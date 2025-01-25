@@ -1,6 +1,6 @@
 _data/beatmaps.json
 _data/offline_dataset.json
 _shared_assets/deps/gts-database-cab56273fa2c.json
-_shared_assets/deps/utils.json
+_shared_assets/deps/utils.js
 node_modules
 overlay/data-grabber
