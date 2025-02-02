@@ -186,7 +186,7 @@ class ShowcaseManager {
             pick = beatmapSet[index]["pick"];
             customMapper = beatmapSet[index]["mappers"];
             mod = pick.substring(0,2).toUpperCase();
-            if (mod == "HR" || "FM") {
+            if (mod == "HR" || mod == "FM") {
                 modOD = Math.min(memoryOD*1.4, 10).toFixed(2);
             } else if (mod == "DT") {
                 modOD = Math.min((79.5 - (Math.min(79.5, Math.max(19.5, 79.5 - Math.ceil(6 * memoryOD))) / 1.5)) / 6, 1.5 > 1.5 ? 12 : 11).toFixed(2);
@@ -201,7 +201,7 @@ class ShowcaseManager {
             pick = beatmapSet[index]["pick"];
             customMapper = beatmapSet[index]["mappers"];
             mod = pick.substring(0,2).toUpperCase();
-            if (mod == "HR" || "FM") {
+            if (mod == "HR" || mod == "FM") {
                 modOD = Math.min(memoryOD*1.4, 10).toFixed(2);
             } else if (mod == "DT") {
                 modOD = Math.min((79.5 - (Math.min(79.5, Math.max(19.5, 79.5 - Math.ceil(6 * memoryOD))) / 1.5)) / 6, 1.5 > 1.5 ? 12 : 11).toFixed(2);
@@ -409,13 +409,15 @@ socket.onmessage = async event => {
     } 
     
     if (generated) {
-        
+        showcaseManager.updateReplayer(data.gameplay.name);
+        if (beatmaps.includes(data.menu.bm.path.file)) {
+            data = offlineData.find(beatmapData => beatmapData.menu.bm.path.file == data.menu.bm.path.file);
+        }
         let tempStats = [data.menu.bm.stats.memoryOD, data.menu.bm.stats.fullSR, data.menu.bm.stats.BPM.min, data.menu.bm.stats.BPM.max];
         if (showcaseManager.metadata != data.menu.bm.path.file || !showcaseManager.arraysEqual(showcaseManager.stats,tempStats)) {
             showcaseManager.updateStats(data.menu.bm.path.file, tempStats);
             showcaseManager.updateDetails(data);
         };
-        showcaseManager.updateReplayer(data.gameplay.name);
     }
 }
 
