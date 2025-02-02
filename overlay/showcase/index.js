@@ -15,6 +15,8 @@ socket.onerror = error => {
 let beatmapSet = [];
 let beatmaps = [];
 let offlineData = [];
+let stages = [];
+let currentStage;
 (async () => {
     try {
         const jsonData = await $.getJSON("../../_data/beatmaps.json");
@@ -24,6 +26,14 @@ let offlineData = [];
         const jsonData_2 = await $.getJSON("../../_data/offline_dataset.json");
         jsonData_2.map((beatmap) => {
             offlineData.push(beatmap);
+        });
+        const jsonData_3 = await $.getJSON("../../_data/stage.json");
+        jsonData_3.map((stage,index) => {
+            if (index == 0) {
+                currentStage = stage.currentStage;
+            } else {
+                stages.push(stage);
+            }
         });
         initialized = true;
     } catch (error) {
@@ -35,11 +45,12 @@ let offlineData = [];
 })();
 console.log(beatmapSet);
 console.log(offlineData);
+console.log(stages);
+console.log(currentStage);
 
 // PLACEHOLDER VARS /////////////////////////////////////////////////////////////////
 let currentFile = "";
 let currentStats;
-let currentStage;
 let tempBG;
 let hasSetup = false;
 let generated = false;
@@ -75,6 +86,7 @@ class ShowcaseManager {
         this.sourceAsset = document.getElementById("source");
         this.pickAsset = document.getElementById("pick");
         this.customSongAsset = document.getElementById("customSong");
+        this.customCollabAsset = document.getElementById("customCollab");
         this.mapperTextAsset = document.getElementById("mapperText");
         this.difficultyTextAsset = document.getElementById("difficultyText");
         this.difficultyTextDelayAsset = document.getElementById("difficultyTextDelay");
@@ -86,6 +98,7 @@ class ShowcaseManager {
         this.pickQueueAsset = document.getElementById("pickQueue");
         this.stinger = document.getElementById("transitionVideo");
         this.replayer = document.getElementById("replay");
+        this.showcaseText = document.getElementById("asset_1");
         this.metadata;
         this.stats = [];
         this.beatmapSet = beatmapSet;
@@ -94,6 +107,7 @@ class ShowcaseManager {
         this.generate();
     }
     async generate() {
+        this.showcaseText.setAttribute("src",stages.find(stage => stage.stage == currentStage)["showcase"]);
         for (let i = 0; i < this.beatmapSet.length; i++) {
             this.pickItem = document.createElement("div");
             this.pickName = document.createElement("div");
@@ -216,8 +230,11 @@ class ShowcaseManager {
         setTimeout(function() {
             try {
                 this.customSongAsset.style.opacity = beatmapSet[index]["customSong"] ? 1 : 0;
+                this.customCollabAsset.innerHTML = `${beatmapSet[index]["collab"]} Collab`;
+                this.customCollabAsset.style.opacity = beatmapSet[index]["collab"] != "" ? 1 : 0;
             } catch (e) {
                 this.customSongAsset.style.opacity = 0;
+                this.customCollabAsset.style.opacity = 0;
             }
             this.pickAsset.innerHTML = pick == undefined ? "N.A" : pick;
             this.songTitleAsset.innerHTML = title;

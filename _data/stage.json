@@ -1,0 +1,11 @@
+[
+    { "currentStage": "RO64"},
+    { "stage": "QL", "showcase": "../../_shared_assets/design/showcase_text_quals.png"},
+    { "stage": "RO64", "showcase": "../../_shared_assets/design/showcase_text_ro64.png"},
+    { "stage": "RO32", "showcase": "../../_shared_assets/design/showcase_text_ro32.png"},
+    { "stage": "RO16", "showcase": "../../_shared_assets/design/showcase_text_ro16.png"},
+    { "stage": "QF", "showcase": "../../_shared_assets/design/showcase_text_qf.png"},
+    { "stage": "SF", "showcase": "../../_shared_assets/design/showcase_text_sf.png"},
+    { "stage": "F", "showcase": "../../_shared_assets/design/showcase_text_f.png"},
+    { "stage": "GF", "showcase": "../../_shared_assets/design/showcase_text_gf.png"}
+]
