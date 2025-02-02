@@ -156,7 +156,7 @@ class ShowcaseManager {
                 pickOverlay.style.backgroundImage = "linear-gradient(to right, rgba(255,255,255,1) ,rgba(255,255,255,0))";
                 pickSource.style.opacity = 0;
             }
-            console.log(this.revealed+moveIndex-3);
+            // console.log(this.revealed+moveIndex-3);
             if (index == this.revealed+moveIndex-3) {
                 pickSource.style.filter = "blur(0px)";
             } else {
@@ -166,11 +166,6 @@ class ShowcaseManager {
         this.revealed += moveIndex;
     }
     updateDetails(data) {
-        let tempStats = [data.menu.bm.stats.memoryOD, data.menu.bm.stats.fullSR, data.menu.bm.stats.BPM.min, data.menu.bm.stats.BPM.max];
-        if (this.metadata === data.menu.bm.path.file && this.arraysEqual(this.stats,tempStats)) return;
-        this.metadata = data.menu.bm.path.file;
-        this.stats = tempStats;
-
         this.stinger.play();
         let { id } = data.menu.bm;
         let { memoryOD, fullSR, BPM: { min, max } } = data.menu.bm.stats;
@@ -198,7 +193,6 @@ class ShowcaseManager {
                 full = full/1.5;
                 min = Math.round(min*1.5);
                 max = Math.round(max*1.5);
-                fullSR = beatmapSet[index]["modSR"];
             }
             this.move(index-this.currentPick);
             this.currentPick = index;
@@ -214,7 +208,6 @@ class ShowcaseManager {
                 full = full/1.5;
                 min = Math.round(min*1.5);
                 max = Math.round(max*1.5);
-                fullSR = beatmapSet[index]["modSR"];
             }
             this.move(index-this.currentPick);
             this.currentPick = index;
@@ -231,8 +224,8 @@ class ShowcaseManager {
             this.artistTitleAsset.innerHTML = artist;
             this.mapperTextAsset.innerHTML = customMapper != "" ? customMapper:mapper;
             this.difficultyTextAsset.innerHTML = difficulty;
-            this.odAsset.innerHTML = modOD != undefined ? `${Number(memoryOD).toFixed(1)} (${Number(modOD).toFixed(1)})` : Number(memoryOD).toFixed(1);
-            this.srAsset.innerHTML = `${fullSR.toFixed(2)}*`;
+            this.odAsset.innerHTML = (mod == "DT" || mod == "FM" || mod == "HR") ? `${Number(memoryOD).toFixed(1)} (${Number(modOD).toFixed(1)})` : Number(memoryOD).toFixed(1);
+            this.srAsset.innerHTML = mod == "DT" ? `${beatmapSet[index]["modSR"]}*` : `${Number(fullSR).toFixed(2)}*`;
             this.bpmAsset.innerHTML = min === max ? min : `${min} - ${max}`;
             this.lengthAsset.innerHTML = parseTime(full);
             this.modpoolAsset.innerHTML = mod == "TB" ? "&#8202;TB" : mod;
@@ -307,7 +300,10 @@ class ShowcaseManager {
     arraysEqual(a, b) {
         return a.length === b.length && a.every((val, index) => val === b[index]);
     }
-    
+    updateStats(metadata,stats) {
+        this.metadata = metadata;
+        this.stats = stats;
+    }
 }
 
 class Beatmap {
@@ -413,7 +409,12 @@ socket.onmessage = async event => {
     } 
     
     if (generated) {
-        showcaseManager.updateDetails(data);
+        
+        let tempStats = [data.menu.bm.stats.memoryOD, data.menu.bm.stats.fullSR, data.menu.bm.stats.BPM.min, data.menu.bm.stats.BPM.max];
+        if (showcaseManager.metadata != data.menu.bm.path.file || !showcaseManager.arraysEqual(showcaseManager.stats,tempStats)) {
+            showcaseManager.updateStats(data.menu.bm.path.file, tempStats);
+            showcaseManager.updateDetails(data);
+        };
         showcaseManager.updateReplayer(data.gameplay.name);
     }
 }
