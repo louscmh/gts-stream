@@ -87,7 +87,7 @@ class ShowcaseManager {
         this.stinger = document.getElementById("transitionVideo");
         this.replayer = document.getElementById("replay");
         this.metadata;
-        this.stats;
+        this.stats = [];
         this.beatmapSet = beatmapSet;
         this.currentPick;
         this.revealed = 3;
@@ -166,9 +166,10 @@ class ShowcaseManager {
         this.revealed += moveIndex;
     }
     updateDetails(data) {
-        if (data.menu.bm.path.file == this.metadata || data.menu.bm.stats == this.stats) return;
+        let tempStats = [data.menu.bm.stats.memoryOD, data.menu.bm.stats.fullSR, data.menu.bm.stats.BPM.min, data.menu.bm.stats.BPM.max];
+        if (this.metadata === data.menu.bm.path.file && this.arraysEqual(this.stats,tempStats)) return;
         this.metadata = data.menu.bm.path.file;
-        this.stats = data.menu.bm.stats;
+        this.stats = tempStats;
 
         this.stinger.play();
         let { id } = data.menu.bm;
@@ -303,6 +304,10 @@ class ShowcaseManager {
         this.pickMaskAsset.style.animation = "fadeInLeft 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
         this.fgAsset.style.animation = "fadeInLeft 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
     }
+    arraysEqual(a, b) {
+        return a.length === b.length && a.every((val, index) => val === b[index]);
+    }
+    
 }
 
 class Beatmap {
