@@ -229,12 +229,12 @@ class ShowcaseManager {
 
         setTimeout(function() {
             try {
-                this.customSongAsset.style.opacity = beatmapSet[index]["customSong"] ? 1 : 0;
+                this.customSongAsset.style.display = beatmapSet[index]["customSong"] ? "initial" : "none";
                 this.customCollabAsset.innerHTML = `${beatmapSet[index]["collab"]} Collab`;
-                this.customCollabAsset.style.opacity = beatmapSet[index]["collab"] != "" ? 1 : 0;
+                this.customCollabAsset.style.display = beatmapSet[index]["collab"] != "" ? "initial" : "none";
             } catch (e) {
-                this.customSongAsset.style.opacity = 0;
-                this.customCollabAsset.style.opacity = 0;
+                this.customSongAsset.style.display = "none";
+                this.customCollabAsset.style.display = "none";
             }
             this.pickAsset.innerHTML = pick == undefined ? "N.A" : pick;
             this.songTitleAsset.innerHTML = title;
