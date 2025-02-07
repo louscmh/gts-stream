@@ -1,0 +1,321 @@
+@font-face {
+    font-family: "Sora-Bold";
+    src: url("../../_shared_assets/fonts/Sora-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Sora-ExtraBold";
+    src: url("../../_shared_assets/fonts/Sora-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Sora-Light";
+    src: url("../../_shared_assets/fonts/Sora-Light.ttf");
+}
+
+@font-face {
+    font-family: "Sora-Regular";
+    src: url("../../_shared_assets/fonts/Sora-Regular.ttf");
+}
+
+#main {
+    position: absolute;
+    width:1920px;
+    height:1080px;
+    top:0px;
+    left:0px;
+    display:flex;
+    font-family: "Sora-Light";
+    color: white;
+    font-size:24px;
+}
+
+.foreground {
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 0;
+}
+
+#bg {
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: -1;
+}
+
+#player {
+    z-index: 1;
+    position: absolute;
+    top:328px;
+    left:98px;
+    color:black;
+    display:flex;
+    flex-direction: column;
+}
+
+#playerPic {
+    border: 8px solid white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width:298px;
+    height:298px;
+    object-fit:cover;
+    object-position: center;
+    background-color: black;
+
+}
+
+#playerSection {
+    background-color: white;
+    width:298px;
+    height:218px;
+    display:flex;
+    flex-direction: column;
+}
+
+#playerName {
+    font-family: "Sora-ExtraBold";
+    font-size: 28px;
+    margin-left:10px;
+    margin-right:10px;
+    height:80px;
+    text-align: center;
+}
+
+#seedSection {
+    display:flex;
+    margin-inline:10px;
+    height: 120px;
+    align-items: end;
+    justify-content: center;
+}
+
+#seedTexts {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:80px;
+    height: 120px;
+}
+
+#seedText1 {
+    font-family: "Sora-ExtraBold";
+    text-align: right;
+    padding-right:15px;
+    margin-top:38px;
+}
+
+#seedText2 {
+    font-family: "Sora-Regular";
+    margin-left:2px;
+}
+
+#seedNumber {
+    font-family: "Sora-Bold";
+    font-size:100px;
+    margin-bottom:-24px;
+    display:flex;
+    align-items: end;
+    height:140px !important;
+    width:fit-content;
+}
+
+#qualsSection {
+    margin-top:23px;
+    background-color: white;
+    width:298px;
+    height:73px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top:2px;
+}
+
+#rankSection, #avgSection {
+    display:flex;
+    justify-content: space-between;
+    margin-inline:10px;
+}
+
+#rankText, #avgText {
+    font-family: "Sora-Bold";
+}
+
+#rank, #avg {
+    font-family: "Sora-Regular";
+}
+
+#result {
+    position:absolute;
+    top: 95px;
+    left:470px;
+}
+
+#resultContainer {
+    display:flex;
+    flex-direction: column;
+}
+
+.map {
+    height:83.6px;
+    margin-bottom: 5px;
+    display:flex;
+}
+
+.mapSide {
+    height:inherit;
+    width:860px;
+    display:flex;
+    background-color: white;
+    color:black;
+}
+
+.mapLeft {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:7px;
+    font-family: "Sora-Regular";
+    z-index: 2;
+}
+
+.mapRight {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    font-family: "Sora-ExtraBold";
+    z-index: 2;
+}
+
+.mapSong {
+    width:fit-content;
+    font-size: 37px;
+}
+
+.mapArtist {
+    font-size:23px;
+    margin-top:-6px;
+}
+
+.mapRank {
+    margin-right:8px;
+    font-size: 21px;
+    margin-bottom:-12px;
+    margin-top:8px;
+}
+
+.mapScore {
+    margin-right:7px;
+    font-size: 50px;
+}
+
+.mapSource {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    z-index: 1;
+    object-fit: cover;
+    object-position: center;
+    opacity:0.2;
+	filter: blur(5px);
+}
+
+.mapMod {
+    height:98px;
+    display:flex;
+    text-align: center;
+    align-items: end;
+    justify-content: center;
+    font-family: "Sora-ExtraBold";
+    font-size:47px;
+    margin-left:6px;
+}
+
+/* CONTROLLER */
+#controller {
+    position:absolute;
+    left:1920px;
+    top:0px;
+    background-color:rgb(39, 39, 39);
+    width:500px;
+    height:1080px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttons {
+    width:90%;
+    height:90%;
+    display:flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: "Sora-Regular";
+    color:white;
+    font-size:24px;
+    user-select: none; /* Disable text selection */
+}
+
+.button {
+    width:100%;
+    height:fit-content;
+    background-color: rgb(255, 255, 255);
+    margin-block:10px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Sora-Bold";
+    color:rgb(0, 0, 0);
+    font-size:32px;
+    padding-top: 5px;
+    margin-bottom:15px;
+    text-align: center;
+    padding-block: 10px;
+    user-select: none; /* Disable text selection */
+    transition: ease-in-out 500ms;
+}
+
+@keyframes fadeOutDown {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
