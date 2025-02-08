@@ -163,21 +163,21 @@ class PlayerController {
         this.picks = picks;
     }
     fadeOut() {
-        this.qualsSection.style.animation = "fadeOutDown 1s cubic-bezier(.45,0,1,.48)";
+        this.qualsSection.style.animation = "fadeOutDown 1.2s cubic-bezier(.45,0,1,.48)";
         this.qualsSection.style.opacity = 0;
         setTimeout(function() {
-            this.playerSection.style.animation = "fadeOutDown 1s cubic-bezier(.45,0,1,.48)";
-            this.playerPic.style.animation = "fadeOutDown 1s cubic-bezier(.45,0,1,.48)";
+            this.playerSection.style.animation = "fadeOutDown 1.2s cubic-bezier(.45,0,1,.48)";
+            this.playerPic.style.animation = "fadeOutDown 1.2s cubic-bezier(.45,0,1,.48)";
             this.playerSection.style.opacity = 0;
             this.playerPic.style.opacity = 0;
         }.bind(this),100);
     }
     fadeIn() {
-        this.qualsSection.style.animation = "fadeInRight 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
+        this.qualsSection.style.animation = "fadeInRight 1.2s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
         this.qualsSection.style.opacity = 1;
         setTimeout(function() {
-            this.playerSection.style.animation = "fadeInRight 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
-            this.playerPic.style.animation = "fadeInRight 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
+            this.playerSection.style.animation = "fadeInRight 1.2s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
+            this.playerPic.style.animation = "fadeInRight 1.2s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
             this.playerSection.style.opacity = 1;
             this.playerPic.style.opacity = 1;
         }.bind(this),100);

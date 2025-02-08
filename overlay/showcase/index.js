@@ -99,6 +99,8 @@ class ShowcaseManager {
         this.stinger = document.getElementById("transitionVideo");
         this.replayer = document.getElementById("replay");
         this.showcaseText = document.getElementById("asset_1");
+        this.overviewStage = document.getElementById("overviewStage");
+        this.overviewDetails = document.getElementById("overviewDetails");
         this.metadata;
         this.stats = [];
         this.beatmapSet = beatmapSet;
@@ -108,6 +110,8 @@ class ShowcaseManager {
     }
     async generate() {
         this.showcaseText.setAttribute("src",stages.find(stage => stage.stage == currentStage)["showcase"]);
+        this.overviewStage.innerHTML = stages.find(stage => stage.stage == currentStage)["stageName"];
+        this.overviewDetails.innerHTML = stages.find(stage => stage.stage == currentStage)["overviewText"];
         for (let i = 0; i < this.beatmapSet.length; i++) {
             this.pickItem = document.createElement("div");
             this.pickName = document.createElement("div");
