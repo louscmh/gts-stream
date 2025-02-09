@@ -1,5 +1,5 @@
 Usecase: obs-overlay
-Name: TMC4-SHOWCASE
+Name: EGTS-SHOWCASE
 Author: lous
 CompatibleWith: gosu,tosu
 Resolution: 1920x1080

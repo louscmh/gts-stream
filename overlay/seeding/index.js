@@ -138,9 +138,12 @@ class PlayerController {
     async updateDetails(seedData) {
         animateIn();
         const data = await getUserDataSet(seedData.Players[0].id);
+        let imageUrl = `https://a.ppy.sh/${seedData.Players[0].id}`;
+        let img = new Image();
+        img.src = imageUrl;
         setTimeout( function() {
                 let seeds = [];
-                this.playerPic.setAttribute("src", `https://a.ppy.sh/${seedData.Players[0].id}`);
+                this.playerPic.setAttribute("src", imageUrl);
                 this.playerName.innerHTML = seedData.FullName;
                 this.seedNumber.innerHTML = seedData["Seed"].match(/\d+/)[0];
                 this.rank.innerHTML = `#${data.pp_rank}`;
