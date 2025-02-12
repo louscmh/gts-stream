@@ -260,7 +260,7 @@ class Beatmap {
     }
     generateQueue(isPlayerOne, isBan = false) {
         let player = isPlayerOne ? "playerOne" : "playerTwo";
-        let queueContainer = document.getElementById(`${player}${isBan ? "Ban" : "Queue"}`);
+        let queueContainer = this.mods == "TB" ?  document.getElementById("tbQueue") : document.getElementById(`${player}${isBan ? "Ban" : "Queue"}`);
 
         this.clickerQueue = document.createElement("div");
         this.clickerQueue.id = `${this.layerName}ClickerQueue`;
@@ -383,7 +383,7 @@ class Beatmap {
         this.clickerQueue.style.opacity = 1;
         if (!this.isBan) {
             this.mapPickIcon.style.transform = `${isPlayerOne ? "fadeInRight" : "fadeInLeft"} 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)`;
-            this.mapPickQueue.style.opacity = 1;
+            this.mapPickQueue.style.opacity = this.mods == "TB" ? 0 : 1;
             this.clickerQueue.addEventListener("click", async (event) => {
                 if (event.altKey) {
                     this.toggleWin(true);
@@ -425,7 +425,7 @@ class Beatmap {
         }
         this.mapPickIcon.style.opacity = 1;
         this.mapPickIcon.style.animation = "fadeInPickIcon 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
-        if (this.mods != "TB") this.generateQueue(isPlayerOne, false);
+        this.generateQueue(isPlayerOne, false);
     }
 
     toggleWin(isPlayerOne = true) {
@@ -532,6 +532,7 @@ class MatchManager {
         this.upcomingDifficultyText = document.getElementById("upcomingDifficultyText");
         this.upcomingSource = document.getElementById("upcomingSource");
         this.upcomingPickPlayerSource = document.getElementById("upcomingPickPlayerSource");
+        this.upcomingPickPlayer = document.getElementById("upcomingPickPlayer");
 
         this.matchPickId = document.getElementById("matchPickId");
         this.matchSource = document.getElementById("matchSource");
@@ -664,7 +665,7 @@ class MatchManager {
         this.controllerArrow.addEventListener("click", async (event) => {
             if (!this.togglePickVar) return;
             this.unpulseOverview("");
-            if (!this.currentMatchScene) {
+            if (!this.currentMatchScene && (this.bestOf-1)*2 != this.pickCount-2) {
                 if (this.playerTurn == "left") { 
                     this.bottomP1Pick.style.animation = "fadeInRight 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
                     this.bottomP1Pick.style.opacity = 1;
@@ -866,7 +867,7 @@ class MatchManager {
                             this.banCount++;
                             bm.toggleBan(this.playerTurn == "left" ? this.leftPlayerData.user_id : this.rightPlayerData.user_id, this.playerTurn == "left" ? true : false, this.pickCount);
                             this.controllerTurn.click();
-                        } else if (this.banCount == 2 && !bm.isPick && !bm.isBan) {
+                        } else if (this.banCount == 2 && !bm.isPick && !bm.isBan && (this.bestOf-1)*2 != this.pickCount-2) {
                             // PICKING
                             this.pickCount++;
                             this.unpulseOverview(bm.layerName);
@@ -875,12 +876,12 @@ class MatchManager {
                             this.playerTurn == "left" ? this.bottomPlayerTwoPick.style.opacity = 0 : this.bottomPlayerOnePick.style.opacity = 0;
                             this.controllerTurn.click();
                             this.changeUpcoming(bm.mapData);
+                            this.undimButton(this.controllerArrow);
+                            this.togglePickVar = true;
                             this.effectsShimmer.style.animation = "glow 1.5s ease-in-out";
                             setTimeout(function() {
                                 this.effectsShimmer.style.animation = "none";
                             }.bind(this),1500);
-                            this.undimButton(this.controllerArrow);
-                            this.togglePickVar = true;
                             setTimeout(function() {
                                 this.autoSceneChange(1);
                             }.bind(this),15000);
@@ -895,6 +896,11 @@ class MatchManager {
                         this.unpulseOverview(bm.layerName);
                         bm.togglePick(this.playerTurn == "left" ? true : false, null);
                         this.changeUpcoming(bm.mapData);
+                        bm.clickerQueue.style.transform = `translateY(-${100*(7-this.bestOf)}px)`;
+                        this.effectsShimmer.style.animation = "glow 1.5s ease-in-out";
+                        setTimeout(function() {
+                            this.effectsShimmer.style.animation = "none";
+                        }.bind(this),1500);
                     }
                 }
             });
@@ -960,7 +966,8 @@ class MatchManager {
         } else {
             this.gameplayManager.isDoubleTime = false;
         }
-
+            
+        this.upcomingPickPlayer.style.display = upcomingOfflineMapData.pick.substring(0,2) == "TB" ? "none" : "flex";
         this.upcomingPickId.innerHTML = upcomingOfflineMapData.pick;
         this.upcomingSongText.innerHTML = mapData.title;
         this.upcomingArtistText.innerHTML = mapData.artist;

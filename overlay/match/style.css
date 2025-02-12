@@ -366,11 +366,12 @@ body {
     width: 1920px;
     object-fit: contain;
     object-position: center;
+    z-index:1;
 }
 
 #playerOneQueue {
     position: absolute;
-    left: 258px;
+    left: 238px;
     top: 253px;
     width: 466px;
     display: flex;
@@ -380,8 +381,18 @@ body {
 
 #playerTwoQueue {
     position: absolute;
-    left: 1196px;
+    left: 1216px;
     top: 253px;
+    width: 466px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tbQueue {
+    position: absolute;
+    left: 727px;
+    top: 818px;
     width: 466px;
     display: flex;
     flex-direction: column;
@@ -390,7 +401,7 @@ body {
 
 #playerOneBan {
     position: absolute;
-    left: 258px;
+    left: 238px;
     top: 127px;
     width: 466px;
     display: flex;
@@ -400,7 +411,7 @@ body {
 
 #playerTwoBan {
     position: absolute;
-    left: 1196px;
+    left: 1216px;
     top: 127px;
     width: 466px;
     display: flex;
@@ -417,6 +428,7 @@ body {
     margin-bottom: 5px;
     opacity: 1;
     transition: 500ms ease-in-out;
+    z-index:5;
 }
 
 .mapPickIconQueueLeft {
