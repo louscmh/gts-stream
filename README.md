@@ -26,6 +26,7 @@ Within the Match Overlay there are a few elements that requires the streamer to 
 
 ### Interacting with the Control Panel
 ![alt text](_shared_assets/setup/image-control.png)
+
 This is the main interactable panel that contains all the buttons to manage the overlay. In order from top to bottom:
 ___
 - **UPCOMING ACTION:** Will display one of the following actions: `Left/Right Player Ban/Pick`. This denotes what action will be performed upon clicking on the maps in the pool overview, and will automatically switch players whenever a map is clicked (Except on the 2nd ban, then the next action will retain the same player, attaining the 2nd ban 1st pick rule). Click on the button to manually switch players (Left -> Right, Right -> Left). `Ban` will change to `Pick` after banning 2 maps.
