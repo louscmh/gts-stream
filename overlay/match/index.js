@@ -491,7 +491,6 @@ class MatchManager {
         this.pickCount = 0;
         this.playerTurn = "left";
         this.banCount = 0;
-        this.hasBanned = false;
         this.leftPlayerData;
         this.rightPlayerData;
         this.currentMappoolScene = 1;
@@ -500,12 +499,19 @@ class MatchManager {
         this.scoreOne;
         this.scoreTwo;
         this.bestOf;
+
+        this.hasBanned = false;
         this.togglePickVar = false;
+        this.mappoolSwitchVar = true;
+        this.matchSwitchVar = true;
+        this.introSwitchVar = true;
         this.currentMatchScene = false;
+        this.currentIntroScene = false;
+        this.autoPicker = true;
+        this.autoScene = true;
+
         this.gameplayManager = new GameplayManager;
         this.currentState;
-        this.autoPicker = false;
-        this.autoScene = true;
         this.chatLen = 0;
 
         this.mappoolOverview = document.getElementById("mappoolContainer");
@@ -565,6 +571,19 @@ class MatchManager {
         this.bg_match = document.getElementById("bg_match");
 
         this.chats = document.getElementById("chats");
+        this.matchStage = document.getElementById("matchStage");
+        this.mainMatchScene = document.getElementById("mainMatchScene");
+        this.matchBottom = document.getElementById("matchBottom");
+
+        this.introPlayerOnePfp = document.getElementById("introPlayerOnePfp");
+        this.introPlayerTwoPfp = document.getElementById("introPlayerTwoPfp");
+        this.introPlayerOneName = document.getElementById("introPlayerOneName");
+        this.introPlayerTwoName = document.getElementById("introPlayerTwoName");
+        this.introPlayerOneSeed = document.getElementById("introPlayerOneSeed");
+        this.introPlayerTwoSeed = document.getElementById("introPlayerTwoSeed");
+        this.introPlayerOneRank = document.getElementById("introPlayerOneRank");
+        this.introPlayerTwoRank = document.getElementById("introPlayerTwoRank");
+        this.introScene = document.getElementById("introScene");
 
         this.controllerTurn = document.getElementById("controllerTurn");
         this.controllerTurn.addEventListener("click", async (event) => {
@@ -657,44 +676,56 @@ class MatchManager {
             this.bottomPlayerOnePick.style.opacity = 0;
             this.bottomPlayerTwoPick.style.opacity = 0;
             this.dimButton(this.controllerArrow);
+            this.togglePickVar = false;
         });
 
         this.controllerMappool = document.getElementById("controllerMappool");
         this.controllerMappool.addEventListener("click", async (event) => {
-            if (this.currentMappoolScene == 1) {
-                this.controllerMappool.innerHTML = "Mappool Scene (2/3)";
-                this.currentMappoolScene = 2;
-                this.mappoolOverview.style.animation = "mappoolSceneOut 1s cubic-bezier(.45,0,1,.48)";
-                this.mappoolOverview.style.opacity = 0;
+            if (this.mappoolSwitchVar) {
+                this.dimButton(this.controllerMappool);
+                this.mappoolSwitchVar = false;
+                if (this.currentMappoolScene == 1) {
+                    this.controllerMappool.innerHTML = "Mappool Scene (2/3)";
+                    this.currentMappoolScene = 2;
+                    this.mappoolOverview.style.animation = "mappoolSceneOut 1s cubic-bezier(.45,0,1,.48)";
+                    this.mappoolOverview.style.opacity = 0;
+                    setTimeout(function() {
+                        this.mappoolUpcoming.style.animation = "mappoolSceneIn 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
+                        this.mappoolUpcoming.style.opacity = 1;
+                    }.bind(this),1000);
+                } else if (this.currentMappoolScene == 2) {
+                    this.controllerMappool.innerHTML = "Mappool Scene (3/3)";
+                    this.currentMappoolScene = 3;
+                    this.mappoolUpcoming.style.animation = "mappoolSceneOut 1s cubic-bezier(.45,0,1,.48)";
+                    this.mappoolUpcoming.style.opacity = 0;
+                    setTimeout(function() {
+                        this.mappoolQueue.style.animation = "mappoolSceneIn 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
+                        this.mappoolQueue.style.opacity = 1;
+                    }.bind(this),1000);
+                } else if (this.currentMappoolScene == 3) {
+                    this.controllerMappool.innerHTML = "Mappool Scene (1/3)";
+                    this.currentMappoolScene = 1;
+                    this.mappoolQueue.style.animation = "mappoolSceneOut 1s cubic-bezier(.45,0,1,.48)";
+                    this.mappoolQueue.style.opacity = 0;
+                    setTimeout(function() {
+                        this.mappoolOverview.style.animation = "mappoolSceneIn 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
+                        this.mappoolOverview.style.opacity = 1;
+                    }.bind(this),1000);
+                }
                 setTimeout(function() {
-                    this.mappoolUpcoming.style.animation = "mappoolSceneIn 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
-                    this.mappoolUpcoming.style.opacity = 1;
-                }.bind(this),1000);
-            } else if (this.currentMappoolScene == 2) {
-                this.controllerMappool.innerHTML = "Mappool Scene (3/3)";
-                this.currentMappoolScene = 3;
-                this.mappoolUpcoming.style.animation = "mappoolSceneOut 1s cubic-bezier(.45,0,1,.48)";
-                this.mappoolUpcoming.style.opacity = 0;
-                setTimeout(function() {
-                    this.mappoolQueue.style.animation = "mappoolSceneIn 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
-                    this.mappoolQueue.style.opacity = 1;
-                }.bind(this),1000);
-            } else if (this.currentMappoolScene == 3) {
-                this.controllerMappool.innerHTML = "Mappool Scene (1/3)";
-                this.currentMappoolScene = 1;
-                this.mappoolQueue.style.animation = "mappoolSceneOut 1s cubic-bezier(.45,0,1,.48)";
-                this.mappoolQueue.style.opacity = 0;
-                setTimeout(function() {
-                    this.mappoolOverview.style.animation = "mappoolSceneIn 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
-                    this.mappoolOverview.style.opacity = 1;
-                }.bind(this),1000);
+                    this.undimButton(this.controllerMappool);
+                    this.mappoolSwitchVar = true;
+                }.bind(this),2000);
             }
         });
 
         this.controllerMatch = document.getElementById("controllerMatch");
         this.controllerMatch.addEventListener("click", async (event) => {
+            if (!this.matchSwitchVar) return;
+            this.dimButton(this.controllerMatch);
+            this.matchSwitchVar = false;
             if (this.currentMatchScene) {
-                this.controllerMatch.innerHTML = "Switch to Match";
+                this.controllerMatch.innerHTML = "Switch to Gameplay";
                 this.currentMatchScene = false;
                 this.gameplayManager.hideGameplay();
                 setTimeout(function() {
@@ -739,6 +770,45 @@ class MatchManager {
                     this.gameplayManager.promptGameplay();
                 }.bind(this),1000);
             }
+            setTimeout(function() {
+                this.undimButton(this.controllerMatch);
+                this.matchSwitchVar = true;
+            }.bind(this),2000);
+        });
+
+        this.controllerIntro = document.getElementById("controllerIntro");
+        this.controllerIntro.addEventListener("click", async (event) => {
+            if (this.introSwitchVar) {
+                this.dimButton(this.controllerIntro);
+                this.introSwitchVar = false;
+                if (this.currentIntroScene) {
+                    this.controllerIntro.innerHTML = "Switch to Intro";
+                    this.currentIntroScene = false;
+                    this.introScene.style.animation = "mappoolSceneOut 1s cubic-bezier(.45,0,1,.48)";
+                    this.introScene.style.opacity = 0;
+                    setTimeout(function() {
+                        this.mainMatchScene.style.animation = "mappoolSceneIn 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
+                        this.mainMatchScene.style.opacity = 1;
+                        this.matchBottom.style.animation = "bottomSceneIn 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
+                        this.matchBottom.style.opacity = 1;
+                    }.bind(this),1000);
+                } else {
+                    this.controllerIntro.innerHTML = "Switch to Match";
+                    this.currentIntroScene = true;
+                    this.mainMatchScene.style.animation = "mappoolSceneOut 1s cubic-bezier(.45,0,1,.48)";
+                    this.mainMatchScene.style.opacity = 0;
+                    this.matchBottom.style.animation = "bottomSceneOut 1s cubic-bezier(.45,0,1,.48)";
+                    this.matchBottom.style.opacity = 0;
+                    setTimeout(function() {
+                        this.introScene.style.animation = "mappoolSceneIn 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
+                        this.introScene.style.opacity = 1;
+                    }.bind(this),1000);
+                }
+                setTimeout(function() {
+                    this.undimButton(this.controllerIntro);
+                    this.introSwitchVar = true;
+                }.bind(this),2000);
+            }
         });
 
         this.controllerAutoPick = document.getElementById("controllerAutoPick");
@@ -769,6 +839,7 @@ class MatchManager {
     }
 
     generateOverview() {
+        this.matchStage.innerHTML = stages.find(stage => stage.stage == currentStage)["stageName"];
         this.beatmapSet.map(async (beatmap, index) => {
             let pickMod = beatmap.pick.substring(0, 2);
             const bm = new Beatmap(pickMod, beatmap.beatmapId, `map${index}`);
@@ -809,6 +880,7 @@ class MatchManager {
                                 this.effectsShimmer.style.animation = "none";
                             }.bind(this),1500);
                             this.undimButton(this.controllerArrow);
+                            this.togglePickVar = true;
                             setTimeout(function() {
                                 this.autoSceneChange(1);
                             }.bind(this),15000);
@@ -859,6 +931,15 @@ class MatchManager {
         this.bottomPlayerTwoName.innerHTML = playerId[1];
         this.bottomPlayerOneSeed.innerHTML = `Seed #${seedData.find(seed => seed["Players"][0].id == this.leftPlayerData.user_id)["Seed"].match(/\d+/)[0]}`;
         this.bottomPlayerTwoSeed.innerHTML = `Seed #${seedData.find(seed => seed["Players"][0].id == this.rightPlayerData.user_id)["Seed"].match(/\d+/)[0]}`;
+
+        this.introPlayerOnePfp.setAttribute("src", `https://a.ppy.sh/${this.leftPlayerData.user_id}`);
+        this.introPlayerTwoPfp.setAttribute("src", `https://a.ppy.sh/${this.rightPlayerData.user_id}`);
+        this.introPlayerOneName.innerHTML = playerId[0];
+        this.introPlayerTwoName.innerHTML = playerId[1];
+        this.introPlayerOneSeed.innerHTML = `#${seedData.find(seed => seed["Players"][0].id == this.leftPlayerData.user_id)["Seed"].match(/\d+/)[0]}`;
+        this.introPlayerTwoSeed.innerHTML = `#${seedData.find(seed => seed["Players"][0].id == this.rightPlayerData.user_id)["Seed"].match(/\d+/)[0]}`;
+        this.introPlayerOneRank.innerHTML = `#${this.leftPlayerData.pp_rank}`;
+        this.introPlayerTwoRank.innerHTML = `#${this.rightPlayerData.pp_rank}`;
     }
 
     changeUpcoming(mapData) {
@@ -1014,13 +1095,11 @@ class MatchManager {
     }
 
     dimButton(button) {
-        this.togglePickVar = false;
         button.style.backgroundColor = "rgb(67, 67, 67)";
         button.style.color = "rgb(36, 36, 36)";
     }
 
     undimButton(button) {
-        this.togglePickVar = true;
         button.style.backgroundColor = "white";
         button.style.color = "black";
     }
@@ -1071,7 +1150,7 @@ class MatchManager {
     }
 
     autoSceneChange(index) {
-        if (!this.autoScene) return;
+        if (!this.autoScene || !this.hasBanned) return;
 
         if (index == 1 && this.currentMappoolScene == 1) {
             // change to upcoming map
