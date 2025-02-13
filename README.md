@@ -36,9 +36,11 @@ ___
 
 - **SWITCH TO GAMEPLAY:** Button to switch scenes from mappool to gameplay. Upon pressing again will return you to the mappool scene.
 
-- **SWITCH TO INTRO:** Button to switch scenes from mappool to intro. Upon pressing again will return you to the mappool scene.
+- **SWITCH TO INTRO:** Button to switch scenes from main match scene to intro. Upon pressing again will return you to the mappool scene.
 
-- **WITCH TO RESULTS:** Currently W.I.P
+- **SWITCH TO RESULTS:** Button to switch scenes from main match scene to results. Upon pressing again will return you to the main match scene scene. Disabled by default, and will only be enabled when the following two things happen:
+    - One of the players have reached the maximum amount of points in the tournament client. 
+    - The exact amount of picks marked as a win neccessary to win by a player has been reached.
 ___
 **AUTO CONTROLS**
 Both buttons are toggled on by default and should only be turned off if fixing an error/debugging.
@@ -79,4 +81,5 @@ ___
 ### Intro Scene
 ![alt text](_shared_assets/setup/image-intro.png)
 
-
+### Winner Scene
+![alt text](_shared_assets/setup/image-winner.png)
