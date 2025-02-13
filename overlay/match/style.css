@@ -32,11 +32,38 @@ body {
     width: 1920px;
     height: 1080px;
     top: 0px;
-    left: 0px;
+    left: 500px;
     display: flex;
     font-family: "Sora-Light";
     color: white;
     font-size: 24px;
+    user-select: none;
+}
+
+#preLoading {
+    position: absolute;
+    width: 2920px;
+    height: 1080px;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.5);
+    font-family: "Sora-ExtraBold";
+    color: white;
+    font-size: 80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index:99;
+    transition: 500ms ease-in-out;
+}
+
+#mainMatchScene {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    top: 0px;
+    left: 0px;
+    opacity:1;
 }
 
 .foreground {
@@ -662,6 +689,7 @@ body {
     width: 1920px;
     /* transform: translateY(1080px); */
     z-index: 3;
+    opacity:1;
 }
 
 #matchTop {
@@ -1569,10 +1597,272 @@ body {
     font-family:"Sora-Bold";
 }
 
+/* RESULTS */
+#resultScene {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    opacity:0;
+}
+
+#resultAsset_1, #resultAsset_2 {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    top: 0px;
+    left: 0px;
+}
+
+#resultScoreline {
+    height:58px;
+    width:1700px;
+    display:flex;
+    position:absolute;
+    align-items: center;
+    top: 247px;
+    left:49px;
+}
+
+#resultsStaticText {
+    background-color: white;
+    color:black;
+    font-family: "Sora-ExtraBold";
+    font-size:47px;
+    width:335px;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    padding-right:12px;
+}
+
+#resultScorelinePlayerOne {
+    display:flex;
+    align-items: center;
+}
+
+#resultScorelinePlayerTwo {
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#resultScorelineLine {
+    display:flex;
+    margin-inline: 20px;
+    align-items: center;
+}
+
+.resultText {
+    font-family: "Sora-ExtraBold";
+    font-size:72px;
+}
+
+.resultScorelineSource {
+    margin-inline:30px;
+    height:58px;
+    width:58px;
+    border:4px solid white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.resultScorelineText {
+    font-family: "Sora-ExtraBold";
+    font-size:30px;
+}
+
+#resultQueueContainer {
+    display:flex;
+    position:absolute;
+    top: 400px;
+    left:240px;
+    flex-direction: column;
+    width:fit-content;
+}
+
+#resultQueueTop {
+    display:flex;
+    align-items: end;
+    width:fit-content;
+}
+
+#resultBan {
+    display:flex;
+}
+
+.resultContainer {
+    display:flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width:fit-content;
+}
+
+.resultContainerSong {
+    height:144px;
+    width:144px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+.resultContainerPick {
+    font-family: "Sora-ExtraBold";
+    font-size:42px;
+    color:white;
+    z-index:2;
+    border:4px solid white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height:144px;
+    width:144px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultContainerSource {
+    height:144px;
+    width:144px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: black;
+    object-fit: cover;
+    filter: brightness(50%) blur(4px);
+    z-index:1;
+}
+
+.resultContainerBottom {
+    display:flex;
+    width:144px;
+    height:39px;
+}
+
+.resultContainerPlayer {
+    width:39px;
+    height:39px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: "Sora-ExtraBold";
+    font-size:24px;
+}
+
+.resultContainerText {
+    width:105px;
+    height:39px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    font-family: "Sora-ExtraBold";
+    font-size:32px;
+}
+
+#resultPlayerPick {
+    display:flex;
+    align-items: center;
+    width:fit-content;
+    margin-right:20px;
+}
+
+.resultPlayerPickSource {
+    height:42px;
+    width:42px;
+    border:4px solid white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.resultPlayerText {
+    color:white;
+    font-family: "Sora-ExtraBold";
+    font-size:24px;
+    margin-left:10px;
+    margin-right:20px;
+}
+
+#resultPickContainer {
+    display:flex;
+    width:fit-content;
+    height:fit-content;
+    align-items: center;
+    margin-top:67px;
+}
+
+#resultPicks {
+    display:flex;
+    flex-direction: column;
+    width:fit-content;
+}
+
+#resultPickOne {
+    display:flex;
+    margin-bottom: 26px;
+}
+
+#resultPickTwo {
+    display:flex;
+}
+
+#resultPickTb {
+    margin-left: 72px;
+}
+
+#resultSceneBanText {
+    position: absolute;
+    top:404px;
+    left:75px;
+    width:113px;
+    height:44px;
+    background-color: white;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Sora-ExtraBold";
+    font-size:36px;
+}
+
+#resultScenePickText {
+    position: absolute;
+    top:654px;
+    left:75px;
+    width:113px;
+    height:44px;
+    background-color: white;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Sora-ExtraBold";
+    font-size:36px;
+}
+
+#resultStageText {
+    position: absolute;
+    right:0px;
+    bottom:-20px;
+    font-family: "Sora-ExtraBold";
+    font-size:78px;
+    text-align: right;
+}
+
 /* CONTROLLER */
 #controller {
     position: absolute;
-    left: 1920px;
+    left: 2420px;
     top: 0px;
     background-color: rgb(39, 39, 39);
     width: 500px;
@@ -1583,7 +1873,20 @@ body {
     z-index: 10;
 }
 
-#buttons {
+#debugController {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(39, 39, 39);
+    width: 500px;
+    height: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.buttons {
     width: 90%;
     height: 90%;
     display: flex;
@@ -1770,6 +2073,30 @@ body {
     }
 }
 
+@keyframes topSceneOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+}
+
+@keyframes topSceneIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 @keyframes scrollText {
 	0% {
 	  transform: translateX(100%);
@@ -1844,7 +2171,7 @@ body {
         opacity: 0;
         transform: translateY(83px);
     }
-}
+}   
 
 @keyframes slideUpMatchBottom {
     0% {

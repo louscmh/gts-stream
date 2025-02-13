@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <div id="preLoading">Setting up Overlay...</div>
   <div id="main">
     <div id="effectsOverlay">
       <div id="effectsShimmer">
@@ -380,8 +381,64 @@
         </div>
       </div>
     </div>
+    <div id="resultScene">
+      <img id="resultAsset_1" src="../../_shared_assets/design/seed_egts.png">
+      <img id="resultAsset_2" src="../../_shared_assets/design/match_result_asset.png">
+      <div id="resultStageText"></div>
+      <div id="resultSceneBanText">BAN</div>
+      <div id="resultScenePickText">PICK</div>
+      <div id="resultScoreline">
+        <div id="resultsStaticText">Results</div>
+        <div id="resultScorelinePlayerOne">
+          <img class="resultScorelineSource" id="resultScorelinePlayerOneSource">
+          <div class="resultScorelineText" id="resultScorelinePlayerOneText">insertplayername</div>
+        </div>
+        <div id="resultScorelineLine">
+          <div class="resultText" id="resultOne">0</div>
+          <div class="resultText">-</div>
+          <div class="resultText" id="resultTwo">0</div>
+        </div>
+        <div id="resultScorelinePlayerTwo">
+          <img class="resultScorelineSource" id="resultScorelinePlayerTwoSource">
+          <div class="resultScorelineText" id="resultScorelinePlayerTwoText">insertplayername</div>
+        </div>
+      </div>
+      <div id="resultQueueContainer">
+        <div id="resultQueueTop">
+          <div id="resultBan">
+            <!-- <div class="resultContainer">
+              <div class="resultContainerSong">
+                <div class="resultContainerPick">NM1</div>
+                <img class="resultContainerSource">
+              </div>
+              <div class="resultContainerBottom">
+                <div class="resultContainerPlayer">P1</div>
+                <div class="resultContainerText">BAN</div>
+              </div>
+            </div> -->
+          </div>
+          <div id="resultPlayerPick">
+            <div class="resultPlayerText">PICKS:</div>
+            <img class="resultPlayerPickSource" id="resultPlayerPickSourceOne">
+            <div class="resultPlayerText" id="resultPlayerTextOne">P1 TOP</div>
+            <img class="resultPlayerPickSource" id="resultPlayerPickSourceTwo">
+            <div class="resultPlayerText" id="resultPlayerTextTwo">P2 BOTTOM</div>
+          </div>
+        </div>
+        <div id="resultPickContainer">
+          <div id="resultPicks">
+            <div id="resultPickOne">
+            </div>
+            <div id="resultPickTwo">
+            </div>
+          </div>
+          <div id="resultPickTb">
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- <img id="bg" src="../../_shared_assets/design/test.png"> -->
-    <video id="bg" loop autoplay muted playsinline>
+    <video id="bg" loop muted playsinline>
       <source src="../../_shared_assets/design/normal_banner_animated.mp4" type="video/mp4">
     </video>
     <video id="bg_match" loop muted playsinline>
@@ -389,7 +446,7 @@
     </video>
   </div>
   <div id="controller">
-    <div id="buttons">
+    <div class="buttons">
       <div class="title">UPCOMING ACTION</div>
       <div class="button" id="controllerTurn">Left Player Ban</div>
       <div class="title">SCENE CONTROLS</div>
@@ -403,6 +460,17 @@
       <div class="title">OTHER CONTROLS</div>
       <div class="button" id="controllerUndo">Undo Action</div>
       <div class="button" id="controllerArrow">Toggle Picking</div>
+    </div>
+  </div>
+  <div id="debugController">
+    <div class="buttons">
+      <div class="title">DEBUG MENU</div>
+      <div class="button" id="debugPickCount">Pick Count: 0</div>
+      <div class="button" id="debugLeftWins">Left Wins: 0</div>
+      <div class="button" id="debugRightWins">Right Wins: 0</div>
+      <div class="button" id="debugScoreOne">Score One: 0</div>
+      <div class="button" id="debugScoreTwo">Score Two: 0</div>
+      <div class="button" id="debugHasBanned">Has Banned: false</div>
     </div>
   </div>
   <script src="index.js"></script>

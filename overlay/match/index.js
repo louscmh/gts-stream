@@ -69,6 +69,7 @@ let initialized = false;
 let matchManager;
 let tempLeft;
 let leftTeam = "placeholder";
+let preLoading = document.getElementById("preLoading");
 const beatmapsStore = new Set(); // Store beatmapID;
 
 // MAIN LOOP ////////////////////////////////////////////////////////////////////
@@ -99,6 +100,7 @@ socket.onmessage = async event => {
     matchManager.gameplayManager.updateClients(data.tourney.ipcClients, data.tourney.manager.bools.scoreVisible, data.tourney.manager.ipcState);
     matchManager.updateScores(data);
     matchManager.updateChat(data);
+    matchManager.debug();
 
     let tempStats = [data.menu.bm.id, data.menu.bm.stats.memoryOD, data.menu.bm.stats.fullSR, data.menu.bm.stats.BPM.min, data.menu.bm.stats.BPM.max];
     if (matchManager.currentFile != data.menu.bm.path.file || !arraysEqual(matchManager.currentStats,tempStats)) {
@@ -119,8 +121,10 @@ class Beatmap {
         this.isBan = false;
         this.isPick = false;
         this.isWin = false;
+        this.isWinPlayerOne;
         this.pickIndex;
         this.mapData;
+        this.isPlayerOne;
     }
     generateOverview() {
         let mappoolContainer = document.getElementById(`overview${this.mods}`);
@@ -384,17 +388,54 @@ class Beatmap {
         if (!this.isBan) {
             this.mapPickIcon.style.transform = `${isPlayerOne ? "fadeInRight" : "fadeInLeft"} 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)`;
             this.mapPickQueue.style.opacity = this.mods == "TB" ? 0 : 1;
-            this.clickerQueue.addEventListener("click", async (event) => {
-                if (event.altKey) {
-                    this.toggleWin(true);
-                } 
-            });
-            this.clickerQueue.addEventListener("contextmenu", async (event) => {
-                if (event.altKey) {
-                    this.toggleWin(false);
-                }
-            });
         }
+    }
+
+    generateResult(isPlayerOne, isBan = false, leftIsTop = false) {
+        let player = leftIsTop ? isPlayerOne ? "One" : "Two" : isPlayerOne ? "Two" : "One";
+        let resultQueue = this.mods == "TB" ?  document.getElementById("resultPickTb") : document.getElementById(`result${isBan ? "Ban" : `Pick${player}`}`);
+
+        this.clickerResults = document.createElement("div");
+        this.clickerResults.id = `${this.layerName}resultContainer`;
+        this.clickerResults.setAttribute("class", "resultContainer");
+
+        resultQueue.appendChild(this.clickerResults);
+        let resultContainer = document.getElementById(this.clickerResults.id);
+
+        this.resultContainerSong = document.createElement("div");
+        this.resultContainerPick = document.createElement("div");
+        this.resultContainerSource = document.createElement("img");
+        this.resultContainerBottom = document.createElement("div");
+        this.resultContainerPlayer = document.createElement("div");
+        this.resultContainerText = document.createElement("div");
+
+        this.resultContainerSong.id = `${this.layerName}resultContainerSong`;
+        this.resultContainerPick.id = `${this.layerName}resultContainerPick`;
+        this.resultContainerSource.id = `${this.layerName}resultContainerSource`;
+        this.resultContainerBottom.id = `${this.layerName}resultContainerBottom`;
+        this.resultContainerPlayer.id = `${this.layerName}resultContainerPlayer`;
+        this.resultContainerText.id = `${this.layerName}resultContainerText`;
+
+        this.resultContainerSong.setAttribute("class", "resultContainerSong");
+        this.resultContainerPick.setAttribute("class", "resultContainerPick");
+        this.resultContainerSource.setAttribute("class", "resultContainerSource");
+        this.resultContainerBottom.setAttribute("class", "resultContainerBottom");
+        this.resultContainerPlayer.setAttribute("class", "resultContainerPlayer");
+        this.resultContainerText.setAttribute("class", "resultContainerText");
+
+        this.resultContainerPick.innerHTML = beatmapSet.find(beatmap => beatmap.beatmapId == this.beatmapID)["pick"];
+        this.resultContainerSource.setAttribute("src", this.mapSource.src);
+        this.resultContainerPlayer.innerHTML = isPlayerOne ? "P1" : "P2";
+        this.resultContainerText.innerHTML = isBan ? "BAN" : "WIN";
+
+        resultContainer.appendChild(this.resultContainerSong);
+        resultContainer.appendChild(this.resultContainerBottom);
+
+        document.getElementById(this.resultContainerSong.id).appendChild(this.resultContainerPick);
+        document.getElementById(this.resultContainerSong.id).appendChild(this.resultContainerSource);
+
+        document.getElementById(this.resultContainerBottom.id).appendChild(this.resultContainerPlayer);
+        document.getElementById(this.resultContainerBottom.id).appendChild(this.resultContainerText);
     }
 
     toggleBan(playerId = 6231292, isPlayerOne, pickIndex) {
@@ -407,13 +448,15 @@ class Beatmap {
             this.mapBanText.style.animation = "fadeInOverviewBeatmap 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
             this.mapBanPlayer.style.animation = "fadeInOverviewBeatmap 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
             this.generateQueue(isPlayerOne, true);
+            this.generateResult(isPlayerOne, true);
         }.bind(this), 100);
     }
 
-    togglePick(isPlayerOne = true, pickIndex) {
+    togglePick(isPlayerOne = true, pickIndex, resultLeftOnTop=false) {
         if (this.isBan || this.isPick) return;
         this.isPick = true;
         this.pickIndex = pickIndex;
+        this.isPlayerOne = isPlayerOne;
         if (this.mods != "TB") {
             if (isPlayerOne) {
                 this.mapPickText.innerHTML = "P1 PICK";
@@ -426,29 +469,47 @@ class Beatmap {
         this.mapPickIcon.style.opacity = 1;
         this.mapPickIcon.style.animation = "fadeInPickIcon 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
         this.generateQueue(isPlayerOne, false);
+        this.generateResult(isPlayerOne, false, resultLeftOnTop);
     }
 
     toggleWin(isPlayerOne = true) {
         if (this.isBan || !this.isPick) return;
         this.isWin = true;
+        this.isWinPlayerOne = isPlayerOne;
         if (isPlayerOne) {
             this.mapWinP1.style.opacity = 1;
             this.mapWinP1.style.animation = "fadeInOverviewBeatmap 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
             this.mapWinP2.style.opacity = 0;
             this.mapWinP2.style.animation = "";
+            this.mapWinP2.style.backgroundColor = "white";
             this.mapWinP1Queue.style.opacity = 1;
             this.mapWinP1Queue.style.animation = "fadeInOverviewBeatmap 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
             this.mapWinP2Queue.style.opacity = 0;
             this.mapWinP2Queue.style.animation = "";
+            this.mapWinP2Queue.style.backgroundColor = "white";
+            this.resultContainerPlayer.innerHTML = "P1";
+            if (this.mods != "TB") {
+                this.resultContainerText.style.backgroundColor = this.isPlayerOne ? "#d0ffcc" : "#ffcccc";
+                this.mapWinP1Queue.style.backgroundColor = this.isPlayerOne ? "#d0ffcc" : "#ffcccc";
+                this.mapWinP1.style.backgroundColor = this.isPlayerOne ? "#d0ffcc" : "#ffcccc";
+            }
         } else {
             this.mapWinP2.style.opacity = 1;
             this.mapWinP2.style.animation = "fadeInOverviewBeatmap 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
             this.mapWinP1.style.opacity = 0;
             this.mapWinP1.style.animation = "";
+            this.mapWinP1.style.backgroundColor = "white";
             this.mapWinP2Queue.style.opacity = 1;
             this.mapWinP2Queue.style.animation = "fadeInOverviewBeatmap 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
             this.mapWinP1Queue.style.opacity = 0;
             this.mapWinP1Queue.style.animation = "";
+            this.mapWinP1Queue.style.backgroundColor = "white";
+            this.resultContainerPlayer.innerHTML = "P2";
+            if (this.mods != "TB") {
+                this.resultContainerText.style.backgroundColor = this.isPlayerOne ? "#ffcccc" : "#d0ffcc";
+                this.mapWinP2.style.backgroundColor = this.isPlayerOne ? "#ffcccc" : "#d0ffcc";
+                this.mapWinP2Queue.style.backgroundColor = this.isPlayerOne ? "#ffcccc" : "#d0ffcc";
+            }
         }
     }
 
@@ -456,8 +517,10 @@ class Beatmap {
         if (this.isPick && pickIndex == this.pickIndex) {
             if (this.mods != "TB") {
                 this.clickerQueue.style.opacity = 0;
+                this.clickerResults.style.opacity = 0;
                 setTimeout(function () {
                     this.clickerQueue.remove();
+                    this.clickerResults.remove();
                 }.bind(this), 500);
             }
             this.mapPickText.style.opacity = 0;
@@ -471,6 +534,8 @@ class Beatmap {
             this.pickIndex = null;
             this.isPick = false;
             this.isWin = false;
+            this.isWinPlayerOne = null;
+            this.isPlayerOne = null;
         } if (this.isBan && pickIndex == this.pickIndex) {
             this.clickerQueue.style.opacity = 0;
             setTimeout(function () {
@@ -489,6 +554,8 @@ class MatchManager {
         this.beatmapSet = beatmapSet;
         this.overviewBeatmaps = [];
         this.pickCount = 0;
+        this.leftWins = 0;
+        this.rightWins = 0;
         this.playerTurn = "left";
         this.banCount = 0;
         this.leftPlayerData;
@@ -505,12 +572,15 @@ class MatchManager {
         this.mappoolSwitchVar = true;
         this.matchSwitchVar = true;
         this.introSwitchVar = true;
+        this.resultSwitchVar = false;
         this.currentMatchScene = false;
         this.currentIntroScene = false;
+        this.currentResultScene = false;
         this.autoPicker = true;
         this.autoScene = true;
 
         this.gameplayManager = new GameplayManager;
+        this.resultsManager = new ResultsManager;
         this.currentState;
         this.chatLen = 0;
 
@@ -575,6 +645,7 @@ class MatchManager {
         this.matchStage = document.getElementById("matchStage");
         this.mainMatchScene = document.getElementById("mainMatchScene");
         this.matchBottom = document.getElementById("matchBottom");
+        this.matchTop = document.getElementById("matchTop");
 
         this.introPlayerOnePfp = document.getElementById("introPlayerOnePfp");
         this.introPlayerTwoPfp = document.getElementById("introPlayerTwoPfp");
@@ -585,6 +656,7 @@ class MatchManager {
         this.introPlayerOneRank = document.getElementById("introPlayerOneRank");
         this.introPlayerTwoRank = document.getElementById("introPlayerTwoRank");
         this.introScene = document.getElementById("introScene");
+        this.resultScene = document.getElementById("resultScene");
 
         this.controllerTurn = document.getElementById("controllerTurn");
         this.controllerTurn.addEventListener("click", async (event) => {
@@ -649,12 +721,17 @@ class MatchManager {
 
         this.controllerUndo = document.getElementById("controllerUndo");
         this.controllerUndo.addEventListener("click", async (event) => {
+            let deletedPick;
             if (this.pickCount > 2) {
-                this.overviewBeatmaps.find(overviewBeatmap => overviewBeatmap.pickIndex == this.pickCount && overviewBeatmap.isPick).cancelOperation(this.pickCount);
+                deletedPick = this.overviewBeatmaps.find(overviewBeatmap => overviewBeatmap.pickIndex == this.pickCount && overviewBeatmap.isPick);
+                deletedPick.isWin ? deletedPick.isWinPlayerOne ? this.leftWins-- : this.rightWins-- : null;
+                deletedPick.cancelOperation(this.pickCount);
                 this.pickCount--;
                 this.controllerTurn.click();
             } else if (this.pickCount <= 2 & this.banCount > 0) {
-                this.overviewBeatmaps.find(overviewBeatmap => overviewBeatmap.pickIndex == this.pickCount && overviewBeatmap.isBan).cancelOperation(this.pickCount);
+                deletedPick = this.overviewBeatmaps.find(overviewBeatmap => overviewBeatmap.pickIndex == this.pickCount && overviewBeatmap.isBan);
+                deletedPick.isWin ? deletedPick.isWinPlayerOne ? this.leftWins-- : this.rightWins-- : null;
+                deletedPick.cancelOperation(this.pickCount);
                 this.pickCount--;
                 this.banCount--;
                 this.controllerTurn.click();
@@ -665,7 +742,7 @@ class MatchManager {
         this.controllerArrow.addEventListener("click", async (event) => {
             if (!this.togglePickVar) return;
             this.unpulseOverview("");
-            if (!this.currentMatchScene && (this.bestOf-1)*2 != this.pickCount-2) {
+            if (!this.currentMatchScene && (this.bestOf-1)*2 != this.pickCount-2 && (this.scoreOne != this.bestOf && this.scoreTwo != this.bestOf && this.leftWins != this.bestOf && this.rightWins != this.bestOf)) {
                 if (this.playerTurn == "left") { 
                     this.bottomP1Pick.style.animation = "fadeInRight 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
                     this.bottomP1Pick.style.opacity = 1;
@@ -732,7 +809,7 @@ class MatchManager {
                 setTimeout(function() {
                     this.mappoolScene.style.animation = "mappoolSceneIn 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
                     this.mappoolScene.style.opacity = 1;
-                    if (!this.togglePickVar) {
+                    if (!this.togglePickVar && (this.bestOf-1)*2 != this.pickCount-2 && (this.scoreOne != this.bestOf && this.scoreTwo != this.bestOf && this.leftWins != this.bestOf && this.rightWins != this.bestOf)) {
                         if (this.playerTurn == "left") { 
                             this.bottomP1Pick.style.animation = "fadeInRight 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
                             this.bottomP1Pick.style.opacity = 1;
@@ -754,7 +831,7 @@ class MatchManager {
                 this.currentMatchScene = true;
                 this.mappoolScene.style.animation = "mappoolSceneOut 1s cubic-bezier(.45,0,1,.48)";
                 this.mappoolScene.style.opacity = 0;
-                if (!this.togglePickVar) {
+                if (!this.togglePickVar && (this.bestOf-1)*2 != this.pickCount-2 && (this.scoreOne != this.bestOf && this.scoreTwo != this.bestOf && this.leftWins != this.bestOf && this.rightWins != this.bestOf)) {
                     if (this.playerTurn == "left") { 
                         this.bottomP1Pick.style.animation = "fadeOutRight 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
                         this.bottomP1Pick.style.opacity = 0;
@@ -812,6 +889,48 @@ class MatchManager {
             }
         });
 
+        this.controllerResults = document.getElementById("controllerResults");
+        this.controllerResults.addEventListener("click", async (event) => {
+            if (this.resultSwitchVar) {
+                this.dimButton(this.controllerResults);
+                this.resultSwitchVar = false;
+                if (this.currentResultScene) {
+                    this.controllerResults.innerHTML = "Switch to Results";
+                    this.currentResultScene = false;
+                    this.resultScene.style.animation = "mappoolSceneOut 1s cubic-bezier(.45,0,1,.48)";
+                    this.resultScene.style.opacity = 0;
+                    setTimeout(function() {
+                        this.mainMatchScene.style.animation = "mappoolSceneIn 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
+                        this.mainMatchScene.style.opacity = 1;
+                        this.matchBottom.style.animation = "bottomSceneIn 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
+                        this.matchBottom.style.opacity = 1;
+                        this.matchBottom.style.animation = "bottomSceneIn 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
+                        this.matchBottom.style.opacity = 1;
+                        this.matchTop.style.animation = "topSceneIn 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
+                        this.matchTop.style.opacity = 1;
+                    }.bind(this),1000);
+                } else {
+                    this.controllerResults.innerHTML = "Switch to Match";
+                    this.currentResultScene = true;
+                    this.mainMatchScene.style.animation = "mappoolSceneOut 1s cubic-bezier(.45,0,1,.48)";
+                    this.mainMatchScene.style.opacity = 0;
+                    this.matchBottom.style.animation = "bottomSceneOut 1s cubic-bezier(.45,0,1,.48)";
+                    this.matchBottom.style.opacity = 0;
+                    this.matchTop.style.animation = "topSceneOut 1s cubic-bezier(.45,0,1,.48)";
+                    this.matchTop.style.opacity = 0;
+                    setTimeout(function() {
+                        this.resultScene.style.animation = "mappoolSceneIn 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
+                        this.resultScene.style.opacity = 1;
+                    }.bind(this),1000);
+                }
+                setTimeout(function() {
+                    this.undimButton(this.controllerResults);
+                    this.resultSwitchVar = true;
+                }.bind(this),2000);
+            }
+                
+        });
+
         this.controllerAutoPick = document.getElementById("controllerAutoPick");
         this.controllerAutoPick.addEventListener("click", async (event) => {
             if (this.autoPicker) {
@@ -854,10 +973,13 @@ class MatchManager {
             bm.mapData = mapData;
             bm.clicker.addEventListener("click", async (event) => {
                 if (bm.mods != "TB") {
-                    if (event.altKey) {
+                    if (event.altKey && this.hasBanned && bm.isPick && (!bm.isWinPlayerOne || bm.isWinPlayerOne  == null)) {
                         // WINNING
+                        bm.isWin ? this.rightWins-- : null;
+                        this.leftWins++;
                         bm.toggleWin(true);
                         this.controllerArrow.click();
+                        this.checkWin();
                     } else if (event.ctrlKey || event.shiftKey) {
                         return;
                     } else {
@@ -865,13 +987,33 @@ class MatchManager {
                             // BANNING
                             this.pickCount++;
                             this.banCount++;
+                            if (this.banCount == 1) {this.resultsManager.firstPickIsLeft = this.playerTurn == "left" ? false : true};
+                            this.resultsManager.update();
                             bm.toggleBan(this.playerTurn == "left" ? this.leftPlayerData.user_id : this.rightPlayerData.user_id, this.playerTurn == "left" ? true : false, this.pickCount);
                             this.controllerTurn.click();
                         } else if (this.banCount == 2 && !bm.isPick && !bm.isBan && (this.bestOf-1)*2 != this.pickCount-2) {
                             // PICKING
                             this.pickCount++;
                             this.unpulseOverview(bm.layerName);
-                            bm.togglePick(this.playerTurn == "left" ? true : false, this.pickCount);
+                            bm.togglePick(this.playerTurn == "left" ? true : false, this.pickCount, this.resultsManager.firstPickIsLeft);
+                            bm.clickerQueue.addEventListener("click", async (event) => {
+                                if (event.altKey && !bm.isBan && bm.isPick && (!bm.isWinPlayerOne || bm.isWinPlayerOne  == null)) {
+                                    bm.isWin ? this.rightWins-- : null;
+                                    this.leftWins++;
+                                    bm.toggleWin(true);
+                                    this.controllerArrow.click();
+                                    this.checkWin();
+                                } 
+                            });
+                            bm.clickerQueue.addEventListener("contextmenu", async (event) => {
+                                if (event.altKey && !bm.isBan && bm.isPick && (bm.isWinPlayerOne || bm.isWinPlayerOne  == null)) {
+                                    bm.isWin ? this.leftWins-- : null;
+                                    this.rightWins++;
+                                    bm.toggleWin(false);
+                                    this.controllerArrow.click();
+                                    this.checkWin();
+                                }
+                            });
                             this.playerTurn == "left" ? this.bottomPlayerOnePick.style.opacity = 1 : this.bottomPlayerTwoPick.style.opacity = 1;
                             this.playerTurn == "left" ? this.bottomPlayerTwoPick.style.opacity = 0 : this.bottomPlayerOnePick.style.opacity = 0;
                             this.controllerTurn.click();
@@ -888,7 +1030,14 @@ class MatchManager {
                         }
                     }
                 } else {
-                    if (event.ctrlKey) {
+                    if (event.altKey && this.hasBanned && bm.isPick && (!bm.isWinPlayerOne || bm.isWinPlayerOne  == null)) {
+                        // WINNING
+                        bm.isWin ? this.rightWins-- : null;
+                        this.leftWins++;
+                        bm.toggleWin(true);
+                        this.controllerArrow.click();
+                        this.checkWin();
+                    } else if (event.ctrlKey) {
                         // CANCELING
                         this.unpulseOverview();
                         bm.cancelOperation(null);
@@ -901,13 +1050,19 @@ class MatchManager {
                         setTimeout(function() {
                             this.effectsShimmer.style.animation = "none";
                         }.bind(this),1500);
+                        setTimeout(function() {
+                            this.autoSceneChange(1);
+                        }.bind(this),15000);
                     }
                 }
             });
             bm.clicker.addEventListener("contextmenu", async (event) => {
-                if (event.altKey) {
+                if (event.altKey && this.hasBanned && bm.isPick && (bm.isWinPlayerOne || bm.isWinPlayerOne  == null)) {
+                    bm.isWin ? this.leftWins-- : null;
+                    this.rightWins++;
                     bm.toggleWin(false);
                     this.controllerArrow.click();
+                    this.checkWin();
                 }
             });
             this.overviewBeatmaps.push(bm);
@@ -946,6 +1101,14 @@ class MatchManager {
         this.introPlayerTwoSeed.innerHTML = `#${seedData.find(seed => seed["Players"][0].id == this.rightPlayerData.user_id)["Seed"].match(/\d+/)[0]}`;
         this.introPlayerOneRank.innerHTML = `#${this.leftPlayerData.pp_rank}`;
         this.introPlayerTwoRank.innerHTML = `#${this.rightPlayerData.pp_rank}`;
+
+        this.resultsManager.playerLeft = this.leftPlayerData;
+        this.resultsManager.playerRight = this.rightPlayerData;
+        this.resultsManager.initialUpdate();
+        preLoading.style.opacity = 0;
+        setTimeout(function() {
+            preLoading.style.display = "none";
+        }.bind(this),1000);
     }
 
     changeUpcoming(mapData) {
@@ -1028,7 +1191,7 @@ class MatchManager {
         this.matchSongLength.innerHTML = parseTimeMs(full);
         this.matchSource.setAttribute('src',`http://` + location.host + `/Songs/${data.menu.bm.path.full}?a=${Math.random(10000)}`);
         this.matchSource.onerror = function() {
-            this.matchSource.setAttribute('src',`../../_shared_assets/design/main_banner.ong`);
+            this.matchSource.setAttribute('src',`../../_    shared_assets/design/main_banner.ong`);
         };
         makeScrollingText(this.matchSongTitle, this.matchSongTitleDelay, 20, 400, 30);
     }
@@ -1051,6 +1214,7 @@ class MatchManager {
 		}
 
 		this.scoreOne = data.tourney.manager.stars.left;
+        this.resultsManager.scoreLeft = data.tourney.manager.stars.left;
 		this.bottomScoreLeft.innerHTML = "";
 		for (var i = 0; i < this.scoreOne; i++) {
 			if (scoreEvent === "blue-add" && i === this.scoreOne - 1) {
@@ -1076,6 +1240,7 @@ class MatchManager {
 		}
 
 		this.scoreTwo = data.tourney.manager.stars.right;
+        this.resultsManager.scoreRight = data.tourney.manager.stars.right;
 		this.bottomScoreRight.innerHTML = "";
 		for (var i = 0; i < this.bestOf - this.scoreTwo; i++) {
 			if (scoreEvent === "red-remove" && i === this.bestOf - this.scoreTwo - 1) {
@@ -1099,6 +1264,8 @@ class MatchManager {
 				this.bottomScoreRight.appendChild(scoreFill);
 			}
 		}
+        this.resultsManager.update();
+        this.checkWin();
     }
 
     dimButton(button) {
@@ -1151,8 +1318,12 @@ class MatchManager {
     markWin(leftWon) {
         let currentMapId = this.currentStats[0];
         if (beatmapsIds.includes(currentMapId)) {
-            this.overviewBeatmaps.find(beatmap => beatmap.beatmapID == currentMapId).toggleWin(leftWon);
+            let winPick = this.overviewBeatmaps.find(beatmap => beatmap.beatmapID == currentMapId);
+            winPick.isWin ? leftWon ? this.rightWins-- : this.leftWins : null;
+            leftWon ? this.leftWins++ : this.rightWins++;
+            winPick.toggleWin(leftWon);
             this.controllerArrow.click();
+            this.checkWin();
         }
     }
 
@@ -1224,6 +1395,25 @@ class MatchManager {
     
         // Update the scroll so it's sticks at the bottom by default
         this.chats.scrollTop = chats.scrollHeight;
+    }
+
+    debug() {
+        document.getElementById("debugPickCount").innerHTML = `Pick Count: ${this.pickCount}`;
+        document.getElementById("debugLeftWins").innerHTML = `Left Wins: ${this.leftWins}`;
+        document.getElementById("debugRightWins").innerHTML = `Right Wins: ${this.rightWins}`;
+        document.getElementById("debugScoreOne").innerHTML = `Score One: ${this.scoreOne}`;
+        document.getElementById("debugScoreTwo").innerHTML = `Score Two: ${this.scoreTwo}`;
+        document.getElementById("debugHasBanned").innerHTML = `Has Banned: ${this.hasBanned}`;
+    }
+
+    checkWin() {
+        if ((this.leftWins == this.bestOf || this.rightWins == this.bestOf) && (this.scoreOne == this.bestOf || this.scoreTwo == this.bestOf)) {
+            this.undimButton(this.controllerResults);
+            this.resultSwitchVar = true;
+        } else {
+            this.dimButton(this.controllerResults);
+            this.resultSwitchVar = false;
+        }
     }
 }
 
@@ -1528,6 +1718,56 @@ class GameplayManager {
             this.matchWinningLeftWinText.style.opacity = 0;
             this.matchWinningRightWinText.style.opacity = 1;
         }
+    }
+}
+
+class ResultsManager {
+    constructor() {
+        this.resultScorelinePlayerOneSource = document.getElementById("resultScorelinePlayerOneSource");
+        this.resultScorelinePlayerOneText = document.getElementById("resultScorelinePlayerOneText");
+        this.resultScorelinePlayerTwoSource = document.getElementById("resultScorelinePlayerTwoSource");
+        this.resultScorelinePlayerTwoText = document.getElementById("resultScorelinePlayerTwoText");
+        this.resultOne = document.getElementById("resultOne");
+        this.resultTwo = document.getElementById("resultTwo");
+
+        this.resultBan = document.getElementById("resultBan");
+        this.resultPickOne = document.getElementById("resultPickOne");
+        this.resultPickTwo = document.getElementById("resultPickTwo");
+        this.resultPickTb = document.getElementById("resultPickTb");
+        
+        this.resultPlayerPickSourceOne = document.getElementById("resultPlayerPickSourceOne");
+        this.resultPlayerTextOne = document.getElementById("resultPlayerTextOne");
+        this.resultPlayerPickSourceTwo = document.getElementById("resultPlayerPickSourceTwo");
+        this.resultPlayerTextTwo = document.getElementById("resultPlayerTextTwo");
+        this.resultStageText = document.getElementById("resultStageText");
+
+        this.scoreLeft = 0;
+        this.scoreRight = 0;
+        this.playerLeft;
+        this.playerRight;
+        this.firstPickIsLeft = false;
+        this.beatmapsLeft = [];
+        this.beatmapsRight = [];
+        this.bans = [];
+        this.tb = [];
+        this.currentStage = stages.find(stage => stage.stage == currentStage)["stageName"];
+    }
+
+    initialUpdate() {
+        this.resultScorelinePlayerOneSource.setAttribute("src", `https://a.ppy.sh/${this.playerLeft.user_id}`);
+        this.resultScorelinePlayerTwoSource.setAttribute("src", `https://a.ppy.sh/${this.playerRight.user_id}`);
+        this.resultScorelinePlayerOneText.innerHTML = this.playerLeft.username;
+        this.resultScorelinePlayerTwoText.innerHTML = this.playerRight.username;
+        this.resultPlayerPickSourceOne.setAttribute("src", `https://a.ppy.sh/${this.playerLeft.user_id}`);
+        this.resultPlayerPickSourceTwo.setAttribute("src", `https://a.ppy.sh/${this.playerRight.user_id}`);
+        this.resultStageText.innerHTML = this.currentStage;
+    }
+
+    update() {
+        this.resultOne.innerHTML = this.scoreLeft;
+        this.resultTwo.innerHTML = this.scoreRight;
+        this.resultPlayerTextOne.innerHTML = `P1 ${this.firstPickIsLeft ? "TOP" : "BOTTOM"}`;
+        this.resultPlayerTextTwo.innerHTML = `P2 ${this.firstPickIsLeft ? "BOTTOM" : "TOP"}`;
     }
 }
 
