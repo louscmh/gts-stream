@@ -4,7 +4,7 @@ The main repository for the overlay of Expert Global Taiko Showdown 2025, meant 
 ___
 ## INSTALLATION PROCESS
 ### OBS Scene
-The scene file is located as `./_data/obs_scenes/EGTS_SHOWCASE_day_month_index.json`. Just pick the one with the latest version when importing into OBS. If prompted with missing files, select the `./_shared_assets/` folder (select the child folders if there's assets still missing).
+The scene file is located as `./_data/obs_scenes/EGTS_MATCH_day_month_index.json`. Just pick the one with the latest version when importing into OBS. If prompted with missing files, select the `./_shared_assets/` folder (select the child folders if there's assets still missing).
 
 ### Tosu & Stream Directory
 **[Project link for tosu](https://github.com/KotRikD/tosu#readme)**
@@ -40,7 +40,7 @@ ___
 
 - **SWITCH TO RESULTS:** Button to switch scenes from main match scene to results. Upon pressing again will return you to the main match scene scene. Disabled by default, and will only be enabled when the following two things happen:
     - One of the players have reached the maximum amount of points in the tournament client. 
-    - The exact amount of picks marked as a win neccessary to win by a player has been reached.
+    - The exact amount of picks marked as a win neccessary to win the overall match by a player has been reached.
 ___
 **AUTO CONTROLS**
 Both buttons are toggled on by default and should only be turned off if fixing an error/debugging.
