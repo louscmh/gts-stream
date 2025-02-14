@@ -538,8 +538,10 @@ class Beatmap {
             this.isPlayerOne = null;
         } if (this.isBan && pickIndex == this.pickIndex) {
             this.clickerQueue.style.opacity = 0;
+            this.clickerResults.style.opacity = 0;
             setTimeout(function () {
                 this.clickerQueue.remove();
+                this.clickerResults.remove();
             }.bind(this), 500);
             this.mapBanContainer.style.opacity = 0;
             this.mapBanText.style.animation = "";
@@ -1025,7 +1027,14 @@ class MatchManager {
                                 this.effectsShimmer.style.animation = "none";
                             }.bind(this),1500);
                             setTimeout(function() {
-                                this.autoSceneChange(1);
+                                if (this.currentMappoolScene == 1) {
+                                    this.autoSceneChange(1);
+                                } else if (this.currentMappoolScene == 3) {
+                                    this.autoSceneChange(3);
+                                    setTimeout(function() {
+                                        this.autoSceneChange(1);
+                                    }.bind(this),5000);
+                                }
                             }.bind(this),15000);
                         }
                     }
@@ -1319,7 +1328,8 @@ class MatchManager {
         let currentMapId = this.currentStats[0];
         if (beatmapsIds.includes(currentMapId)) {
             let winPick = this.overviewBeatmaps.find(beatmap => beatmap.beatmapID == currentMapId);
-            winPick.isWin ? leftWon ? this.rightWins-- : this.leftWins : null;
+            if (!this.hasBanned || !winPick.isPick) return;
+            winPick.isWin ? leftWon ? this.rightWins-- : this.leftWins-- : null;
             leftWon ? this.leftWins++ : this.rightWins++;
             winPick.toggleWin(leftWon);
             this.controllerArrow.click();
