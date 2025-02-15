@@ -1173,6 +1173,7 @@ class MatchManager {
 
     updateMatchSong(data) {
         if (beatmapsIds.includes(data.menu.bm.id)) { 
+            this.autoPick(id);
             let mapData = this.overviewBeatmaps.find(beatmap => beatmap.mapData.beatmap_id == data.menu.bm.id)["mapData"];
             // console.log(mapData);
             let upcomingOfflineMapData = this.beatmapSet.find(beatmap => beatmap.beatmapId == mapData.beatmap_id);
