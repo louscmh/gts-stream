@@ -18,6 +18,12 @@ For the overlay to properly function, it will require you to insert an API key i
 
 You can find your own osu! API at https://osu.ppy.sh/home/account/edit#legacy-api, make sure to not reveal this api key to anyone else (otherwise they will have the potential to steal your credentials)
 
+### Hiding yourself from Discord VC Streamkit
+If you don't plan to talk at all, you can do this to hide yourself in vc indicator:
+1. Right click on yourself in discord, Copy ID.
+2. Put your ID into the following code: `li[data-userid*="your user id here"] {display: none;}`
+3. Paste this code at the end of the respective commentator overlay's custom CSS.
+
 ___
 ## INTERACTING WITH THE OVERLAY
 Within the Match Overlay there are a few elements that requires the streamer to manually click on them to properly display relevant details. To interact with the Overlay, click on the `Interact` Button when selecting the Match Overlay in OBS.
