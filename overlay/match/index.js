@@ -1145,6 +1145,8 @@ class MatchManager {
         this.upcomingArtistText.innerHTML = mapData.artist;
         this.upcomingSrText.innerHTML = Number(sr).toFixed(2);
         this.upcomingOdText.innerHTML = mapData.diff_overall == finalOD ? Number(finalOD).toFixed(1) : `${Number(mapData.diff_overall).toFixed(1)} (${Number(finalOD).toFixed(1)})`
+        this.matchSongOd.innerHTML = mapData.diff_overall == finalOD ? Number(finalOD).toFixed(1) : `${Number(mapData.diff_overall).toFixed(1)} (${Number(finalOD).toFixed(1)})`
+        this.matchSongSr.innerHTML = Number(sr).toFixed(2);
         this.upcomingBpmText.innerHTML = Number(bpm).toFixed(0);
         this.upcomingLengthText.innerHTML = parseTime(length);
         this.upcomingDifficultyText.innerHTML = mapData.version;
@@ -1164,14 +1166,13 @@ class MatchManager {
 
     updateMatchSong(data) {
         let { id } = data.menu.bm;
-        let { memoryOD, fullSR, BPM: { min, max } } = data.menu.bm.stats;
+        let { BPM: { min, max } } = data.menu.bm.stats;
         let { full } = data.menu.bm.time;
         let { difficulty, mapper, artist, title } = data.menu.bm.metadata;
         let pick;
         let index;
         let customMapper = "";
         let mod = "";
-        let modOD;
 
         if (beatmapsIds.includes(id)) {
             index = beatmapSet.findIndex(beatmap => beatmap["beatmapId"] === id);
@@ -1179,10 +1180,7 @@ class MatchManager {
             this.autoPick(id);
             customMapper = beatmapSet[index]["mappers"];
             mod = pick.substring(0,2).toUpperCase();
-            if (mod == "HR" || mod == "FM") {
-                modOD = Math.min(memoryOD*1.4, 10).toFixed(2);
-            } else if (mod == "DT") {
-                modOD = Math.min((79.5 - (Math.min(79.5, Math.max(19.5, 79.5 - Math.ceil(6 * memoryOD))) / 1.5)) / 6, 1.5 > 1.5 ? 12 : 11).toFixed(2);
+            if (mod == "DT") {
                 full = full/1.5;
                 min = Math.round(min*1.5);
                 max = Math.round(max*1.5);
@@ -1194,8 +1192,6 @@ class MatchManager {
         this.matchArtistTitle.innerHTML = artist;
         this.matchMapperTitle.innerHTML = customMapper != "" ? customMapper:mapper;
         this.matchDifficultyTitle.innerHTML = difficulty;
-        this.matchSongOd.innerHTML = (mod == "DT" || mod == "FM" || mod == "HR") ? `${Number(memoryOD).toFixed(1)} (${Number(modOD).toFixed(1)})` : Number(memoryOD).toFixed(1);
-        this.matchSongSr.innerHTML = mod == "DT" ? `${beatmapSet[index]["modSR"]}*` : `${Number(fullSR).toFixed(2)}*`;
         this.matchSongBpm.innerHTML = min === max ? min : `${min} - ${max}`;
         this.matchSongLength.innerHTML = parseTimeMs(full);
         this.matchSource.setAttribute('src',`http://` + location.host + `/Songs/${data.menu.bm.path.full}?a=${Math.random(10000)}`);
