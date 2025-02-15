@@ -1194,7 +1194,7 @@ class MatchManager {
             this.matchPickId.innerHTML = upcomingOfflineMapData.pick;
             this.matchSongTitle.innerHTML = mapData.title;
             this.matchArtistTitle.innerHTML = mapData.artist;
-            this.matchMapperTitle.innerHTML = upcomingOfflineMapData.customMapper != "" ? mapData.creator:upcomingOfflineMapData.customMapper;
+            this.matchMapperTitle.innerHTML = mapData.creator;
             this.matchDifficultyTitle.innerHTML = mapData.version;
             this.matchSongOd.innerHTML = mapData.diff_overall == finalOD ? Number(finalOD).toFixed(1) : `${Number(mapData.diff_overall).toFixed(1)} (${Number(finalOD).toFixed(1)})`;
             this.matchSongSr.innerHTML = `${Number(sr).toFixed(2)}*`;
