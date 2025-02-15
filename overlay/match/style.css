@@ -1494,6 +1494,19 @@ body {
     color:white;
 }
 
+#chatsDebug {
+    margin-top:10px;
+    width:410px;
+    height:300px;
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden; /* Hide scrollbars */
+	font-size: 16px;
+    font-family: 'LINESeed-Bold', sans-serif;
+    color:white;
+    background-color: black;
+}
+
 .chat {
 	display: flex;
 	text-align: left;

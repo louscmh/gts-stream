@@ -64,7 +64,8 @@ let api;
 
 // PLACEHOLDER VARS /////////////////////////////////////////////////////////////////
 let generated = false;
-let hasSetup = false;
+let hasSetupBeatmaps = false;
+let hasSetupPlayers = false;
 let initialized = false;
 let matchManager;
 let tempLeft;
@@ -77,12 +78,12 @@ socket.onmessage = async event => {
     if (!initialized) { return };
     let data = JSON.parse(event.data);
 
-    if (!hasSetup) {
+    if (!hasSetupBeatmaps) {
         await setupBeatmaps();
-        hasSetup = true;
+        hasSetupBeatmaps = true;
     }
 
-    if (!hasSetup) { return };
+    if (!hasSetupBeatmaps) { return };
 
     // NORMAL CODE
 
@@ -94,6 +95,8 @@ socket.onmessage = async event => {
             leftTeam = tempLeft;
         }, 150);
     }
+
+    if (!hasSetupPlayers) { return };
 
     matchManager.checkState(data.tourney.manager.ipcState);
     matchManager.gameplayManager.updateProgress(data);
@@ -644,6 +647,7 @@ class MatchManager {
         this.bg_match = document.getElementById("bg_match");
 
         this.chats = document.getElementById("chats");
+        this.chatsDebug = document.getElementById("chatsDebug");
         this.matchStage = document.getElementById("matchStage");
         this.mainMatchScene = document.getElementById("mainMatchScene");
         this.matchBottom = document.getElementById("matchBottom");
@@ -1076,6 +1080,10 @@ class MatchManager {
             });
             this.overviewBeatmaps.push(bm);
         });
+        preLoading.innerHTML = "Fetching player data...";
+        setTimeout(function() {
+            preLoading.innerHTML = "Fetching player data failed - Join a valid lobby first!";
+        },5000);
     }
 
     unpulseOverview(layerName = "") {
@@ -1115,6 +1123,7 @@ class MatchManager {
         this.resultsManager.playerRight = this.rightPlayerData;
         this.resultsManager.initialUpdate();
         preLoading.style.opacity = 0;
+        hasSetupPlayers = true;
         setTimeout(function() {
             preLoading.style.display = "none";
         }.bind(this),1000);
@@ -1143,10 +1152,8 @@ class MatchManager {
         this.upcomingPickId.innerHTML = upcomingOfflineMapData.pick;
         this.upcomingSongText.innerHTML = mapData.title;
         this.upcomingArtistText.innerHTML = mapData.artist;
-        this.upcomingSrText.innerHTML = Number(sr).toFixed(2);
-        this.upcomingOdText.innerHTML = mapData.diff_overall == finalOD ? Number(finalOD).toFixed(1) : `${Number(mapData.diff_overall).toFixed(1)} (${Number(finalOD).toFixed(1)})`
-        this.matchSongOd.innerHTML = mapData.diff_overall == finalOD ? Number(finalOD).toFixed(1) : `${Number(mapData.diff_overall).toFixed(1)} (${Number(finalOD).toFixed(1)})`
-        this.matchSongSr.innerHTML = Number(sr).toFixed(2);
+        this.upcomingSrText.innerHTML = `${Number(sr).toFixed(2)}*`;
+        this.upcomingOdText.innerHTML = mapData.diff_overall == finalOD ? Number(finalOD).toFixed(1) : `${Number(mapData.diff_overall).toFixed(1)} (${Number(finalOD).toFixed(1)})`;
         this.upcomingBpmText.innerHTML = Number(bpm).toFixed(0);
         this.upcomingLengthText.innerHTML = parseTime(length);
         this.upcomingDifficultyText.innerHTML = mapData.version;
@@ -1165,39 +1172,57 @@ class MatchManager {
     }
 
     updateMatchSong(data) {
-        let { id } = data.menu.bm;
-        let { BPM: { min, max } } = data.menu.bm.stats;
-        let { full } = data.menu.bm.time;
-        let { difficulty, mapper, artist, title } = data.menu.bm.metadata;
-        let pick;
-        let index;
-        let customMapper = "";
-        let mod = "";
+        if (beatmapsIds.includes(data.menu.bm.id)) { 
+            let mapData = this.overviewBeatmaps.find(beatmap => beatmap.mapData.beatmap_id == data.menu.bm.id)["mapData"];
+            // console.log(mapData);
+            let upcomingOfflineMapData = this.beatmapSet.find(beatmap => beatmap.beatmapId == mapData.beatmap_id);
+            let finalOD = mapData.diff_overall;
+            let bpm = mapData.bpm;
+            let length = mapData.total_length;
+            let sr = upcomingOfflineMapData.pick.substring(0,2) == "DT" ? upcomingOfflineMapData.modSR : mapData.difficultyrating;
 
-        if (beatmapsIds.includes(id)) {
-            index = beatmapSet.findIndex(beatmap => beatmap["beatmapId"] === id);
-            pick = beatmapSet.find(beatmap => beatmap["beatmapId"] === id)["pick"];
-            this.autoPick(id);
-            customMapper = beatmapSet[index]["mappers"];
-            mod = pick.substring(0,2).toUpperCase();
-            if (mod == "DT") {
-                full = full/1.5;
-                min = Math.round(min*1.5);
-                max = Math.round(max*1.5);
+            if (upcomingOfflineMapData.pick.substring(0,2) == "HR" || upcomingOfflineMapData.pick.substring(0,2) == "FM") {
+                finalOD = Math.min(finalOD*1.4, 10);
+                this.gameplayManager.isDoubleTime = false;
+            } else if (upcomingOfflineMapData.pick.substring(0,2) == "DT") {
+                finalOD = Math.min((79.5 - (Math.min(79.5, Math.max(19.5, 79.5 - Math.ceil(6 * finalOD))) / 1.5)) / 6, 1.5 > 1.5 ? 12 : 11);
+                bpm = Math.round(bpm*1.5);
+                length = length/1.5;
             }
-        }
 
-        this.matchPickId.innerHTML = pick == null ? "" : pick;
-        this.matchSongTitle.innerHTML = title;
-        this.matchArtistTitle.innerHTML = artist;
-        this.matchMapperTitle.innerHTML = customMapper != "" ? customMapper:mapper;
-        this.matchDifficultyTitle.innerHTML = difficulty;
-        this.matchSongBpm.innerHTML = min === max ? min : `${min} - ${max}`;
-        this.matchSongLength.innerHTML = parseTimeMs(full);
-        this.matchSource.setAttribute('src',`http://` + location.host + `/Songs/${data.menu.bm.path.full}?a=${Math.random(10000)}`);
-        this.matchSource.onerror = function() {
-            this.matchSource.setAttribute('src',`../../_    shared_assets/design/main_banner.ong`);
-        };
+            this.matchPickId.innerHTML = upcomingOfflineMapData.pick;
+            this.matchSongTitle.innerHTML = mapData.title;
+            this.matchArtistTitle.innerHTML = mapData.artist;
+            this.matchMapperTitle.innerHTML = upcomingOfflineMapData.customMapper != "" ? upcomingOfflineMapData.customMapper:mapData.creator;
+            this.matchDifficultyTitle.innerHTML = mapData.version;
+            this.matchSongOd.innerHTML = mapData.diff_overall == finalOD ? Number(finalOD).toFixed(1) : `${Number(mapData.diff_overall).toFixed(1)} (${Number(finalOD).toFixed(1)})`;
+            this.matchSongSr.innerHTML = `${Number(sr).toFixed(2)}*`;
+            this.matchSongBpm.innerHTML = Number(bpm).toFixed(0);
+            this.matchSongLength.innerHTML = parseTime(length);
+            this.matchSource.setAttribute("src", `https://assets.ppy.sh/beatmaps/${mapData.beatmapset_id}/covers/cover.jpg`);
+            this.matchSource.onerror = function() {
+                this.matchSource.setAttribute('src',`../../_shared_assets/design/main_banner.ong`);
+            };
+        } else {
+            let { memoryOD, fullSR, BPM: { min, max } } = data.menu.bm.stats;
+            let { full } = data.menu.bm.time;
+            let { difficulty, mapper, artist, title } = data.menu.bm.metadata;
+    
+            this.matchPickId.innerHTML = "";
+            this.matchSongTitle.innerHTML = title;
+            this.matchArtistTitle.innerHTML = artist;
+            this.matchMapperTitle.innerHTML = mapper;
+            this.matchDifficultyTitle.innerHTML = difficulty;
+            this.matchSongOd.innerHTML = Number(memoryOD).toFixed(1);
+            this.matchSongSr.innerHTML = `${Number(fullSR).toFixed(2)}*`;
+            this.matchSongBpm.innerHTML = min === max ? min : `${min} - ${max}`;
+            this.matchSongLength.innerHTML = parseTimeMs(full);
+            this.matchSource.setAttribute('src',`http://` + location.host + `/Songs/${data.menu.bm.path.full}?a=${Math.random(10000)}`);
+            this.matchSource.onerror = function() {
+                this.matchSource.setAttribute('src',`../../_shared_assets/design/main_banner.ong`);
+            };
+
+        }
         makeScrollingText(this.matchSongTitle, this.matchSongTitleDelay, 20, 400, 30);
     }
 
@@ -1290,7 +1315,7 @@ class MatchManager {
         // map has ended and its the next player's turn
         if (ipcState == 4) {
             this.gameplayManager.hidePlayerData();
-            this.markWin(this.gameplayManager.calculateResults());
+            this.markWin(this.gameplayManager.calculateResults(this.leftPlayerData, this.rightPlayerData));
             this.gameplayManager.showResults();
             this.autoSceneChange(2);
             setTimeout(function() {
@@ -1352,7 +1377,7 @@ class MatchManager {
             // change to mappool scene
             this.controllerMatch.click();
             setTimeout(function() {
-                this.autoSceneChange(3);
+                this.resultSwitchVar == true ? this.controllerResults.click() : this.autoSceneChange(3);
             }.bind(this),25000);
         }
     }
@@ -1364,6 +1389,7 @@ class MatchManager {
         if (this.chatLen == 0 || (this.chatLen > 0 && this.chatLen > data.tourney.manager.chat.length)) {
             // Starts from bottom
             this.chats.innerHTML = "";
+            this.chatsDebug.innerHTML = "";
             this.chatLen = 0;
         }
     
@@ -1374,26 +1400,42 @@ class MatchManager {
             // Chat variables
             let chatParent = document.createElement('div');
             chatParent.setAttribute('class', 'chat');
+            let chatParentDebug = document.createElement('div');
+            chatParentDebug.setAttribute('class', 'chat');
     
             let chatTime = document.createElement('div');
             chatTime.setAttribute('class', 'chatTime');
+            let chatTimeDebug = document.createElement('div');
+            chatTimeDebug.setAttribute('class', 'chatTime');
     
             let chatName = document.createElement('div');
             chatName.setAttribute('class', 'chatName');
+            let chatNameDebug = document.createElement('div');
+            chatNameDebug.setAttribute('class', 'chatName');
     
             let chatText = document.createElement('div');
             chatText.setAttribute('class', 'chatText');
+            let chatTextDebug = document.createElement('div');
+            chatTextDebug.setAttribute('class', 'chatText');
     
             chatTime.innerText = data.tourney.manager.chat[i].time;
             chatName.innerText = data.tourney.manager.chat[i].name + ":\xa0";
             chatText.innerText = data.tourney.manager.chat[i].messageBody;
+            chatTimeDebug.innerText = data.tourney.manager.chat[i].time;
+            chatNameDebug.innerText = data.tourney.manager.chat[i].name + ":\xa0";
+            chatTextDebug.innerText = data.tourney.manager.chat[i].messageBody;
     
             chatName.classList.add(tempClass);
+            chatNameDebug.classList.add(tempClass);
     
             chatParent.append(chatTime);
             chatParent.append(chatName);
             chatParent.append(chatText);
+            chatParentDebug.append(chatTimeDebug);
+            chatParentDebug.append(chatNameDebug);
+            chatParentDebug.append(chatTextDebug);
             this.chats.append(chatParent);
+            this.chatsDebug.append(chatParentDebug);
         }
     
         // Update the Length of chat
@@ -1401,6 +1443,7 @@ class MatchManager {
     
         // Update the scroll so it's sticks at the bottom by default
         this.chats.scrollTop = chats.scrollHeight;
+        this.chatsDebug.scrollTop = chatsDebug.scrollHeight;
     }
 
     debug() {
@@ -1410,6 +1453,7 @@ class MatchManager {
         document.getElementById("debugScoreOne").innerHTML = `Score One: ${this.scoreOne}`;
         document.getElementById("debugScoreTwo").innerHTML = `Score Two: ${this.scoreTwo}`;
         document.getElementById("debugHasBanned").innerHTML = `Has Banned: ${this.hasBanned}`;
+        document.getElementById("debugId").innerHTML = `Current ID: ${this.currentStats[0]}`;
     }
 
     checkWin() {
@@ -1679,14 +1723,14 @@ class GameplayManager {
         this.toggleLead("center");
     }
 
-    calculateResults() {
+    calculateResults(leftPlayerData, rightPlayerData) {
         let leftWon = this.scoreLeft > this.scoreRight;
         let isTie = this.scoreLeft == this.scoreRight;
 
         if (leftWon && !isTie) {
-            this.bottomResultsTop.innerHTML = "PLAYER 1 WINS BY";
+            this.bottomResultsTop.innerHTML = `${leftPlayerData.username} WINS BY`;
         } else if (!leftWon && !isTie) {
-            this.bottomResultsTop.innerHTML = "PLAYER 2 WINS BY";
+            this.bottomResultsTop.innerHTML = `${rightPlayerData.username} WINS BY`;
         } else if (isTie) {
             this.bottomResultsTop.innerHTML = "SCORE IS TIED!";
         }
