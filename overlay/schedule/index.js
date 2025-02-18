@@ -21,7 +21,7 @@ const now = new Date();
         jsonData_2.Teams.map((seed) => {
             seedData.push(seed);
         });
-        const jsonData_3 = await $.getJSON("../../_data/matches.json");
+        const jsonData_3 = await $.getJSON(stages.find(stage => stage.stage == currentStage)["matchData"]);
         jsonData_3.map((match) => {
             matches.push(match);
         });
