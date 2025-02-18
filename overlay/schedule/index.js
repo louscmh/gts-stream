@@ -104,14 +104,18 @@ class MatchManager {
             const now = new Date();
             const diff = targetTime - now;
             if (diff <= 0) {
-                timer.textContent = "00:00:00";
+                timer.textContent = "00:00";
                 clearInterval(intervalId);
                 return;
             }
             const hours = String(Math.floor(diff / (1000 * 60 * 60))).padStart(2, '0');
             const minutes = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
             const seconds = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, '0');
-            timer.textContent = `${hours}:${minutes}:${seconds}`;
+            if (hours == "00") {
+                timer.textContent = `${minutes}:${seconds}`;
+            } else {
+                timer.textContent = `${hours}:${minutes}:${seconds}`;
+            }
         }
 
         // Update the countdown immediately and then every second
