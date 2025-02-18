@@ -1901,13 +1901,13 @@ const parseTimeMs = ms => {
 setInterval(fadeInOut, 25000)
 
 async function fadeInOut() {
-	document.getElementById("matchSubtitleDetails1").style.opacity = 0;
+	document.getElementById("matchSongPart1").style.opacity = 0;
 	await delay(500);
 	document.getElementById("matchSubtitleDetails2").style.opacity = 1;
 	await delay(12000);
 	document.getElementById("matchSubtitleDetails2").style.opacity = 0;
 	await delay(500);
-	document.getElementById("matchSubtitleDetails1").style.opacity = 1;
+	document.getElementById("matchSongPart1").style.opacity = 1;
 	await delay(12000);
 }
 

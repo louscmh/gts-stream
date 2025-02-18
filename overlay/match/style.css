@@ -749,17 +749,19 @@ body {
     color:white;
     display:flex;
     z-index:4;
-    flex-direction: column;
-    margin-right:20px;
+    /* flex-direction: column; */
+    /* margin-right:20px; */
+    margin-block:5px;
 }
 
 .matchSongStatText {
     font-family:"Sora-Bold";
-    font-size:9px;
+    font-size:20px;
 }
 
 .matchSongStat {
-    font-size:9px;
+    font-size:20px;
+    margin-left:10px;
 }
 
 #matchSongDetails {
@@ -770,6 +772,11 @@ body {
     height:fit-content;
     overflow:hidden;
     position:relative;
+}
+
+#matchSongPart1 {
+    opacity: 1;
+    transition: 500ms ease-in-out;
 }
 
 #matchSongTitle {
@@ -806,11 +813,25 @@ body {
 
 #matchSubtitleDetails2 {
     display:flex;
-    margin-top:8px;
+    padding-block:15px;
     transition: 500ms ease-in-out;
     opacity: 0;
     /* display:none; */
-    transform:translateY(-32px);
+    /* transform:translateY(-32px); */
+    position:absolute;
+    height:70px;
+    /* display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto);  */
+}
+
+.matchSongStatColumn {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:fit-content;
+    margin-right:20px;
 }
 
 #matchMapper, #matchDifficulty {
@@ -827,11 +848,11 @@ body {
 
 .matchSubtitle {
     font-family:"Sora-Bold";
-    font-size:9px;
+    font-size:12px;
 }
 
 #matchMapperTitle, #matchDifficultyTitle {
-    font-size:9px;
+    font-size:12px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
