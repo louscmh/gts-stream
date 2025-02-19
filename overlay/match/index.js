@@ -1407,7 +1407,10 @@ class MatchManager {
             // change to mappool scene
             this.controllerMatch.click();
             setTimeout(function () {
-                this.resultSwitchVar == true ? this.controllerResults.click() : this.autoSceneChange(3);
+                this.resultSwitchVar == true ? this.controllerResults.click() : null;
+            }.bind(this), 10000);
+            setTimeout(function () {
+                this.autoSceneChange(3);
             }.bind(this), 25000);
         }
     }
