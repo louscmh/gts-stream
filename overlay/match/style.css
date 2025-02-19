@@ -55,6 +55,7 @@ body {
     align-items: center;
     z-index:99;
     transition: 500ms ease-in-out;
+    /* display:none; */
 }
 
 #mainMatchScene {
@@ -872,7 +873,7 @@ body {
 }
 
 #matchBottom {
-    /* opacity:0; */
+    opacity:1   ;
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -1631,6 +1632,291 @@ body {
     font-family:"Sora-Bold";
 }
 
+#matchHistoryScene {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#matchHistoryText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Sora-ExtraBold";
+    font-size:48px;
+    color:black;
+    background-color: white;
+    width:392px;
+    height:58px;
+    margin-top:-30px;
+    opacity:0;
+}
+
+#matchHistoryMainContainer {
+    position: absolute;
+    top: 148px;
+    left:90px;
+    height:896px;
+    width:1750px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#matchHistoryPlayerContainer, #matchHistoryContainer {
+    display:flex;
+    justify-content: space-between;
+}
+
+#matchHistoryLeftPlayer {
+    display:flex;
+    opacity:0;
+}
+
+#matchHistoryLeftPlayerSource {
+    border:solid 4px white;
+    object-fit: contain;
+    object-position: center;
+    width:82px;
+    height:82px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#matchHistoryLeftPlayerDetails {
+    position:relative;
+    background-color: white;
+    height:82px;
+    width:300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color:black;
+    margin-left:-2px;
+}
+
+#matchHistoryLeftPlayerName {
+    font-family: "Sora-ExtraBold";
+    font-size:30px;
+    margin-left:13px;
+}
+
+#matchHistoryLeftPlayerSeed {
+    font-size:24px;
+    margin-left:13px;
+    margin-top:-3px;
+}
+
+#matchHistoryRightContainer {
+    position: absolute;
+    top: 148px;
+    right:90px;
+    height:896px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+#matchHistoryRightPlayer {
+    display:flex;
+    flex-direction: row-reverse;
+    opacity:0;
+}
+
+#matchHistoryRightPlayerSource {
+    border:solid 4px white;
+    object-fit: contain;
+    object-position: center;
+    width:82px;
+    height:82px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#matchHistoryRightPlayerDetails {
+    position:relative;
+    background-color: white;
+    height:82px;
+    width:300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    color:black;
+    margin-right:-2px;
+}
+
+#matchHistoryRightPlayerName {
+    font-family: "Sora-ExtraBold";
+    font-size:30px;
+    margin-right:13px;
+}
+
+#matchHistoryRightPlayerSeed {
+    font-size:24px;
+    margin-right:13px;
+    margin-top:-3px;
+}
+
+#matchHistoryLeft {
+    display:flex;
+    flex-direction: column;
+}
+
+#matchHistoryRight {
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.historyLeft {
+    margin-top:36px;
+    display:flex;
+    height:fit-content;
+    width:fit-content;
+    opacity:0;
+}
+
+.historyRoundLeft {
+    font-family:"Sora-ExtraBold";
+    font-size:57px;
+    width: 200px;
+    height:54px;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.historyPlayerLeft {
+    background-color: white;
+    color:black;
+    font-family:"Sora-ExtraBold";
+    font-size:30px;
+    width: 370px;
+    height:54px;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+    padding-inline:8px;
+}
+
+.historySourceLeft {
+    border:solid 4px white;
+    object-fit: cover;
+    object-position: center;
+    width:54px;
+    height:54px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin-left:-2px;
+}
+
+.historyWinDetailsLeft {
+    display:flex;
+    flex-direction: column;
+    height:54px;
+    margin-left:37px;
+}
+
+.historyWinTextLeft {
+    background-color: white;
+    color:black;
+    font-family:"Sora-ExtraBold";
+    font-size:22px;
+    width: 93px;
+    height:23px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.historyWinScoreLeft {
+    font-family:"Sora-ExtraBold";
+    font-size:30px;
+    margin-left:-2px;
+    margin-top:2px;
+}
+
+.historyRight {
+    margin-top:36px;
+    display:flex;
+    flex-direction: row-reverse;
+    height:fit-content;
+    width:fit-content;
+    opacity:0;
+}
+
+.historyRoundRight {
+    font-family:"Sora-ExtraBold";
+    font-size:57px;
+    width: 200px;
+    height:54px;
+    display:flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.historyPlayerRight {
+    background-color: white;
+    color:black;
+    font-family:"Sora-ExtraBold";
+    font-size:30px;
+    width: 370px;
+    height:54px;
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    padding-inline:8px;
+}
+
+.historySourceRight {
+    border:solid 4px white;
+    object-fit: cover;
+    object-position: center;
+    width:54px;
+    height:54px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin-right:-2px;
+}
+
+.historyWinDetailsRight {
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+    height:54px;
+    margin-right:37px;
+}
+
+.historyWinTextRight {
+    background-color: white;
+    color:black;
+    font-family:"Sora-ExtraBold";
+    font-size:22px;
+    width: 93px;
+    height:23px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.historyWinScoreRight {
+    font-family:"Sora-ExtraBold";
+    font-size:30px;
+    margin-right:-2px;
+    margin-top:2px;
+}
+
 /* RESULTS */
 #resultScene {
     position: absolute;
@@ -1977,6 +2263,28 @@ body {
     }
 }
 
+@keyframes fadeOutDownFurther {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(500px);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 @keyframes fadeInDown {
     0% {
         opacity: 0;
@@ -2032,6 +2340,52 @@ body {
     100% {
         opacity: 0;
         transform: translateX(250px);
+    }
+}
+
+@keyframes fadeInRightHistory {
+    0% {
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeftHistory {
+    0% {
+        opacity: 0;
+        transform: translateX(400px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOutRightHistory {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+}
+
+@keyframes fadeOutLeftHistory {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(400px);
     }
 }
 
@@ -2256,5 +2610,29 @@ body {
     100% {
         background-color: white;
         width: 100%;
+    }
+}
+
+@keyframes appearIn {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes appearOut {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0);
     }
 }
