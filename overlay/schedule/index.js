@@ -17,67 +17,6 @@ try {
     console.log(e);
 }
 
-// BEATMAP DATA /////////////////////////////////////////////////////////////////
-let stages = [];
-let seedData = [];
-let currentStage;
-let firstTo;
-let matchManager;
-let initialized = false;
-// const now = new Date("2025-02-23T00:00:00.000Z");
-const now = new Date();
-(async () => {
-    try {
-        const jsonData = await $.getJSON("../../_data/stage.json");
-        jsonData.map((stage, index) => {
-            if (index == 0) {
-                currentStage = stage.currentStage;
-            } else {
-                stages.push(stage);
-            }
-        });
-        const jsonData_2 = await $.getJSON("../../_data/seeding.json");
-        jsonData_2.Teams.map((seed) => {
-            seedData.push(seed);
-        });
-        setupSchedules()
-    } catch (error) {
-        console.error("Could not read JSON file", error);
-    }
-})();
-console.log(stages);
-
-// MAIN LOOP ////////////////////////////////////////////////////////////////////
-let tempLeftScore;
-let tempRightScore;
-let tempBestOf;
-
-socket.onmessage = async event => {
-    if (!initialized) { return };
-    let data = JSON.parse(event.data);
-    [tempLeftScore, tempRightScore, tempBestOf] = [data.tourney.manager.stars.left, data.tourney.manager.stars.right, Math.ceil(data.tourney.manager.bestOF / 2)];
-    let [leftTeam, rightTeam] = [data.tourney.manager.teamName.left, data.tourney.manager.teamName.right];
-    let currentMatch = matchManager.matches.find(match => match.leftName == leftTeam && match.rightName == rightTeam);
-
-    if(currentMatch != null && tempBestOf == firstTo && (currentMatch.leftScore != tempLeftScore || currentMatch.rightScore != tempRightScore)) {
-        currentMatch.leftScore = tempLeftScore;
-        currentMatch.rightScore = tempRightScore;
-        currentMatch.updateScore();
-        matchManager.checkUpdates();
-    }
-}
-
-async function setupSchedules() {
-    firstTo = stages.find(stage => stage.stage == currentStage)["firstTo"];
-    document.getElementById("roundName").innerHTML = stages.find(stage => stage.stage == currentStage)["stageName"];
-    // const schedules = matches;
-    const schedules = await getSchedules(stages.find(stage => stage.stage == currentStage)["stageName"]);
-    console.log(schedules);
-    matchManager = new MatchManager(schedules);
-    matchManager.generateInitialSchedules()
-    initialized = true;
-}
-
 class MatchManager {
     constructor(data) {
         this.data = data;
@@ -315,6 +254,67 @@ class Match {
             this.matchPlayerTwoWin.style.opacity = 0;
         }
     }
+}
+
+// BEATMAP DATA /////////////////////////////////////////////////////////////////
+let stages = [];
+let seedData = [];
+let currentStage;
+let firstTo;
+let matchManager;
+let initialized = false;
+// const now = new Date("2025-02-23T00:00:00.000Z");
+const now = new Date();
+(async () => {
+    try {
+        const jsonData = await $.getJSON("../../_data/stage.json");
+        jsonData.map((stage, index) => {
+            if (index == 0) {
+                currentStage = stage.currentStage;
+            } else {
+                stages.push(stage);
+            }
+        });
+        const jsonData_2 = await $.getJSON("../../_data/seeding.json");
+        jsonData_2.Teams.map((seed) => {
+            seedData.push(seed);
+        });
+        setupSchedules()
+    } catch (error) {
+        console.error("Could not read JSON file", error);
+    }
+})();
+console.log(stages);
+
+// MAIN LOOP ////////////////////////////////////////////////////////////////////
+let tempLeftScore;
+let tempRightScore;
+let tempBestOf;
+
+socket.onmessage = async event => {
+    if (!initialized) { return };
+    let data = JSON.parse(event.data);
+    [tempLeftScore, tempRightScore, tempBestOf] = [data.tourney.manager.stars.left, data.tourney.manager.stars.right, Math.ceil(data.tourney.manager.bestOF / 2)];
+    let [leftTeam, rightTeam] = [data.tourney.manager.teamName.left, data.tourney.manager.teamName.right];
+    let currentMatch = matchManager.matches.find(match => match.leftName == leftTeam && match.rightName == rightTeam);
+
+    if(currentMatch != null && tempBestOf == firstTo && (currentMatch.leftScore != tempLeftScore || currentMatch.rightScore != tempRightScore)) {
+        currentMatch.leftScore = tempLeftScore;
+        currentMatch.rightScore = tempRightScore;
+        currentMatch.updateScore();
+        matchManager.checkUpdates();
+    }
+}
+
+async function setupSchedules() {
+    firstTo = stages.find(stage => stage.stage == currentStage)["firstTo"];
+    document.getElementById("roundName").innerHTML = stages.find(stage => stage.stage == currentStage)["stageName"];
+    // const schedules = matches;
+    const schedules = await getSchedules(stages.find(stage => stage.stage == currentStage)["stageName"]);
+    console.log(schedules);
+    matchManager = new MatchManager(schedules);
+    matchManager.generateInitialSchedules()
+    initialized = true;
 }
 
 async function getSchedules(stage) {
