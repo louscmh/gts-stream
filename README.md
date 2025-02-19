@@ -42,7 +42,7 @@ ___
 
 - **SWITCH TO GAMEPLAY:** Button to switch scenes from mappool to gameplay. Upon pressing again will return you to the mappool scene.
 
-- **SWITCH TO INTRO:** Button to switch scenes from main match scene to intro. Upon pressing again will return you to the mappool scene.
+- **SWITCH TO INTRO:** Button to switch scenes regarding anything pre-match related. Will cycle through the following scenes in a loop: Main Match Scene (default) -> Intro Scene -> Match History
 
 - **SWITCH TO RESULTS:** Button to switch scenes from main match scene to results. Upon pressing again will return you to the main match scene scene. Disabled by default, and will only be enabled when the following two things happen:
     - One of the players have reached the maximum amount of points in the tournament client. 
@@ -87,5 +87,11 @@ ___
 ### Intro Scene
 ![alt text](_shared_assets/setup/image-intro.png)
 
+### Match History Scene
+![alt text](_shared_assets/setup/image-history.png)
+
 ### Winner Scene
 ![alt text](_shared_assets/setup/image-winner.png)
+
+### Schedule Scene
+![alt text](_shared_assets/setup/image-schedule.png)
