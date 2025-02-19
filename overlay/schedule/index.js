@@ -1,10 +1,23 @@
+// SOCKET /////////////////////////////////////////////////////////////////
+let socket = new ReconnectingWebSocket("ws://" + location.host + "/ws");
+socket.onopen = () => {
+    console.log("Successfully Connected");
+};
+socket.onclose = event => {
+    console.log("Socket Closed Connection: ", event);
+    socket.send("Client Closed!");
+};
+socket.onerror = error => {
+    console.log("Socket Error: ", error);
+};
+
 // BEATMAP DATA /////////////////////////////////////////////////////////////////
 let stages = [];
 let seedData = [];
-let matches = [];
 let currentStage;
 let firstTo;
 let matchManager;
+let initialized = false;
 // const now = new Date("2025-02-23T00:00:00.000Z");
 const now = new Date();
 (async () => {
@@ -21,43 +34,65 @@ const now = new Date();
         jsonData_2.Teams.map((seed) => {
             seedData.push(seed);
         });
-        const jsonData_3 = await $.getJSON(stages.find(stage => stage.stage == currentStage)["matchData"]);
-        jsonData_3.map((match) => {
-            matches.push(match);
-        });
         setupSchedules()
     } catch (error) {
         console.error("Could not read JSON file", error);
     }
 })();
 console.log(stages);
-console.log(matches);
+
+// MAIN LOOP ////////////////////////////////////////////////////////////////////
+let tempLeftScore;
+let tempRightScore;
+let tempBestOf;
+
+socket.onmessage = async event => {
+    if (!initialized) { return };
+    let data = JSON.parse(event.data);
+    [tempLeftScore, tempRightScore, tempBestOf] = [data.tourney.manager.stars.left, data.tourney.manager.stars.right, Math.ceil(data.tourney.manager.bestOF / 2)];
+    let [leftTeam, rightTeam] = [data.tourney.manager.teamName.left, data.tourney.manager.teamName.right];
+    let currentMatch = matchManager.matches.find(match => match.leftName == leftTeam && match.rightName == rightTeam);
+
+    if(currentMatch != null && tempBestOf == firstTo && (currentMatch.leftScore != tempLeftScore || currentMatch.rightScore != tempRightScore)) {
+        currentMatch.leftScore = tempLeftScore;
+        currentMatch.rightScore = tempRightScore;
+        currentMatch.updateScore();
+        matchManager.checkUpdates();
+    }
+}
 
 async function setupSchedules() {
     firstTo = stages.find(stage => stage.stage == currentStage)["firstTo"];
     document.getElementById("roundName").innerHTML = stages.find(stage => stage.stage == currentStage)["stageName"];
-    const schedules = matches;
+    // const schedules = matches;
+    const schedules = await getSchedules(stages.find(stage => stage.stage == currentStage)["stageName"]);
     console.log(schedules);
     matchManager = new MatchManager(schedules);
     matchManager.generateInitialSchedules()
+    initialized = true;
 }
 
 class MatchManager {
     constructor(data) {
         this.data = data;
         this.selectedSchedules = data
-            .filter(match => new Date(match.time) > now)
+            .filter(match => (match.score1 != firstTo && match.score2 != firstTo))
             .sort((a, b) => new Date(a.time) - new Date(b.time))
             .slice(0, 5);
-        this.currentMatch = this.selectedSchedules[0];
+        this.currentMatch = data
+            .filter(match => (match.score1 != firstTo && match.score2 != firstTo))
+            .sort((a, b) => new Date(a.time) - new Date(b.time))
+            .slice(0, 1)[0];
         this.matches = [];
         this.timer = document.getElementById('timer');
     }
 
     generateInitialSchedules() {
         this.selectedSchedules.map(async (schedule, index) => {
-            const match = new Match(index);
+            const match = new Match(index, schedule, schedule.player1, schedule.player2);
             match.generate();
+            match.leftScore = schedule.score1 < 0 ? 0 : schedule.score1;
+            match.rightScore = schedule.score2 < 0 ? 0 : schedule.score2;
             match.matchPlayerOneName.innerHTML = schedule.player1;
             match.matchPlayerOneSeed.innerHTML = `Seed #${seedData.find(seed => seed.FullName == schedule.player1)["Seed"].match(/\d+/)[0]}`;
             match.matchPlayerOneSource.setAttribute("src", `https://a.ppy.sh/${seedData.find(seed => seed.FullName == schedule.player1)["Players"][0]["id"]}`)
@@ -79,6 +114,7 @@ class MatchManager {
                     match.reset();
                 } else {
                     match.addScoreLeft();
+                    this.checkUpdates();
                 }
             })
             match.matchPlayerOne.addEventListener("contextmenu", (event) => {
@@ -89,11 +125,14 @@ class MatchManager {
                     match.reset();
                 } else {
                     match.addScoreRight();
+                    this.checkUpdates();
                 }
             })
             match.matchPlayerTwo.addEventListener("contextmenu", (event) => {
                 match.removeScoreRight();
             })
+            match.updateScore();
+            this.matches.push(match);
         })
         this.startCountdown();
     }
@@ -105,8 +144,8 @@ class MatchManager {
             const diff = targetTime - now;
             if (diff <= 0) {
                 timer.textContent = "00:00";
-                clearInterval(intervalId);
-                return;
+                // clearInterval(intervalId);
+                // return;
             }
             const hours = String(Math.floor(diff / (1000 * 60 * 60))).padStart(2, '0');
             const minutes = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
@@ -119,17 +158,28 @@ class MatchManager {
         }
 
         // Update the countdown immediately and then every second
-        updateCountdown();
         const intervalId = setInterval(updateCountdown, 1000);
+    }
+
+    checkUpdates() {
+        let selectedCurrentMatch = this.matches.find(match => (match.data._id == this.currentMatch._id));
+        let selectedCurrentMatchIndex = this.matches.findIndex(match => (match.data._id == this.currentMatch._id));
+        if (selectedCurrentMatchIndex == 4) return;
+        // console.log(selectedCurrentMatch, selectedCurrentMatchIndex);
+        if (selectedCurrentMatch.leftScore == firstTo || selectedCurrentMatch.rightScore == firstTo) {
+            this.currentMatch = this.matches[selectedCurrentMatchIndex+1].data;
+        }
     }
 }
 
 class Match {
-    constructor(index) {
-        this.data;
+    constructor(index, data, leftName, rightName) {
+        this.data = data;
         this.index = index;
         this.leftScore = 0;
         this.rightScore = 0;
+        this.leftName = leftName;
+        this.rightName = rightName;
     }
 
     generate() {
@@ -295,3 +345,38 @@ async function getUserDataSet(user_id) {
         console.error(error);
     }
 }
+
+// setInterval(async function () {
+//     if (!matchManager) return; // Ensure matchManager exists before checking
+
+//     try {
+//         // console.log("Checking for updates...");
+//         const newSchedules = await getSchedules(stages.find(stage => stage.stage == currentStage)["stageName"]);
+
+//         if (!newSchedules) return; // If no new data, exit function
+
+//         // Compare JSON data (stringify to compare deep equality)
+//         if (JSON.stringify(newSchedules) !== JSON.stringify(matchManager.data)) {
+//             console.log("Schedules updated. Updating matchManager...");
+
+//             // Update matchManager with new schedules
+//             matchManager.data = newSchedules;
+
+//             // Re-generate selected schedules
+//             matchManager.selectedSchedules = newSchedules
+//                 .filter(match => (match.score1 != firstTo && match.score2 != firstTo))
+//                 .sort((a, b) => new Date(a.time) - new Date(b.time))
+//                 .slice(0, 5);
+
+//             matchManager.currentMatch = newSchedules
+//                 .filter(match => (match.score1 != firstTo && match.score2 != firstTo))
+//                 .sort((a, b) => new Date(a.time) - new Date(b.time))
+//                 .slice(0, 1)[0];
+
+//             // Call any UI update function if necessary
+//             matchManager.updateUI();
+//         }
+//     } catch (error) {
+//         console.error("Error checking for schedule updates:", error);
+//     }
+// }, 60000);
