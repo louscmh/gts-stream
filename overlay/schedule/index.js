@@ -2,20 +2,20 @@
 let socket;
 try {
     socket = new ReconnectingWebSocket("ws://" + location.host + "/ws");
+
+    socket.onopen = () => {
+        console.log("Successfully Connected");
+    };
+    socket.onclose = event => {
+        console.log("Socket Closed Connection: ", event);
+        socket.send("Client Closed!");
+    };
+    socket.onerror = error => {
+        console.log("Socket Error: ", error);
+    };
 } catch (e) {
     console.log(e);
 }
-
-socket.onopen = () => {
-    console.log("Successfully Connected");
-};
-socket.onclose = event => {
-    console.log("Socket Closed Connection: ", event);
-    socket.send("Client Closed!");
-};
-socket.onerror = error => {
-    console.log("Socket Error: ", error);
-};
 
 // BEATMAP DATA /////////////////////////////////////////////////////////////////
 let stages = [];
