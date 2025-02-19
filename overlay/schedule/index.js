@@ -1,5 +1,11 @@
 // SOCKET /////////////////////////////////////////////////////////////////
-let socket = new ReconnectingWebSocket("ws://" + location.host + "/ws");
+let socket;
+try {
+    socket = new ReconnectingWebSocket("ws://" + location.host + "/ws");
+} catch (e) {
+    console.log(e);
+}
+
 socket.onopen = () => {
     console.log("Successfully Connected");
 };
