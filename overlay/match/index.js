@@ -1143,8 +1143,8 @@ class MatchManager {
         this.matchHistoryRightPlayerSource.setAttribute("src", `https://a.ppy.sh/${this.rightPlayerData.user_id}`);
         this.matchHistoryLeftPlayerName.innerHTML = playerId[0];
         this.matchHistoryRightPlayerName.innerHTML = playerId[1];
-        this.matchHistoryLeftPlayerSeed.innerHTML = `#${seedData.find(seed => seed["Players"][0].id == this.leftPlayerData.user_id)["Seed"].match(/\d+/)[0]}`;
-        this.matchHistoryRightPlayerSeed.innerHTML = `#${seedData.find(seed => seed["Players"][0].id == this.rightPlayerData.user_id)["Seed"].match(/\d+/)[0]}`;
+        this.matchHistoryLeftPlayerSeed.innerHTML = `Seed #${seedData.find(seed => seed["Players"][0].id == this.leftPlayerData.user_id)["Seed"].match(/\d+/)[0]}`;
+        this.matchHistoryRightPlayerSeed.innerHTML = `Seed #${seedData.find(seed => seed["Players"][0].id == this.rightPlayerData.user_id)["Seed"].match(/\d+/)[0]}`;
 
         this.resultsManager.playerLeft = this.leftPlayerData;
         this.resultsManager.playerRight = this.rightPlayerData;
