@@ -43,22 +43,12 @@ class MatchManager {
 
                 return match.score1 !== firstTo &&
                     match.score2 !== firstTo &&
-                    matchTime > oneHourAgo;
+                    matchTime > oneHourAgo &&
+                    match.streamer;
             })
             .sort((a, b) => new Date(a.time) - new Date(b.time))
             .slice(0, 5);
-        this.currentMatch = data
-            .filter(match => {
-                const matchTime = new Date(match.time);
-                const oneHourAgo = new Date();
-                oneHourAgo.setHours(oneHourAgo.getHours() - 1);
-
-                return match.score1 !== firstTo &&
-                    match.score2 !== firstTo &&
-                    matchTime > oneHourAgo;
-            })
-            .sort((a, b) => new Date(a.time) - new Date(b.time))
-            .slice(0, 1)[0];
+        this.currentMatch = this.selectedSchedules[0];
         this.matches = [];
         this.timer = document.getElementById('timer');
     }
@@ -67,6 +57,7 @@ class MatchManager {
         this.selectedSchedules.map(async (schedule, index) => {
             const match = new Match(index, schedule, schedule.player1, schedule.player2);
             match.generate();
+            this.matches.push(match);
             const leftPlayerData = await getUserDataSet(schedule.player1);
             const rightPlayerData = await getUserDataSet(schedule.player2);
             match.leftScore = schedule.score1 < 0 ? 0 : schedule.score1;
@@ -110,7 +101,6 @@ class MatchManager {
                 match.removeScoreRight();
             })
             match.updateScore();
-            this.matches.push(match);
         })
         this.startCountdown();
     }
@@ -142,10 +132,21 @@ class MatchManager {
     checkUpdates() {
         let selectedCurrentMatch = this.matches.find(match => (match.data._id == this.currentMatch._id));
         let selectedCurrentMatchIndex = this.matches.findIndex(match => (match.data._id == this.currentMatch._id));
+        console.log(selectedCurrentMatchIndex);
         if (selectedCurrentMatchIndex == 4) return;
         // console.log(selectedCurrentMatch, selectedCurrentMatchIndex);
         if (selectedCurrentMatch.leftScore == firstTo || selectedCurrentMatch.rightScore == firstTo) {
-            this.currentMatch = this.matches[selectedCurrentMatchIndex + 1].data;
+            for (let i = 1; i < (5-selectedCurrentMatchIndex); i++) {
+                console.log(i);
+                console.log(selectedCurrentMatchIndex);
+                console.log(this.currentMatch.time);
+                console.log(this.matches[selectedCurrentMatchIndex + i].data.time);
+                if (this.matches[selectedCurrentMatchIndex + i].data.time != this.currentMatch.time) {
+                    console.log(selectedCurrentMatchIndex + i);
+                    this.currentMatch = this.matches[selectedCurrentMatchIndex + i].data;
+                    return;
+                }
+            };
         }
     }
 }
