@@ -106,7 +106,7 @@
     {
         "beatmapId": 4984222,
         "pick": "FM3",
-        "modSR": 7.31,
+        "modSR": null,
         "customSong": false,
         "collab": "vivid/stasis",
         "mappers": ""
