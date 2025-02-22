@@ -66,9 +66,9 @@ class MatchManager {
     generateInitialSchedules() {
         this.selectedSchedules.map(async (schedule, index) => {
             const match = new Match(index, schedule, schedule.player1, schedule.player2);
+            match.generate();
             const leftPlayerData = await getUserDataSet(schedule.player1);
             const rightPlayerData = await getUserDataSet(schedule.player2);
-            match.generate();
             match.leftScore = schedule.score1 < 0 ? 0 : schedule.score1;
             match.rightScore = schedule.score2 < 0 ? 0 : schedule.score2;
             match.matchPlayerOneName.innerHTML = schedule.player1;
@@ -128,9 +128,9 @@ class MatchManager {
             const hours = String(Math.floor(diff / (1000 * 60 * 60))).padStart(2, '0');
             const minutes = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
             const seconds = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, '0');
-            if (hours == "00") {
+            if (hours == "00" && diff > 0) {
                 timer.textContent = `${minutes}:${seconds}`;
-            } else {
+            } else if (hours != "00" && diff > 0) {
                 timer.textContent = `${hours}:${minutes}:${seconds}`;
             }
         }
