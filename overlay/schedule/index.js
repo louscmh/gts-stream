@@ -17,15 +17,46 @@ try {
     console.log(e);
 }
 
+// API /////////////////////////////////////////////////////////////////
+const file = [];
+let api;
+(async () => {
+    try {
+        const jsonData = await $.getJSON("../../_data/api.json");
+        jsonData.map((num) => {
+            file.push(num);
+        });
+        api = file[0].api;
+    } catch (error) {
+        console.error("Could not read JSON file", error);
+    }
+})();
+
 class MatchManager {
     constructor(data) {
         this.data = data;
         this.selectedSchedules = data
-            .filter(match => (match.score1 != firstTo && match.score2 != firstTo))
+            .filter(match => {
+                const matchTime = new Date(match.time);
+                const oneHourAgo = new Date();
+                oneHourAgo.setHours(oneHourAgo.getHours() - 1);
+
+                return match.score1 !== firstTo &&
+                    match.score2 !== firstTo &&
+                    matchTime > oneHourAgo;
+            })
             .sort((a, b) => new Date(a.time) - new Date(b.time))
             .slice(0, 5);
         this.currentMatch = data
-            .filter(match => (match.score1 != firstTo && match.score2 != firstTo))
+            .filter(match => {
+                const matchTime = new Date(match.time);
+                const oneHourAgo = new Date();
+                oneHourAgo.setHours(oneHourAgo.getHours() - 1);
+
+                return match.score1 !== firstTo &&
+                    match.score2 !== firstTo &&
+                    matchTime > oneHourAgo;
+            })
             .sort((a, b) => new Date(a.time) - new Date(b.time))
             .slice(0, 1)[0];
         this.matches = [];
@@ -35,15 +66,17 @@ class MatchManager {
     generateInitialSchedules() {
         this.selectedSchedules.map(async (schedule, index) => {
             const match = new Match(index, schedule, schedule.player1, schedule.player2);
+            const leftPlayerData = await getUserDataSet(schedule.player1);
+            const rightPlayerData = await getUserDataSet(schedule.player2);
             match.generate();
             match.leftScore = schedule.score1 < 0 ? 0 : schedule.score1;
             match.rightScore = schedule.score2 < 0 ? 0 : schedule.score2;
             match.matchPlayerOneName.innerHTML = schedule.player1;
-            match.matchPlayerOneSeed.innerHTML = `Seed #${seedData.find(seed => seed.FullName == schedule.player1)["Seed"].match(/\d+/)[0]}`;
-            match.matchPlayerOneSource.setAttribute("src", `https://a.ppy.sh/${seedData.find(seed => seed.FullName == schedule.player1)["Players"][0]["id"]}`)
+            match.matchPlayerOneSeed.innerHTML = `Seed #${seedData.find(seed => seed["Players"][0]["id"] == leftPlayerData.user_id)["Seed"].match(/\d+/)[0]}`;
+            match.matchPlayerOneSource.setAttribute("src", `https://a.ppy.sh/${seedData.find(seed => seed["Players"][0]["id"] == leftPlayerData.user_id)["Players"][0]["id"]}`)
             match.matchPlayerTwoName.innerHTML = schedule.player2;
-            match.matchPlayerTwoSeed.innerHTML = `Seed #${seedData.find(seed => seed.FullName == schedule.player2)["Seed"].match(/\d+/)[0]}`;
-            match.matchPlayerTwoSource.setAttribute("src", `https://a.ppy.sh/${seedData.find(seed => seed.FullName == schedule.player2)["Players"][0]["id"]}`)
+            match.matchPlayerTwoSeed.innerHTML = `Seed #${seedData.find(seed => seed["Players"][0]["id"] == rightPlayerData.user_id)["Seed"].match(/\d+/)[0]}`;
+            match.matchPlayerTwoSource.setAttribute("src", `https://a.ppy.sh/${seedData.find(seed => seed["Players"][0]["id"] == rightPlayerData.user_id)["Players"][0]["id"]}`)
             match.matchTime.innerHTML = (new Date(schedule.time)).toLocaleTimeString('en-US', {
                 timeZone: 'UTC',
                 hour: '2-digit',
@@ -112,7 +145,7 @@ class MatchManager {
         if (selectedCurrentMatchIndex == 4) return;
         // console.log(selectedCurrentMatch, selectedCurrentMatchIndex);
         if (selectedCurrentMatch.leftScore == firstTo || selectedCurrentMatch.rightScore == firstTo) {
-            this.currentMatch = this.matches[selectedCurrentMatchIndex+1].data;
+            this.currentMatch = this.matches[selectedCurrentMatchIndex + 1].data;
         }
     }
 }
@@ -298,7 +331,7 @@ socket.onmessage = async event => {
     let [leftTeam, rightTeam] = [data.tourney.manager.teamName.left, data.tourney.manager.teamName.right];
     let currentMatch = matchManager.matches.find(match => match.leftName == leftTeam && match.rightName == rightTeam);
 
-    if(currentMatch != null && tempBestOf == firstTo && (currentMatch.leftScore != tempLeftScore || currentMatch.rightScore != tempRightScore)) {
+    if (currentMatch != null && tempBestOf == firstTo && (currentMatch.leftScore != tempLeftScore || currentMatch.rightScore != tempRightScore)) {
         currentMatch.leftScore = tempLeftScore;
         currentMatch.rightScore = tempRightScore;
         currentMatch.updateScore();
