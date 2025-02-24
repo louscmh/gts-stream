@@ -43,8 +43,7 @@ class MatchManager {
 
                 return match.score1 !== firstTo &&
                     match.score2 !== firstTo &&
-                    matchTime > oneHourAgo &&
-                    match.streamer;
+                    matchTime > oneHourAgo
             })
             .sort((a, b) => new Date(a.time) - new Date(b.time))
             .slice(0, 5);
@@ -136,7 +135,7 @@ class MatchManager {
         if (selectedCurrentMatchIndex == 4) return;
         // console.log(selectedCurrentMatch, selectedCurrentMatchIndex);
         if (selectedCurrentMatch.leftScore == firstTo || selectedCurrentMatch.rightScore == firstTo) {
-            for (let i = 1; i < (5-selectedCurrentMatchIndex); i++) {
+            for (let i = 1; i < (5 - selectedCurrentMatchIndex); i++) {
                 console.log(i);
                 console.log(selectedCurrentMatchIndex);
                 console.log(this.currentMatch.time);
