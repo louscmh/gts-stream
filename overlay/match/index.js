@@ -1882,11 +1882,11 @@ class HistoryManager {
                 canGenerate = round == stages.find(stage => stage.stage == currentStage)["stageName"] ? false : true;
                 const stageMatches = await getSchedules(round);
                 const leftMatches = stageMatches
-                    .filter(match => (match.score1 > -2 || match.score2 > -2))
+                    .filter(match => (match.score1 == -1 || match.score2 == -1 || match.score1 > 4 || match.score2 > 4))
                     .filter(match => (match.player1 == this.leftPlayer || match.player2 == this.leftPlayer))
                     .sort((a, b) => new Date(a.time) - new Date(b.time))
                 const rightMatches = stageMatches
-                    .filter(match => (match.score1 > -2 || match.score2 > -2))
+                    .filter(match => (match.score1 == -1 || match.score2 == -1 || match.score1 > 4 || match.score2 > 4))
                     .filter(match => (match.player1 == this.rightPlayer || match.player2 == this.rightPlayer))
                     .sort((a, b) => new Date(a.time) - new Date(b.time))
 
