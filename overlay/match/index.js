@@ -1163,7 +1163,8 @@ class MatchManager {
         let finalOD = mapData.diff_overall;
         let bpm = mapData.bpm;
         let length = mapData.total_length;
-        let sr = upcomingOfflineMapData.pick.substring(0, 2) == "DT" ? upcomingOfflineMapData.modSR : mapData.difficultyrating;
+        // let sr = upcomingOfflineMapData.pick.substring(0, 2) == "DT" ? upcomingOfflineMapData.modSR : mapData.difficultyrating;
+        let sr = upcomingOfflineMapData.modSR;
 
         if (upcomingOfflineMapData.pick.substring(0, 2) == "HR" || upcomingOfflineMapData.pick.substring(0, 2) == "FM") {
             finalOD = Math.min(finalOD * 1.4, 10);
@@ -1209,7 +1210,8 @@ class MatchManager {
             let finalOD = mapData.diff_overall;
             let bpm = mapData.bpm;
             let length = mapData.total_length;
-            let sr = upcomingOfflineMapData.pick.substring(0, 2) == "DT" ? upcomingOfflineMapData.modSR : mapData.difficultyrating;
+            // let sr = upcomingOfflineMapData.pick.substring(0, 2) == "DT" ? upcomingOfflineMapData.modSR : mapData.difficultyrating;
+            let sr = upcomingOfflineMapData.modSR;
 
             if (upcomingOfflineMapData.pick.substring(0, 2) == "HR" || upcomingOfflineMapData.pick.substring(0, 2) == "FM") {
                 finalOD = Math.min(finalOD * 1.4, 10);

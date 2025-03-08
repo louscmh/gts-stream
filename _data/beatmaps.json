@@ -2,7 +2,7 @@
     {
         "beatmapId": 5006045,
         "pick": "NM1",
-        "modSR": null,
+        "modSR": 7.24,
         "customSong": true,
         "collab": "",
         "mappers": ""
@@ -10,7 +10,7 @@
     {
         "beatmapId": 5006463,
         "pick": "NM2",
-        "modSR": null,
+        "modSR": 7.97,
         "customSong": false,
         "collab": "",
         "mappers": ""
@@ -18,7 +18,7 @@
     {
         "beatmapId": 5006448,
         "pick": "NM3",
-        "modSR": null,
+        "modSR": 7.58,
         "customSong": true,
         "collab": "",
         "mappers": "Shinsekai-, Vulkin"
@@ -26,7 +26,7 @@
     {
         "beatmapId": 5006460,
         "pick": "NM4",
-        "modSR": null,
+        "modSR": 6.75,
         "customSong": false,
         "collab": "",
         "mappers": ""
@@ -34,7 +34,7 @@
     {
         "beatmapId": 5006472,
         "pick": "NM5",
-        "modSR": null,
+        "modSR": 7.24,
         "customSong": false,
         "collab": "",
         "mappers": ""
@@ -42,7 +42,7 @@
     {
         "beatmapId": 5006346,
         "pick": "HD1",
-        "modSR": null,
+        "modSR": 5.2,
         "customSong": false,
         "collab": "",
         "mappers": ""
@@ -50,7 +50,7 @@
     {
         "beatmapId": 5005636,
         "pick": "HD2",
-        "modSR": null,
+        "modSR": 7.13,
         "customSong": true,
         "collab": "",
         "mappers": "My Angel Seia, Cookie_Tree, Ph0eNiiXZ"
@@ -58,7 +58,7 @@
     {
         "beatmapId": 5006328,
         "pick": "HR1",
-        "modSR": null,
+        "modSR": 6.04,
         "customSong": false,
         "collab": "",
         "mappers": ""
@@ -66,7 +66,7 @@
     {
         "beatmapId": 5006483,
         "pick": "HR2",
-        "modSR": null,
+        "modSR": 6.68,
         "customSong": true,
         "collab": "",
         "mappers": ""
@@ -90,7 +90,7 @@
     {
         "beatmapId": 5006426,
         "pick": "FM1",
-        "modSR": null,
+        "modSR": 6.68,
         "customSong": false,
         "collab": "",
         "mappers": ""
@@ -98,7 +98,7 @@
     {
         "beatmapId": 5006098,
         "pick": "FM2",
-        "modSR": null,
+        "modSR": 5.96,
         "customSong": false,
         "collab": "",
         "mappers": ""
@@ -106,7 +106,7 @@
     {
         "beatmapId": 5006531,
         "pick": "FM3",
-        "modSR": null,
+        "modSR": 7.39,
         "customSong": false,
         "collab": "ADOFAI",
         "mappers": ""
@@ -114,7 +114,7 @@
     {
         "beatmapId": 5005638,
         "pick": "TB",
-        "modSR": null,
+        "modSR": 7.89,
         "customSong": true,
         "collab": "",
         "mappers": ""
