@@ -246,7 +246,7 @@ class ShowcaseManager {
             this.mapperTextAsset.innerHTML = customMapper != "" ? customMapper:mapper;
             this.difficultyTextAsset.innerHTML = difficulty;
             this.odAsset.innerHTML = (mod == "DT" || mod == "FM" || mod == "HR") ? `${Number(memoryOD).toFixed(1)} (${Number(modOD).toFixed(1)})` : Number(memoryOD).toFixed(1);
-            this.srAsset.innerHTML = mod == "DT" ? `${beatmapSet[index]["modSR"]}*` : `${Number(fullSR).toFixed(2)}*`;
+            this.srAsset.innerHTML = `${beatmapSet[index]["modSR"]}*`;
             this.bpmAsset.innerHTML = min === max ? min : `${min} - ${max}`;
             this.lengthAsset.innerHTML = parseTime(full);
             this.modpoolAsset.innerHTML = mod == "TB" ? "&#8202;TB" : mod;

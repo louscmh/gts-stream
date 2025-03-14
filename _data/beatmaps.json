@@ -1,120 +1,128 @@
 [
     {
-        "beatmapId": 5006045,
+        "beatmapId": "5016113",
         "pick": "NM1",
-        "modSR": 7.24,
-        "customSong": true,
+        "modSR": null,
+        "customSong": false,
         "collab": "",
         "mappers": ""
     },
     {
-        "beatmapId": 5006463,
+        "beatmapId": "5016130",
         "pick": "NM2",
-        "modSR": 7.97,
+        "modSR": null,
         "customSong": false,
-        "collab": "",
+        "collab": "Phigros",
         "mappers": ""
     },
     {
-        "beatmapId": 5006448,
+        "beatmapId": "5016115",
         "pick": "NM3",
-        "modSR": 7.58,
+        "modSR": null,
         "customSong": true,
         "collab": "",
-        "mappers": "Shinsekai-, Vulkin"
+        "mappers": ""
     },
     {
-        "beatmapId": 5006460,
+        "beatmapId": "5016102",
         "pick": "NM4",
-        "modSR": 6.75,
-        "customSong": false,
-        "collab": "",
-        "mappers": ""
-    },
-    {
-        "beatmapId": 5006472,
-        "pick": "NM5",
-        "modSR": 7.24,
-        "customSong": false,
-        "collab": "",
-        "mappers": ""
-    },
-    {
-        "beatmapId": 5006346,
-        "pick": "HD1",
-        "modSR": 5.2,
-        "customSong": false,
-        "collab": "",
-        "mappers": ""
-    },
-    {
-        "beatmapId": 5005636,
-        "pick": "HD2",
-        "modSR": 7.13,
-        "customSong": true,
-        "collab": "",
-        "mappers": "My Angel Seia, Cookie_Tree, Ph0eNiiXZ"
-    },
-    {
-        "beatmapId": 5006328,
-        "pick": "HR1",
-        "modSR": 6.04,
-        "customSong": false,
-        "collab": "",
-        "mappers": ""
-    },
-    {
-        "beatmapId": 5006483,
-        "pick": "HR2",
-        "modSR": 6.68,
-        "customSong": true,
-        "collab": "",
-        "mappers": ""
-    },
-    {
-        "beatmapId": 5006496,
-        "pick": "DT1",
-        "modSR": 7.4,
-        "customSong": false,
-        "collab": "",
-        "mappers": ""
-    },
-    {
-        "beatmapId": 5006477,
-        "pick": "DT2",
-        "modSR": 7.68,
-        "customSong": false,
-        "collab": "",
-        "mappers": ""
-    },
-    {
-        "beatmapId": 5006426,
-        "pick": "FM1",
-        "modSR": 6.68,
-        "customSong": false,
-        "collab": "",
-        "mappers": ""
-    },
-    {
-        "beatmapId": 5006098,
-        "pick": "FM2",
-        "modSR": 5.96,
-        "customSong": false,
-        "collab": "",
-        "mappers": ""
-    },
-    {
-        "beatmapId": 5006531,
-        "pick": "FM3",
-        "modSR": 7.39,
+        "modSR": null,
         "customSong": false,
         "collab": "ADOFAI",
         "mappers": ""
     },
     {
-        "beatmapId": 5005638,
+        "beatmapId": "5016136",
+        "pick": "NM5",
+        "modSR": null,
+        "customSong": true,
+        "collab": "",
+        "mappers": "Dusk-, davidminh0111"
+    },
+    {
+        "beatmapId": "5016128",
+        "pick": "NM6",
+        "modSR": null,
+        "customSong": true,
+        "collab": "",
+        "mappers": ""
+    },
+    {
+        "beatmapId": "5015685",
+        "pick": "HD1",
+        "modSR": null,
+        "customSong": false,
+        "collab": "Orzmic",
+        "mappers": ""
+    },
+    {
+        "beatmapId": "5016147",
+        "pick": "HD2",
+        "modSR": null,
+        "customSong": false,
+        "collab": "",
+        "mappers": ""
+    },
+    {
+        "beatmapId": "5015688",
+        "pick": "HR1",
+        "modSR": null,
+        "customSong": false,
+        "collab": "",
+        "mappers": ""
+    },
+    {
+        "beatmapId": "5016142",
+        "pick": "HR2",
+        "modSR": null,
+        "customSong": true,
+        "collab": "",
+        "mappers": ""
+    },
+    {
+        "beatmapId": "5016117",
+        "pick": "DT1",
+        "modSR": 7.39,
+        "customSong": false,
+        "collab": "",
+        "mappers": ""
+    },
+    {
+        "beatmapId": "5015689",
+        "pick": "DT2",
+        "modSR": 7.79,
+        "customSong": false,
+        "collab": "",
+        "mappers": ""
+    },
+    {
+        "beatmapId": "5016129",
+        "pick": "FM1",
+        "modSR": null,
+        "customSong": true,
+        "collab": "",
+        "mappers": ""
+    },
+    {
+        "beatmapId": "5016176",
+        "pick": "FM2",
+        "modSR": null,
+        "customSong": false,
+        "collab": "",
+        "mappers": ""
+    },
+    {
+        "beatmapId": "5016186",
+        "pick": "FM3",
+        "modSR": null,
+        "customSong": false,
+        "collab": "Orzmic",
+        "mappers": ""
+    },
+    {
+        "beatmapId": "5016172",
         "pick": "TB",
-        "modSR": 7.89,
+        "modSR": null,
         "customSong": true,
         "collab": "",
         "mappers": ""
