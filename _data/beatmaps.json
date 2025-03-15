@@ -1,6 +1,6 @@
 [
     {
-        "beatmapId": "5016113",
+        "beatmapId": 5016113,
         "pick": "NM1",
         "modSR": null,
         "customSong": false,
@@ -8,7 +8,7 @@
         "mappers": ""
     },
     {
-        "beatmapId": "5016130",
+        "beatmapId": 5016130,
         "pick": "NM2",
         "modSR": null,
         "customSong": false,
@@ -16,7 +16,7 @@
         "mappers": ""
     },
     {
-        "beatmapId": "5016115",
+        "beatmapId": 5016115,
         "pick": "NM3",
         "modSR": null,
         "customSong": true,
@@ -24,7 +24,7 @@
         "mappers": ""
     },
     {
-        "beatmapId": "5016102",
+        "beatmapId": 5016102,
         "pick": "NM4",
         "modSR": null,
         "customSong": false,
@@ -32,7 +32,7 @@
         "mappers": ""
     },
     {
-        "beatmapId": "5016136",
+        "beatmapId": 5016136,
         "pick": "NM5",
         "modSR": null,
         "customSong": true,
@@ -40,7 +40,7 @@
         "mappers": "Dusk-, davidminh0111"
     },
     {
-        "beatmapId": "5016128",
+        "beatmapId": 5016128,
         "pick": "NM6",
         "modSR": null,
         "customSong": true,
@@ -48,7 +48,7 @@
         "mappers": ""
     },
     {
-        "beatmapId": "5015685",
+        "beatmapId": 5015685,
         "pick": "HD1",
         "modSR": null,
         "customSong": false,
@@ -56,7 +56,7 @@
         "mappers": ""
     },
     {
-        "beatmapId": "5016147",
+        "beatmapId": 5016147,
         "pick": "HD2",
         "modSR": null,
         "customSong": false,
@@ -64,7 +64,7 @@
         "mappers": ""
     },
     {
-        "beatmapId": "5015688",
+        "beatmapId": 5015688,
         "pick": "HR1",
         "modSR": null,
         "customSong": false,
@@ -72,7 +72,7 @@
         "mappers": ""
     },
     {
-        "beatmapId": "5016142",
+        "beatmapId": 5016142,
         "pick": "HR2",
         "modSR": null,
         "customSong": true,
@@ -80,7 +80,7 @@
         "mappers": ""
     },
     {
-        "beatmapId": "5016117",
+        "beatmapId": 5016117,
         "pick": "DT1",
         "modSR": 7.39,
         "customSong": false,
@@ -88,7 +88,7 @@
         "mappers": ""
     },
     {
-        "beatmapId": "5015689",
+        "beatmapId": 5015689,
         "pick": "DT2",
         "modSR": 7.79,
         "customSong": false,
@@ -96,7 +96,7 @@
         "mappers": ""
     },
     {
-        "beatmapId": "5016129",
+        "beatmapId": 5016129,
         "pick": "FM1",
         "modSR": null,
         "customSong": true,
@@ -104,7 +104,7 @@
         "mappers": ""
     },
     {
-        "beatmapId": "5016176",
+        "beatmapId": 5016176,
         "pick": "FM2",
         "modSR": null,
         "customSong": false,
@@ -112,7 +112,7 @@
         "mappers": ""
     },
     {
-        "beatmapId": "5016186",
+        "beatmapId": 5016186,
         "pick": "FM3",
         "modSR": null,
         "customSong": false,
@@ -120,7 +120,7 @@
         "mappers": ""
     },
     {
-        "beatmapId": "5016172",
+        "beatmapId": 5016172,
         "pick": "TB",
         "modSR": null,
         "customSong": true,
