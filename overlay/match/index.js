@@ -1892,28 +1892,30 @@ class HistoryManager {
                     .filter(match => (match.player1 == this.rightPlayer || match.player2 == this.rightPlayer))
                     .sort((a, b) => new Date(a.time) - new Date(b.time))
 
-                leftMatches.map((match) => {
+                leftMatches.map(async (match) => {
                     const history = new History(true, index);
                     index++;
                     history.generate();
                     const isLeft = match.player1 == this.leftPlayer ? true : false;
+                    const playerData = await getUserDataSet(isLeft ? match.player2 : match.player1);
                     history.historyRound.innerHTML = stages.find(stage => stage.stageName == round)["stage"];
                     history.historyPlayer.innerHTML = isLeft ? match.player2 : match.player1;
-                    history.historySource.setAttribute("src", `https://a.ppy.sh/${seedData.find(seed => seed.FullName == (isLeft ? match.player2 : match.player1))["Players"][0]["id"]}`);
+                    history.historySource.setAttribute("src", `https://a.ppy.sh/${playerData.user_id}`);
                     history.historyWinText.innerHTML = isLeft ? (match.score1 > match.score2 ? "WIN" : "LOSE") : (match.score2 > match.score1 ? "WIN" : "LOSE");
                     history.historyWinText.style.backgroundColor = isLeft ? (match.score1 > match.score2 ? "white" : "black") : (match.score2 > match.score1 ? "white" : "black");
                     history.historyWinText.style.color = isLeft ? (match.score1 > match.score2 ? "black" : "white") : (match.score2 > match.score1 ? "black" : "white");
                     history.historyWinScore.innerHTML = `${match.score1}-${match.score2}`;
                     this.leftHistory.push(history);
                 })
-                rightMatches.map((match) => {
+                rightMatches.map(async (match) => {
                     const history = new History(false, index);
                     index++;
                     history.generate();
                     const isLeft = match.player1 == this.rightPlayer ? true : false;
+                    const playerData = await getUserDataSet(isLeft ? match.player2 : match.player1);
                     history.historyRound.innerHTML = stages.find(stage => stage.stageName == round)["stage"];
                     history.historyPlayer.innerHTML = isLeft ? match.player2 : match.player1;
-                    history.historySource.setAttribute("src", `https://a.ppy.sh/${seedData.find(seed => seed.FullName == (isLeft ? match.player2 : match.player1))["Players"][0]["id"]}`);
+                    history.historySource.setAttribute("src", `https://a.ppy.sh/${playerData.user_id}`);
                     history.historyWinText.innerHTML = isLeft ? (match.score1 > match.score2 ? "WIN" : "LOSE") : (match.score2 > match.score1 ? "WIN" : "LOSE");
                     history.historyWinText.style.backgroundColor = isLeft ? (match.score1 > match.score2 ? "white" : "black") : (match.score2 > match.score1 ? "white" : "black");
                     history.historyWinText.style.color = isLeft ? (match.score1 > match.score2 ? "black" : "white") : (match.score2 > match.score1 ? "black" : "white");
