@@ -796,6 +796,7 @@ body {
     white-space:nowrap;
     position:absolute;
     width:fit-content;
+    transform: translateY(-33px);
 }
 
 #matchArtistTitle {
