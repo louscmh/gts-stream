@@ -1,130 +1,130 @@
 [
     {
-        "beatmapId": 5026922,
+        "beatmapId": 5037752,
         "pick": "NM1",
-        "modSR": 8.37,
-        "customSong": true,
+        "modSR": 8.87,
+        "customSong": false,
         "collab": "",
-        "mappers": ""
+        "mappers": "davidminh0111, My Angel Seia"
     },
     {
-        "beatmapId": 5026846,
+        "beatmapId": 5037732,
         "pick": "NM2",
-        "modSR": 8.54,
+        "modSR": 8.94,
         "customSong": true,
         "collab": "",
         "mappers": ""
     },
     {
-        "beatmapId": 5027114,
+        "beatmapId": 5037744,
         "pick": "NM3",
-        "modSR": 7.31,
-        "customSong": true,
+        "modSR": 8.53,
+        "customSong": false,
         "collab": "",
         "mappers": ""
     },
     {
-        "beatmapId": 5026842,
+        "beatmapId": 5037773,
         "pick": "NM4",
-        "modSR": 8.2,
+        "modSR": 8.41,
         "customSong": true,
         "collab": "",
-        "mappers": "SolaEclipse, Nozdormu"
+        "mappers": ""
     },
     {
-        "beatmapId": 5026861,
+        "beatmapId": 5037745,
         "pick": "NM5",
-        "modSR": 7.6,
-        "customSong": false,
+        "modSR": 7.67,
+        "customSong": true,
         "collab": "",
-        "mappers": "arcpotato, ler1211"
+        "mappers": ""
     },
     {
-        "beatmapId": 5026844,
+        "beatmapId": 5037768,
         "pick": "NM6",
-        "modSR": 8.12,
+        "modSR": 8.73,
         "customSong": false,
         "collab": "",
         "mappers": ""
     },
     {
-        "beatmapId": 5026871,
+        "beatmapId": 5037789,
         "pick": "HD1",
-        "modSR": 5.41,
+        "modSR": 6.71,
         "customSong": false,
-        "collab": "ADOFAI",
-        "mappers": "Dusk-, rubies87"
-    },
-    {
-        "beatmapId": 5027070,
-        "pick": "HD2",
-        "modSR": 7.96,
-        "customSong": true,
         "collab": "",
-        "mappers": "My Angel Seia, Cookie_Tree, Ph0eNiiXZ"
+        "mappers": ""
     },
     {
-        "beatmapId": 5025041,
-        "pick": "HR1",
-        "modSR": 7.63,
+        "beatmapId": 5037305,
+        "pick": "HD2",
+        "modSR": 8.02,
         "customSong": false,
         "collab": "Phigros",
+        "mappers": "rubies87, Cynplytholowazy"
+    },
+    {
+        "beatmapId": 5037809,
+        "pick": "HR1",
+        "modSR": 7.67,
+        "customSong": true,
+        "collab": "",
         "mappers": ""
     },
     {
-        "beatmapId": 5026875,
+        "beatmapId": 5037811,
         "pick": "HR2",
-        "modSR": 8.35,
-        "customSong": false,
-        "collab": "vivid/stasis",
+        "modSR": 8.76,
+        "customSong": true,
+        "collab": "GTS x Phigros x ADOFAI x Orzmic",
         "mappers": ""
     },
     {
-        "beatmapId": 5026807,
+        "beatmapId": 5037816,
         "pick": "DT1",
-        "modSR": 8.15,
+        "modSR": 8.62,
         "customSong": false,
         "collab": "",
         "mappers": ""
     },
     {
-        "beatmapId": 5026795,
+        "beatmapId": 5037391,
         "pick": "DT2",
-        "modSR": 8.2,
+        "modSR": 8.31,
         "customSong": false,
         "collab": "",
         "mappers": ""
     },
     {
-        "beatmapId": 5026853,
+        "beatmapId": 5037308,
         "pick": "FM1",
-        "modSR": 7.35,
+        "modSR": 7.84,
         "customSong": false,
-        "collab": "",
-        "mappers": ""
+        "collab": "Orzmic",
+        "mappers": "HiroK, rubies87"
     },
     {
-        "beatmapId": 5026843,
+        "beatmapId": 5037751,
         "pick": "FM2",
-        "modSR": 7.34,
+        "modSR": 7.84,
         "customSong": false,
         "collab": "",
         "mappers": ""
     },
     {
-        "beatmapId": 5026890,
+        "beatmapId": 5037820,
         "pick": "FM3",
-        "modSR": 7.87,
+        "modSR": 7.38,
         "customSong": true,
         "collab": "",
         "mappers": ""
-    },  
+    },
     {
-        "beatmapId": 5026904,
+        "beatmapId": 5037847,
         "pick": "TB",
-        "modSR": 8.5,
+        "modSR": 9.02,
         "customSong": true,
         "collab": "",
-        "mappers": "tasuke912, uone, kei821"
+        "mappers": "GTS Mapping Team"
     }
 ]

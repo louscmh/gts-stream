@@ -189,6 +189,12 @@ class ShowcaseManager {
         let { memoryOD, fullSR, BPM: { min, max } } = data.menu.bm.stats;
         let { full } = data.menu.bm.time;
         let { difficulty, mapper, artist, title } = data.menu.bm.metadata;
+        difficulty = difficulty.replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+        title = title.replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
         let file = data.menu.bm.path.file;
         let index;
         let pick;
