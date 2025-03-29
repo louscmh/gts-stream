@@ -796,7 +796,6 @@ body {
     white-space:nowrap;
     position:absolute;
     width:fit-content;
-    transform: translateY(-39.3333px);
 }
 
 #matchArtistTitle {
@@ -2492,6 +2491,15 @@ body {
 	}
 	100% {
 	  transform: translateX(-100%);
+	}
+}
+
+@keyframes scrollTextDelay {
+	0% {
+	  transform: translateX(100%) translateY(-39.3333px);
+	}
+	100% {
+	  transform: translateX(-100%) translateY(-39.3333px);
 	}
 }
 

@@ -992,6 +992,12 @@ class MatchManager {
             bm.generateOverview();
             const mapData = await getDataSet(beatmap.beatmapId);
             bm.mapSource.setAttribute("src", `https://assets.ppy.sh/beatmaps/${mapData.beatmapset_id}/covers/cover.jpg`);
+            mapData.title = mapData.title.replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;");
+            mapData.version = mapData.version.replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;");
             bm.mapTitle.innerHTML = mapData.title;
             bm.mapArtist.innerHTML = mapData.artist;
             bm.mapMapper.innerHTML = mapData.creator;
@@ -1160,12 +1166,6 @@ class MatchManager {
 
     changeUpcoming(mapData) {
         let upcomingOfflineMapData = this.beatmapSet.find(beatmap => beatmap.beatmapId == mapData.beatmap_id);
-        upcomingOfflineMapData.title = upcomingOfflineMapData.title.replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;");
-        upcomingOfflineMapData.version = upcomingOfflineMapData.version.replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;");
         let finalOD = mapData.diff_overall;
         let bpm = mapData.bpm;
         let length = mapData.total_length;
@@ -1210,12 +1210,6 @@ class MatchManager {
         if (beatmapsIds.includes(data.menu.bm.id)) {
             this.autoPick(data.menu.bm.id);
             let mapData = this.overviewBeatmaps.find(beatmap => beatmap.mapData.beatmap_id == data.menu.bm.id)["mapData"];
-            mapData.title = mapData.title.replace(/&/g, "&amp;")
-            .replace(/</g, "&lt;")
-            .replace(/>/g, "&gt;");
-            mapData.version = mapData.version.replace(/&/g, "&amp;")
-            .replace(/</g, "&lt;")
-            .replace(/>/g, "&gt;");
             // console.log(mapData);
             let upcomingOfflineMapData = this.beatmapSet.find(beatmap => beatmap.beatmapId == mapData.beatmap_id);
             let finalOD = mapData.diff_overall;
@@ -2115,7 +2109,7 @@ async function makeScrollingText(title, titleDelay, rate, boundaryWidth, padding
         titleDelay.innerHTML = title.innerHTML;
         let ratio = (title.scrollWidth / boundaryWidth) * rate
         title.style.animation = `scrollText ${ratio}s linear infinite`;
-        titleDelay.style.animation = `scrollText ${ratio}s linear infinite`;
+        titleDelay.style.animation = `scrollTextDelay ${ratio}s linear infinite`;
         titleDelay.style.animationDelay = `${-ratio / 2}s`;
         titleDelay.style.paddingRight = `${padding}px`;
         title.style.paddingRight = `${padding}px`;
