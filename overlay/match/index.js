@@ -1370,7 +1370,7 @@ class MatchManager {
     }
 
     autoPick(beatmapId) {
-        if (!this.autoPicker || !this.hasBanned) return;
+        if (!this.autoPicker || !this.hasBanned || this.leftWins == this.bestOf || this.rightWins == this.bestOf) return;
         if (beatmapsIds.includes(beatmapId)) {
             for (let beatmap of this.overviewBeatmaps) {
                 if (beatmap.beatmapID == beatmapId) {
