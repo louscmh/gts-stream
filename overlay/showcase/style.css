@@ -1,22 +1,23 @@
 @font-face {
-    font-family: "Sora-Bold";
-    src: url("../../_shared_assets/fonts/Sora-Bold.ttf");
+    font-family: "Outfit-Bold";
+    src: url("../../_shared_assets/fonts/Outfit-Bold.ttf");
 }
 
 @font-face {
-    font-family: "Sora-ExtraBold";
-    src: url("../../_shared_assets/fonts/Sora-ExtraBold.ttf");
+    font-family: "Outfit-ExtraBold";
+    src: url("../../_shared_assets/fonts/Outfit-ExtraBold.ttf");
 }
 
 @font-face {
-    font-family: "Sora-Light";
-    src: url("../../_shared_assets/fonts/Sora-Light.ttf");
+    font-family: "Outfit-Light";
+    src: url("../../_shared_assets/fonts/Outfit-Light.ttf");
 }
 
 @font-face {
-    font-family: "Sora-Regular";
-    src: url("../../_shared_assets/fonts/Sora-Regular.ttf");
+    font-family: "Outfit-Regular";
+    src: url("../../_shared_assets/fonts/Outfit-Regular.ttf");
 }
+
 
 #main {
     position: absolute;
@@ -25,8 +26,8 @@
     top:0px;
     left:0px;
     display:flex;
-    font-family: "Sora-Light";
-    color: white;
+    font-family: "Outfit-Light";
+    color: #515151;
     font-size:24px;
 }
 
@@ -74,16 +75,19 @@
     display:flex;
     align-items: end;
     justify-content: space-between;
+    overflow:hidden;
 }
 
 #modpool {
-    font-family: "Sora-ExtraBold";
+    font-family: "Outfit-ExtraBold";
     font-size: 150px;
-    margin-bottom:-42px;
+    margin-bottom:-38px;
     margin-left: -10px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8), 
-    0px 0px 24px rgba(0, 0, 0, 0.9);
-
+    /* text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8), 
+    0px 0px 24px rgba(255, 255, 255, 0.9); */
+    background-color: rgba(255,255,255,0.75);
+    padding-right: 40px;
+    border-radius: 0 100px 0px 0;
 }
 
 #songDetails {
@@ -94,10 +98,7 @@
 
 #artistTitle {
     font-size: 26.68px;
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, 1), 
-    2px 2px 5px rgba(0, 0, 0, 0.9), 
-    0px 0px 12px rgba(0, 0, 0, 1);
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(255,255,255,0.75);
     padding-right:15px;
     padding-left:30px;
     padding-bottom:8px;
@@ -106,12 +107,10 @@
 
 #songTitle {
     font-size: 48px;
-    font-family: "Sora-Bold";
+    font-family: "Outfit-Bold";
     text-align: right;
     width:fit-content;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9), 
-    0px 0px 24px rgba(0, 0, 0, 1);
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(255,255,255,0.75);
     padding-right:15px;
     padding-left:20px;
     border-radius: 20px 0 0 20px;
@@ -152,7 +151,7 @@
 }
 
 #source {
-	filter: brightness(70%) url("#sharpBlur");
+	/* filter: brightness(70%) url("#sharpBlur"); */
 	object-fit: cover;
 	object-position: center;
     height:225px;
@@ -166,9 +165,9 @@
 }
 
 #pick {
-    font-family: "Sora-ExtraBold";
+    font-family: "Outfit-ExtraBold";
     font-size: 74.23px;
-    margin-left:10px;
+    margin-left:15px;
     margin-top:5px;
     margin-right:70px;
 }
@@ -189,7 +188,8 @@
     padding-top:3px;
     padding-block: 2px;
     margin-bottom: 8px;
-    background-color: white;
+    background-color: #5f5f5f;
+    color:white;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -200,7 +200,8 @@
     border-radius: 10px;
     padding-inline: 9px;
     padding-block: 2px;
-    background-color: white;
+    background-color: #5f5f5f;
+    color:white;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -212,7 +213,7 @@
     flex-direction: column;
     width:inherit;
     align-items: end;
-    font-family:"Sora-Regular";
+    font-family:"Outfit-Regular";
     font-size:16px;
 }
 
@@ -279,6 +280,11 @@
     position:relative;
     margin-right:18px;
     transition: 1000ms ease-in-out;
+    overflow:hidden;
+    border: 4px solid #5f5f5f;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .pickOverlay {
@@ -293,7 +299,7 @@
 }
 
 .pickName {
-    font-family: "Sora-Bold";
+    font-family: "Outfit-Bold";
     font-size:30px;
     color:black;
     position: absolute;
@@ -370,12 +376,12 @@
 #overviewStage {
     position: absolute;
     top:0px;
-    left:0px;
+    left:-5px;
     width:1920px;
     height:1120px;
-    font-family: "Sora-ExtraBold";
-    font-size:150px;
-    color:white;
+    font-family: "Outfit-ExtraBold";
+    font-size:130px;
+    color:#5f5f5f;
     display:flex;
     align-items: end;
 }
@@ -383,12 +389,12 @@
 #overviewDetails {
     position: absolute;
     top:0px;
-    left:0px;
+    left:5px;
     width:1920px;
     height:1120px;
-    font-family: "Sora-ExtraBold";
-    font-size:150px;
-    color:white;
+    font-family: "Outfit-ExtraBold";
+    font-size:130px;
+    color:#5f5f5f;
     display:flex;
     justify-content: end;
     align-items: end;
@@ -430,7 +436,7 @@
     height: inherit;
     display:flex;
     flex-direction: column;
-    font-family: "Sora-Regular";
+    font-family: "Outfit-Regular";
     color:black;
     z-index:3;
 }
@@ -482,13 +488,13 @@
 }
 
 .mapMapperTitle, .mapDifficultyTitle {
-    font-family: "Sora-ExtraBold";
+    font-family: "Outfit-ExtraBold";
     font-size:10px;
     margin-left:7px;
 }
 
 .mapMapper, .mapDifficulty {
-    font-family: "Sora-Regular";
+    font-family: "Outfit-Regular";
     font-size:10px;
     margin-left:7px;
 }
@@ -509,7 +515,7 @@
     display:flex;
     justify-content: end;
     align-items: end;
-    font-family: 'Sora-ExtraBold';
+    font-family: 'Outfit-ExtraBold';
     color:white;
     font-size:54px;
     margin-top:14px;
@@ -550,7 +556,7 @@
     display:flex;
     align-items: center;
     font-size: 30px;
-    font-family: 'Sora-Bold', sans-serif;
+    font-family: 'Outfit-Bold', sans-serif;
     font-weight: normal;
     color: white;
     background-color: #252525;
