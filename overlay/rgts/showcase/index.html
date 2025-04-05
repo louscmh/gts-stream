@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../../../_shared_assets/deps/reconnecting-websocket.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="sceneTransition">
+      <video id="transitionVideo" muted playsinline>
+        <source src="../../../_shared_assets/design/rgts/showcase_stinger.webm" type="video/webm">
+      </video>
+    </div>
+    <img id="asset_1">
+    <img id="asset_2" src="../../../_shared_assets/design/rgts/egts_typo_showcase.png">
+    <div id="mainShowcase">
+      <div id="client">
+        <div id="modpool"></div>
+        <div id="songDetails">
+          <div id="songTitle"></div>
+          <div id="artistTitle"></div>
+        </div>
+      </div>
+      <div id="beatmapDetails">
+        <div id="sourceContainer">
+          <div id="sourceLining"></div>
+          <img id="source" src="../../../_shared_assets/design/rgts/main_banner.png">
+            <svg style="display: hidden; width: 0; height: 0; " hidden>
+              <filter id='sharpBlur'>
+                <feGaussianBlur stdDeviation='1'></feGaussianBlur>
+                <feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 9 0'></feColorMatrix>
+                <feComposite in2='SourceGraphic' operator='in'></feComposite>
+              </filter>
+            </svg>
+          </img>
+        </div>
+        <div id="modRow">
+          <div id="pick"></div>
+          <div id="customText">
+            <div id="customSong">Custom Song</div>
+            <div id="customCollab"></div>
+          </div>
+        </div>
+        <div id="detailsRight">
+          <div id="mapperText"></div>
+          <div id="difficultyContainer">
+            <div id="difficultyText"></div>
+            <div id="difficultyTextDelay"></div>
+          </div>
+          <div id="sr"></div>
+          <div id="od"></div>
+          <div id="bpm"></div>
+          <div id="length"></div>
+          <div id="replay"></div>
+        </div>
+      </div>
+      <div id="pickMask">
+        <div id="pickQueue">
+          <!-- <div class="pickItem">
+            <div class="pickName">NM1</div>
+            <div class="pickOverlay"></div>
+            <div class="pickSource"></div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div id="overviewScene">
+      <div id="overviewStage"></div>
+      <div id="overviewDetails"></div>
+      <div id="mappoolContainer">
+        <div id="NM" class="mapContainer">
+          <!-- <div class="clicker">
+            <div class="mapDetails">
+              <div class="mapTitleContainer">
+                <div class="mapTitle">*insert song title</div>
+              </div>
+              <div class="mapArtistContainer">
+                <div class="mapArtist">*insert artist name that's long</div>
+              </div>
+              <div class="mapBottom">
+                <div class="mapMapperContainer">
+                  <div class="mapMapperTitle">MAPPED BY</div>
+                  <div class="mapMapper">insert mapper name here</div>
+                </div>
+                <div class="mapDifficultyContainer">
+                  <div class="mapDifficultyTitle">DIFFICULTY</div>
+                  <div class="mapDifficulty">insert diff name here</div>
+                </div>
+              </div>
+            </div>
+            <div class="mapModpool">NM</div>
+            <div class="mapOverlay"></div>
+            <div class="mapSource"></div>
+          </div> -->
+        </div>
+        <div id="HD" class="mapContainer"></div>
+        <div id="HR" class="mapContainer"></div>
+        <div id="DT" class="mapContainer"></div>
+        <div id="FM" class="mapContainer"></div>
+        <div id="TB" class="mapContainer"></div>
+      </div>
+    </div>
+    <img id="fg" src="../../../_shared_assets/design/rgts/gts_showcase_frame.png">
+    <img id="bg_overview" src="../../../_shared_assets/design/rgts/gts_bg.png">
+    <!-- <video id="bg_overview" loop muted playsinline>
+      <source src="../../../_shared_assets/design/rgts/normal_banner_animated.mp4" type="video/mp4">
+    </video> -->
+    <img id="bg" src="../../../_shared_assets/design/rgts/gts_bg_showcase.png">
+    <!-- <video id="bg" autoplay loop muted playsinline>
+      <source src="../../../_shared_assets/design/rgts/showcase_bg_animated.webm" type="video/webm">
+    </video> -->
+  </div>
+  <div id="controlPanel">
+    <div id="sceneButton">CURRENT SCENE: SHOWCASE</div>
+  </div>
+	<script src="index.js"></script>
+  </body>
+    
+  </html>

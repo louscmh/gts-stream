@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../../_shared_assets/deps/reconnecting-websocket.min.js"></script>
+  <script src="../../_shared_assets/deps/countUp.js"></script>
+</head>
+
+<body>
+  <div id="preLoading">Setting up Overlay...</div>
+  <div id="main">
+    <div id="effectsOverlay">
+      <div id="effectsShimmer">
+        <div id="effectsLeftShimmer"></div>
+        <div id="effectsRightShimmer"></div>
+      </div>
+    </div>
+    <div id="matchForeground">
+      <div id="matchTop">
+        <img id="matchTopFg" src="../../_shared_assets/design/match_fg.png">
+        <div id="matchSongContainer">
+          <div id="matchPick">
+            <div id="matchPickId"></div>
+            <img id="matchSource" src="../../_shared_assets/design/main_banner.png">
+          </div>
+          <div id="matchSongDetails">
+            <div id="matchSongPart1">
+              <div id="matchSongTitle"></div>
+              <div id="matchSongTitleDelay"></div>
+              <div id="matchArtistTitle"></div>
+              <div id="matchSubtitleDetails1">
+                <div id="matchMapper">
+                  <div class="matchSubtitle">MAPPED BY</div>
+                  <div id="matchMapperTitle"></div>
+                </div>
+                <div id="matchDifficulty">
+                  <div class="matchSubtitle">DIFFICULTY</div>
+                  <div id="matchDifficultyTitle"></div>
+                </div>
+              </div>
+
+            </div>
+            <div id="matchSubtitleDetails2">
+              <div class="matchSongStatColumn">
+                <div class="matchSongStatContainer">
+                  <div class="matchSongStatText">SR</div>
+                  <div class="matchSongStat" id="matchSongSr">0.00*</div>
+                </div>
+                <div class="matchSongStatContainer">
+                  <div class="matchSongStatText">OD</div>
+                  <div class="matchSongStat" id="matchSongOd">0.0 (0.0)</div>
+                </div>
+              </div>
+                <div class="matchSongStatColumn">
+                <div class="matchSongStatContainer">
+                  <div class="matchSongStatText">BPM</div>
+                  <div class="matchSongStat" id="matchSongBpm">000</div>
+                </div>
+                <div class="matchSongStatContainer">
+                  <div class="matchSongStatText">LENGTH</div>
+                  <div class="matchSongStat" id="matchSongLength">00:00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="matchStage">Grand Finals</div>
+      </div>
+      <div id="matchBottom">
+        <div id="bottomPlayerOne">
+          <img class="bottomPfp" id="bottomPlayerOnePfp">
+          <div id="bottomP1Top">
+            <div id="bottomP1Text">P1</div>
+            <div id="bottomP1Pick">
+              <div class="bottomPickText" id="bottomP1PickText">Currently Banning</div>
+              <div class="bottomPickArrow">>>></div>
+            </div>
+          </div>
+          <div id="bottomPlayerOneDetails">
+            <div id="bottomScoreRowLeft">
+              <div id="bottomScoreLeft">
+              </div>
+              <div id="bottomPlayerOnePick">PICK</div>
+            </div>
+            <div id="bottomPlayerOneName"></div>
+            <div id="bottomPlayerOneSeed"></div>
+          </div>
+        </div>
+        <div id="bottomMiddleContainer">
+          <div id="bottomChat">
+            <div id="chats"></div>
+            <div id="bottomChatText">Chat</div>
+          </div>
+          <div id="bottomMatch">
+            <div id="bottomMatchResults">
+              <div id="bottomResultsTop"></div>
+              <div id="bottomResultsBottom">000,001</div>
+            </div>
+            <div id="bottomMatchProgressBar">
+              <div id="bottomSongProgressText">SONG PROGRESS</div>
+              <div id="bottomSongProgressLabels">
+                <div id="bottomSongStart">00:00</div>
+                <div id="bottomSongPercentage">100.0%</div>
+                <div id="bottomSongEnd">09:59</div>
+              </div>
+              <div id="bottomProgressBar">
+                <div id="bottomProgressBarContent"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="bottomPlayerTwo">
+          <img class="bottomPfp" id="bottomPlayerTwoPfp">
+          <div id="bottomP2Top">
+            <div id="bottomP2Text">P2</div>
+            <div id="bottomP2Pick">
+              <div class="bottomPickText" id="bottomP2PickText">Currently Banning</div>
+              <div class="bottomPickArrow">&lt;&lt;&lt;</div>
+            </div>
+          </div>
+          <div id="bottomPlayerTwoDetails">
+            <div id="bottomScoreRowRight">
+              <div id="bottomScoreRight">
+              </div>
+              <div id="bottomPlayerTwoPick">PICK</div>
+            </div>
+            <div id="bottomPlayerTwoName"></div>
+            <div id="bottomPlayerTwoSeed"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="introScene">
+      <div id="introPlayerOne" class="introPlayer">
+        <img class="introPlayerPfp" id="introPlayerOnePfp">
+        <div class="introPlayerDetails" id="introPlayerOneDetails">
+          <div class="introPlayerName" id="introPlayerOneName">insertplayername</div>
+          <div class="introPlayerContainer">
+            <div class="introPlayerText">Seed</div>
+            <div class="introPlayerStatText" id="introPlayerOneSeed">#64</div>
+          </div>
+          <div class="introPlayerContainer">
+            <div class="introPlayerText">Rank</div>
+            <div class="introPlayerStatText" id="introPlayerOneRank">#9999</div>
+          </div>
+        </div>
+      </div>
+      <div id="introVSText">VS</div>
+      <div id="introPlayerTwo" class="introPlayer">
+        <img class="introPlayerPfp" id="introPlayerTwoPfp">
+        <div class="introPlayerDetails" id="introPlayerTwoDetails">
+          <div class="introPlayerName" id="introPlayerTwoName">insertplayername</div>
+          <div class="introPlayerContainer">
+            <div class="introPlayerText">Seed</div>
+            <div class="introPlayerStatText" id="introPlayerTwoSeed">#64</div>
+          </div>
+          <div class="introPlayerContainer">
+            <div class="introPlayerText">Rank</div>
+            <div class="introPlayerStatText" id="introPlayerTwoRank">#9999</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="matchHistoryScene">
+      <div id="matchHistoryMainContainer">
+        <div id="matchHistoryPlayerContainer">
+          <div id="matchHistoryLeftPlayer">
+            <img id="matchHistoryLeftPlayerSource">
+            <div id="matchHistoryLeftPlayerDetails">
+              <div id="matchHistoryLeftPlayerName">insertplayername</div>
+              <div id="matchHistoryLeftPlayerSeed">Seed #099</div>
+            </div>
+          </div>
+          <div id="matchHistoryText">Match History</div>
+          <div id="matchHistoryRightPlayer">
+            <img id="matchHistoryRightPlayerSource">
+            <div id="matchHistoryRightPlayerDetails">
+              <div id="matchHistoryRightPlayerName">insertplayername</div>
+              <div id="matchHistoryRightPlayerSeed">Seed #099</div>
+            </div>
+          </div>
+        </div>
+        <div id="matchHistoryContainer">
+          <div id="matchHistoryLeft">
+            <!-- <div class="historyLeft">
+              <div class="historyRoundLeft">RO64</div>
+              <div class="historyPlayerLeft">insertplayername</div>
+              <img class="historySourceLeft">
+              <div class="historyWinDetailsLeft">
+                <div class="historyWinTextLeft">WIN</div>
+                <div class="historyWinScoreLeft">5-1</div>
+              </div>
+            </div> -->
+          </div>
+          <div id="matchHistoryRight">
+            <!-- <div class="historyRight">
+              <div class="historyRoundRight">RO64</div>
+              <div class="historyPlayerRight">insertplayername</div>
+              <img class="historySourceRight">
+              <div class="historyWinDetailsRight">
+                <div class="historyWinTextRight">WIN</div>
+                <div class="historyWinScoreRight">5-1</div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mainMatchScene">
+      <div id="mappoolScene">
+        <div id="mappoolContainer">
+          <div id="overviewNM" class="mapContainerOverview">
+            <!-- <div class="clickerOverview">
+              <div class="mapPickText">P1 PICK</div>
+              <div class="mapBanContainer">
+                <img class="mapBanPlayer" src="../../_shared_assets/design/main_banner.png"></img>
+                <div class="mapBanText">BAN</div>
+              </div>
+              <div class="mapDetailsOverview">
+                <div class="mapTitleContainerOverview">
+                  <div class="mapTitleOverview">*insert song title</div>
+                </div>
+                <div class="mapArtistContainerOverview">
+                  <div class="mapArtistOverview">*insert artist name that's long</div>
+                </div>
+                <div class="mapBottomOverview">
+                  <div class="mapMapperContainerOverview">
+                    <div class="mapMapperTitleOverview">MAPPED BY</div>
+                    <div class="mapMapperOverview">insert mapper name here</div>
+                  </div>
+                  <div class="mapDifficultyContainerOverview">
+                    <div class="mapDifficultyTitleOverview">DIFFICULTY</div>
+                    <div class="mapDifficultyOverview">insert diff name here</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mapWin">
+                <div class="mapPlayerText">P1</div>
+                <div class="mapWinText">WIN</div>
+              </div>
+              <div class="mapWin">
+                <div class="mapPlayerText">P2</div>
+                <div class="mapWinText">WIN</div>
+              </div>
+              <img class="mapPickIcon" src="../../_shared_assets/design/pick_arrow_overview.png">
+              <div class="mapModpoolOverview">NM</div>
+              <div class="mapOverlayOverview"></div>
+              <div class="mapSourceOverview"></div>
+            </div> -->
+          </div>
+          <div id="overviewHD" class="mapContainerOverview"></div>
+          <div id="overviewHR" class="mapContainerOverview"></div>
+          <div id="overviewDT" class="mapContainerOverview"></div>
+          <div id="overviewFM" class="mapContainerOverview"></div>
+          <div id="overviewTB" class="mapContainerOverview"></div>
+        </div>
+        <div id="mappoolQueue">
+          <div id="playerOneBan"></div>
+          <div id="playerTwoBan"></div>
+          <div id="playerOneQueue">
+            <!-- <div class="clickerQueue">
+              <div class="mapDetailsOverview">
+                <div class="mapTitleContainerOverview">
+                  <div class="mapTitleOverview">*insert song title</div>
+                </div>
+                <div class="mapArtistContainerOverview">
+                  <div class="mapArtistOverview">*insert artist name that's long</div>
+                </div>
+                <div class="mapBottomOverview">
+                  <div class="mapMapperContainerOverview">
+                    <div class="mapMapperTitleOverview">MAPPED BY</div>
+                    <div class="mapMapperOverview">insert mapper name here</div>
+                  </div>
+                  <div class="mapDifficultyContainerOverview">
+                    <div class="mapDifficultyTitleOverview">DIFFICULTY</div>
+                    <div class="mapDifficultyOverview">insert diff name here</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mapWin">
+                <div class="mapPlayerText">P1</div>
+                <div class="mapWinText">WIN</div>
+              </div>
+              <div class="mapWin">
+                <div class="mapPlayerText">P2</div>
+                <div class="mapWinText">WIN</div>
+              </div>
+              <img class="mapPickIconQueueLeft" src="../../_shared_assets/design/pick_queue_left.png">
+              <div class="mapModpoolOverview">NM</div>
+              <div class="mapOverlayOverview"></div>
+              <div class="mapSourceOverview"></div>
+            </div> -->
+          </div>
+          <div id="playerTwoQueue"></div>
+          <div id="tbQueue"></div>
+          <img id="queueForeground" src="../../_shared_assets/design/match_queue_foreground.png">
+        </div>
+        <div id="mappoolUpcoming">
+          <div id="upcomingContainer">
+            <div id="upcomingTexts">
+              <div id="upcomingPick">NEXT PICK</div>
+              <div id="upcomingPickId">NM1</div>
+            </div>
+            <div id="upcomingMap">
+              <div id="upcomingSong">
+                <div id="upcomingSongText">*insert song title</div>
+                <div id="upcomingArtistText">*insert artist name that's long</div>
+              </div>
+              <div id="upcomingTags">
+                <div id="upcomingCollabTag">Phigros Collab</div>
+                <div id="upcomingCustomTag">Custom Song</div>
+                <img id="upcomingTriangle" src="../../_shared_assets/design/upcoming_triangle.png">
+              </div>
+              <div id="upcomingPickPlayer">
+                <div id="upcomingPickPlayerText">PICKED BY</div>
+                <img id="upcomingPickPlayerSource" src="../../_shared_assets/design/main_banner.png">
+              </div>
+              <img id="upcomingSource" src="../../_shared_assets/design/main_banner.png">
+            </div>
+            <div id="upcomingDetails">
+              <div class="upcomingDetailsColumn">
+                <div class="upcomingStats">
+                  <div class="upcomingDetailsText">SR</div>
+                  <div id="upcomingSrText" class="upcomingDetailsStats">9.99*</div>
+                  <div class="upcomingDetailsText">OD</div>
+                  <div id="upcomingOdText" class="upcomingDetailsStats">9.99 (10.99)</div>
+                </div>
+                <div id="upcomingMapper">
+                  <div class="upcomingDetailsText2">MAPPED BY</div>
+                  <div id="upcomingMapperText" class="upcomingDetailsStats2">insert mapper name here</div>
+                </div>
+              </div>
+              <div class="upcomingDetailsColumn">
+                <div class="upcomingStats">
+                  <div class="upcomingDetailsText">BPM</div>
+                  <div id="upcomingBpmText" class="upcomingDetailsStats">999 - 999 (999)</div>
+                  <div class="upcomingDetailsText">LEN</div>
+                  <div id="upcomingLengthText" class="upcomingDetailsStats">10:00</div>
+                </div>
+                <div id="upcomingDifficulty">
+                  <div class="upcomingDetailsText2">DIFFICULTY</div>
+                  <div id="upcomingDifficultyText" class="upcomingDetailsStats2">insert diff name here</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="matchScene">
+        <div id="matchClients">
+          <div id="matchClientOne">
+            <div id="matchClientOneDetails">
+              <div id="matchClientOneMissGlow"></div>
+              <div class="matchClientLeft">
+                <div class="matchClient100">
+                  <div class="matchClient100Text">100</div>
+                  <div class="matchClientText" id="matchClientOne100">99</div>
+                </div>
+                <div class="matchClientMiss">
+                  <div class="matchClientMissText">MISS</div>
+                  <div class="matchClientText" id="matchClientOneMiss">99</div>
+                </div>
+              </div>
+              <div class="matchClientUr">
+                <div class="matchClientUrText">UR</div>
+                <div class="matchClientText" id="matchClientOneUr">999.99</div>
+              </div>
+            </div>
+          </div>
+          <div id="matchClientTwo">
+            <div id="matchClientTwoDetails">
+              <div id="matchClientTwoMissGlow"></div>
+              <div class="matchClientLeft">
+                <div class="matchClient100">
+                  <div class="matchClient100Text">100</div>
+                  <div class="matchClientText" id="matchClientTwo100">99</div>
+                </div>
+                <div class="matchClientMiss">
+                  <div class="matchClientMissText">MISS</div>
+                  <div class="matchClientText" id="matchClientTwoMiss">99</div>
+                </div>
+              </div>
+              <div class="matchClientUr">
+                <div class="matchClientUrText">UR</div>
+                <div class="matchClientText" id="matchClientTwoUr">999.99</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="matchScoreBoard">
+          <div id="matchWinningBoard">
+            <div id="matchWinningLeft">
+              <div id="matchWinningLeftContent"></div>
+              <div id="matchWinningLeftWinText">
+                <div class="mapPlayerText">P1</div>
+                <div class="mapWinText">WIN</div>
+              </div>
+            </div>
+            <div id="matchWinningRight">
+              <div id="matchWinningRightContent"></div>
+              <div id="matchWinningRightWinText">
+                <div class="mapPlayerText">P2</div>
+                <div class="mapWinText">WIN</div>
+              </div>
+            </div>
+          </div>
+          <div id="matchOneScoreContainer">
+            <div id="matchOneScore">1,012,000</div>
+          </div>
+          <div id="matchOneLead">&lt;&lt;</div>
+          <div id="matchScoreBar">
+            <div id="matchScoreLeftSection">
+              <div id="matchScoreLeftContainer">
+                <div id="matchScoreLeftContent"></div>
+                <div id="matchScoreLeftText">+100,000</div>
+              </div>
+            </div>
+            <div id="matchScoreRightSection">
+              <div id="matchScoreRightContainer">
+                <div id="matchScoreRightContent"></div>
+                <div id="matchScoreRightText">+100,000</div>
+              </div>
+            </div>
+          </div>
+          <div id="matchTwoLead">>></div>
+          <div id="matchTwoScoreContainer">
+            <div id="matchTwoScore">1,012,000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="resultScene">
+      <img id="resultAsset_1" src="../../_shared_assets/design/seed_egts.png">
+      <img id="resultAsset_2" src="../../_shared_assets/design/match_result_asset.png">
+      <div id="resultStageText"></div>
+      <div id="resultSceneBanText">BAN</div>
+      <div id="resultScenePickText">PICK</div>
+      <div id="resultScoreline">
+        <div id="resultsStaticText">Results</div>
+        <div id="resultScorelinePlayerOne">
+          <img class="resultScorelineSource" id="resultScorelinePlayerOneSource">
+          <div class="resultScorelineText" id="resultScorelinePlayerOneText">insertplayername</div>
+        </div>
+        <div id="resultScorelineLine">
+          <div class="resultText" id="resultOne">0</div>
+          <div class="resultText">-</div>
+          <div class="resultText" id="resultTwo">0</div>
+        </div>
+        <div id="resultScorelinePlayerTwo">
+          <img class="resultScorelineSource" id="resultScorelinePlayerTwoSource">
+          <div class="resultScorelineText" id="resultScorelinePlayerTwoText">insertplayername</div>
+        </div>
+      </div>
+      <div id="resultQueueContainer">
+        <div id="resultQueueTop">
+          <div id="resultBan">
+            <!-- <div class="resultContainer">
+              <div class="resultContainerSong">
+                <div class="resultContainerPick">NM1</div>
+                <img class="resultContainerSource">
+              </div>
+              <div class="resultContainerBottom">
+                <div class="resultContainerPlayer">P1</div>
+                <div class="resultContainerText">BAN</div>
+              </div>
+            </div> -->
+          </div>
+          <div id="resultPlayerPick">
+            <div class="resultPlayerText">PICKS:</div>
+            <img class="resultPlayerPickSource" id="resultPlayerPickSourceOne">
+            <div class="resultPlayerText" id="resultPlayerTextOne">P1 TOP</div>
+            <img class="resultPlayerPickSource" id="resultPlayerPickSourceTwo">
+            <div class="resultPlayerText" id="resultPlayerTextTwo">P2 BOTTOM</div>
+          </div>
+        </div>
+        <div id="resultPickContainer">
+          <div id="resultPicks">
+            <div id="resultPickOne">
+            </div>
+            <div id="resultPickTwo">
+            </div>
+          </div>
+          <div id="resultPickTb">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <img id="bg" src="../../_shared_assets/design/test.png"> -->
+    <video id="bg" loop muted autoplay playsinline>
+      <source src="../../_shared_assets/design/normal_banner_animated.mp4" type="video/mp4">
+    </video>
+    <video id="bg_match" loop muted playsinline>
+      <source src="../../_shared_assets/design/match_bg_animated.webm" type="video/webm">
+    </video>
+  </div>
+  <div id="controller">
+    <div class="buttons">
+      <div class="title">UPCOMING ACTION</div>
+      <div class="button" id="controllerTurn">Left Player Ban</div>
+      <div class="title">SCENE CONTROLS</div>
+      <div class="button" id="controllerMappool">Mappool Scene (1/3)</div>
+      <div class="button" id="controllerMatch">Switch to Gameplay</div>
+      <div class="button" id="controllerIntro">Switch to Intro</div>
+      <div class="button" id="controllerResults">Switch to Results</div>
+      <div class="title">AUTO CONTROLS</div>
+      <div class="button" id="controllerAutoPick">Untoggle Auto Pick</div>
+      <div class="button" id="controllerAutoScene">Untoggle Auto Scene</div>
+      <div class="title">OTHER CONTROLS</div>
+      <div class="button" id="controllerUndo">Undo Action</div>
+      <div class="button" id="controllerArrow">Toggle Picking</div>
+    </div>
+  </div>
+  <div id="debugController">
+    <div class="buttons">
+      <div class="title">DEBUG MENU</div>
+      <div class="button" id="debugPickCount">Pick Count: 0</div>
+      <div class="button" id="debugLeftWins">Left Wins: 0</div>
+      <div class="button" id="debugRightWins">Right Wins: 0</div>
+      <div class="button" id="debugScoreOne">Score One: 0</div>
+      <div class="button" id="debugScoreTwo">Score Two: 0</div>
+      <div class="button" id="debugHasBanned">Has Banned: false</div>
+      <div class="button" id="debugId">Current ID: 0</div>
+      <div class="title">CHAT MENU</div>
+      <div id="chatsDebug"></div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
