@@ -26,15 +26,15 @@ let stages = [];
 let currentStage;
 (async () => {
     try {
-        const jsonData = await $.getJSON("../../_data/beatmaps.json");
+        const jsonData = await $.getJSON("../../../_data/beatmaps.json");
         jsonData.map((beatmap) => {
             beatmapSet.push(beatmap);
         });
-        const jsonData_2 = await $.getJSON("../../_data/offline_dataset.json");
+        const jsonData_2 = await $.getJSON("../../../_data/offline_dataset.json");
         jsonData_2.map((beatmap) => {
             offlineData.push(beatmap);
         });
-        const jsonData_3 = await $.getJSON("../../_data/stage_agts.json");
+        const jsonData_3 = await $.getJSON("../../../_data/stage_agts.json");
         jsonData_3.map((stage,index) => {
             if (index == 0) {
                 currentStage = stage.currentStage;

@@ -1,21 +1,21 @@
 @font-face {
     font-family: "Outfit-Bold";
-    src: url("../../_shared_assets/fonts/Outfit-Bold.ttf");
+    src: url("../../../_shared_assets/fonts/Outfit-Bold.ttf");
 }
 
 @font-face {
     font-family: "Outfit-ExtraBold";
-    src: url("../../_shared_assets/fonts/Outfit-ExtraBold.ttf");
+    src: url("../../../_shared_assets/fonts/Outfit-ExtraBold.ttf");
 }
 
 @font-face {
     font-family: "Outfit-Light";
-    src: url("../../_shared_assets/fonts/Outfit-Light.ttf");
+    src: url("../../../_shared_assets/fonts/Outfit-Light.ttf");
 }
 
 @font-face {
     font-family: "Outfit-Regular";
-    src: url("../../_shared_assets/fonts/Outfit-Regular.ttf");
+    src: url("../../../_shared_assets/fonts/Outfit-Regular.ttf");
 }
 
 
@@ -542,7 +542,7 @@
 	object-fit: cover;
 	object-position: center;
 	filter: brightness(60%);
-    /* background-image: url(../../_shared_assets/design/main_banner.png); */
+    /* background-image: url(../../../_shared_assets/design/main_banner.png); */
 }
 
 /* CONTROL PANEL */
