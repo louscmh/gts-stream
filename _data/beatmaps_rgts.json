@@ -1,130 +1,58 @@
 [
     {
-        "beatmapId": "kaitendaentai - Maldoror (davidminh0111) [Glacial Frost].osu",
-        "pick": "NM1",
-        "modSR": 8.87,
-        "customSong": false,
-        "collab": "",
-        "mappers": "davidminh0111, My Angel Seia"
+      "beatmapId": 1741773,
+      "pick": "NM1",
+      "modSR": 5.19,
+      "customSong": false,
+      "collab": "",
+      "mappers": ""
     },
     {
-        "beatmapId": "Sydosys - SOURCE_MISSING (Cynplytholowazy) [Isn't the Source EGTS].osu",
-        "pick": "NM2",
-        "modSR": 8.94,
-        "customSong": true,
-        "collab": "",
-        "mappers": ""
+      "beatmapId": 3335907,
+      "pick": "NM2",
+      "modSR": 5.19,
+      "customSong": false,
+      "collab": "",
+      "mappers": ""
     },
     {
-        "beatmapId": "Hylen - Minerva (_Rise) [Hell Oni].osu",
-        "pick": "NM3",
-        "modSR": 8.53,
-        "customSong": false,
-        "collab": "",
-        "mappers": ""
+      "beatmapId": 3328798,
+      "pick": "NM3",
+      "modSR": 4.74,
+      "customSong": false,
+      "collab": "",
+      "mappers": ""
     },
     {
-        "beatmapId": "Foodbot & Kyotsugyon - deadline chasers (Mew) [Dichotomy Paradox].osu",
-        "pick": "NM4",
-        "modSR": 8.41,
-        "customSong": true,
-        "collab": "",
-        "mappers": ""
+      "beatmapId": 3220415,
+      "pick": "HD1",
+      "modSR": 4.53,
+      "customSong": false,
+      "collab": "",
+      "mappers": ""
     },
     {
-        "beatmapId": "HowToPlayLN - Lorentz Attractor (miyagishima) [Chaos].osu",
-        "pick": "NM5",
-        "modSR": 7.67,
-        "customSong": true,
-        "collab": "",
-        "mappers": ""
+      "beatmapId": 4666683,
+      "pick": "HR1",
+      "modSR": 4.94,
+      "customSong": false,
+      "collab": "",
+      "mappers": ""
     },
     {
-        "beatmapId": "Ludicin - Onus Regulus (Nwolf) [The Fallen King's Precipice].osu",
-        "pick": "NM6",
-        "modSR": 8.73,
-        "customSong": false,
-        "collab": "",
-        "mappers": ""
+      "beatmapId": 4498551,
+      "pick": "DT1",
+      "modSR": 4.88,
+      "customSong": false,
+      "collab": "",
+      "mappers": ""
     },
     {
-        "beatmapId": "The Flashbulb - Kirlian Shores (tasuke912) [Tranquil].osu",
-        "pick": "HD1",
-        "modSR": 6.71,
-        "customSong": false,
-        "collab": "",
-        "mappers": ""
-    },
-    {
-        "beatmapId": "Sakuzyo - Distorted Fate (rubies87) [Butterfly Effect].osu",
-        "pick": "HD2",
-        "modSR": 8.02,
-        "customSong": false,
-        "collab": "Phigros",
-        "mappers": "rubies87, Cynplytholowazy"
-    },
-    {
-        "beatmapId": "Ice - M4DN355, Menace (Vulkin) [The End].osu",
-        "pick": "HR1",
-        "modSR": 7.67,
-        "customSong": true,
-        "collab": "",
-        "mappers": ""
-    },
-    {
-        "beatmapId": "Acute Disarray - AbsoluTe disoRdeR (Hivie) [MayHeM].osu",
-        "pick": "HR2",
-        "modSR": 8.76,
-        "customSong": true,
-        "collab": "",
-        "mappers": ""
-    },
-    {
-        "beatmapId": "celtix - Tenkyuu (4sbet1) [Inner Oni].osu",
-        "pick": "DT1",
-        "modSR": 8.62,
-        "customSong": false,
-        "collab": "",
-        "mappers": ""
-    },
-    {
-        "beatmapId": "Risa Yuzuki - Filia no Rashinban (feat. cosMo@bousouP) (X a v y) [Ura Oni].osu",
-        "pick": "DT2",
-        "modSR": 8.31,
-        "customSong": false,
-        "collab": "",
-        "mappers": ""
-    },
-    {
-        "beatmapId": "seatrus - GRAVITY ZONE (rubies87) [Inner Oni].osu",
-        "pick": "FM1",
-        "modSR": 7.84,
-        "customSong": false,
-        "collab": "Orzmic",
-        "mappers": "HiroK, rubies87"
-    },
-    {
-        "beatmapId": "Lamanya - Q33B (ekumea1123) [+-m3].osu",
-        "pick": "FM2",
-        "modSR": 7.84,
-        "customSong": false,
-        "collab": "",
-        "mappers": ""
-    },
-    {
-        "beatmapId": "GTS Sound Team takehirotei - GTSFINAL_ROAD_MEGAMIX (uone) [FINALE].osu",
-        "pick": "FM3",
-        "modSR": 7.38,
-        "customSong": true,
-        "collab": "",
-        "mappers": ""
-    },
-    {
-        "beatmapId": "GTS Sound Team - wrd.colliders ~Chaos in Conclusion~ (Kasumi-sama) [zs.endeavour].osu",
-        "pick": "TB",
-        "modSR": 9.02,
-        "customSong": true,
-        "collab": "",
-        "mappers": "GTS Mapping Team"
+      "beatmapId": 2561652,
+      "pick": "FM1",
+      "modSR": 5.11,
+      "customSong": false,
+      "collab": "",
+      "mappers": ""
     }
 ]
