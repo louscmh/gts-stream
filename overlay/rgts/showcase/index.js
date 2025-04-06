@@ -259,7 +259,12 @@ class ShowcaseManager {
             this.mapperTextAsset.innerHTML = customMapper != "" ? customMapper:mapper;
             this.difficultyTextAsset.innerHTML = difficulty;
             this.odAsset.innerHTML = (mod == "DT" || mod == "FM" || mod == "HR") ? `${Number(memoryOD).toFixed(1)} (${Number(modOD).toFixed(1)})` : Number(memoryOD).toFixed(1);
-            this.srAsset.innerHTML = `${beatmapSet[index]["modSR"]}*`;
+            try {
+                this.srAsset.innerHTML = `${beatmapSet[index]?.modSR ?? fullSR}*`;
+              } catch (e) {
+                console.warn("beatmapSet[index] is undefined, falling back to fullSR");
+                this.srAsset.innerHTML = `${fullSR}*`;
+              }
             this.bpmAsset.innerHTML = min === max ? min : `${min} - ${max}`;
             this.lengthAsset.innerHTML = parseTime(full);
             this.modpoolAsset.innerHTML = mod == "TB" ? "&#8202;TB" : mod;
@@ -553,10 +558,10 @@ async function setupBeatmaps() {
         const bm = new Beatmap(beatmap.pick.substring(0,2), beatmap.beatmapId, `map${index}`);
         bm.generate();
         // console.log(offlineData[0].menu.bm.path.file);
-        console.log(bm.beatmapId);
+        // console.log(bm.beatmapId);
         const mapData = offlineData.find(beatmapData => (/^[0-9]+$/.test(beatmap["beatmapId"]) ? beatmapData.menu.bm.id : beatmapData.menu.bm.path.file) == beatmap["beatmapId"]);
         // console.log(mapData);
-        console.log(mapData.menu.bm.path.full);
+        // console.log(mapData.menu.bm.path.full);
         bm.mapSource.setAttribute("src", `http://127.0.0.1:24050/Songs/${mapData.menu.bm.path.full}?a=${Math.random(10000)}`);
         bm.mapTitle.innerHTML = mapData.menu.bm.metadata.title;
         bm.mapArtist.innerHTML = mapData.menu.bm.metadata.artist;
