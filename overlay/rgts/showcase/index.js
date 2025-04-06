@@ -484,7 +484,7 @@ async function makeScrollingText(title, titleDelay, rate, boundaryWidth, padding
 
 async function promptOverview() {
     document.getElementById("bg_overview").style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)";
-    // document.getElementById("bg_overview").play();
+    document.getElementById("bg_overview").play();
 
     setTimeout(function() {
         showcaseManager.fadeOut();
@@ -493,7 +493,7 @@ async function promptOverview() {
     setTimeout(function() {
         overviewScene.style.opacity = 1;
         overviewScene.style.animation = "fadeInLeft 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
-        // document.getElementById("bg").pause();
+        document.getElementById("bg").pause();
         currentScene = "overview";
     },1500);
 }
@@ -502,7 +502,7 @@ async function promptShowcase() {
     let overviewScene = document.getElementById("overviewScene");
     overviewScene.style.opacity = 0;
     overviewScene.style.animation = "fadeOutRight 1s cubic-bezier(.45,0,1,.48)";
-    // document.getElementById("bg").play();
+    document.getElementById("bg").play();
 
     setTimeout(function() {
         showcaseManager.fadeIn();
@@ -511,7 +511,7 @@ async function promptShowcase() {
     
     setTimeout(function() {
         document.getElementById("bg_overview").style.clipPath = "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)";
-        // document.getElementById("bg_overview").pause();
+        document.getElementById("bg_overview").pause();
         currentScene = "showcase";
     },2000);
 }
