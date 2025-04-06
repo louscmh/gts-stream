@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "Outfit-Bold";
+    src: url("../../../_shared_assets/fonts/Outfit-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-ExtraBold";
+    src: url("../../../_shared_assets/fonts/Outfit-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-Light";
+    src: url("../../../_shared_assets/fonts/Outfit-Light.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-Regular";
+    src: url("../../../_shared_assets/fonts/Outfit-Regular.ttf");
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: "Outfit-Bold";
+    overflow-x: auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 2220px;
+    /* 1920 + 300 control panel */
+    height: 1080px;
+}
+
+.video-area {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    flex-shrink: 0;
+}
+
+.video-area video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#fg {
+    position: absolute;
+    width:1920px;
+    height:1080px;
+    z-index:2;
+}
+
+.timer {
+    font-family: "Outfit-Bold";
+    position: absolute;
+    left: 1118px;
+    top: 440px;
+    /* transform: translateX(-50%); */
+    width:469px;
+    height:164px;
+    display:flex;
+    z-index:3;
+    justify-content: center;
+    align-items: center;
+    font-size: 168px;
+    color: black;
+}
+
+.control-panel {
+    width: 300px;
+    height: 100%;
+    background: #1a1a1a;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    font-family: "Outfit-Bold";
+}
+
+.control-panel button {
+    width: 100%;
+    padding: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    background: #333;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    transition: background 0.3s;
+    font-family: "Outfit-Bold";
+    font-weight:700;
+}
+
+.control-panel button:hover {
+    background: #555;
+}
