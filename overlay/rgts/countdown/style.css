@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "Outfit-Bold";
+    src: url("../../../_shared_assets/fonts/Outfit-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-ExtraBold";
+    src: url("../../../_shared_assets/fonts/Outfit-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-Light";
+    src: url("../../../_shared_assets/fonts/Outfit-Light.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-Regular";
+    src: url("../../../_shared_assets/fonts/Outfit-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Sui-Generis";
+    src: url("../../../_shared_assets/fonts/Sui\ Generis\ Rg.otf");
+}
+
+@font-face {
+    font-family: "ClashDisplay";
+    src: url("../../../_shared_assets/fonts/ClashDisplay-Variable.ttf");
+}
+
+@font-face {
+    font-family: "Amiri-Bold";
+    src: url("../../../_shared_assets/fonts/Amiri-Bold.ttf");
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: Arial, sans-serif;
+    overflow-x: auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 2220px;
+    /* 1920 + 300 control panel */
+    height: 1080px;
+}
+
+.video-area {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    flex-shrink: 0;
+}
+
+.video-area video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#fg {
+    position: absolute;
+    width:1920px;
+    height:1080px;
+    z-index:2;
+}
+
+.timer {
+    font-family: "Sui-Generis";
+    position: absolute;
+    left: 1005px;
+    top: 447px;
+    /* transform: translateX(-50%); */
+    width:545px;
+    height:129px;
+    display:flex;
+    z-index:3;
+    justify-content: center;
+    align-items: center;
+    font-size: 158px;
+    color: white;
+    text-shadow: 5px 7px 1px black;
+}
+
+.fillbar {
+    position: absolute;
+    left: 77px;
+    top: 1032px;
+    /* transform: translateX(-50%); */
+    width:1766px;
+    height:20px;
+    display:flex;
+    z-index:0;
+}
+
+#fill {
+    background-image: url("../../../_shared_assets/design/rgts/bar.png");
+    width:100%;
+    height:19px;
+    transition: width ease-in-out 1s;
+}
+
+.control-panel {
+    width: 300px;
+    height: 100%;
+    background: #1a1a1a;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.control-panel button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    background: #333;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.control-panel button:hover {
+    background: #555;
+}
