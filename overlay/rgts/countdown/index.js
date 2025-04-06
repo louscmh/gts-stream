@@ -37,13 +37,15 @@ function startCountdown() {
 
 function increaseTime() {
   duration += 60;
-  if (duration > defaultDuration) duration = defaultDuration;
   updateDisplay();
 }
 
 function decreaseTime() {
   if (duration >= 60) {
     duration -= 60;
+    updateDisplay();
+  } else {
+    duration == 0;
     updateDisplay();
   }
 }
