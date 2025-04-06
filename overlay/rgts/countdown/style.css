@@ -43,7 +43,7 @@ html {
     margin: 0;
     padding: 0;
     background: #000;
-    font-family: "ClashDisplay", sans-serif;
+    font-family: "ClashDisplay";
     overflow-x: auto;
 }
 
@@ -122,18 +122,21 @@ html {
     align-items: center;
     gap: 20px;
     flex-shrink: 0;
+    font-family: "ClashDisplay";
 }
 
 .control-panel button {
     width: 100%;
     padding: 15px;
-    font-size: 18px;
+    font-size: 30px;
     cursor: pointer;
     background: #333;
     border: none;
     color: white;
     border-radius: 8px;
     transition: background 0.3s;
+    font-family: "ClashDisplay";
+    font-weight:700;
 }
 
 .control-panel button:hover {
