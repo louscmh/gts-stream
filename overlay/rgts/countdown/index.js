@@ -1,7 +1,7 @@
 let timerDisplay = document.getElementById('timer');
 let fillBar = document.getElementById('fill');
 
-let defaultDuration = 600; // 10:00 in seconds
+let defaultDuration = 300; // 5:00 in seconds
 let duration = defaultDuration;
 let countdownInterval;
 
