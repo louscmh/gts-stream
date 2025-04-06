@@ -21,8 +21,6 @@ function startCountdown() {
     if (duration > 0) {
       duration--;
       updateDisplay();
-    } else {
-      clearInterval(countdownInterval);
     }
   }, 1000);
 }
