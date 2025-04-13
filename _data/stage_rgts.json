@@ -1,12 +1,33 @@
 [
     {
-        "currentStage": "QL"
+        "currentStage": "W1"
     },
     {
         "stage": "QL",
         "showcase": "../../../_shared_assets/design/rgts/showcase_text_quals.png",
         "stageName": "Qualifiers",
         "overviewText": "2 Runs"
+    },
+    {
+        "stage": "W1",
+        "showcase": "../../../_shared_assets/design/rgts/showcase_text_w1.png",
+        "stageName": "Week 1",
+        "overviewText": "BO9",
+        "firstTo": 5
+    },
+    {
+        "stage": "W2",
+        "showcase": "../../../_shared_assets/design/rgts/showcase_text_w2.png",
+        "stageName": "Week 2",
+        "overviewText": "BO9",
+        "firstTo": 5
+    },
+    {
+        "stage": "W3",
+        "showcase": "../../../_shared_assets/design/rgts/showcase_text_w3.png",
+        "stageName": "Week 3",
+        "overviewText": "BO9",
+        "firstTo": 5
     },
     {
         "stage": "RO64",

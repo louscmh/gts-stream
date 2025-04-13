@@ -2355,7 +2355,7 @@
         {
             "FullName": "Germanic Alliance",
             "Acronym": "Ger",
-            "FlagName": "DE",
+            "FlagName": "GA",
             "SeedingResults": [
                 {
                     "Mod": "NM",
@@ -2618,7 +2618,7 @@
         {
             "FullName": "South American Alliance",
             "Acronym": "Sou",
-            "FlagName": "CL",
+            "FlagName": "SAA",
             "SeedingResults": [
                 {
                     "Mod": "NM",
@@ -2875,7 +2875,7 @@
         {
             "FullName": "Asian Alliance",
             "Acronym": "Asi",
-            "FlagName": "HK",
+            "FlagName": "AA",
             "SeedingResults": [
                 {
                     "Mod": "NM",
@@ -3002,7 +3002,7 @@
         {
             "FullName": "North American Alliance",
             "Acronym": "Nor",
-            "FlagName": "MX",
+            "FlagName": "NAA",
             "SeedingResults": [
                 {
                     "Mod": "NM",
@@ -3516,7 +3516,7 @@
         {
             "FullName": "Latvia-Finnish Alliance",
             "Acronym": "Lat",
-            "FlagName": "LV",
+            "FlagName": "LFA",
             "SeedingResults": [
                 {
                     "Mod": "NM",
