@@ -1,30 +1,30 @@
 [
-    {
-      "beatmapId": 4127427,
-      "pick": "NM1"
-    },
-    {
-      "beatmapId": 5058911,
-      "pick": "NM2"
-    },
-    {
-      "beatmapId": 4705946,
-      "pick": "NM3"
-    },
-    {
-      "beatmapId": 5058943,
-      "pick": "HD1"
-    },
-    {
-      "beatmapId": 3008027,
-      "pick": "HR1"
-    },
-    {
-      "beatmapId": 4218763,
-      "pick": "DT1"
-    },
-    {
-      "beatmapId": 5058940,
-      "pick": "FM1"
-    }
-  ]
+  {
+    "beatmapId": 1741773,
+    "pick": "NM1"
+  },
+  {
+    "beatmapId": 3335907,
+    "pick": "NM2"
+  },
+  {
+    "beatmapId": 3328798,
+    "pick": "NM3"
+  },
+  {
+    "beatmapId": 3220415,
+    "pick": "HD1"
+  },
+  {
+    "beatmapId": 4666683,
+    "pick": "HR1"
+  },
+  {
+    "beatmapId": 4498551,
+    "pick": "DT1"
+  },
+  {
+    "beatmapId": 2561652,
+    "pick": "FM1"
+  }
+]

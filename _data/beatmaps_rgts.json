@@ -1,58 +1,106 @@
 [
-    {
-      "beatmapId": 1741773,
-      "pick": "NM1",
-      "modSR": 5.19,
-      "customSong": false,
-      "collab": "",
-      "mappers": ""
-    },
-    {
-      "beatmapId": 3335907,
-      "pick": "NM2",
-      "modSR": 5.19,
-      "customSong": false,
-      "collab": "",
-      "mappers": ""
-    },
-    {
-      "beatmapId": 3328798,
-      "pick": "NM3",
-      "modSR": 4.74,
-      "customSong": false,
-      "collab": "",
-      "mappers": ""
-    },
-    {
-      "beatmapId": 3220415,
-      "pick": "HD1",
-      "modSR": 4.53,
-      "customSong": false,
-      "collab": "",
-      "mappers": ""
-    },
-    {
-      "beatmapId": 4666683,
-      "pick": "HR1",
-      "modSR": 4.94,
-      "customSong": false,
-      "collab": "",
-      "mappers": ""
-    },
-    {
-      "beatmapId": 4498551,
-      "pick": "DT1",
-      "modSR": 4.88,
-      "customSong": false,
-      "collab": "",
-      "mappers": ""
-    },
-    {
-      "beatmapId": 2561652,
-      "pick": "FM1",
-      "modSR": 5.11,
-      "customSong": false,
-      "collab": "",
-      "mappers": ""
-    }
+  {
+    "beatmapId": 3107014,
+    "pick": "NM1",
+    "modSR": 4.56,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 2383402,
+    "pick": "NM2",
+    "modSR": 4.59,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "SiLiS - Damaged Mercury (qish) [Oni].osu",
+    "pick": "NM3",
+    "modSR": 4.44,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "MYUKKE. - Boudica (K a y o k o) [Victory Lap].osu",
+    "pick": "NM4",
+    "modSR": 4,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 1003850,
+    "pick": "HD1",
+    "modSR": 4.46,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3618268,
+    "pick": "HD2",
+    "modSR": 4.01,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3338254,
+    "pick": "HR1",
+    "modSR": 4.44,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 1913439,
+    "pick": "HR2",
+    "modSR": 4.54,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3357163,
+    "pick": "DT1",
+    "modSR": 4.51,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "solfa feat. iyuna - Emukko Kyun Kyun (Yasuho) [Emukko Map Map].osu",
+    "pick": "DT2",
+    "modSR": 4.51,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3929547,
+    "pick": "FM1",
+    "modSR": 4.08,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Rose Quartz - CHAOS; [Deconstruction] (NekoTowel) [CHAOS; [Oni] (RGTS Ver.)].osu",
+    "pick": "FM2",
+    "modSR": 4.6,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 1242045,
+    "pick": "TB",
+    "modSR": 5.13,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  }
 ]
