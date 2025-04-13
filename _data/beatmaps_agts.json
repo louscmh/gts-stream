@@ -1,58 +1,114 @@
 [
-    {
-      "beatmapId": 4127427,
-      "pick": "NM1",
-      "modSR": 6.38,
-      "customSong": false,
-      "collab": "",
-      "mappers": ""
-    },
-    {
-      "beatmapId": "False Noise - Kek (Cut Ver.) (HiroK) [Inner Oni].osu",
-      "pick": "NM2",
-      "modSR": 5.85,
-      "customSong": false,
-      "collab": "",
-      "mappers": ""
-    },
-    {
-      "beatmapId": 4705946,
-      "pick": "NM3",
-      "modSR": 5.04,
-      "customSong": false,
-      "collab": "",
-      "mappers": ""
-    },
-    {
-      "beatmapId": "ikaruga_nex - Lilith ambivalence lovers (_somet) [Thelepathic Love].osu",
-      "pick": "HD1",
-      "modSR": 5.52,
-      "customSong": false,
-      "collab": "",
-      "mappers": ""
-    },
-    {
-      "beatmapId": 3008027,
-      "pick": "HR1",
-      "modSR": 6.12,
-      "customSong": false,
-      "collab": "",
-      "mappers": ""
-    },
-    {
-      "beatmapId": 4218763,
-      "pick": "DT1",
-      "modSR": 6.16,
-      "customSong": false,
-      "collab": "",
-      "mappers": ""
-    },
-    {
-      "beatmapId": "HyuN feat. YURI - Disorder (na7yuta_osu) [Crash Order].osu",
-      "pick": "FM1",
-      "modSR": 6.45,
-      "customSong": false,
-      "collab": "",
-      "mappers": ""
-    }
-  ]
+  {
+    "beatmapId": "DJ Raisei - Sekai kara ____ ga Kieru Toki (komasy) [i love ____ (AGTS edit)].osu",
+    "pick": "NM1",
+    "modSR": 5.78,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Morimori Atsushi vs. uma - ETERNALDREAMER (sendol) [Inner Oni].osu",
+    "pick": "NM2",
+    "modSR": 5.75,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3782248,
+    "pick": "NM3",
+    "modSR": 5.02,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3009191,
+    "pick": "NM4",
+    "modSR": 5.48,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4778433,
+    "pick": "NM5",
+    "modSR": 5.2,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4765131,
+    "pick": "HD1",
+    "modSR": 5.44,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4831549,
+    "pick": "HD2",
+    "modSR": 5.26,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3721592,
+    "pick": "HR1",
+    "modSR": 4.95,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4226467,
+    "pick": "HR2",
+    "modSR": 5.73,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "inabakumori - I'm the Rain (Gamelan4) [Alluvium].osu",
+    "pick": "DT1",
+    "modSR": 5.09,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4959653,
+    "pick": "DT2",
+    "modSR": 5.57,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4760393,
+    "pick": "FM1",
+    "modSR": 5.48,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3808532,
+    "pick": "FM2",
+    "modSR": 5.25,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Camellia - SECRET BOSS (Konpaku Sariel) [Lv. 60].osu",
+    "pick": "TB",
+    "modSR": 6.04,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  }
+]
