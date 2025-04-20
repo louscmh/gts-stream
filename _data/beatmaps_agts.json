@@ -1,112 +1,120 @@
 [
   {
-    "beatmapId": "DJ Raisei - Sekai kara ____ ga Kieru Toki (komasy) [i love ____ (AGTS edit)].osu",
+    "beatmapId": 4512693,
     "pick": "NM1",
-    "modSR": 5.78,
+    "modSR": 6.16,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Morimori Atsushi vs. uma - ETERNALDREAMER (sendol) [Inner Oni].osu",
+    "beatmapId": 2941146,
     "pick": "NM2",
+    "modSR": 6.22,
+    "customSong": false,
+    "collab": "",
+    "mappers": "Waribashi"
+  },
+  {
+    "beatmapId": 5079475,
+    "pick": "NM3",
+    "modSR": 5.27,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3910514,
+    "pick": "NM4",
+    "modSR": 5.38,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3801706,
+    "pick": "NM5",
     "modSR": 5.75,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3782248,
-    "pick": "NM3",
-    "modSR": 5.02,
+    "beatmapId": 5080488,
+    "pick": "NM6",
+    "modSR": 5.12,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3009191,
-    "pick": "NM4",
-    "modSR": 5.48,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 4778433,
-    "pick": "NM5",
-    "modSR": 5.2,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 4765131,
+    "beatmapId": "Aoi with mAoA9 - to soar (shoucan91) [Inner Oni].osu",
     "pick": "HD1",
-    "modSR": 5.44,
+    "modSR": 5.96,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4831549,
+    "beatmapId": 2325514,
     "pick": "HD2",
-    "modSR": 5.26,
+    "modSR": 4.25,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3721592,
+    "beatmapId": 4873526,
     "pick": "HR1",
-    "modSR": 4.95,
+    "modSR": 5.45,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4226467,
+    "beatmapId": 4569238,
     "pick": "HR2",
-    "modSR": 5.73,
+    "modSR": 5.92,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "inabakumori - I'm the Rain (Gamelan4) [Alluvium].osu",
+    "beatmapId": 3602887,
     "pick": "DT1",
-    "modSR": 5.09,
+    "modSR": 5.4,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4959653,
+    "beatmapId": 3952442,
     "pick": "DT2",
-    "modSR": 5.57,
+    "modSR": 5.88,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4760393,
+    "beatmapId": 1709943,
     "pick": "FM1",
-    "modSR": 5.48,
+    "modSR": 5.85,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3808532,
+    "beatmapId": 3784968,
     "pick": "FM2",
-    "modSR": 5.25,
+    "modSR": 5.55,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Camellia - SECRET BOSS (Konpaku Sariel) [Lv. 60].osu",
+    "beatmapId": 5080032,
     "pick": "TB",
-    "modSR": 6.04,
+    "modSR": 6.35,
     "customSong": false,
     "collab": "",
     "mappers": ""

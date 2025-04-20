@@ -1,106 +1,122 @@
 [
   {
-    "beatmapId": 3107014,
+    "beatmapId": "I love you Orchestra - Red Ocean (K a y o k o) [Differentiation].osu",
     "pick": "NM1",
+    "modSR": 5.25,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4588723,
+    "pick": "NM2",
+    "modSR": 5.06,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Tanchiky - This is Power (ikin5050) [Oni].osu",
+    "pick": "NM3",
+    "modSR": 4.95,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Aiobahn - Dressing Pafe (Creeperbrine303) [i just schizo my sv].osu",
+    "pick": "NM4",
+    "modSR": 4.83,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "ikaruga_nex - Mirage (TaikoMom) [Resolute].osu",
+    "pick": "NM5",
+    "modSR": 5.07,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 749964,
+    "pick": "HD1",
+    "modSR": 4.87,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "RiraN - Daydream (Ectomic) [RGTS].osu",
+    "pick": "HD2",
+    "modSR": 4.57,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3839058,
+    "pick": "HR1",
+    "modSR": 4.67,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 2552267,
+    "pick": "HR2",
+    "modSR": 4.64,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 2205808,
+    "pick": "DT1",
+    "modSR": 4.92,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "A-One feat. Aki - Wanna Be My Dream (Yasuho) [Wanna Be My Collab].osu",
+    "pick": "DT2",
+    "modSR": 4.90,
+    "customSong": false,
+    "collab": "",
+    "mappers": "Yasuho & TaikoMom"
+  },
+  {
+    "beatmapId": 3286087,
+    "pick": "FM1",
+    "modSR": 4.75,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "technoplanet - Intuition (_yosh) [Oni].osu",
+    "pick": "FM2",
+    "modSR": 5.06,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3787573,
+    "pick": "FM3",
     "modSR": 4.56,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 2383402,
-    "pick": "NM2",
-    "modSR": 4.59,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "SiLiS - Damaged Mercury (qish) [Oni].osu",
-    "pick": "NM3",
-    "modSR": 4.44,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "MYUKKE. - Boudica (K a y o k o) [Victory Lap].osu",
-    "pick": "NM4",
-    "modSR": 4,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 1003850,
-    "pick": "HD1",
-    "modSR": 4.46,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 3618268,
-    "pick": "HD2",
-    "modSR": 4.01,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 3338254,
-    "pick": "HR1",
-    "modSR": 4.44,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 1913439,
-    "pick": "HR2",
-    "modSR": 4.54,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 3357163,
-    "pick": "DT1",
-    "modSR": 4.51,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "solfa feat. iyuna - Emukko Kyun Kyun (Yasuho) [Emukko Map Map].osu",
-    "pick": "DT2",
-    "modSR": 4.51,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 3929547,
-    "pick": "FM1",
-    "modSR": 4.08,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "Rose Quartz - CHAOS; [Deconstruction] (NekoTowel) [CHAOS; [Oni] (RGTS Ver.)].osu",
-    "pick": "FM2",
-    "modSR": 4.6,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 1242045,
+    "beatmapId": "MEMODEMO - Love Language (shoucan91) [Loveless World].osu",
     "pick": "TB",
-    "modSR": 5.13,
+    "modSR": 5.71,
     "customSong": false,
     "collab": "",
-    "mappers": ""
+    "mappers": "Nana & Shoucan91"
   }
 ]
