@@ -194,6 +194,8 @@ class ShowcaseManager {
         this.stinger.play();
         let { id } = data.menu.bm;
         let { memoryOD, fullSR, BPM: { min, max } } = data.menu.bm.stats;
+        data.menu.mods.str.includes("DT") ? min = Math.round(min / 1.5) : null
+        data.menu.mods.str.includes("DT") ? max = Math.round(max / 1.5) : null
         let { full } = data.menu.bm.time;
         let { difficulty, mapper, artist, title } = data.menu.bm.metadata;
         difficulty = difficulty.replace(/&/g, "&amp;")
@@ -452,7 +454,7 @@ socket.onmessage = async event => {
         if (beatmaps.includes(data.menu.bm.path.file)) {
             data = offlineData.find(beatmapData => beatmapData.menu.bm.path.file == data.menu.bm.path.file);
         }
-        let tempStats = [data.menu.bm.stats.memoryOD, data.menu.bm.stats.fullSR, data.menu.bm.stats.BPM.min, data.menu.bm.stats.BPM.max];
+        let tempStats = [data.menu.bm.stats.memoryOD, data.menu.bm.stats.fullSR];
         if (showcaseManager.metadata != data.menu.bm.path.file || !showcaseManager.arraysEqual(showcaseManager.stats,tempStats)) {
             showcaseManager.updateStats(data.menu.bm.path.file, tempStats);
             showcaseManager.updateDetails(data);
