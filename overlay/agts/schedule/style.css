@@ -122,6 +122,8 @@
     font-family: "Outfit-ExtraBold";
     font-size:30px;
     margin-left:13px;
+    width:fit-content;
+    white-space: nowrap;
 }
 
 .matchPlayerOneSeed {
@@ -202,6 +204,8 @@
     font-family: "Outfit-ExtraBold";
     font-size:30px;
     margin-right:13px;
+    width:fit-content;
+    white-space: nowrap;
 }
 
 .matchPlayerTwoSeed {

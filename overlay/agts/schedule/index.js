@@ -118,9 +118,11 @@ class MatchManager {
             match.leftScore = schedule.score1 < 0 ? 0 : schedule.score1;
             match.rightScore = schedule.score2 < 0 ? 0 : schedule.score2;
             match.matchPlayerOneName.innerHTML = schedule.player1;
+            adjustFont(match.matchPlayerOneName, 265, 30);
             match.matchPlayerOneSeed.innerHTML = `Seed #${seedData.find(seed => seed["FullName"] == schedule.player1)["Seed"].match(/\d+/)[0]}`;
             match.matchPlayerOneSource.setAttribute("src", leftFlag)
             match.matchPlayerTwoName.innerHTML = schedule.player2;
+            adjustFont(match.matchPlayerTwoName, 245, 30);
             match.matchPlayerTwoSeed.innerHTML = `Seed #${seedData.find(seed => seed["FullName"] == schedule.player2)["Seed"].match(/\d+/)[0]}`;
             match.matchPlayerTwoSource.setAttribute("src", rightFlag)
             match.matchTime.innerHTML = (new Date(schedule.time)).toLocaleTimeString('en-US', {
@@ -453,3 +455,12 @@ async function getCountryFlag(acronym) {
 //         console.error("Error checking for schedule updates:", error);
 //     }
 // }, 60000);
+
+async function adjustFont(title, boundaryWidth, originalFontSize) {
+    if (title.scrollWidth > boundaryWidth) {
+        let ratio = (title.scrollWidth / boundaryWidth);
+        title.style.fontSize = `${originalFontSize / ratio}px`;
+    } else {
+        title.style.fontSize = `${originalFontSize}px`;
+    }
+}
