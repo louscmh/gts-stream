@@ -33,7 +33,7 @@ let teamFlags = [
 ];
 (async () => {
     try {
-        const jsonData = await $.getJSON("../../../_data/seeding.json");
+        const jsonData = await $.getJSON("../../../_data/seeding_agts.json");
         jsonData.Teams.map((seed) => {
             seedData.push(seed);
         });
@@ -56,19 +56,7 @@ let teamFlags = [
 })();
 
 // API /////////////////////////////////////////////////////////////////
-const file = [];
-let api;
-(async () => {
-    try {
-        const jsonData = await $.getJSON("../../../_data/api.json");
-        jsonData.map((num) => {
-            file.push(num);
-        });
-        api = file[0].api;
-    } catch (error) {
-        console.error("Could not read JSON file", error);
-    }
-})();
+const BASE = "https://lous-gts-proxy.louscmh.workers.dev";
 
 // HTML VARS /////////////////////////////////////////////////////////////////
 let controllerSeed = document.getElementById("controllerSeed");
@@ -255,38 +243,19 @@ async function setupInitial() {
 }
 
 async function getUserDataSet(user_id) {
-    try {
-        const data = (
-            await axios.get("/get_user", {
-                baseURL: "https://osu.ppy.sh/api",
-                params: {
-                    k: api,
-                    u: user_id,
-                    m: 1,
-                },
-            })
-        )["data"];
-        return data.length !== 0 ? data[0] : null;
-    } catch (error) {
-        console.error(error);
-    }
+    const { data } = await axios.get("/get_user", {
+        baseURL: BASE,
+        params: { u: user_id, m: 1 }
+    });
+    return data.length ? data[0] : null;
 }
 
 async function getDataSet(beatmapID) {
-    try {
-        const data = (
-            await axios.get("/get_beatmaps", {
-                baseURL: "https://osu.ppy.sh/api",
-                params: {
-                    k: api,
-                    b: beatmapID,
-                },
-            })
-        )["data"];
-        return data.length !== 0 ? data[0] : null;
-    } catch (error) {
-        console.error(error);
-    }
+    const { data } = await axios.get("/get_beatmaps", {
+        baseURL: BASE,
+        params: { b: beatmapID }
+    });
+    return data.length ? data[0] : null;
 };
 
 async function adjustFont(title, boundaryWidth, originalFontSize) {

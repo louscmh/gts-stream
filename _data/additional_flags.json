@@ -1,43 +1,52 @@
 [
-    {
-      "full_name": "North American Alliance",
-      "flagname": "NAA",
-      "link": "https://motheroftaiko.s-ul.eu/RGTS/eOsSQBQc"
-    },
-    {
-      "full_name": "Latvia-Finnish Alliance",
-      "flagname": "LFA",
-      "link": "https://motheroftaiko.s-ul.eu/RGTS/gt3syBTI"
-    },
-    {
-      "full_name": "South American Alliance",
-      "flagname": "SAA",
-      "link": "https://motheroftaiko.s-ul.eu/RGTS/V4DRDyVm"
-    },
-    {
-      "full_name": "Asian Alliance",
-      "flagname": "AA",
-      "link": "https://motheroftaiko.s-ul.eu/RGTS/SLBaZBHH"
-    },
-    {
-      "full_name": "Germanic Alliance",
-      "flagname": "GA",
-      "link": "https://motheroftaiko.s-ul.eu/RGTS/J8S06B0C"
-    },
-    {
-      "full_name": "Latin American Alliance",
-      "flagname": "LAA",
-      "link": "https://motheroftaiko.s-ul.eu/AGTS/ZoZ6m0x9"
-    },
-    {
-      "full_name": "East European Alliance",
-      "flagname": "EEA",
-      "link": "https://motheroftaiko.s-ul.eu/AGTS/dR3r13Ng"
-    },
-    {
-      "full_name": "North European Alliance",
-      "flagname": "NEA",
-      "link": "https://motheroftaiko.s-ul.eu/AGTS/ywWA4YwB"
-    }
-  ]
-  
+  {
+    "full_name": "North American Alliance",
+    "flagname": "NAARGTS",
+    "link": "https://motheroftaiko.s-ul.eu/RGTS/eOsSQBQc"
+  },
+  {
+    "full_name": "Latvia-Finnish Alliance",
+    "flagname": "LFARGTS",
+    "link": "https://motheroftaiko.s-ul.eu/RGTS/gt3syBTI"
+  },
+  {
+    "full_name": "South American Alliance",
+    "flagname": "SAARGTS",
+    "link": "https://motheroftaiko.s-ul.eu/RGTS/V4DRDyVm"
+  },
+  {
+    "full_name": "Asian Alliance",
+    "flagname": "AARGTS",
+    "link": "https://motheroftaiko.s-ul.eu/RGTS/SLBaZBHH"
+  },
+  {
+    "full_name": "Germanic Alliance",
+    "flagname": "GARGTS",
+    "link": "https://motheroftaiko.s-ul.eu/RGTS/J8S06B0C"
+  },
+  {
+    "full_name": "North American Alliance",
+    "flagname": "NAAAGTS",
+    "link": "https://motheroftaiko.s-ul.eu/AGTS/e83V12f8"
+  },
+  {
+    "full_name": "Latin American Alliance",
+    "flagname": "LAAAGTS",
+    "link": "https://motheroftaiko.s-ul.eu/AGTS/ZoZ6m0x9"
+  },
+  {
+    "full_name": "East European Alliance",
+    "flagname": "EEAAGTS",
+    "link": "https://motheroftaiko.s-ul.eu/AGTS/dR3r13Ng"
+  },
+  {
+    "full_name": "North European Alliance",
+    "flagname": "NEAAGTS",
+    "link": "https://motheroftaiko.s-ul.eu/AGTS/ywWA4YwB"
+  },
+  {
+    "full_name": "Asian Alliance",
+    "flagname": "AAAGTS",
+    "link": "https://motheroftaiko.s-ul.eu/AGTS/1m6YlMsA"
+  }
+]

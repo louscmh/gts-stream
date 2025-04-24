@@ -33,7 +33,7 @@ let teamFlags = [
 ];
 (async () => {
     try {
-        const jsonData = await $.getJSON("../../../_data/seeding.json");
+        const jsonData = await $.getJSON("../../../_data/seeding_rgts.json");
         jsonData.Teams.map((seed) => {
             seedData.push(seed);
         });
