@@ -1,6 +1,6 @@
 [
   {
-    "beatmapId": "I love you Orchestra - Red Ocean (K a y o k o) [Differentiation].osu",
+    "beatmapId": 5080592,
     "pick": "NM1",
     "modSR": 5.25,
     "customSong": false,
@@ -16,7 +16,7 @@
     "mappers": ""
   },
   {
-    "beatmapId": "Tanchiky - This is Power (ikin5050) [Oni].osu",
+    "beatmapId": 5080748,
     "pick": "NM3",
     "modSR": 4.95,
     "customSong": false,
@@ -24,7 +24,7 @@
     "mappers": ""
   },
   {
-    "beatmapId": "Aiobahn - Dressing Pafe (Creeperbrine303) [i just schizo my sv].osu",
+    "beatmapId": 5080583,
     "pick": "NM4",
     "modSR": 4.83,
     "customSong": false,
@@ -32,7 +32,7 @@
     "mappers": ""
   },
   {
-    "beatmapId": "ikaruga_nex - Mirage (TaikoMom) [Resolute].osu",
+    "beatmapId": 5080713,
     "pick": "NM5",
     "modSR": 5.07,
     "customSong": false,
@@ -48,7 +48,7 @@
     "mappers": ""
   },
   {
-    "beatmapId": "RiraN - Daydream (Ectomic) [RGTS].osu",
+    "beatmapId": 5080759,
     "pick": "HD2",
     "modSR": 4.57,
     "customSong": false,
@@ -80,7 +80,7 @@
     "mappers": ""
   },
   {
-    "beatmapId": "A-One feat. Aki - Wanna Be My Dream (Yasuho) [Wanna Be My Collab].osu",
+    "beatmapId": 5079784,
     "pick": "DT2",
     "modSR": 4.90,
     "customSong": false,
@@ -96,7 +96,7 @@
     "mappers": ""
   },
   {
-    "beatmapId": "technoplanet - Intuition (_yosh) [Oni].osu",
+    "beatmapId": 5080778,
     "pick": "FM2",
     "modSR": 5.06,
     "customSong": false,
@@ -112,7 +112,7 @@
     "mappers": ""
   },
   {
-    "beatmapId": "MEMODEMO - Love Language (shoucan91) [Loveless World].osu",
+    "beatmapId": 5080749,
     "pick": "TB",
     "modSR": 5.71,
     "customSong": false,

@@ -1,0 +1,300 @@
+@font-face {
+    font-family: "Outfit-Bold";
+    src: url("../../../_shared_assets/fonts/Outfit-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-ExtraBold";
+    src: url("../../../_shared_assets/fonts/Outfit-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-Light";
+    src: url("../../../_shared_assets/fonts/Outfit-Light.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-Regular";
+    src: url("../../../_shared_assets/fonts/Outfit-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Sui-Generis";
+    src: url("../../../_shared_assets/fonts/Sui\ Generis\ Rg.otf");
+}
+
+@font-face {
+    font-family: "ClashDisplay";
+    src: url("../../../_shared_assets/fonts/ClashDisplay-Variable.ttf");
+}
+
+@font-face {
+    font-family: "Amiri";
+    src: url("../../../_shared_assets/fonts/Amiri.ttf");
+}
+
+#main {
+    position: absolute;
+    width:1920px;
+    height:1080px;
+    top:0px;
+    left:0px;
+    display:flex;
+    font-family: "ClashDisplay";
+    color: black;
+    font-size:24px;
+    user-select: none;
+}
+
+#fg {
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: -1;
+}
+
+#bg {
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: -2;
+    filter: blur(5px);
+}
+
+#roundName {
+    font-family: "Sui-Generis";
+    font-size:100px;
+    position:absolute;
+    top:95px;
+    left:95px;
+}
+
+#timer {
+    font-family: "ClashDisplay";
+    font-weight: 600;
+    font-size:136px;
+    position:absolute;
+    top:858px;
+    left:1068px;
+    width:800px;
+    text-align: right;
+}
+
+#upcomingMatchContainer {
+    position:absolute;
+    top:400px;
+    left:50px;
+    display:flex;
+    flex-direction: column;
+    height:fit-content;
+}
+
+#upcomingMatchText {
+    margin-bottom:14px;
+    font-size:24px;
+}
+
+.match {
+    display:flex;
+    height:82px;
+    width:fit-content;
+    margin-bottom:35px;
+}
+
+.matchPlayerOne {
+    display:flex;
+}
+
+.matchPlayerOneSource {
+    background-color: white;
+    object-fit: scale-down;
+    padding:0 8px 0 5px;
+    object-position: center;
+    width:82px;
+    height:82px;
+}
+
+.matchPlayerOneDetails {
+    position:relative;
+    background-color: white;
+    height:82px;
+    width:300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color:black;
+    margin-left:-2px;
+}
+
+.matchPlayerOneName {
+    font-family: "ClashDisplay";
+    font-weight: 600;
+    font-size:30px;
+    margin-left:13px;
+    width:fit-content;
+    white-space: nowrap;
+}
+
+.matchPlayerOneSeed {
+    font-size:24px;
+    margin-left:13px;
+    margin-top:-3px;
+}
+
+.matchPlayerOneWin {
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    width:116px;
+    height:29px;
+    font-size:28px;
+    font-family: "ClashDisplay";
+    font-weight: 600;
+    color:white;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms ease-in-out;
+    opacity: 0;
+}
+
+.matchMiddleText {
+    height:82px;
+    width:171px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:72px;
+    font-family: "ClashDisplay";
+    font-weight: 600;
+}
+
+.matchPlayerTwo {
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+.matchPlayerTwoSource {
+    background-color: white;
+    object-fit: contain;
+    padding:0 5px 0 8px;
+    object-position: center;
+    width:82px;
+    height:82px;
+}
+
+.matchPlayerTwoDetails {
+    position:relative;
+    background-color: white;
+    height:82px;
+    width:300px;
+    display:flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: center;
+    color:black;
+    margin-right:-2px;
+}
+
+.matchPlayerTwoName {
+    font-family: "ClashDisplay";
+    font-weight: 600;
+    font-size:30px;
+    margin-right:13px;
+    width:fit-content;
+    white-space: nowrap;
+}
+
+.matchPlayerTwoSeed {
+    font-size:24px;
+    margin-right:13px;
+    margin-top:-3px;
+}
+
+.matchPlayerTwoWin {
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:116px;
+    height:29px;
+    font-size:28px;
+    font-family: "ClashDisplay";
+    font-weight: 600;
+    color:white;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms ease-in-out;
+    opacity: 0;
+}
+
+.matchDate {
+    display:flex;
+    flex-direction: column;
+    margin-left: 21px;
+    height:82px;
+    justify-content: center;
+}
+
+.matchTime {
+    font-family: "ClashDisplay";
+    font-weight: 600;
+    font-size:57px;
+    margin-top:-3px;
+}
+
+.matchDay {
+    font-family: "ClashDisplay";
+    font-weight: 400;
+    font-size:36px;
+    margin-top:-16px;
+}
+
+/* CONTROLLER */
+#controller {
+    position:absolute;
+    left:1920px;
+    top:0px;
+    background-color:rgb(39, 39, 39);
+    width:500px;
+    height:1080px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttons {
+    width:90%;
+    height:90%;
+    display:flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: "Outfit-Regular";
+    color:white;
+    font-size:24px;
+    user-select: none; /* Disable text selection */
+}
+
+.button {
+    width:100%;
+    height:fit-content;
+    background-color: rgb(255, 255, 255);
+    margin-block:10px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit-Bold";
+    color:rgb(0, 0, 0);
+    font-size:32px;
+    padding-top: 5px;
+    margin-bottom:15px;
+    text-align: center;
+    padding-block: 10px;
+    user-select: none; /* Disable text selection */
+    transition: ease-in-out 500ms;
+}
