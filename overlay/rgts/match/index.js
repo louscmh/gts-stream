@@ -307,13 +307,13 @@ socket.onmessage = async event => {
 
     tempLeft = data.tourney.manager.teamName.left;
 
-    // if (tempLeft != leftTeam && tempLeft != "" && !playersSetup) {
-    if (!playersSetup) {
+    if (tempLeft != leftTeam && tempLeft != "" && !playersSetup) {
+    // if (!playersSetup) {
         leftTeam = tempLeft;
         playersSetup = true;
         setTimeout(function (event) {
-            // matchManager.updatePlayerId([data.tourney.manager.teamName.left, data.tourney.manager.teamName.right])
-            matchManager.updatePlayerId(["China B", "Indonesia B"]);
+            matchManager.updatePlayerId([data.tourney.manager.teamName.left, data.tourney.manager.teamName.right])
+            // matchManager.updatePlayerId(["China B", "Indonesia B"]);
         }, 150);
     }
 
