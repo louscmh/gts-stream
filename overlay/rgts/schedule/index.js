@@ -111,19 +111,19 @@ class MatchManager {
             const match = new Match(index, schedule, schedule.player1, schedule.player2);
             match.generate();
             this.matches.push(match);
-            const leftPlayerData = await getUserDataSet(schedule.player1);
-            const rightPlayerData = await getUserDataSet(schedule.player2);
-            const leftFlag = await getCountryFlag(seedData.find(seed => seed["FullName"] == schedule.player1)["FlagName"]);
-            const rightFlag = await getCountryFlag(seedData.find(seed => seed["FullName"] == schedule.player2)["FlagName"]);
+            const leftPlayerData = seedData.find(seed => seed["Acronym"] == schedule.player1);
+            const rightPlayerData = seedData.find(seed => seed["Acronym"] == schedule.player2);
+            const leftFlag = await getCountryFlag(leftPlayerData.FlagName);
+            const rightFlag = await getCountryFlag(rightPlayerData.FlagName);
             match.leftScore = schedule.score1 < 0 ? 0 : schedule.score1;
             match.rightScore = schedule.score2 < 0 ? 0 : schedule.score2;
-            match.matchPlayerOneName.innerHTML = schedule.player1;
+            match.matchPlayerOneName.innerHTML = leftPlayerData.FullName;
             adjustFont(match.matchPlayerOneName, 265, 30);
-            match.matchPlayerOneSeed.innerHTML = `Seed #${seedData.find(seed => seed["FullName"] == schedule.player1)["Seed"].match(/\d+/)[0]}`;
+            match.matchPlayerOneSeed.innerHTML = `Seed #${leftPlayerData.Seed.match(/\d+/)[0]}`;
             match.matchPlayerOneSource.setAttribute("src", leftFlag)
-            match.matchPlayerTwoName.innerHTML = schedule.player2;
+            match.matchPlayerTwoName.innerHTML = rightPlayerData.FullName;
             adjustFont(match.matchPlayerTwoName, 245, 30);
-            match.matchPlayerTwoSeed.innerHTML = `Seed #${seedData.find(seed => seed["FullName"] == schedule.player2)["Seed"].match(/\d+/)[0]}`;
+            match.matchPlayerTwoSeed.innerHTML = `Seed #${rightPlayerData.Seed.match(/\d+/)[0]}`;
             match.matchPlayerTwoSource.setAttribute("src", rightFlag)
             match.matchTime.innerHTML = (new Date(schedule.time)).toLocaleTimeString('en-US', {
                 timeZone: 'UTC',

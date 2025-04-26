@@ -2,7 +2,7 @@
     "Teams": [
         {
             "FullName": "Singapore",
-            "Acronym": "Sin",
+            "Acronym": "SGP",
             "FlagName": "SG",
             "SeedingResults": [
                 {
@@ -135,7 +135,7 @@
         },
         {
             "FullName": "China A",
-            "Acronym": "Chi",
+            "Acronym": "CNA",
             "FlagName": "CN",
             "SeedingResults": [
                 {
@@ -268,7 +268,7 @@
         },
         {
             "FullName": "Indonesia A",
-            "Acronym": "Ind",
+            "Acronym": "IDA",
             "FlagName": "ID",
             "SeedingResults": [
                 {
@@ -398,7 +398,7 @@
         },
         {
             "FullName": "United States B",
-            "Acronym": "Uni",
+            "Acronym": "USB",
             "FlagName": "US",
             "SeedingResults": [
                 {
@@ -528,7 +528,7 @@
         },
         {
             "FullName": "United States A",
-            "Acronym": "Uni",
+            "Acronym": "USA",
             "FlagName": "US",
             "SeedingResults": [
                 {
@@ -661,7 +661,7 @@
         },
         {
             "FullName": "Taiwan",
-            "Acronym": "Tai",
+            "Acronym": "TWN",
             "FlagName": "TW",
             "SeedingResults": [
                 {
@@ -794,7 +794,7 @@
         },
         {
             "FullName": "Poland A",
-            "Acronym": "Pol",
+            "Acronym": "PLA",
             "FlagName": "PL",
             "SeedingResults": [
                 {
@@ -927,7 +927,7 @@
         },
         {
             "FullName": "Japan",
-            "Acronym": "Jap",
+            "Acronym": "JAP",
             "FlagName": "JP",
             "SeedingResults": [
                 {
@@ -1054,7 +1054,7 @@
         },
         {
             "FullName": "Lithuania",
-            "Acronym": "Lit",
+            "Acronym": "LTU",
             "FlagName": "LT",
             "SeedingResults": [
                 {
@@ -1184,7 +1184,7 @@
         },
         {
             "FullName": "Canada",
-            "Acronym": "Can",
+            "Acronym": "CAN",
             "FlagName": "CA",
             "SeedingResults": [
                 {
@@ -1317,7 +1317,7 @@
         },
         {
             "FullName": "South Korea",
-            "Acronym": "Sou",
+            "Acronym": "KOR",
             "FlagName": "KR",
             "SeedingResults": [
                 {
@@ -1450,7 +1450,7 @@
         },
         {
             "FullName": "France",
-            "Acronym": "Fra",
+            "Acronym": "FRA",
             "FlagName": "FR",
             "SeedingResults": [
                 {
@@ -1583,7 +1583,7 @@
         },
         {
             "FullName": "United Kingdom",
-            "Acronym": "Uni",
+            "Acronym": "GBR",
             "FlagName": "GB",
             "SeedingResults": [
                 {
@@ -1710,7 +1710,7 @@
         },
         {
             "FullName": "Netherlands",
-            "Acronym": "Net",
+            "Acronym": "NLD",
             "FlagName": "NL",
             "SeedingResults": [
                 {
@@ -1843,7 +1843,7 @@
         },
         {
             "FullName": "China B",
-            "Acronym": "Chi",
+            "Acronym": "CNB",
             "FlagName": "CN",
             "SeedingResults": [
                 {
@@ -1976,7 +1976,7 @@
         },
         {
             "FullName": "Vietnam",
-            "Acronym": "Vie",
+            "Acronym": "VNM",
             "FlagName": "VN",
             "SeedingResults": [
                 {
@@ -2106,7 +2106,7 @@
         },
         {
             "FullName": "Thailand",
-            "Acronym": "Tha",
+            "Acronym": "THA",
             "FlagName": "TH",
             "SeedingResults": [
                 {
@@ -2230,7 +2230,7 @@
         },
         {
             "FullName": "Argentina",
-            "Acronym": "Arg",
+            "Acronym": "ARG",
             "FlagName": "AR",
             "SeedingResults": [
                 {
@@ -2354,7 +2354,7 @@
         },
         {
             "FullName": "Germanic Alliance",
-            "Acronym": "Ger",
+            "Acronym": "GEA",
             "FlagName": "GARGTS",
             "SeedingResults": [
                 {
@@ -2484,7 +2484,7 @@
         },
         {
             "FullName": "Philippines",
-            "Acronym": "Phi",
+            "Acronym": "PHL",
             "FlagName": "PH",
             "SeedingResults": [
                 {
@@ -2617,7 +2617,7 @@
         },
         {
             "FullName": "South American Alliance",
-            "Acronym": "Sou",
+            "Acronym": "SAA",
             "FlagName": "SAARGTS",
             "SeedingResults": [
                 {
@@ -2744,7 +2744,7 @@
         },
         {
             "FullName": "Spain",
-            "Acronym": "Spa",
+            "Acronym": "ESP",
             "FlagName": "ES",
             "SeedingResults": [
                 {
@@ -2874,7 +2874,7 @@
         },
         {
             "FullName": "Asian Alliance",
-            "Acronym": "Asi",
+            "Acronym": "ASA",
             "FlagName": "AARGTS",
             "SeedingResults": [
                 {
@@ -3001,7 +3001,7 @@
         },
         {
             "FullName": "North American Alliance",
-            "Acronym": "Nor",
+            "Acronym": "NAA",
             "FlagName": "NAARGTS",
             "SeedingResults": [
                 {
@@ -3128,7 +3128,7 @@
         },
         {
             "FullName": "Brazil",
-            "Acronym": "Bra",
+            "Acronym": "BRA",
             "FlagName": "BR",
             "SeedingResults": [
                 {
@@ -3258,7 +3258,7 @@
         },
         {
             "FullName": "Italy",
-            "Acronym": "Ita",
+            "Acronym": "ITA",
             "FlagName": "IT",
             "SeedingResults": [
                 {
@@ -3388,7 +3388,7 @@
         },
         {
             "FullName": "Australia",
-            "Acronym": "Aus",
+            "Acronym": "AUS",
             "FlagName": "AU",
             "SeedingResults": [
                 {
@@ -3515,7 +3515,7 @@
         },
         {
             "FullName": "Latvia-Finnish Alliance",
-            "Acronym": "Lat",
+            "Acronym": "LFA",
             "FlagName": "LFARGTS",
             "SeedingResults": [
                 {
@@ -3645,7 +3645,7 @@
         },
         {
             "FullName": "Poland B",
-            "Acronym": "Pol",
+            "Acronym": "PLB",
             "FlagName": "PL",
             "SeedingResults": [
                 {
@@ -3778,7 +3778,7 @@
         },
         {
             "FullName": "Indonesia B",
-            "Acronym": "Ind",
+            "Acronym": "IDB",
             "FlagName": "ID",
             "SeedingResults": [
                 {

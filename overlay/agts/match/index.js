@@ -1345,10 +1345,10 @@ class MatchManager {
     }
 
     async updatePlayerId(playerId) {
-        this.leftPlayerData = seedData.find(seed => seed["FullName"] == playerId[0]);
-        this.rightPlayerData = seedData.find(seed => seed["FullName"] == playerId[1]);
-        const leftFlag = await getCountryFlag(seedData.find(seed => seed["FullName"] == playerId[0])["FlagName"]);
-        const rightFlag = await getCountryFlag(seedData.find(seed => seed["FullName"] == playerId[1])["FlagName"]);
+        this.leftPlayerData = seedData.find(seed => seed["Acronym"] == playerId[0]);
+        this.rightPlayerData = seedData.find(seed => seed["Acronym"] == playerId[1]);
+        const leftFlag = await getCountryFlag(seedData.find(seed => seed["Acronym"] == playerId[0])["FlagName"]);
+        const rightFlag = await getCountryFlag(seedData.find(seed => seed["Acronym"] == playerId[1])["FlagName"]);
         const leftRoster = await Promise.all(
             this.leftPlayerData.Players.map(async (player) => {
                 const data = await getUserDataSet(player.id);
@@ -1362,26 +1362,26 @@ class MatchManager {
 
         this.bottomPlayerOnePfp.setAttribute("src", leftFlag);
         this.bottomPlayerTwoPfp.setAttribute("src", rightFlag);
-        this.bottomPlayerOneName.innerHTML = playerId[0];
-        this.bottomPlayerTwoName.innerHTML = playerId[1];
-        this.bottomPlayerOneSeed.innerHTML = `Seed #${seedData.find(seed => seed["FullName"] == playerId[0])["Seed"].match(/\d+/)[0]}`;
-        this.bottomPlayerTwoSeed.innerHTML = `Seed #${seedData.find(seed => seed["FullName"] == playerId[1])["Seed"].match(/\d+/)[0]}`;
+        this.bottomPlayerOneName.innerHTML = this.leftPlayerData.FullName;
+        this.bottomPlayerTwoName.innerHTML = this.rightPlayerData.FullName;
+        this.bottomPlayerOneSeed.innerHTML = `Seed #${seedData.find(seed => seed["Acronym"] == playerId[0])["Seed"].match(/\d+/)[0]}`;
+        this.bottomPlayerTwoSeed.innerHTML = `Seed #${seedData.find(seed => seed["Acronym"] == playerId[1])["Seed"].match(/\d+/)[0]}`;
 
         this.introPlayerOnePfp.setAttribute("src", leftFlag);
         this.introPlayerTwoPfp.setAttribute("src", rightFlag);
-        this.introPlayerOneName.innerHTML = playerId[0];
-        this.introPlayerTwoName.innerHTML = playerId[1];
-        this.introPlayerOneSeed.innerHTML = `#${seedData.find(seed => seed["FullName"] == playerId[0])["Seed"].match(/\d+/)[0]}`;
-        this.introPlayerTwoSeed.innerHTML = `#${seedData.find(seed => seed["FullName"] == playerId[1])["Seed"].match(/\d+/)[0]}`;
+        this.introPlayerOneName.innerHTML = this.leftPlayerData.FullName;
+        this.introPlayerTwoName.innerHTML = this.rightPlayerData.FullName;
+        this.introPlayerOneSeed.innerHTML = `#${seedData.find(seed => seed["Acronym"] == playerId[0])["Seed"].match(/\d+/)[0]}`;
+        this.introPlayerTwoSeed.innerHTML = `#${seedData.find(seed => seed["Acronym"] == playerId[1])["Seed"].match(/\d+/)[0]}`;
         this.introPlayerOneRoster.innerHTML = leftRoster.join(" · ");
         this.introPlayerTwoRoster.innerHTML = rightRoster.join(" · ");
 
         this.matchHistoryLeftPlayerSource.setAttribute("src", leftFlag);
         this.matchHistoryRightPlayerSource.setAttribute("src", rightFlag);
-        this.matchHistoryLeftPlayerName.innerHTML = playerId[0];
-        this.matchHistoryLightPlayerName.innerHTML = playerId[1];
-        this.matchHistoryLeftPlayerSeed.innerHTML = `#${seedData.find(seed => seed["FullName"] == playerId[0])["Seed"].match(/\d+/)[0]}`;
-        this.matchHistoryRightPlayerSeed.innerHTML = `#${seedData.find(seed => seed["FullName"] == playerId[1])["Seed"].match(/\d+/)[0]}`;
+        this.matchHistoryLeftPlayerName.innerHTML = this.leftPlayerData.FullName;
+        this.matchHistoryLightPlayerName.innerHTML = this.rightPlayerData.FullName;
+        this.matchHistoryLeftPlayerSeed.innerHTML = `#${seedData.find(seed => seed["Acronym"] == playerId[0])["Seed"].match(/\d+/)[0]}`;
+        this.matchHistoryRightPlayerSeed.innerHTML = `#${seedData.find(seed => seed["Acronym"] == playerId[1])["Seed"].match(/\d+/)[0]}`;
 
         this.resultsManager.playerLeft = this.leftPlayerData;
         this.resultsManager.playerRight = this.rightPlayerData;
@@ -2117,7 +2117,7 @@ class HistoryManager {
                     history.generate();
                     const isLeft = match.player1 == this.leftPlayer.FullName ? true : false;
                     history.historyPlayer.innerHTML = isLeft ? match.player2 : match.player1;
-                    const teamFlag = await getCountryFlag(seedData.find(seed => seed["FullName"] == history.historyPlayer.innerHTML)["FlagName"]);
+                    const teamFlag = await getCountryFlag(seedData.find(seed => seed["Acronym"] == history.historyPlayer.innerHTML)["FlagName"]);
                     history.historyRound.innerHTML = stages.find(stage => stage.stageName == round)["stage"];
                     history.historySource.setAttribute("src", teamFlag);
                     history.historyWinText.innerHTML = isLeft ? (match.score1 > match.score2 ? "WIN" : "LOSE") : (match.score2 > match.score1 ? "WIN" : "LOSE");
@@ -2132,7 +2132,7 @@ class HistoryManager {
                     history.generate();
                     const isLeft = match.player1 == this.rightPlayer.FullName ? true : false;
                     history.historyPlayer.innerHTML = isLeft ? match.player2 : match.player1;
-                    const teamFlag = await getCountryFlag(seedData.find(seed => seed["FullName"] == history.historyPlayer.innerHTML)["FlagName"]);
+                    const teamFlag = await getCountryFlag(seedData.find(seed => seed["Acronym"] == history.historyPlayer.innerHTML)["FlagName"]);
                     history.historyRound.innerHTML = stages.find(stage => stage.stageName == round)["stage"];
                     history.historySource.setAttribute("src", teamFlag);
                     history.historyWinText.innerHTML = isLeft ? (match.score1 > match.score2 ? "WIN" : "LOSE") : (match.score2 > match.score1 ? "WIN" : "LOSE");
