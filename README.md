@@ -3,8 +3,6 @@ The main repository for the overlay of Expert Global Taiko Showdown 2025, meant 
 
 ___
 ## INSTALLATION PROCESS
-### OBS Scene
-The scene file is located as `./_data/obs_scenes/EGTS_MATCH_day_month_index.json`. Just pick the one with the latest version when importing into OBS. If prompted with missing files, select the `./_shared_assets/` folder (select the child folders if there's assets still missing).
 
 ### Tosu & Stream Directory
 **[Project link for tosu](https://github.com/KotRikD/tosu#readme)**
@@ -12,11 +10,6 @@ The scene file is located as `./_data/obs_scenes/EGTS_MATCH_day_month_index.json
 Download the latest release and export `tosu.exe` in any directory you want. Then create a folder named `static` in that directory and run `tosu.exe`.
 
 To properly import all overlays, download the latest release of this project and import it into the static folder. If you have an osu! client open, the OBS scenes should properly reflect the scenes. If it doesn't project anything, contact `louscmh` immediately.
-
-### API Setup
-For the overlay to properly function, it will require you to insert an API key into `./_data/api.json`.
-
-You can find your own osu! API at https://osu.ppy.sh/home/account/edit#legacy-api, make sure to not reveal this api key to anyone else (otherwise they will have the potential to steal your credentials)
 
 ### Hiding yourself from Discord VC Streamkit
 If you don't plan to talk at all, you can do this to hide yourself in vc indicator:
