@@ -1,122 +1,122 @@
 [
   {
-    "beatmapId": 5080592,
+    "beatmapId": 4731375,
     "pick": "NM1",
-    "modSR": 5.25,
+    "modSR": 5.36,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4588723,
+    "beatmapId": 4960480,
     "pick": "NM2",
-    "modSR": 5.06,
+    "modSR": 5.54,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5080748,
+    "beatmapId": 3865686,
     "pick": "NM3",
-    "modSR": 4.95,
+    "modSR": 4.74,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5080583,
+    "beatmapId": "ak+q - radiance of cathartika (Sagasemat) [ReOnion].osu",
     "pick": "NM4",
-    "modSR": 4.83,
+    "modSR": 5.24,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5080713,
+    "beatmapId": 4247191,
     "pick": "NM5",
-    "modSR": 5.07,
+    "modSR": 5.18,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 749964,
+    "beatmapId": 4406783,
     "pick": "HD1",
+    "modSR": 5.36,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4378895,
+    "pick": "HD2",
+    "modSR": 3.99,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 5089092,
+    "pick": "HR1",
+    "modSR": 4.77,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Neko Hacker - Fly High feat. mochari (Irone OSU) [RGTS ver.].osu",
+    "pick": "HR2",
+    "modSR": 5.44,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4725504,
+    "pick": "DT1",
+    "modSR": 5.11,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4401364,
+    "pick": "DT2",
+    "modSR": 5.26,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 2942409,
+    "pick": "FM1",
+    "modSR": 5.27,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "seatrus - Shiny Summer Skies (supesan) [Boo! (RGTS edit)].osu",
+    "pick": "FM2",
+    "modSR": 4.86,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "James Landino - Hide And Seek (HiroK) [Inner Oni (GTS edit part 2 (RGTS2025))].osu",
+    "pick": "FM3",
     "modSR": 4.87,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5080759,
-    "pick": "HD2",
-    "modSR": 4.57,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 3839058,
-    "pick": "HR1",
-    "modSR": 4.67,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 2552267,
-    "pick": "HR2",
-    "modSR": 4.64,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 2205808,
-    "pick": "DT1",
-    "modSR": 4.92,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 5079784,
-    "pick": "DT2",
-    "modSR": 4.90,
-    "customSong": false,
-    "collab": "",
-    "mappers": "Yasuho & TaikoMom"
-  },
-  {
-    "beatmapId": 3286087,
-    "pick": "FM1",
-    "modSR": 4.75,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 5080778,
-    "pick": "FM2",
-    "modSR": 5.06,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 3787573,
-    "pick": "FM3",
-    "modSR": 4.56,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 5080749,
+    "beatmapId": "Dyglone - Timepiece Tower (makimen) [Eternally].osu",
     "pick": "TB",
-    "modSR": 5.71,
+    "modSR": 5.8,
     "customSong": false,
     "collab": "",
-    "mappers": "Nana & Shoucan91"
+    "mappers": ""
   }
 ]
