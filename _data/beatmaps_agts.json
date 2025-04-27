@@ -1,120 +1,120 @@
 [
   {
-    "beatmapId": 4512693,
+    "beatmapId": "STEAKA - Doping Dance (Raphalge) [Inner Oni (AGTS Ver.)].osu",
     "pick": "NM1",
-    "modSR": 6.16,
+    "modSR": 6.32,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 2941146,
+    "beatmapId": 4579581,
     "pick": "NM2",
-    "modSR": 6.22,
+    "modSR": 6.59,
     "customSong": false,
     "collab": "",
-    "mappers": "Waribashi"
+    "mappers": ""
   },
   {
-    "beatmapId": 5079475,
+    "beatmapId": 4077669,
     "pick": "NM3",
-    "modSR": 5.27,
+    "modSR": 5.43,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3910514,
+    "beatmapId": "69 de 74 - Grievous Fate (TaikoMom) [La Mort d'Oni].osu",
     "pick": "NM4",
-    "modSR": 5.38,
+    "modSR": 6.11,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3801706,
+    "beatmapId": 4414243,
     "pick": "NM5",
-    "modSR": 5.75,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 5080488,
-    "pick": "NM6",
-    "modSR": 5.12,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 5080547,
-    "pick": "HD1",
-    "modSR": 5.96,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 2325514,
-    "pick": "HD2",
-    "modSR": 4.25,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 4873526,
-    "pick": "HR1",
-    "modSR": 5.45,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 4569238,
-    "pick": "HR2",
-    "modSR": 5.92,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 3602887,
-    "pick": "DT1",
-    "modSR": 5.4,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 3952442,
-    "pick": "DT2",
-    "modSR": 5.88,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 1709943,
-    "pick": "FM1",
     "modSR": 5.85,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3784969,
-    "pick": "FM2",
-    "modSR": 5.55,
+    "beatmapId": 4716173,
+    "pick": "NM6",
+    "modSR": 4.45,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5080032,
+    "beatmapId": "HyuN - iRELLiA (sendol) [Inner Oni].osu",
+    "pick": "HD1",
+    "modSR": 6.11,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4901992,
+    "pick": "HD2",
+    "modSR": 5.87,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3610766,
+    "pick": "HR1",
+    "modSR": 5.59,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4639024,
+    "pick": "HR2",
+    "modSR": 5.71,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4937438,
+    "pick": "DT1",
+    "modSR": 6.11,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 1840607,
+    "pick": "DT2",
+    "modSR": 5.98,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "69 de 74 - RTTR (Fynbi) [FM].osu",
+    "pick": "FM1",
+    "modSR": 5.89,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4517021,
+    "pick": "FM2",
+    "modSR": 5.52,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4514594,
     "pick": "TB",
-    "modSR": 6.35,
+    "modSR": 6.39,
     "customSong": false,
     "collab": "",
     "mappers": ""
