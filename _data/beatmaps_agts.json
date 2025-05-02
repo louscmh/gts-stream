@@ -1,6 +1,6 @@
 [
   {
-    "beatmapId": "STEAKA - Doping Dance (Raphalge) [Inner Oni (AGTS Ver.)].osu",
+    "beatmapId": 5090685,
     "pick": "NM1",
     "modSR": 6.32,
     "customSong": false,
@@ -24,7 +24,7 @@
     "mappers": ""
   },
   {
-    "beatmapId": "69 de 74 - Grievous Fate (TaikoMom) [La Mort d'Oni].osu",
+    "beatmapId": 5090918,
     "pick": "NM4",
     "modSR": 6.11,
     "customSong": false,
@@ -48,7 +48,7 @@
     "mappers": ""
   },
   {
-    "beatmapId": "HyuN - iRELLiA (sendol) [Inner Oni].osu",
+    "beatmapId": 5090714,
     "pick": "HD1",
     "modSR": 6.11,
     "customSong": false,
@@ -96,7 +96,7 @@
     "mappers": ""
   },
   {
-    "beatmapId": "69 de 74 - RTTR (Fynbi) [FM].osu",
+    "beatmapId": 5091021,
     "pick": "FM1",
     "modSR": 5.89,
     "customSong": false,
