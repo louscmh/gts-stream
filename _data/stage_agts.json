@@ -30,6 +30,27 @@
         "firstTo": 5
     },
     {
+        "stage": "W4",
+        "showcase": "../../../_shared_assets/design/agts/showcase_text_w1.png",
+        "stageName": "Week 1",
+        "overviewText": "BO9",
+        "firstTo": 5
+    },
+    {
+        "stage": "W5",
+        "showcase": "../../../_shared_assets/design/agts/showcase_text_w2.png",
+        "stageName": "Week 2",
+        "overviewText": "BO9",
+        "firstTo": 5
+    },
+    {
+        "stage": "W6",
+        "showcase": "../../../_shared_assets/design/agts/showcase_text_w3.png",
+        "stageName": "Week 3",
+        "overviewText": "BO9",
+        "firstTo": 5
+    },
+    {
         "stage": "RO64",
         "showcase": "../../../_shared_assets/design/agts/showcase_text_ro64.png",
         "stageName": "Round of 64",
