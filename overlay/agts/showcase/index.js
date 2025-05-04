@@ -26,7 +26,7 @@ let stages = [];
 let currentStage;
 (async () => {
     try {
-        const jsonData = await $.getJSON("../../../_data/beatmaps_agts.json");
+        const jsonData = await $.getJSON("../../../_data/beatmaps_agts_showcase.json");
         jsonData.map((beatmap) => {
             beatmapSet.push(beatmap);
         });
