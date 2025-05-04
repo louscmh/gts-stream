@@ -1,6 +1,6 @@
 [
     {
-        "currentStage": "W3"
+        "currentStage": "W4"
     },
     {
         "stage": "QL",
@@ -19,36 +19,36 @@
         "stage": "W2",
         "showcase": "../../../_shared_assets/design/rgts/showcase_text_w2.png",
         "stageName": "Week 2",
-        "overviewText": "BO9",
-        "firstTo": 5
+        "overviewText": "BO11",
+        "firstTo": 6
     },
     {
         "stage": "W3",
         "showcase": "../../../_shared_assets/design/rgts/showcase_text_w3.png",
         "stageName": "Week 3",
-        "overviewText": "BO9",
-        "firstTo": 5
+        "overviewText": "BO11",
+        "firstTo": 6
     },
     {
         "stage": "W4",
-        "showcase": "../../../_shared_assets/design/rgts/showcase_text_w1.png",
-        "stageName": "Week 1",
-        "overviewText": "BO9",
-        "firstTo": 5
+        "showcase": "../../../_shared_assets/design/rgts/showcase_text_w4.png",
+        "stageName": "Week 4",
+        "overviewText": "BO13",
+        "firstTo": 7
     },
     {
         "stage": "W5",
-        "showcase": "../../../_shared_assets/design/rgts/showcase_text_w2.png",
-        "stageName": "Week 2",
-        "overviewText": "BO9",
-        "firstTo": 5
+        "showcase": "../../../_shared_assets/design/rgts/showcase_text_w5.png",
+        "stageName": "Week 5",
+        "overviewText": "BO13",
+        "firstTo": 7
     },
     {
         "stage": "W6",
-        "showcase": "../../../_shared_assets/design/rgts/showcase_text_w3.png",
-        "stageName": "Week 3",
-        "overviewText": "BO9",
-        "firstTo": 5
+        "showcase": "../../../_shared_assets/design/rgts/showcase_text_w6.png",
+        "stageName": "Week 6",
+        "overviewText": "BO13",
+        "firstTo": 7
     },
     {
         "stage": "RO64",
