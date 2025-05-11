@@ -1,129 +1,129 @@
 [
   {
-    "beatmapId": 2634497,
+    "beatmapId": "YUC'e - POISON -KO3 Remix- (Yuemiao) [HAVE YOU EVER FELT LIKE THIS (RGTS edit.)].osu",
     "pick": "NM1",
-    "modSR": 5.58,
+    "modSR": 5.4,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Mitsuki - ChallengeR (Cynplytholowazy) [Inner Oni].osu",
+    "beatmapId": 4873532,
     "pick": "NM2",
-    "modSR": 5.97,
+    "modSR": 6.05,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Mameyudoufu - Point (N a N a) [Navy Stocking Market].osu",
+    "beatmapId": "DJ Raisei - #Kurutta Minzoku AGNIKAYANIZM (FinHazel) [#KHAOSKHALLER].osu",
     "pick": "NM3",
-    "modSR": 5.2,
+    "modSR": 5.44,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3720298,
+    "beatmapId": "Pegboard Nerds - Gunslinga (feat. MC Mota) (kurumilove) [BANG!].osu",
     "pick": "NM4",
-    "modSR": 4.79,
+    "modSR": 5.06,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "SEVEN LIVES - CORRUPTED LINE (arcpotato) [GLITCH].osu",
+    "beatmapId": "sakuraburst - dragonlands (cut ver.) (YonGin) [Fapu's Ura Oni (RGTS edit)].osu",
     "pick": "NM5",
-    "modSR": 5.67,
+    "modSR": 5.51,
     "customSong": false,
     "collab": "",
-    "mappers": ""
+    "mappers": "Faputa"
   },
   {
-    "beatmapId": 4577786,
+    "beatmapId": 3619317,
     "pick": "NM6",
-    "modSR": 4.82,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 4514488,
-    "pick": "HD1",
-    "modSR": 5.27,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "Tenchio - multiband depression (YonGin) [3san's oni (RGTS edit)].osu",
-    "pick": "HD2",
     "modSR": 4.21,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3386386,
+    "beatmapId": 3200322,
+    "pick": "HD1",
+    "modSR": 5.28,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Essbee - Rubix (BlackBN) [Inner Oni (RGTS Edit)].osu",
+    "pick": "HD2",
+    "modSR": 4.46,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3931227,
     "pick": "HR1",
-    "modSR": 4.96,
+    "modSR": 5.23,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "sugosugiii - Kill The Silence (arcpotato) [Deafening Silence].osu",
+    "beatmapId": 4548209,
     "pick": "HR2",
-    "modSR": 5.32,
+    "modSR": 6.24,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4514467,
+    "beatmapId": "Neko Hacker - Sweet Dreams feat. Rika (supesan) [It's a Magic!!].osu",
     "pick": "DT1",
-    "modSR": 5.43,
+    "modSR": 5.66,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3938602,
+    "beatmapId": 4027413,
     "pick": "DT2",
-    "modSR": 5.31,
+    "modSR": 5.66,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "BlackY feat. Risa Yuzuki - UNLEASHED (Alwaysyukaz) [Inner Oni (RGTS Ver.)].osu",
+    "beatmapId": 3024683,
     "pick": "FM1",
-    "modSR": 5.16,
+    "modSR": 5.28,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 1868170,
+    "beatmapId": 3596065,
     "pick": "FM2",
-    "modSR": 4.8,
+    "modSR": 5.34,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "katagiri - Urushi (K a y o k o) [Kayoko & Creeper's Ura Oni].osu",
+    "beatmapId": 4182392,
     "pick": "FM3",
-    "modSR": 5.14,
+    "modSR": 5.46,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 2485836,
+    "beatmapId": "Pirendora - Valkyrie (Alwaysyukaz) [Luminous sky].osu",
     "pick": "TB",
-    "modSR": 6.1,
-    "customSong": false,
+    "modSR": 6.03,
+    "customSong": true,
     "collab": "",
     "mappers": ""
   }
