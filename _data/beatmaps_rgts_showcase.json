@@ -1,130 +1,133 @@
 [
   {
-    "beatmapId": "YUC'e - POISON -KO3 Remix- (Yuemiao) [HAVE YOU EVER FELT LIKE THIS (RGTS edit.)].osu",
+    "beatmapId": "Fellowship - Hold Up Your Hearts (Again) (hz404) [Beyond the Horizon (RGTS Edit)].osu",
     "pick": "NM1",
-    "modSR": 5.4,
+    "modSR": 5.85,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4873532,
+    "beatmapId": 3994029,
     "pick": "NM2",
-    "modSR": 6.05,
+    "modSR": 6.26,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "DJ Raisei - #Kurutta Minzoku AGNIKAYANIZM (FinHazel) [#KHAOSKHALLER].osu",
+    "beatmapId": 3999686,
     "pick": "NM3",
-    "modSR": 5.44,
+    "modSR": 5.53,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Pegboard Nerds - Gunslinga (feat. MC Mota) (kurumilove) [BANG!].osu",
+    "beatmapId": "HyperJuice - City Lights feat. EVO+, Jinmenusagi (Pa's Lam System Remix) (_gt) [Rycy's Gameplay Threatens Singapore].osu",
     "pick": "NM4",
-    "modSR": 5.06,
+    "modSR": 4.64,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "sakuraburst - dragonlands (cut ver.) (YonGin) [Fapu's Ura Oni (RGTS edit)].osu",
+    "beatmapId": "THE SHAFT - Linear Accelerator (MTNTWarz) [babu Oni].osu",
     "pick": "NM5",
-    "modSR": 5.51,
+    "modSR": 6.04,
     "customSong": false,
     "collab": "",
     "mappers": "Faputa"
   },
   {
-    "beatmapId": 3619317,
+    "beatmapId": 4061425,
     "pick": "NM6",
-    "modSR": 4.21,
+    "modSR": 5.30,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3200322,
+    "beatmapId": 2412961,
     "pick": "HD1",
-    "modSR": 5.28,
+    "modSR": 5.50,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Essbee - Rubix (BlackBN) [Inner Oni (RGTS Edit)].osu",
+    "beatmapId": "waterflame - Glorious Morning 2 (Cut Ver.) (YonGin) [Renaissance Age].osu",
     "pick": "HD2",
-    "modSR": 4.46,
+    "modSR": 5.33,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3931227,
+    "beatmapId": "Reku Mochizuki - INFiNiTE ENERZY -Overdoze- (shoucan91) [Kantan (GTS Edit)].osu",
     "pick": "HR1",
-    "modSR": 5.23,
+    "modSR": 6.02,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4548209,
+    "beatmapId": 4817235,
     "pick": "HR2",
-    "modSR": 6.24,
+    "modSR": 6.59,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Neko Hacker - Sweet Dreams feat. Rika (supesan) [It's a Magic!!].osu",
+    "beatmapId": "Symholic - Tokei no Tsue (-Kazuha) [Timeless (RGTS edit)].osu",
     "pick": "DT1",
-    "modSR": 5.66,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 4027413,
-    "pick": "DT2",
-    "modSR": 5.66,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 3024683,
-    "pick": "FM1",
-    "modSR": 5.28,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 3596065,
-    "pick": "FM2",
     "modSR": 5.34,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4182392,
-    "pick": "FM3",
-    "modSR": 5.46,
+    "beatmapId": "Mew S - Call For The Core (N a N a) [Krazy For The KFC (RGTS Edit)].osu",
+    "pick": "DT2",
+    "modSR": 5.74,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Pirendora - Valkyrie (Alwaysyukaz) [Luminous sky].osu",
+    "beatmapId": "Hiiragi Magnetite - Tetoris (makimen) [Speed Run!!! (RGTS Ver.)].osu",
+    "pick": "FM1",
+    "modSR": 5.69,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 2073780,
+    "pick": "FM2",
+    "modSR": 5.49,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 2548538,
+    "pick": "FM3",
+    "modSR": 5.05,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "polyscream - antiparadiiso (Alwaysyukaz) [Fallen].osu",
     "pick": "TB",
-    "modSR": 6.03,
+    "modSR": 6.41,
     "customSong": true,
     "collab": "",
     "mappers": ""
   }
 ]
+
+
+
