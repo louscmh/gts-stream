@@ -1,130 +1,130 @@
 [
   {
-    "beatmapId": 3219013,
+    "beatmapId": 800560,
     "pick": "NM1",
-    "modSR": 6.74,
+    "modSR": 6.97,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "DJ Raisei - TON578 (sendol) [Inner Oni (AGTS Ver.)].osu",
+    "beatmapId": 1707286,
     "pick": "NM2",
-    "modSR": 6.9,
+    "modSR": 7.11,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5111536,
+    "beatmapId": "Lamanya - flexidefine (-Kazuha) [Inner Oni].osu",
     "pick": "NM3",
-    "modSR": 5.49,
+    "modSR": 6.33,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Zmey Gorynich - Sorochinskaya Yarmarka (TaikoMom) [Night on the Eve of Ivan Kupala].osu",
+    "beatmapId": "Fleshgod Apocalypse - The Fool (TaikoMom) [Pagliacci (AGTS edit)].osu",
     "pick": "NM4",
+    "modSR": 7.83,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3893863,
+    "pick": "NM5",
     "modSR": 7.05,
     "customSong": false,
     "collab": "",
-    "mappers": ""
+    "mappers": "Waribashi and layxa"
   },
   {
-    "beatmapId": "YUC'e - Night Club Junkie (ikin5050) ['fdyuaskjllslljkhkl (AGTS ver.)].osu",
-    "pick": "NM5",
-    "modSR": 6.37,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 4093638,
+    "beatmapId": "Riya - Eternally (Ph0eNiiXZ) [Infinitely].osu",
     "pick": "NM6",
-    "modSR": 5.11,
+    "modSR": 6.95,
     "customSong": false,
     "collab": "",
-    "mappers": ""
+    "mappers": "Jaycekpo and Phoenix"
   },
   {
-    "beatmapId": "NIWASHI - T_ritama Breaker (na7yuta_osu) [Armor Break].osu",
+    "beatmapId": 4603783,
     "pick": "HD1",
-    "modSR": 6.72,
+    "modSR": 6.64,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Tedjimo yomigY - Edelweiss (Gamelan4) [Noble White].osu",
+    "beatmapId": "you feat. ugu - PAINTER (sendol) [Inner Oni (AGTS Ver.)].osu",
     "pick": "HD2",
-    "modSR": 5.12,
+    "modSR": 5.58,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Rabbit House - Fleur de Lapin - ChaoticDreamFestival (Faputa) [Chaotic Oni (AGTS Ver.)].osu",
+    "beatmapId": "Xyris - Crypts of the Damned ~Blackened Heart~ (Briesmas) [Inner Oni].osu",
     "pick": "HR1",
-    "modSR": 6.8,
+    "modSR": 7.58,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Omoi - Spiral Flight (Sped Up Ver.) (iloveyou4ever) [Hikouki (AGTS Ver.)].osu",
+    "beatmapId": 661517,
     "pick": "HR2",
-    "modSR": 7.3,
+    "modSR": 7.09,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3482519,
+    "beatmapId": "Inabakumori - Ipace (Gamelan4) [Absentminded].osu",
     "pick": "DT1",
-    "modSR": 6.57,
+    "modSR": 5.8,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 1887379,
+    "beatmapId": "Camellia - Kimi ga Shinu no o Nagamete Iru yo (Cynplytholowazy) [Meaning of Fate].osu",
     "pick": "DT2",
-    "modSR": 6.83,
+    "modSR": 6.95,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4226694,
+    "beatmapId": "Raimukun - Nyarlathotep's Dreamland (sendol) [Ura Oni].osu",
     "pick": "FM1",
-    "modSR": 6.44,
+    "modSR": 7.04,
     "customSong": false,
     "collab": "",
-    "mappers": "Yuemiao & ler1211"
+    "mappers": ""
   },
   {
-    "beatmapId": 3918944,
+    "beatmapId": 4562354,
     "pick": "FM2",
-    "modSR": 6.23,
+    "modSR": 6.64,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Aoi - soar to phi (sendol) [Inner Oni].osu",
+    "beatmapId": "xi - Aragami (HiroK) [Hell Oni].osu",
     "pick": "FM3",
-    "modSR": 6.6,
+    "modSR": 7.02,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Kokomochi feat. Kasane Teto - HOWYOULEFTME (sendol) [IWONDERHOW].osu",
+    "beatmapId": "Type R - Jackknife (Gamelan4) [UNFOLD].osu",
     "pick": "TB",
-    "modSR": 7.15,
-    "customSong": true,
+    "modSR": 7.68,
+    "customSong": false,
     "collab": "",
-    "mappers": "The Poolers"
+    "mappers": "AGTS Mapping Team"
   }
 ]
