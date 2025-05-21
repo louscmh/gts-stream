@@ -1,130 +1,130 @@
 [
   {
-    "beatmapId": 3219013,
+    "beatmapId": 800560,
     "pick": "NM1",
-    "modSR": 6.74,
+    "modSR": 6.97,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5111983,
+    "beatmapId": 1707286,
     "pick": "NM2",
-    "modSR": 6.9,
+    "modSR": 7.11,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5111536,
+    "beatmapId": 5124366,
     "pick": "NM3",
-    "modSR": 5.49,
+    "modSR": 6.33,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5111657,
+    "beatmapId": 5124203,
     "pick": "NM4",
+    "modSR": 7.83,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3893863,
+    "pick": "NM5",
     "modSR": 7.05,
     "customSong": false,
     "collab": "",
-    "mappers": ""
+    "mappers": "Waribashi and layxa"
   },
   {
-    "beatmapId": 5112011,
-    "pick": "NM5",
-    "modSR": 6.37,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 4093638,
+    "beatmapId": 5124169,
     "pick": "NM6",
-    "modSR": 5.11,
+    "modSR": 6.95,
     "customSong": false,
     "collab": "",
-    "mappers": ""
+    "mappers": "Jaycekpo and Phoenix"
   },
   {
-    "beatmapId": 5112013,
+    "beatmapId": 4603783,
     "pick": "HD1",
-    "modSR": 6.72,
+    "modSR": 6.64,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5112032,
+    "beatmapId": 5124031,
     "pick": "HD2",
-    "modSR": 5.12,
+    "modSR": 5.58,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5112028,
+    "beatmapId": 5124172,
     "pick": "HR1",
-    "modSR": 6.8,
+    "modSR": 7.58,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5111946,
+    "beatmapId": 661517,
     "pick": "HR2",
-    "modSR": 7.3,
+    "modSR": 7.09,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3482519,
+    "beatmapId": 5124220,
     "pick": "DT1",
-    "modSR": 6.57,
+    "modSR": 5.8,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 1887379,
+    "beatmapId": 5124153,
     "pick": "DT2",
-    "modSR": 6.83,
+    "modSR": 6.95,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4226694,
+    "beatmapId": 5124015,
     "pick": "FM1",
-    "modSR": 6.44,
+    "modSR": 7.04,
     "customSong": false,
     "collab": "",
-    "mappers": "Yuemiao & ler1211"
+    "mappers": ""
   },
   {
-    "beatmapId": 3918944,
+    "beatmapId": 4562354,
     "pick": "FM2",
-    "modSR": 6.23,
+    "modSR": 6.64,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5111986,
+    "beatmapId": 5124179,
     "pick": "FM3",
-    "modSR": 6.6,
+    "modSR": 7.02,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5111988,
+    "beatmapId": 5124472,
     "pick": "TB",
-    "modSR": 7.15,
-    "customSong": true,
+    "modSR": 7.68,
+    "customSong": false,
     "collab": "",
-    "mappers": "The Poolers"
+    "mappers": "AGTS Mapping Team"
   }
 ]
