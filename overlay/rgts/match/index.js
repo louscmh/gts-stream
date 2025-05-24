@@ -101,7 +101,7 @@ class ScoreTracker {
     updateClients(data) {
         data.map(async(clientData,index) => {
             // console.log(index);
-            const client = index < 2 ? this.leftClients[index] : this.rightClients[index-2];
+            const client = index < 4 ? this.leftClients[index] : this.rightClients[index-4];
             if (client) {
                 client.updateMiss(clientData.gameplay.hits["0"]);
                 client.updateGood(clientData.gameplay.hits["100"]);
@@ -980,7 +980,7 @@ class MatchManager {
         this.controllerArrow.addEventListener("click", async (event) => {
             if (!this.togglePickVar) return;
             this.unpulseOverview("");
-            if (!this.currentMatchScene && (this.bestOf - 1) * 2 != this.pickCount - 2 && (this.scoreOne != this.bestOf && this.scoreTwo != this.bestOf && this.leftWins != this.bestOf && this.rightWins != this.bestOf)) {
+            if (!this.currentMatchScene && (this.bestOf - 1) * 2 != this.pickCount - 2 && this.leftWins + this.rightWins != this.bestOf*2) {
                 if (this.playerTurn == "left") {
                     this.bottomP1Pick.style.animation = "fadeInRight 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
                     this.bottomP1Pick.style.opacity = 1;
@@ -1601,7 +1601,7 @@ class MatchManager {
     }
 
     autoPick(beatmapId) {
-        if (!this.autoPicker || !this.hasBanned || this.leftWins == this.bestOf || this.rightWins == this.bestOf) return;
+        if (!this.autoPicker || !this.hasBanned || this.leftWins + this.rightWins == this.bestOf*2) return;
         if (beatmapsIds.includes(beatmapId)) {
             for (let beatmap of this.overviewBeatmaps) {
                 if (beatmap.beatmapID == beatmapId) {
@@ -1787,7 +1787,7 @@ class GameplayManager {
         this.scoreRight;
         this.comboLeft;
         this.comboRight;
-        this.barThreshold = 100000;
+        this.barThreshold = 200000;
         this.songStart;
         this.currentTime;
         this.isDoubleTime = false;
@@ -1851,11 +1851,11 @@ class GameplayManager {
     }
 
     async setupClients() {
-        const clientNumber = 4
+        const clientNumber = 8
         for (let i=1;i<clientNumber+1;i++) {
             const client = new Client(i);
             client.generate();
-            this.scoreTracker.addClient(client, i<3?true:false);
+            this.scoreTracker.addClient(client, i<5?true:false);
         }
     }
 

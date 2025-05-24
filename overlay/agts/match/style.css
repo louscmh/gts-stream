@@ -1410,29 +1410,32 @@ body {
     opacity:0;
 }
 
+
 #matchClients {
-    position:absolute;
-    left:0px;
-    top:129px;
-    width:1920px;
-    height:720px;
-    display:flex;
-    opacity:0;
-    display:flex;
+    position: absolute;
+    left: 0px;
+    top: 129px;
+    width: 1920px;
+    height: 720px;
+    opacity: 0;
+    display: flex;
     justify-content: center;
 }
 
-#matchClientLeft, #matchClientRight {
-    width:640px;
-    display:flex;
-    flex-direction: column;
+#matchClientLeft,
+#matchClientRight {
+    width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
 }
 
 .matchClient {
-    width:640px;
-    height:360px;
-    position:relative;
-    display:flex;
+    width: 480px;
+    height: 360px;
+    position: relative;
+    display: flex;
     justify-content: space-between;
     align-items: end;
     /* border: 4px solid white;

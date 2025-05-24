@@ -1477,7 +1477,6 @@ body {
     top: 129px;
     width: 1920px;
     height: 720px;
-    display: flex;
     opacity: 0;
     display: flex;
     justify-content: center;
@@ -1485,13 +1484,15 @@ body {
 
 #matchClientLeft,
 #matchClientRight {
-    width: 640px;
+    width: 960px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
 }
 
 .matchClient {
-    width: 640px;
+    width: 480px;
     height: 360px;
     position: relative;
     display: flex;
