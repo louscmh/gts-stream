@@ -1,6 +1,6 @@
 [
     {
-        "currentStage": "W6"
+        "currentStage": "AS"
     },
     {
         "stage": "QL",
@@ -98,5 +98,12 @@
         "stageName": "Grand Finals",
         "overviewText": "BO13",
         "firstTo": 7
+    },
+    {
+        "stage": "AS",
+        "showcase": "../../../_shared_assets/design/agts/showcase_text_w6.png",
+        "stageName": "All-Stars",
+        "overviewText": "BO13",
+        "firstTo": 8
     }
 ]

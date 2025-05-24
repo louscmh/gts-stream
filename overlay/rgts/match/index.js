@@ -784,7 +784,7 @@ class MatchManager {
         this.leftWins = 0;
         this.rightWins = 0;
         this.playerTurn = "left";
-        this.banCount = 0;
+        this.banCount = 2;
         this.leftPlayerData;
         this.rightPlayerData;
         this.currentMappoolScene = 1;
@@ -794,7 +794,7 @@ class MatchManager {
         this.scoreTwo;
         this.bestOf;
 
-        this.hasBanned = false;
+        this.hasBanned = true;
         this.togglePickVar = false;
         this.mappoolSwitchVar = true;
         this.matchSwitchVar = true;
@@ -1728,7 +1728,7 @@ class MatchManager {
     }
 
     checkWin() {
-        if ((this.leftWins == this.bestOf || this.rightWins == this.bestOf) && (this.scoreOne == this.bestOf || this.scoreTwo == this.bestOf)) {
+        if ((this.leftWins + this.rightWins == (this.bestOf*2)) && (this.scoreOne + this.scoreTwo == (this.bestOf*2)-1)) {
             this.undimButton(this.controllerResults);
             this.resultSwitchVar = true;
         } else {

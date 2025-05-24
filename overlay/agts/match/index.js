@@ -308,6 +308,7 @@ socket.onmessage = async event => {
     tempLeft = data.tourney.manager.teamName.left;
 
     if (tempLeft != leftTeam && tempLeft != "" && !playersSetup) {
+    // if (!playersSetup) {
         leftTeam = tempLeft;
         playersSetup = true;
         setTimeout(function (event) {
@@ -443,8 +444,8 @@ class Beatmap {
         this.mapModpool.innerHTML = this.mods;
         this.mapMapperTitle.innerHTML = "MAPPED BY";
         this.mapDifficultyTitle.innerHTML = "DIFFICULTY";
-        this.mapPlayerTextP1.innerHTML = "P1";
-        this.mapPlayerTextP2.innerHTML = "P2";
+        this.mapPlayerTextP1.innerHTML = "T1";
+        this.mapPlayerTextP2.innerHTML = "T2";
         this.mapWinP1.innerHTML = "WIN";
         this.mapWinP2.innerHTML = "WIN";
         this.mapBanText.innerHTML = "BAN";
@@ -568,8 +569,8 @@ class Beatmap {
         this.mapModpoolQueue.innerHTML = this.mods;
         this.mapMapperTitleQueue.innerHTML = "MAPPED BY";
         this.mapDifficultyTitleQueue.innerHTML = "DIFFICULTY";
-        this.mapPlayerTextP1Queue.innerHTML = "P1";
-        this.mapPlayerTextP2Queue.innerHTML = "P2";
+        this.mapPlayerTextP1Queue.innerHTML = "T1";
+        this.mapPlayerTextP2Queue.innerHTML = "T2";
         this.mapWinP1Queue.innerHTML = "WIN";
         this.mapWinP2Queue.innerHTML = "WIN";
         this.mapSourceQueue.setAttribute("src", this.mapSource.src);
@@ -683,9 +684,9 @@ class Beatmap {
         this.isPlayerOne = isPlayerOne;
         if (this.mods != "TB") {
             if (isPlayerOne) {
-                this.mapPickText.innerHTML = "P1 PICK";
+                this.mapPickText.innerHTML = "T1 PICK";
             } else {
-                this.mapPickText.innerHTML = "P2 PICK";
+                this.mapPickText.innerHTML = "T2 PICK";
             }
             this.mapPickText.style.opacity = 1;
             this.mapPickText.style.animation = "fadeInOverviewBeatmap 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
@@ -711,7 +712,7 @@ class Beatmap {
             this.mapWinP2Queue.style.opacity = 0;
             this.mapWinP2Queue.style.animation = "";
             this.mapWinP2Queue.style.backgroundColor = "white";
-            this.resultContainerPlayer.innerHTML = "P1";
+            this.resultContainerPlayer.innerHTML = "T1";
             if (this.mods != "TB") {
                 this.resultContainerText.style.backgroundColor = this.isPlayerOne ? "#d0ffcc" : "#ffcccc";
                 this.mapWinP1Queue.style.backgroundColor = this.isPlayerOne ? "#d0ffcc" : "#ffcccc";
@@ -728,7 +729,7 @@ class Beatmap {
             this.mapWinP1Queue.style.opacity = 0;
             this.mapWinP1Queue.style.animation = "";
             this.mapWinP1Queue.style.backgroundColor = "white";
-            this.resultContainerPlayer.innerHTML = "P2";
+            this.resultContainerPlayer.innerHTML = "T2";
             if (this.mods != "TB") {
                 this.resultContainerText.style.backgroundColor = this.isPlayerOne ? "#ffcccc" : "#d0ffcc";
                 this.mapWinP2.style.backgroundColor = this.isPlayerOne ? "#ffcccc" : "#d0ffcc";
@@ -783,7 +784,7 @@ class MatchManager {
         this.leftWins = 0;
         this.rightWins = 0;
         this.playerTurn = "left";
-        this.banCount = 0;
+        this.banCount = 2;
         this.leftPlayerData;
         this.rightPlayerData;
         this.currentMappoolScene = 1;
@@ -793,7 +794,7 @@ class MatchManager {
         this.scoreTwo;
         this.bestOf;
 
-        this.hasBanned = false;
+        this.hasBanned = true;
         this.togglePickVar = false;
         this.mappoolSwitchVar = true;
         this.matchSwitchVar = true;
@@ -1727,7 +1728,7 @@ class MatchManager {
     }
 
     checkWin() {
-        if ((this.leftWins == this.bestOf || this.rightWins == this.bestOf) && (this.scoreOne == this.bestOf || this.scoreTwo == this.bestOf)) {
+        if ((this.leftWins + this.rightWins == (this.bestOf*2)) && (this.scoreOne + this.scoreTwo == (this.bestOf*2)-1)) {
             this.undimButton(this.controllerResults);
             this.resultSwitchVar = true;
         } else {
@@ -1806,7 +1807,6 @@ class GameplayManager {
         setTimeout(function () {
             this.bg.style.clipPath = "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)";
             this.revealPlayerData();
-            // this.bg.pause();
         }.bind(this), 1000);
     }
 
@@ -1820,7 +1820,6 @@ class GameplayManager {
         this.bg.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)";
         // this.bg_match.pause();
         this.hidePlayerData();
-        // this.bg.play();
         this.matchScoreBoard.style.opacity = 0;
         this.isGameplay = false;
     }
@@ -1963,8 +1962,8 @@ class GameplayManager {
         this.matchWinningLeftContent.style.width = "0%";
         this.matchWinningRightContent.style.animation = "";
         this.matchWinningRightContent.style.width = "0%";
-        this.matchOneScore.style.color = "#0fa625";
-        this.matchTwoScore.style.color = "#0fa625";
+        this.matchOneScore.style.color = "white";
+        this.matchTwoScore.style.color = "white";
         this.matchOneScore.style.transform = "";
         this.matchTwoScore.style.transform = "";
         this.matchWinningLeftWinText.style.opacity = 0;
@@ -1995,11 +1994,12 @@ class GameplayManager {
         if (leftWon) {
             this.matchWinningLeftContent.style.animation = "winBar 2s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
             this.matchWinningLeftContent.style.width = "100%";
-            this.matchWinningLeftContent.style.backgroundColor = "#0fa625";
+            this.matchWinningLeftContent.style.backgroundColor = "black";
             this.matchWinningRightContent.style.animation = "loseBar 2s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
             this.matchWinningRightContent.style.width = "100%";
             this.matchWinningRightContent.style.backgroundColor = "white";
             this.matchOneScore.style.color = "white";
+            this.matchTwoScore.style.color = "black";
             this.matchOneScore.style.transform = "TranslateX(480px)";
             this.matchTwoScore.style.transform = "TranslateX(-570px)";
             this.matchWinningLeftWinText.style.opacity = 1;
@@ -2007,10 +2007,11 @@ class GameplayManager {
         } else {
             this.matchWinningRightContent.style.animation = "winBar 2s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
             this.matchWinningRightContent.style.width = "100%";
-            this.matchWinningRightContent.style.backgroundColor = "#0fa625";
+            this.matchWinningRightContent.style.backgroundColor = "black";
             this.matchWinningLeftContent.style.animation = "loseBar 2s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
             this.matchWinningLeftContent.style.width = "100%";
             this.matchWinningLeftContent.style.backgroundColor = "white";
+            this.matchOneScore.style.color = "black";
             this.matchTwoScore.style.color = "white";
             this.matchOneScore.style.transform = "TranslateX(570px)";
             this.matchTwoScore.style.transform = "TranslateX(-480px)";
@@ -2067,8 +2068,8 @@ class ResultsManager {
     update() {
         this.resultOne.innerHTML = this.scoreLeft;
         this.resultTwo.innerHTML = this.scoreRight;
-        this.resultPlayerTextOne.innerHTML = `P1 ${this.firstPickIsLeft ? "TOP" : "BOTTOM"}`;
-        this.resultPlayerTextTwo.innerHTML = `P2 ${this.firstPickIsLeft ? "BOTTOM" : "TOP"}`;
+        this.resultPlayerTextOne.innerHTML = `T1 ${this.firstPickIsLeft ? "TOP" : "BOTTOM"}`;
+        this.resultPlayerTextTwo.innerHTML = `T2 ${this.firstPickIsLeft ? "BOTTOM" : "TOP"}`;
     }
 }
 
