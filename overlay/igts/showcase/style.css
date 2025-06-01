@@ -1,0 +1,610 @@
+@font-face {
+    font-family: "Nohemi-Bold";
+    src: url("../../../_shared_assets/fonts/Nohemi-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Nohemi-ExtraBold";
+    src: url("../../../_shared_assets/fonts/Nohemi-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Nohemi-Light";
+    src: url("../../../_shared_assets/fonts/Nohemi-Light.ttf");
+}
+
+@font-face {
+    font-family: "Nohemi-Regular";
+    src: url("../../../_shared_assets/fonts/Nohemi-Regular.ttf");
+}
+
+
+#main {
+    position: absolute;
+    width:1920px;
+    height:1080px;
+    top:0px;
+    left:0px;
+    display:flex;
+    font-family: "Nohemi-Light";
+    color: white;
+    font-size:24px;
+}
+
+#bg, #fg, #bg_overview, #asset_1, #asset_2 {
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:-3;
+}
+
+#bg {
+    z-index: -4;
+}
+
+#bg_overview {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+    transition: 500ms cubic-bezier(0.000, 0.125, 0.000, 1.005);
+}
+
+#fg {
+    z-index:3;
+}
+
+#asset_1, #asset_2 {
+    z-index:4;
+}
+
+#mainShowcase {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:1920px;
+    height:1080px;
+    z-index:1;
+}
+
+#client {
+    position:absolute;
+    width:1300px;
+    height:900px;
+    top: 90px;
+    left: 90px;
+    /* background-color: rgba(255,255,255,0.5); */
+    display:flex;
+    align-items: end;
+    justify-content: space-between;
+    overflow:hidden;
+}
+
+#modpool {
+    font-family: "Nohemi-Regular";
+    font-size: 150px;
+    margin-bottom:-38px;
+    margin-left: -10px;
+    /* text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8), 
+    0px 0px 24px rgba(255, 255, 255, 0.9); */
+    background-color: rgba(0,0,0,0.75);
+    padding-right: 40px;
+    border-radius: 0 100px 0px 0;
+}
+
+#songDetails {
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#artistTitle {
+    font-size: 26.68px;
+    background-color: rgba(0,0,0,0.75);
+    padding-right:15px;
+    padding-left:30px;
+    padding-bottom:8px;
+    border-radius: 10px 0 0 10px;
+}
+
+#songTitle {
+    font-size: 48px;
+    font-family: "Nohemi-Light";
+    text-align: right;
+    width:fit-content;
+    background-color: rgba(0,0,0,0.75);
+    padding-right:15px;
+    padding-left:20px;
+    border-radius: 20px 0 0 20px;
+}
+
+#beatmapDetails {
+    position:absolute;
+    width:441px;
+    height:900px;
+    left: 1390px;
+    top: 90px;
+    /* background-color: rgba(255,255,255,0.5); */
+    display:flex;
+    flex-direction: column;
+}
+
+#sourceContainer {
+    height:225px;
+    width:inherit;
+    border: 2px solid white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    z-index: 2;
+}
+
+#sourceLining {
+    height:225px;
+    width:inherit;
+    border: 2px solid white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    z-index: 2;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+#source {
+	/* filter: brightness(70%) url("#sharpBlur"); */
+	object-fit: cover;
+	object-position: center;
+    height:225px;
+    width:inherit;
+    z-index: 1;
+}
+
+#modRow {
+    display:flex;
+    justify-content: space-between;
+}
+
+#pick {
+    font-family: "Nohemi-Regular";
+    font-size: 74.23px;
+    margin-left:15px;
+    margin-top:5px;
+    margin-right:70px;
+}
+
+#customText {
+    font-size:16px;
+    color:white;
+    margin-right:18px;
+    margin-top:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#customSong {
+    border-radius: 10px;
+    padding-inline: 9px;
+    padding-top:3px;
+    padding-block: 2px;
+    margin-bottom: 8px;
+    /* background-color: #5f5f5f; */
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#customCollab {
+    border-radius: 10px;
+    padding-inline: 9px;
+    padding-block: 2px;
+    /* background-color: #5f5f5f; */
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#detailsRight {
+    display:flex;
+    flex-direction: column;
+    width:inherit;
+    align-items: end;
+    font-family:"Nohemi-Regular";
+    font-size:16px;
+}
+
+#mapperText {
+    margin-right:18px;
+    margin-top:82px;
+    height:75px;
+}
+
+#difficultyContainer {
+    margin-right:18px;
+    width:340px;
+    overflow:hidden;
+	white-space: nowrap;
+    height:55px;
+    display:flex;
+    justify-content: end;
+    position:relative;
+}
+
+#difficultyText, #difficultyTextDelay {
+    width:fit-content;
+}
+
+#difficultyTextDelay {
+    display:none;
+    position:absolute;
+}
+
+#sr, #od, #bpm, #length {
+    font-size:31px;
+    margin-right:18px;
+    height:70px;
+}
+
+#replay {
+    font-size:16px;
+    margin-right:18px;
+    margin-top:48px;
+}
+
+#pickMask {
+    position:absolute;
+    top:1007px;
+    left:90px;
+    width:1740px;
+    height:56px;
+    display:flex;
+    overflow:hidden;
+}
+
+#pickQueue {
+    top:1007px;
+    left:90px;
+    width:fit-content;
+    height:56px;
+    display:flex;
+    transition: 1000ms ease-in-out;
+}
+
+.pickItem {
+    height:56px;
+    width:332px;
+    position:relative;
+    margin-right:18px;
+    transition: 1000ms ease-in-out;
+    overflow:hidden;
+    /* border: 4px solid #5f5f5f; */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.pickOverlay {
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index:1;
+    width:100%;
+    height:100%;
+	background-image: linear-gradient(to right, rgba(255,255,255,0.5) ,rgba(255,255,255,0.5));
+    transition: 1000ms ease-in-out;
+}
+
+.pickName {
+    font-family: "Nohemi-Light";
+    font-size:30px;
+    color:black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index:2;
+    width:95%;
+    height:105%;
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    transition: 1000ms ease-in-out;
+}
+
+.pickSource {
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index:0;
+    width:100%;
+    height:100%;
+	object-fit: cover;
+	object-position: center;
+    transition: 1000ms ease-in-out;
+}
+
+.lastPick {
+    opacity:0;
+    transition: 1000ms ease-in-out;
+}
+
+.lastOverlay {
+	background-image: linear-gradient(to right, rgba(255,255,255,1) ,rgba(255,255,255,0));
+    transition: 1000ms ease-in-out;
+}
+
+.lastSource {
+    opacity:0;
+    transition: 1000ms ease-in-out;
+}
+
+#sceneTransition {
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    top:0px;
+    left:0px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 5 !important;
+}
+
+#transitionVideo {
+    width:1750px; 
+    height:900px; 
+    object-fit: cover;
+    z-index: 5 !important;
+}
+
+/* OVERVIEW SCENE */
+#overviewScene {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:1920px;
+    height:1080px;
+    display:flex;
+    justify-content: center;
+    opacity:0;
+}
+
+#overviewStage {
+    position: absolute;
+    top:0px;
+    left:-5px;
+    width:1920px;
+    height:1112px;
+    font-family: "Nohemi-ExtraBold";
+    font-size:130px;
+    color:white;
+    display:flex;
+    align-items: end;
+}
+
+#overviewDetails {
+    position: absolute;
+    top:0px;
+    left:5px;
+    width:1920px;
+    height:1112px;
+    font-family: "Nohemi-ExtraBold";
+    font-size:130px;
+    color:white;
+    display:flex;
+    justify-content: end;
+    align-items: end;
+}
+
+#mappoolContainer {
+    height:fit-content;
+    width: 1840px;
+    margin-top:95px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:875px;
+}
+
+.mapContainer {
+    display:flex;
+    justify-content: center;
+    width:1840px;
+    height:fit-content;
+    flex-wrap: wrap;
+}
+
+.clicker {
+    width:466px;
+    height:95px;
+    display:flex;
+    position:relative;
+    margin-inline: 70px;
+    margin-bottom:30px;
+}
+
+.mapDetails {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:inherit;
+    height: inherit;
+    display:flex;
+    flex-direction: column;
+    font-family: "Nohemi-Regular";
+    color:black;
+    z-index:3;
+}
+
+.mapTitleContainer {
+    width:inherit;
+    height:35px;
+    position:relative;
+}
+
+.mapTitle {
+    width:90%;
+    height:35px;
+    font-size:25px;
+    margin-left:5px;
+    margin-top:3px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+
+.mapArtistContainer {
+    width:inherit;
+    height:21px;
+    position:relative;
+}
+
+.mapArtist {
+    width:90%;
+    height:21px;
+    font-size:14px;
+    margin-left:7px;
+    margin-top:-1px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.mapBottom {
+    display:flex;
+    margin-top:7px;
+}
+
+.mapMapperContainer {
+    display:flex;
+    flex-direction: column;
+    width:145px;
+}
+
+.mapMapperTitle, .mapDifficultyTitle {
+    font-family: "Nohemi-ExtraBold";
+    font-size:10px;
+    margin-left:7px;
+}
+
+.mapMapper, .mapDifficulty {
+    font-family: "Nohemi-Regular";
+    font-size:10px;
+    margin-left:7px;
+}
+
+.mapDifficulty {
+    width:150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.mapModpool {
+    position:absolute;
+    top:0px;
+    left:-5px;
+    width:inherit;
+    height: inherit;
+    display:flex;
+    justify-content: end;
+    align-items: end;
+    font-family: 'Nohemi-ExtraBold';
+    color:white;
+    font-size:54px;
+    margin-top:14px;
+    z-index: 2;
+}
+
+.mapOverlay {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:inherit;
+    height: inherit;
+    z-index: 1;
+    background-image: linear-gradient(to right, rgba(255,255,255,1) , rgba(255,255,255,0.8), rgba(255,255,255,0));;
+}
+
+.mapSource {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:inherit;
+    height: inherit;
+    z-index: 0;
+	object-fit: cover;
+	object-position: center;
+	filter: brightness(60%);
+    /* background-image: url(../../../_shared_assets/design/main_banner.png); */
+}
+
+/* CONTROL PANEL */
+#controlPanel {
+    width:1920px;
+    height:200px;
+    z-index:0;
+    position:absolute;
+    left:0px;
+    top:1085px;
+    display:flex;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Nohemi-Bold', sans-serif;
+    font-weight: normal;
+    color: white;
+    background-color: #252525;
+    user-select: none;
+}
+
+#sceneButton {
+    background:rgb(4, 96, 139);
+    color:white;
+    width:400px;
+    height:150px;
+    border-radius: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-inline: 25px;
+    padding-inline:10px;
+    transition: 250ms ease-in-out;
+}
+
+@keyframes scrollText {
+	0% {
+	  transform: translateX(100%);
+	}
+	100% {
+	  transform: translateX(-100%);
+	}
+}
+
+@keyframes fadeOutRight {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(600px);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        transform: translateX(-600px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
