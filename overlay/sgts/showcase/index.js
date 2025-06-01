@@ -26,7 +26,7 @@ let stages = [];
 let currentStage;
 (async () => {
     try {
-        const jsonData = await $.getJSON("../../../_data/beatmaps_rgts_showcase.json");
+        const jsonData = await $.getJSON("../../../_data/beatmaps_sgts_showcase.json");
         jsonData.map((beatmap) => {
             beatmapSet.push(beatmap);
         });
@@ -34,7 +34,7 @@ let currentStage;
         jsonData_2.map((beatmap) => {
             offlineData.push(beatmap);
         });
-        const jsonData_3 = await $.getJSON("../../../_data/stage_rgts.json");
+        const jsonData_3 = await $.getJSON("../../../_data/stage_sgts.json");
         jsonData_3.map((stage,index) => {
             if (index == 0) {
                 currentStage = stage.currentStage;
@@ -153,7 +153,7 @@ class ShowcaseManager {
             try {
                 this.pickSource.setAttribute("src", `http://127.0.0.1:24050/Songs/${mapData.menu.bm.path.full}?a=${Math.random(10000)}`);
             } catch (e) {
-                this.pickSource.setAttribute("src","../../../_shared_assets/design/rgts/main_banner.png");
+                this.pickSource.setAttribute("src","../../../_shared_assets/design/sgts/main_banner.png");
             }
 
             this.pickQueueAsset.appendChild(this.pickItem);
@@ -174,11 +174,11 @@ class ShowcaseManager {
             let pickSource = document.getElementById(`${index}pickSource`);
             if (index < this.revealed+moveIndex+1) {
                 pickName.style.opacity = 1;
-                pickOverlay.style.backgroundImage = "linear-gradient(to right, rgba(255,255,255,0.5) ,rgba(255,255,255,0.5))";
+                pickOverlay.style.backgroundImage = "linear-gradient(to right, rgba(192, 255, 38,0.5) ,rgba(192, 255, 38,0.5))";
                 pickSource.style.opacity = 1;
             } else {
                 pickName.style.opacity = 0;
-                pickOverlay.style.backgroundImage = "linear-gradient(to right, rgba(255,255,255,1) ,rgba(255,255,255,0))";
+                pickOverlay.style.backgroundImage = "linear-gradient(to right, rgba(192, 255, 38,1) ,rgba(192, 255, 38,0))";
                 pickSource.style.opacity = 0;
             }
             // console.log(this.revealed+moveIndex-3);
@@ -279,7 +279,7 @@ class ShowcaseManager {
                     this.sourceAsset.setAttribute('src',`http://127.0.0.1:24050/Songs/${data.menu.bm.path.full}?a=${Math.random(10000)}`);
                 }
             } catch (e) {
-                this.sourceAsset.setAttribute('src',"../../../_shared_assets/design/rgts/main_banner.png");
+                this.sourceAsset.setAttribute('src',"../../../_shared_assets/design/sgts/main_banner.png");
             }
     
             this.adjustFont(this.songTitleAsset,700,48);
@@ -415,7 +415,7 @@ class Beatmap {
         this.mapModpool.innerHTML = this.mods;
         this.mapMapperTitle.innerHTML = "MAPPED BY";
         this.mapDifficultyTitle.innerHTML = "DIFFICULTY";
-        this.mapSource.setAttribute('src',"../../../_shared_assets/design/rgts/main_banner.png");
+        this.mapSource.setAttribute('src',"../../../_shared_assets/design/sgts/main_banner.png");
         
         clickerObj.appendChild(this.mapDetails);
         clickerObj.appendChild(this.mapModpool);
@@ -491,7 +491,7 @@ async function makeScrollingText(title, titleDelay, rate, boundaryWidth, padding
 
 async function promptOverview() {
     document.getElementById("bg_overview").style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)";
-    document.getElementById("bg_overview").play();
+    // document.getElementById("bg_overview").play();
 
     setTimeout(function() {
         showcaseManager.fadeOut();
@@ -500,7 +500,7 @@ async function promptOverview() {
     setTimeout(function() {
         overviewScene.style.opacity = 1;
         overviewScene.style.animation = "fadeInLeft 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
-        document.getElementById("bg").pause();
+        // document.getElementById("bg").pause();
         currentScene = "overview";
     },1500);
 }
@@ -509,7 +509,7 @@ async function promptShowcase() {
     let overviewScene = document.getElementById("overviewScene");
     overviewScene.style.opacity = 0;
     overviewScene.style.animation = "fadeOutRight 1s cubic-bezier(.45,0,1,.48)";
-    document.getElementById("bg").play();
+    // document.getElementById("bg").play();
 
     setTimeout(function() {
         showcaseManager.fadeIn();
@@ -518,7 +518,7 @@ async function promptShowcase() {
     
     setTimeout(function() {
         document.getElementById("bg_overview").style.clipPath = "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)";
-        document.getElementById("bg_overview").pause();
+        // document.getElementById("bg_overview").pause();
         currentScene = "showcase";
     },2000);
 }

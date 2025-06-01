@@ -1,133 +1,66 @@
 [
   {
-    "beatmapId": "Fellowship - Hold Up Your Hearts (Again) (hz404) [Beyond the Horizon (RGTS Edit)].osu",
+    "beatmapId": "Gram vs. Yooh - Apocalypse (LuroxS) [Hell Oni].osu",
     "pick": "NM1",
-    "modSR": 5.85,
+    "modSR": 7.3,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3994029,
+    "beatmapId": "Micelle - Gargoyle (roufou) [Ura Oni].osu",
     "pick": "NM2",
-    "modSR": 6.26,
+    "modSR": 7.09,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3999686,
-    "pick": "NM3",
-    "modSR": 5.53,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "HyperJuice - City Lights feat. EVO+, Jinmenusagi (Pa's Lam System Remix) (_gt) [Rycy's Gameplay Threatens Singapore].osu",
-    "pick": "NM4",
-    "modSR": 4.64,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "THE SHAFT - Linear Accelerator (MTNTWarz) [babu Oni].osu",
-    "pick": "NM5",
-    "modSR": 6.04,
-    "customSong": false,
-    "collab": "",
-    "mappers": "Faputa"
-  },
-  {
-    "beatmapId": 4061425,
-    "pick": "NM6",
-    "modSR": 5.30,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 2412961,
+    "beatmapId": 2758293,
     "pick": "HD1",
-    "modSR": 5.50,
+    "modSR": 6.43,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "waterflame - Glorious Morning 2 (Cut Ver.) (YonGin) [Renaissance Age].osu",
+    "beatmapId": 3385974,
     "pick": "HD2",
-    "modSR": 5.33,
+    "modSR": 5.58,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Reku Mochizuki - INFiNiTE ENERZY -Overdoze- (shoucan91) [Kantan (GTS Edit)].osu",
+    "beatmapId": "HyuN feat. Syepias - CROSS SOUL (Undead Alice) [INNER ONI].osu",
     "pick": "HR1",
-    "modSR": 6.02,
+    "modSR": 6.8,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4817235,
+    "beatmapId": 4814962,
     "pick": "HR2",
-    "modSR": 6.59,
+    "modSR": 6.96,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Symholic - Tokei no Tsue (-Kazuha) [Timeless (RGTS edit)].osu",
+    "beatmapId": 4860232,
     "pick": "DT1",
-    "modSR": 5.34,
+    "modSR": 6.74,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Mew S - Call For The Core (N a N a) [Krazy For The KFC (RGTS Edit)].osu",
-    "pick": "DT2",
-    "modSR": 5.74,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "Hiiragi Magnetite - Tetoris (makimen) [Speed Run!!! (RGTS Ver.)].osu",
+    "beatmapId": 5133745,
     "pick": "FM1",
-    "modSR": 5.69,
+    "modSR": 6.19,
     "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 2073780,
-    "pick": "FM2",
-    "modSR": 5.49,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 2548538,
-    "pick": "FM3",
-    "modSR": 5.05,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "polyscream - antiparadiiso (Alwaysyukaz) [Fallen].osu",
-    "pick": "TB",
-    "modSR": 6.41,
-    "customSong": true,
     "collab": "",
     "mappers": ""
   }
 ]
-
-
-

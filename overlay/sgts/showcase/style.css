@@ -1,36 +1,36 @@
 @font-face {
     font-family: "Outfit-Bold";
-    src: url("../../../_shared_assets/fonts/Outfit-Bold.ttf");
+    src: url("../../../_shared_assets/fonts/StretchPro.otf");
 }
 
 @font-face {
     font-family: "Outfit-ExtraBold";
-    src: url("../../../_shared_assets/fonts/Outfit-ExtraBold.ttf");
+    src: url("../../../_shared_assets/fonts/StretchPro.otf");
 }
 
 @font-face {
     font-family: "Outfit-Light";
-    src: url("../../../_shared_assets/fonts/Outfit-Light.ttf");
+    src: url("../../../_shared_assets/fonts/StretchPro.otf");
 }
 
 @font-face {
     font-family: "Outfit-Regular";
-    src: url("../../../_shared_assets/fonts/Outfit-Regular.ttf");
+    src: url("../../../_shared_assets/fonts/StretchPro.otf");
 }
 
 @font-face {
     font-family: "Sui-Generis";
-    src: url("../../../_shared_assets/fonts/Sui\ Generis\ Rg.otf");
+    src: url("../../../_shared_assets/fonts/StretchPro.otf");
 }
 
 @font-face {
     font-family: "ClashDisplay";
-    src: url("../../../_shared_assets/fonts/ClashDisplay-Variable.ttf");
+    src: url("../../../_shared_assets/fonts/StretchPro.otf");
 }
 
 @font-face {
     font-family: "Amiri-Bold";
-    src: url("../../../_shared_assets/fonts/Amiri-Bold.ttf");
+    src: url("../../../_shared_assets/fonts/StretchPro.otf");
 }
 
 
@@ -43,7 +43,7 @@
     display: flex;
     font-family: "ClashDisplay";
     font-weight: 500;
-    color: black;
+    color: #C0FF26;
     font-size: 24px;
 }
 
@@ -82,18 +82,18 @@
     mask-position: 0 0, 90px 90px;
     mask-size: auto, 1300px 900px;
     mask-repeat: no-repeat, no-repeat;
-    filter:  blur(8px);
+    /* filter:  blur(8px); */
 }
 
 #bg_overview {
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
     transition: 500ms cubic-bezier(0.000, 0.125, 0.000, 1.005);
-    filter:  blur(8px);
+    /* filter:  blur(8px); */
 }
 
 #fg {
-    z-index: 3;
+    z-index: 0;
 }
 
 #asset_1,
@@ -107,7 +107,6 @@
     left: 0px;
     width: 1920px;
     height: 1080px;
-    z-index: 1;
 }
 
 #client {
@@ -121,28 +120,33 @@
     align-items: end;
     justify-content: space-between;
     overflow: hidden;
+    z-index: -1 !important;
 }
 
 #modpool {
     font-family: "Sui-Generis";
-    font-size: 150px;
+    font-size: 130px;
     margin-bottom: -38px;
     margin-left: -10px;
     /* text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8), 
     0px 0px 24px rgba(255, 255, 255, 0.9); */
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(0, 0, 0, 0.75);
+    color:white;
     padding-right: 40px;
+    z-index: -1 !important;
 }
 
 #songDetails {
     display: flex;
     flex-direction: column;
     align-items: end;
+    color:white;
+    z-index: -1 !important;
 }
 
 #artistTitle {
     font-size: 26.68px;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(0, 0, 0, 0.75);
     padding-right: 15px;
     padding-left: 30px;
     padding-bottom: 8px;
@@ -154,7 +158,7 @@
     font-weight: 500;
     text-align: right;
     width: fit-content;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(0, 0, 0, 0.75);
     padding-right: 15px;
     padding-left: 20px;
 }
@@ -168,6 +172,7 @@
     /* background-color: rgba(255,255,255,0.5); */
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 #sourceContainer {
@@ -183,10 +188,10 @@
 #sourceLining {
     height: 225px;
     width: inherit;
-    /* border: 2px solid white;
+    border: 2px solid #C0FF26;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box; */
+    -webkit-box-sizing: border-box;
     z-index: 2;
     position: absolute;
     top: 0px;
@@ -205,14 +210,16 @@
 #modRow {
     display: flex;
     justify-content: space-between;
+    z-index: 2;
 }
 
 #pick {
     font-family: "Sui-Generis";
     font-size: 74.23px;
     margin-left: 15px;
-    margin-top: 5px;
+    margin-top: 0px;
     margin-right: 70px;
+    color: white;
 }
 
 #customText {
@@ -255,26 +262,26 @@
     display: flex;
     flex-direction: column;
     width: inherit;
-    align-items: end;
+    align-items: center;
     font-family: "ClashDisplay";
     font-weight: 500;
     font-size: 16px;
 }
 
 #mapperText {
-    margin-right: 18px;
-    margin-top: 87px;
+    /* margin-right: 18px; */
+    margin-top: 65px;
     height: 75px;
 }
 
 #difficultyContainer {
-    margin-right: 18px;
+    /* margin-right: 18px; */
     width: 340px;
     overflow: hidden;
     white-space: nowrap;
-    height: 55px;
+    height: 65px;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     position: relative;
 }
 
@@ -293,14 +300,14 @@
 #bpm,
 #length {
     font-size: 31px;
-    margin-right: 18px;
+    /* margin-right: 18px; */
     height: 70px;
 }
 
 #replay {
     font-size: 16px;
-    margin-right: 18px;
-    margin-top: 48px;
+    /* margin-right: 18px; */
+    margin-top: 52px;
 }
 
 #pickMask {
@@ -342,14 +349,14 @@
     z-index: 1;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    background-image: linear-gradient(to right, rgba(192, 255, 38,0.5), rgba(192, 255, 38,0.5));
     transition: 1000ms ease-in-out;
 }
 
 .pickName {
     font-family: "Amiri-Bold";
     font-size: 30px;
-    color: black;
+    color: white;
     position: absolute;
     top: 0px;
     left: 0px;
