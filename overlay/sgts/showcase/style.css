@@ -45,6 +45,7 @@
     font-weight: 500;
     color: #C0FF26;
     font-size: 24px;
+    font-variant-ligatures: none;
 }
 
 #bg,
