@@ -1,21 +1,21 @@
 @font-face {
-    font-family: "Outfit-Bold";
-    src: url("../../../_shared_assets/fonts/Outfit-Bold.ttf");
+    font-family: "Nohemi-Bold";
+    src: url("../../../_shared_assets/fonts/Nohemi-Bold.ttf");
 }
 
 @font-face {
-    font-family: "Outfit-ExtraBold";
-    src: url("../../../_shared_assets/fonts/Outfit-ExtraBold.ttf");
+    font-family: "Nohemi-ExtraBold";
+    src: url("../../../_shared_assets/fonts/Nohemi-ExtraBold.ttf");
 }
 
 @font-face {
-    font-family: "Outfit-Light";
-    src: url("../../../_shared_assets/fonts/Outfit-Light.ttf");
+    font-family: "Nohemi-Light";
+    src: url("../../../_shared_assets/fonts/Nohemi-Light.ttf");
 }
 
 @font-face {
-    font-family: "Outfit-Regular";
-    src: url("../../../_shared_assets/fonts/Outfit-Regular.ttf");
+    font-family: "Nohemi-Regular";
+    src: url("../../../_shared_assets/fonts/Nohemi-Regular.ttf");
 }
 
 
@@ -28,7 +28,7 @@ html {
     margin: 0;
     padding: 0;
     background: #000;
-    font-family: "Outfit-Bold";
+    font-family: "Nohemi-Bold";
     overflow-x: auto;
 }
 
@@ -61,7 +61,7 @@ html {
 }
 
 .timer {
-    font-family: "Outfit-Bold";
+    font-family: "Nohemi-Bold";
     position: absolute;
     left: 1118px;
     top: 440px;
@@ -88,7 +88,7 @@ html {
     align-items: center;
     gap: 20px;
     flex-shrink: 0;
-    font-family: "Outfit-Bold";
+    font-family: "Nohemi-Bold";
 }
 
 .control-panel button {
@@ -101,7 +101,7 @@ html {
     color: white;
     border-radius: 8px;
     transition: background 0.3s;
-    font-family: "Outfit-Bold";
+    font-family: "Nohemi-Bold";
     font-weight:700;
 }
 
