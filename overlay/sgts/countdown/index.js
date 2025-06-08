@@ -13,14 +13,6 @@ function formatTime(seconds) {
 
 function updateDisplay() {
   timerDisplay.textContent = formatTime(duration);
-
-  // Fill bar logic
-  if (duration <= 300) {
-    let fillPercent = ((300 - duration) / 300) * 100;
-    fillBar.style.width = `${fillPercent}%`;
-  } else {
-    fillBar.style.width = '0%';
-  }
 }
 
 function startCountdown() {

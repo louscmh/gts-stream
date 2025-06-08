@@ -1,36 +1,21 @@
 @font-face {
-    font-family: "Outfit-Bold";
-    src: url("../../../_shared_assets/fonts/Outfit-Bold.ttf");
+    font-family: "Nohemi-Bold";
+    src: url("../../../_shared_assets/fonts/StretchPro.otf");
 }
 
 @font-face {
-    font-family: "Outfit-ExtraBold";
-    src: url("../../../_shared_assets/fonts/Outfit-ExtraBold.ttf");
+    font-family: "Nohemi-ExtraBold";
+    src: url("../../../_shared_assets/fonts/StretchPro.otf");
 }
 
 @font-face {
-    font-family: "Outfit-Light";
-    src: url("../../../_shared_assets/fonts/Outfit-Light.ttf");
+    font-family: "Nohemi-Light";
+    src: url("../../../_shared_assets/fonts/StretchPro.otf");
 }
 
 @font-face {
-    font-family: "Outfit-Regular";
-    src: url("../../../_shared_assets/fonts/Outfit-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Sui-Generis";
-    src: url("../../../_shared_assets/fonts/Sui\ Generis\ Rg.otf");
-}
-
-@font-face {
-    font-family: "ClashDisplay";
-    src: url("../../../_shared_assets/fonts/ClashDisplay-Variable.ttf");
-}
-
-@font-face {
-    font-family: "Amiri-Bold";
-    src: url("../../../_shared_assets/fonts/Amiri-Bold.ttf");
+    font-family: "Nohemi-Regular";
+    src: url("../../../_shared_assets/fonts/StretchPro.otf");
 }
 
 
@@ -42,9 +27,10 @@ body,
 html {
     margin: 0;
     padding: 0;
-    background: #000;
-    font-family: "ClashDisplay";
+    /* background: #000; */
+    font-family: "Nohemi-Bold";
     overflow-x: auto;
+    font-variant-ligatures: none;
 }
 
 .wrapper {
@@ -68,46 +54,26 @@ html {
     object-fit: cover;
 }
 
-#fg {
+#bg {
     position: absolute;
     width:1920px;
     height:1080px;
-    z-index:2;
+    z-index:-1;
 }
 
 .timer {
-    font-family: "Sui-Generis";
+    font-family: "Nohemi-Regular";
     position: absolute;
-    left: 1005px;
-    top: 447px;
     /* transform: translateX(-50%); */
-    width:545px;
-    height:129px;
+    width:1920px;
+    height:1080px;
     display:flex;
     z-index:3;
     justify-content: center;
     align-items: center;
-    font-size: 158px;
+    font-size: 200px;
     color: white;
-    text-shadow: 5px 7px 1px black;
-}
-
-.fillbar {
-    position: absolute;
-    left: 77px;
-    top: 1032px;
-    /* transform: translateX(-50%); */
-    width:1766px;
-    height:20px;
-    display:flex;
-    z-index:0;
-}
-
-#fill {
-    background-image: url("../../../_shared_assets/design/rgts/bar.png");
-    width:100%;
-    height:19px;
-    transition: width linear 1s;
+    font-variant-ligatures: none;
 }
 
 .control-panel {
@@ -122,7 +88,8 @@ html {
     align-items: center;
     gap: 20px;
     flex-shrink: 0;
-    font-family: "ClashDisplay";
+    font-family: "Nohemi-Bold";
+    font-variant-ligatures: none;
 }
 
 .control-panel button {
@@ -135,8 +102,9 @@ html {
     color: white;
     border-radius: 8px;
     transition: background 0.3s;
-    font-family: "ClashDisplay";
+    font-family: "Nohemi-Bold";
     font-weight:700;
+    font-variant-ligatures: none;
 }
 
 .control-panel button:hover {
