@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Nohemi-Bold";
-    src: url("../../../_shared_assets/fonts/Nohemi-Bold.ttf");
+    src: url("../../../_shared_assets/fonts/Nohemi-Medium.ttf");
 }
 
 @font-face {
@@ -61,19 +61,32 @@ html {
 }
 
 .timer {
-    font-family: "Nohemi-Bold";
+    font-family: "Nohemi-Regular";
     position: absolute;
-    left: 1118px;
-    top: 440px;
     /* transform: translateX(-50%); */
-    width:469px;
-    height:164px;
+    width:1920px;
+    height:1080px;
     display:flex;
     z-index:3;
     justify-content: center;
     align-items: center;
-    font-size: 168px;
-    color: black;
+    font-size: 240px;
+    color: white;
+}
+
+.startingText {
+    font-family: "Nohemi-Light";
+    position: absolute;
+    /* transform: translateX(-50%); */
+    width:1920px;
+    height:1080px;
+    top:120px;
+    display:flex;
+    z-index:3;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
 }
 
 .control-panel {

@@ -1,0 +1,358 @@
+@font-face {
+    font-family: "Nohemi-Bold";
+    src: url("../../../_shared_assets/fonts/Nohemi-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Nohemi-ExtraBold";
+    src: url("../../../_shared_assets/fonts/Nohemi-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Nohemi-Light";
+    src: url("../../../_shared_assets/fonts/Nohemi-Light.ttf");
+}
+
+@font-face {
+    font-family: "Nohemi-Regular";
+    src: url("../../../_shared_assets/fonts/Nohemi-Regular.ttf");
+}
+
+#main {
+    position: absolute;
+    width:1920px;
+    height:1080px;
+    top:0px;
+    left:0px;
+    display:flex;
+    font-family: "Nohemi-Light";
+    color: white;
+    font-size:24px;
+}
+
+.foreground {
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 0;
+}
+
+#bg {
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: -1;
+}
+
+#player {
+    z-index: 1;
+    position: absolute;
+    top:328px;
+    left:98px;
+    color:black;
+    display:flex;
+    flex-direction: column;
+}
+
+#playerPic {
+    border: 6px solid white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width:298px;
+    height:220px;
+    object-fit:contain;
+    object-position: center;
+    background-color: white;
+
+}
+
+#playerSection {
+    border: 6px solid white;
+    border-width: 0px 6px 6px 6px; /* 25px top, 10px right, 4px bottom and 35px left */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: white;
+    width:298px;
+    height:218px;
+    display:flex;
+    flex-direction: column;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#playerName {
+    font-family: "Nohemi-Bold";
+    font-size: 28px;
+    margin-left:10px;
+    margin-right:10px;
+    height:20px;
+    width:fit-content !important;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+#playerNames {
+    font-family: "Nohemi-Bold";
+    transform:translateY(20px);
+    font-size: 20px;
+    margin-left:10px;
+    margin-right:10px;
+    height:120px;
+    text-align: center;
+    width:266px;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+#seedSection {
+    display:flex;
+    margin-inline:10px;
+    height: 80px;
+    align-items: end;
+    justify-content: center;
+    margin-bottom:5px;
+}
+
+#seedTexts {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:80px;
+    height: 120px;
+}
+
+#seedText1 {
+    font-family: "Nohemi-ExtraBold";
+    text-align: right;
+    padding-right:15px;
+    margin-top:38px;
+}
+
+#seedText2 {
+    font-family: "Nohemi-Regular";
+    margin-left:2px;
+}
+
+#seedNumber {
+    font-family: "Nohemi-Bold";
+    font-size:100px;
+    margin-bottom:-24px;
+    display:flex;
+    align-items: end;
+    height:140px !important;
+    width:fit-content;
+}
+
+#qualsSection {
+    margin-top:23px;
+    background-color: white;
+    width:298px;
+    height:73px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top:2px;
+    font-size:32px;
+    border: 6px solid white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#rankSection, #avgSection {
+    display:flex;
+    justify-content: space-between;
+    margin-inline:10px;
+}
+
+#rankText, #avgText {
+    font-family: "Nohemi-Bold";
+}
+
+#rank, #avg {
+    font-family: "Nohemi-Regular";
+}
+
+#result {
+    position:absolute;
+    top: 243px;
+    left:470px;
+}
+
+#resultContainer {
+    display:flex;
+    flex-direction: column;
+}
+
+.map {
+    height:83.6px;
+    margin-bottom: 10px;
+    display:flex;
+}
+
+.mapSide {
+    display:flex;
+    height:inherit;
+    width:860px;
+    display:flex;
+    background-color: white;
+    color:black;
+    overflow: hidden;
+}
+
+.mapLeft {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:7px;
+    font-family: "Nohemi-Regular";
+    z-index: 2;
+}
+
+.mapRight {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    font-family: "Nohemi-Regular";
+    z-index: 2;
+}
+
+.mapSong {
+    width:fit-content;
+    margin-top:7px;
+    font-size: 37px;
+}
+
+.mapArtist {
+    font-size:23px;
+    margin-top:-3px;
+}
+
+.mapRank {
+    margin-right:8px;
+    font-size: 21px;
+    margin-bottom:-2px;
+    margin-top:9px;
+    font-family: "Nohemi-ExtraBold";
+}
+
+.mapScore {
+    margin-right:7px;
+    font-size: 50px;
+    color: black;
+}
+
+.mapSource {
+    /* position: absolute; */
+    height: inherit;
+    width: inherit;
+    z-index: 1;
+    object-fit: cover;
+    object-position: center;
+    opacity:0.30;
+    overflow:hidden;
+	filter: blur(3px);
+}
+
+.mapMod {
+    height:98px;
+    display:flex;
+    text-align: center;
+    align-items: end;
+    justify-content: center;
+    font-family: "Nohemi-Regular";
+    font-size:47px;
+    margin-left:6px;
+    margin-top:-4px;
+    color:white;
+}
+
+/* CONTROLLER */
+#controller {
+    position:absolute;
+    left:1920px;
+    top:0px;
+    background-color:rgb(39, 39, 39);
+    width:500px;
+    height:1080px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttons {
+    width:90%;
+    height:90%;
+    display:flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: "Nohemi-Regular";
+    color:white;
+    font-size:24px;
+    user-select: none; /* Disable text selection */
+}
+
+.button {
+    width:100%;
+    height:fit-content;
+    background-color: rgb(255, 255, 255);
+    margin-block:10px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nohemi-Bold";
+    color:rgb(0, 0, 0);
+    font-size:32px;
+    padding-top: 5px;
+    margin-bottom:15px;
+    text-align: center;
+    padding-block: 10px;
+    user-select: none; /* Disable text selection */
+    transition: ease-in-out 500ms;
+}
+
+@keyframes fadeOutDown {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
