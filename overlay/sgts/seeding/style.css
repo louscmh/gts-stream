@@ -61,7 +61,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     width:298px;
-    height:fit-content;
+    height:200px;
     object-fit:contain;
     object-position: center;
     background-color: black;

@@ -1,0 +1,5386 @@
+{
+    "Teams": [
+        {
+            "FullName": "Japan't",
+            "Acronym": "Jap",
+            "FlagName": "US",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 1,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2999082,
+                            "Seed": 1
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2994495,
+                            "Seed": 3
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 1,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3180000,
+                            "Seed": 1
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 3180000,
+                            "Seed": 1
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 1,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 3170140,
+                            "Seed": 1
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 3169852,
+                            "Seed": 3
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 1,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3353914,
+                            "Seed": 1
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 1,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3295713,
+                            "Seed": 1
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#1",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "13664116"
+                },
+                {
+                    "id": "16067522"
+                },
+                {
+                    "id": "14356353"
+                },
+                {
+                    "id": "1263669"
+                },
+                {
+                    "id": "165027"
+                },
+                {
+                    "id": "9540073"
+                }
+            ]
+        },
+        {
+            "FullName": "IAAI",
+            "Acronym": "IAA",
+            "FlagName": "JP",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 2,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2997247,
+                            "Seed": 2
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2994498,
+                            "Seed": 2
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 2,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3178931,
+                            "Seed": 2
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 3174269,
+                            "Seed": 2
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 2,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 3160327,
+                            "Seed": 2
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 3175301,
+                            "Seed": 2
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 2,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3353914,
+                            "Seed": 1
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 2,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3288366,
+                            "Seed": 2
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#2",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "14520910"
+                },
+                {
+                    "id": "11680357"
+                },
+                {
+                    "id": "7160196"
+                },
+                {
+                    "id": "14947043"
+                },
+                {
+                    "id": "5321719"
+                },
+                {
+                    "id": "11325757"
+                }
+            ]
+        },
+        {
+            "FullName": "Xbox Series X",
+            "Acronym": "Xbo",
+            "FlagName": "US",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 3,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2981505,
+                            "Seed": 3
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2997249,
+                            "Seed": 1
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 4,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3157191,
+                            "Seed": 7
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 3149732,
+                            "Seed": 3
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 4,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 3103067,
+                            "Seed": 5
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 3168726,
+                            "Seed": 4
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 6,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3318123,
+                            "Seed": 6
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 8,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3226870,
+                            "Seed": 8
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#3",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "263110"
+                },
+                {
+                    "id": "3918650"
+                },
+                {
+                    "id": "9821194"
+                },
+                {
+                    "id": "4669728"
+                },
+                {
+                    "id": "2277798"
+                },
+                {
+                    "id": "9905079"
+                }
+            ]
+        },
+        {
+            "FullName": "Welcome to my offish",
+            "Acronym": "Wel",
+            "FlagName": "TW",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 8,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2950140,
+                            "Seed": 8
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2893308,
+                            "Seed": 9
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 3,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3166132,
+                            "Seed": 3
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 3121278,
+                            "Seed": 4
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 6,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 3109662,
+                            "Seed": 3
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 3136326,
+                            "Seed": 9
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 3,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3343468,
+                            "Seed": 3
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 4,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3246647,
+                            "Seed": 4
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#4",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "23487206"
+                },
+                {
+                    "id": "16536516"
+                },
+                {
+                    "id": "8145223"
+                },
+                {
+                    "id": "10869389"
+                },
+                {
+                    "id": "26454214"
+                },
+                {
+                    "id": "9623142"
+                }
+            ]
+        },
+        {
+            "FullName": "Haru no Tsuki",
+            "Acronym": "Har",
+            "FlagName": "IT",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 4,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2977366,
+                            "Seed": 4
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2898352,
+                            "Seed": 8
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 5,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3157540,
+                            "Seed": 6
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 3074979,
+                            "Seed": 7
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 5,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 3103294,
+                            "Seed": 4
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 3145122,
+                            "Seed": 6
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 7,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3314435,
+                            "Seed": 7
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 13,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3110454,
+                            "Seed": 13
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#5",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "14510301"
+                },
+                {
+                    "id": "26475388"
+                },
+                {
+                    "id": "7994829"
+                },
+                {
+                    "id": "16650552"
+                },
+                {
+                    "id": "15159808"
+                },
+                {
+                    "id": "29485001"
+                }
+            ]
+        },
+        {
+            "FullName": "WAKASA LIFE",
+            "Acronym": "WAK",
+            "FlagName": "JP",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 5,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2927954,
+                            "Seed": 9
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2960008,
+                            "Seed": 4
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 8,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3106864,
+                            "Seed": 14
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 3120453,
+                            "Seed": 5
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 10,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 3054993,
+                            "Seed": 7
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 3103869,
+                            "Seed": 12
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 14,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3208430,
+                            "Seed": 14
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 3,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3279416,
+                            "Seed": 3
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#6",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "35487271"
+                },
+                {
+                    "id": "30496573"
+                },
+                {
+                    "id": "35619347"
+                },
+                {
+                    "id": "27304274"
+                },
+                {
+                    "id": "21542520"
+                },
+                {
+                    "id": "16662508"
+                }
+            ]
+        },
+        {
+            "FullName": "vecinos invasores",
+            "Acronym": "vec",
+            "FlagName": "GB",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 7,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2921609,
+                            "Seed": 11
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2953541,
+                            "Seed": 5
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 14,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3102205,
+                            "Seed": 16
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 3043038,
+                            "Seed": 10
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 3,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 3058189,
+                            "Seed": 6
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 3179248,
+                            "Seed": 1
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 18,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3152316,
+                            "Seed": 18
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 5,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3243124,
+                            "Seed": 5
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#7",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "9864847"
+                },
+                {
+                    "id": "10072733"
+                },
+                {
+                    "id": "8484987"
+                },
+                {
+                    "id": "6194830"
+                },
+                {
+                    "id": "14433939"
+                },
+                {
+                    "id": "13488325"
+                }
+            ]
+        },
+        {
+            "FullName": "SIGMA TEAM",
+            "Acronym": "SIG",
+            "FlagName": "US",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 12,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2921660,
+                            "Seed": 10
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2842107,
+                            "Seed": 11
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 7,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3151319,
+                            "Seed": 8
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 3067837,
+                            "Seed": 8
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 9,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 3041883,
+                            "Seed": 9
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 3145054,
+                            "Seed": 7
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 10,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3250748,
+                            "Seed": 10
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 10,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3168519,
+                            "Seed": 10
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#8",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "13857986"
+                },
+                {
+                    "id": "5468461"
+                },
+                {
+                    "id": "9511518"
+                },
+                {
+                    "id": "9311768"
+                },
+                {
+                    "id": "8818089"
+                },
+                {
+                    "id": "17061174"
+                }
+            ]
+        },
+        {
+            "FullName": "Asian Heritage Style",
+            "Acronym": "Asi",
+            "FlagName": "US",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 13,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2967051,
+                            "Seed": 6
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2761921,
+                            "Seed": 17
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 11,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3136186,
+                            "Seed": 10
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 3013620,
+                            "Seed": 12
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 8,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 3044837,
+                            "Seed": 8
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 3145014,
+                            "Seed": 8
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 4,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3320507,
+                            "Seed": 4
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 9,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3175079,
+                            "Seed": 9
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#9",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "11833538"
+                },
+                {
+                    "id": "15019527"
+                },
+                {
+                    "id": "15231510"
+                },
+                {
+                    "id": "30243509"
+                },
+                {
+                    "id": "9805760"
+                },
+                {
+                    "id": "12703319"
+                }
+            ]
+        },
+        {
+            "FullName": "POOPENFARTEN",
+            "Acronym": "POO",
+            "FlagName": "IT",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 11,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2960639,
+                            "Seed": 7
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2837132,
+                            "Seed": 13
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 12,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3159746,
+                            "Seed": 5
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2956579,
+                            "Seed": 18
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 7,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 3024978,
+                            "Seed": 10
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 3163529,
+                            "Seed": 5
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 5,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3319624,
+                            "Seed": 5
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 18,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3050050,
+                            "Seed": 18
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#10",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "4609767"
+                },
+                {
+                    "id": "502722"
+                },
+                {
+                    "id": "12630336"
+                },
+                {
+                    "id": "6956922"
+                },
+                {
+                    "id": "3044264"
+                },
+                {
+                    "id": "12160279"
+                }
+            ]
+        },
+        {
+            "FullName": "MANIERA",
+            "Acronym": "MAN",
+            "FlagName": "JP",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 6,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2972625,
+                            "Seed": 5
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2887093,
+                            "Seed": 10
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 9,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3124962,
+                            "Seed": 11
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 3031735,
+                            "Seed": 11
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 14,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 2876723,
+                            "Seed": 17
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 3105738,
+                            "Seed": 11
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 8,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3296267,
+                            "Seed": 8
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 11,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3126653,
+                            "Seed": 11
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#11",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "16320311"
+                },
+                {
+                    "id": "11199742"
+                },
+                {
+                    "id": "2774767"
+                },
+                {
+                    "id": "5846289"
+                },
+                {
+                    "id": "9551196"
+                },
+                {
+                    "id": "8987606"
+                }
+            ]
+        },
+        {
+            "FullName": "The Un-United States of Asia",
+            "Acronym": "The",
+            "FlagName": "MY",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 15,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2877988,
+                            "Seed": 15
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2836874,
+                            "Seed": 14
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 6,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3159751,
+                            "Seed": 4
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 3051169,
+                            "Seed": 9
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 13,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 2996758,
+                            "Seed": 13
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 3052706,
+                            "Seed": 15
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 11,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3249585,
+                            "Seed": 11
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 6,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3242730,
+                            "Seed": 6
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#12",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "9912966"
+                },
+                {
+                    "id": "7500364"
+                },
+                {
+                    "id": "12273160"
+                },
+                {
+                    "id": "6932501"
+                },
+                {
+                    "id": "9755504"
+                },
+                {
+                    "id": "19901680"
+                }
+            ]
+        },
+        {
+            "FullName": "jovial backshots",
+            "Acronym": "jov",
+            "FlagName": "US",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 10,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2897168,
+                            "Seed": 14
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2942230,
+                            "Seed": 6
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 15,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3112596,
+                            "Seed": 13
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2966853,
+                            "Seed": 17
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 12,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 3013858,
+                            "Seed": 11
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 3086154,
+                            "Seed": 13
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 13,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3221596,
+                            "Seed": 13
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 14,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3108386,
+                            "Seed": 14
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#13",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "6490509"
+                },
+                {
+                    "id": "12780046"
+                },
+                {
+                    "id": "6349821"
+                },
+                {
+                    "id": "6256027"
+                },
+                {
+                    "id": "12177903"
+                },
+                {
+                    "id": "9258564"
+                }
+            ]
+        },
+        {
+            "FullName": "[Name Pending]",
+            "Acronym": "[Na",
+            "FlagName": "GB",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 9,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2919735,
+                            "Seed": 13
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2932288,
+                            "Seed": 7
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 13,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3071214,
+                            "Seed": 18
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 3080499,
+                            "Seed": 6
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 15,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 2918953,
+                            "Seed": 16
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 3041276,
+                            "Seed": 17
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 15,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3185618,
+                            "Seed": 15
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 15,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3106211,
+                            "Seed": 15
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#14",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "11406987"
+                },
+                {
+                    "id": "16462012"
+                },
+                {
+                    "id": "18649724"
+                },
+                {
+                    "id": "6793778"
+                },
+                {
+                    "id": "11411697"
+                },
+                {
+                    "id": "15756120"
+                }
+            ]
+        },
+        {
+            "FullName": "yongin & friends sleep in vc",
+            "Acronym": "yon",
+            "FlagName": "HK",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 19,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2843536,
+                            "Seed": 19
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2603780,
+                            "Seed": 23
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 10,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3142887,
+                            "Seed": 9
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 3011845,
+                            "Seed": 13
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 17,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 2995881,
+                            "Seed": 14
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 2937664,
+                            "Seed": 19
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 21,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3107627,
+                            "Seed": 21
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 7,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3236742,
+                            "Seed": 7
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#15",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "7109317"
+                },
+                {
+                    "id": "30114023"
+                },
+                {
+                    "id": "1926383"
+                },
+                {
+                    "id": "8301957"
+                },
+                {
+                    "id": "2211364"
+                },
+                {
+                    "id": "14623658"
+                }
+            ]
+        },
+        {
+            "FullName": "The boys vs faheen",
+            "Acronym": "The",
+            "FlagName": "FR",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 16,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2867999,
+                            "Seed": 17
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2841500,
+                            "Seed": 12
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 17,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3046112,
+                            "Seed": 19
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2995756,
+                            "Seed": 14
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 18,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 2919811,
+                            "Seed": 15
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 2956199,
+                            "Seed": 18
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 19,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3151059,
+                            "Seed": 19
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 12,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3122163,
+                            "Seed": 12
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#16",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "9950381"
+                },
+                {
+                    "id": "8897643"
+                },
+                {
+                    "id": "14034809"
+                },
+                {
+                    "id": "6680785"
+                },
+                {
+                    "id": "11253595"
+                },
+                {
+                    "id": "11260982"
+                }
+            ]
+        },
+        {
+            "FullName": "kanjut badag 2.0",
+            "Acronym": "kan",
+            "FlagName": "ID",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 17,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2873116,
+                            "Seed": 16
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2770906,
+                            "Seed": 16
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 21,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3009777,
+                            "Seed": 22
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2932555,
+                            "Seed": 21
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 11,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 3007403,
+                            "Seed": 12
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 3110184,
+                            "Seed": 10
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 12,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3227928,
+                            "Seed": 12
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 20,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3016583,
+                            "Seed": 20
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#17",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "6048245"
+                },
+                {
+                    "id": "13385865"
+                },
+                {
+                    "id": "14324722"
+                },
+                {
+                    "id": "8089664"
+                },
+                {
+                    "id": "10734140"
+                }
+            ]
+        },
+        {
+            "FullName": "WHATSAPP UNIDOS",
+            "Acronym": "WHA",
+            "FlagName": "CA",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 14,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2920578,
+                            "Seed": 12
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2820990,
+                            "Seed": 15
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 16,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3083258,
+                            "Seed": 17
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2987095,
+                            "Seed": 15
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 20,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 2872569,
+                            "Seed": 18
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 2933212,
+                            "Seed": 21
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 16,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3169326,
+                            "Seed": 16
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 17,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3072975,
+                            "Seed": 17
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#18",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "15191942"
+                },
+                {
+                    "id": "5071871"
+                },
+                {
+                    "id": "12014683"
+                },
+                {
+                    "id": "27809747"
+                },
+                {
+                    "id": "9567727"
+                },
+                {
+                    "id": "19747043"
+                }
+            ]
+        },
+        {
+            "FullName": "im scared ",
+            "Acronym": "im ",
+            "FlagName": "NO",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 20,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2773981,
+                            "Seed": 22
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2665066,
+                            "Seed": 20
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 19,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3117516,
+                            "Seed": 12
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2891700,
+                            "Seed": 23
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 16,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 2863575,
+                            "Seed": 19
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 3075112,
+                            "Seed": 14
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 9,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3254474,
+                            "Seed": 9
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 16,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3075479,
+                            "Seed": 16
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#19",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "18916920"
+                },
+                {
+                    "id": "24638065"
+                },
+                {
+                    "id": "8631719"
+                },
+                {
+                    "id": "29727936"
+                },
+                {
+                    "id": "7555792"
+                },
+                {
+                    "id": "19337995"
+                }
+            ]
+        },
+        {
+            "FullName": "foiled gain",
+            "Acronym": "foi",
+            "FlagName": "FI",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 18,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2790060,
+                            "Seed": 21
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2691177,
+                            "Seed": 18
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 18,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3104916,
+                            "Seed": 15
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2955229,
+                            "Seed": 19
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 19,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 2831925,
+                            "Seed": 20
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 3045780,
+                            "Seed": 16
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 17,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3159695,
+                            "Seed": 17
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 19,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 3024242,
+                            "Seed": 19
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#20",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "8925266"
+                },
+                {
+                    "id": "6506484"
+                },
+                {
+                    "id": "13281473"
+                },
+                {
+                    "id": "4007649"
+                },
+                {
+                    "id": "14451706"
+                },
+                {
+                    "id": "9738123"
+                }
+            ]
+        },
+        {
+            "FullName": "vietnamese cruise",
+            "Acronym": "vie",
+            "FlagName": "VN",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 21,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2860784,
+                            "Seed": 18
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2461754,
+                            "Seed": 25
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 23,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3032428,
+                            "Seed": 21
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2858364,
+                            "Seed": 24
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 21,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 2571880,
+                            "Seed": 21
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 2935687,
+                            "Seed": 20
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 22,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3089972,
+                            "Seed": 22
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 21,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 2944706,
+                            "Seed": 21
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#21",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "10494860"
+                },
+                {
+                    "id": "8772103"
+                },
+                {
+                    "id": "24042710"
+                },
+                {
+                    "id": "22069182"
+                },
+                {
+                    "id": "13660273"
+                },
+                {
+                    "id": "26012543"
+                }
+            ]
+        },
+        {
+            "FullName": "pura mamada",
+            "Acronym": "pur",
+            "FlagName": "MX",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 22,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2798215,
+                            "Seed": 20
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2531511,
+                            "Seed": 24
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 25,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 2893773,
+                            "Seed": 25
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2940248,
+                            "Seed": 20
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 26,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 2321315,
+                            "Seed": 26
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 2774165,
+                            "Seed": 25
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 20,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3109633,
+                            "Seed": 20
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 23,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 2903809,
+                            "Seed": 23
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#22",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "13525805"
+                },
+                {
+                    "id": "5040981"
+                },
+                {
+                    "id": "25396679"
+                },
+                {
+                    "id": "12908933"
+                },
+                {
+                    "id": "5427801"
+                },
+                {
+                    "id": "23361435"
+                }
+            ]
+        },
+        {
+            "FullName": "Initial Don :D",
+            "Acronym": "Ini",
+            "FlagName": "GB",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 24,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2606046,
+                            "Seed": 26
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2683750,
+                            "Seed": 19
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 24,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 2972286,
+                            "Seed": 23
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2891818,
+                            "Seed": 22
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 23,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 2441671,
+                            "Seed": 23
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 2797215,
+                            "Seed": 24
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 27,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 2770015,
+                            "Seed": 27
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 22,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 2921945,
+                            "Seed": 22
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#23",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "9780417"
+                },
+                {
+                    "id": "10733787"
+                },
+                {
+                    "id": "3811831"
+                },
+                {
+                    "id": "13911899"
+                },
+                {
+                    "id": "25662684"
+                },
+                {
+                    "id": "6752242"
+                }
+            ]
+        },
+        {
+            "FullName": "I want play RGTS",
+            "Acronym": "I w",
+            "FlagName": "TW",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 25,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2747083,
+                            "Seed": 23
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2247146,
+                            "Seed": 26
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 22,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 3045655,
+                            "Seed": 20
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2846396,
+                            "Seed": 25
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 22,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 2400378,
+                            "Seed": 25
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 2864867,
+                            "Seed": 22
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 23,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3089290,
+                            "Seed": 23
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 24,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 2853530,
+                            "Seed": 24
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#24",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "11426995"
+                },
+                {
+                    "id": "10547895"
+                },
+                {
+                    "id": "2169329"
+                },
+                {
+                    "id": "14777912"
+                },
+                {
+                    "id": "7774222"
+                },
+                {
+                    "id": "14568255"
+                }
+            ]
+        },
+        {
+            "FullName": "Metzbros",
+            "Acronym": "Met",
+            "FlagName": "GB",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 26,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2359305,
+                            "Seed": 30
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2604514,
+                            "Seed": 22
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 20,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 2941596,
+                            "Seed": 24
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2972390,
+                            "Seed": 16
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 24,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 2552908,
+                            "Seed": 22
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 2769599,
+                            "Seed": 26
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 25,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 2990389,
+                            "Seed": 25
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 26,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 2767625,
+                            "Seed": 26
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#25",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "14072678"
+                },
+                {
+                    "id": "3624499"
+                },
+                {
+                    "id": "7528639"
+                },
+                {
+                    "id": "8071438"
+                },
+                {
+                    "id": "13302996"
+                },
+                {
+                    "id": "6092181"
+                }
+            ]
+        },
+        {
+            "FullName": "issuko",
+            "Acronym": "iss",
+            "FlagName": "FR",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 23,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2701779,
+                            "Seed": 24
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2631816,
+                            "Seed": 21
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 26,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 2841173,
+                            "Seed": 26
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2621216,
+                            "Seed": 26
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 25,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 2424617,
+                            "Seed": 24
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 2711140,
+                            "Seed": 27
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 24,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 3003664,
+                            "Seed": 24
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 25,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 2806690,
+                            "Seed": 25
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#26",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "12453848"
+                },
+                {
+                    "id": "13157438"
+                },
+                {
+                    "id": "13345184"
+                },
+                {
+                    "id": "8023063"
+                },
+                {
+                    "id": "4367742"
+                },
+                {
+                    "id": "11632258"
+                }
+            ]
+        },
+        {
+            "FullName": "Scoer",
+            "Acronym": "Sco",
+            "FlagName": "GB",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 28,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2500871,
+                            "Seed": 27
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2163057,
+                            "Seed": 28
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 30,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 2468580,
+                            "Seed": 30
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2158590,
+                            "Seed": 30
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 27,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 1993330,
+                            "Seed": 30
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 2830379,
+                            "Seed": 23
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 30,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 2627596,
+                            "Seed": 30
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 31,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 2442434,
+                            "Seed": 31
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#27",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "7183087"
+                },
+                {
+                    "id": "25201175"
+                },
+                {
+                    "id": "10659264"
+                }
+            ]
+        },
+        {
+            "FullName": "1738",
+            "Acronym": "173",
+            "FlagName": "RO",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 29,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2447400,
+                            "Seed": 28
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2139421,
+                            "Seed": 30
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 28,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 2748117,
+                            "Seed": 27
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2389335,
+                            "Seed": 28
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 32,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 1761849,
+                            "Seed": 33
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 2425684,
+                            "Seed": 30
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 28,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 2751746,
+                            "Seed": 28
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 27,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 2706438,
+                            "Seed": 27
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#28",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "1188782"
+                },
+                {
+                    "id": "17823779"
+                },
+                {
+                    "id": "9757858"
+                },
+                {
+                    "id": "16039831"
+                },
+                {
+                    "id": "14413148"
+                },
+                {
+                    "id": "15526968"
+                }
+            ]
+        },
+        {
+            "FullName": "Peaceful LOVE",
+            "Acronym": "Pea",
+            "FlagName": "JP",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 27,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2637597,
+                            "Seed": 25
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2158317,
+                            "Seed": 29
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 29,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 2458641,
+                            "Seed": 31
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2367929,
+                            "Seed": 29
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 29,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 1944265,
+                            "Seed": 31
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 2606418,
+                            "Seed": 29
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 26,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 2954029,
+                            "Seed": 26
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 32,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 2426432,
+                            "Seed": 32
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#29",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "30147970"
+                },
+                {
+                    "id": "17746140"
+                },
+                {
+                    "id": "30109442"
+                }
+            ]
+        },
+        {
+            "FullName": "Applerss fangirls :3",
+            "Acronym": "App",
+            "FlagName": "LV",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 33,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2113052,
+                            "Seed": 32
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2032428,
+                            "Seed": 32
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 31,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 2541961,
+                            "Seed": 29
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 1901994,
+                            "Seed": 34
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 28,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 2095870,
+                            "Seed": 27
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 2625659,
+                            "Seed": 28
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 29,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 2676508,
+                            "Seed": 29
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 28,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 2564511,
+                            "Seed": 28
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#30",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "20489038"
+                },
+                {
+                    "id": "19079327"
+                },
+                {
+                    "id": "16058676"
+                },
+                {
+                    "id": "22670606"
+                },
+                {
+                    "id": "15526317"
+                }
+            ]
+        },
+        {
+            "FullName": "LickyPiddy",
+            "Acronym": "Lic",
+            "FlagName": "RU",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 30,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2415154,
+                            "Seed": 29
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2125897,
+                            "Seed": 31
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 27,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 2705851,
+                            "Seed": 28
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2602068,
+                            "Seed": 27
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 31,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 2031630,
+                            "Seed": 29
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 2012209,
+                            "Seed": 33
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 33,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 2278685,
+                            "Seed": 33
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 30,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 2542604,
+                            "Seed": 30
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#31",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "17118441"
+                },
+                {
+                    "id": "5965797"
+                },
+                {
+                    "id": "15186865"
+                },
+                {
+                    "id": "6735738"
+                },
+                {
+                    "id": "14706521"
+                },
+                {
+                    "id": "11630179"
+                }
+            ]
+        },
+        {
+            "FullName": "POGO LEGEND",
+            "Acronym": "POG",
+            "FlagName": "TW",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 32,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2292050,
+                            "Seed": 31
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 1919305,
+                            "Seed": 33
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 34,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 2157832,
+                            "Seed": 34
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2068557,
+                            "Seed": 32
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 30,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 2033599,
+                            "Seed": 28
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 2178126,
+                            "Seed": 32
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 32,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 2327817,
+                            "Seed": 32
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 29,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 2549575,
+                            "Seed": 29
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#32",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "6876404"
+                },
+                {
+                    "id": "2875968"
+                },
+                {
+                    "id": "35313766"
+                }
+            ]
+        },
+        {
+            "FullName": "ASDA",
+            "Acronym": "ASD",
+            "FlagName": "MN",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 31,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 2112524,
+                            "Seed": 33
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 2226755,
+                            "Seed": 27
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 35,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 2029919,
+                            "Seed": 35
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 1529505,
+                            "Seed": 35
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 33,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 1652636,
+                            "Seed": 34
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 2344198,
+                            "Seed": 31
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 31,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 2526399,
+                            "Seed": 31
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 34,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 1981438,
+                            "Seed": 34
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#33",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "26433298"
+                },
+                {
+                    "id": "34516901"
+                },
+                {
+                    "id": "18114917"
+                },
+                {
+                    "id": "29259837"
+                }
+            ]
+        },
+        {
+            "FullName": "taikotris",
+            "Acronym": "tai",
+            "FlagName": "US",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 34,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 1743567,
+                            "Seed": 35
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 1766381,
+                            "Seed": 34
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 33,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 2331149,
+                            "Seed": 32
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 1947918,
+                            "Seed": 33
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 34,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 1892405,
+                            "Seed": 32
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 1945570,
+                            "Seed": 34
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 34,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 2056909,
+                            "Seed": 34
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 33,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 2143744,
+                            "Seed": 33
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#34",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "36682714"
+                },
+                {
+                    "id": "23048879"
+                },
+                {
+                    "id": "16968817"
+                },
+                {
+                    "id": "18220275"
+                },
+                {
+                    "id": "7001787"
+                },
+                {
+                    "id": "36769473"
+                }
+            ]
+        },
+        {
+            "FullName": "zbweyrkovty",
+            "Acronym": "zbw",
+            "FlagName": "CA",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 35,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 1940613,
+                            "Seed": 34
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 1236516,
+                            "Seed": 36
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 32,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 2195596,
+                            "Seed": 33
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 2091545,
+                            "Seed": 31
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 35,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 1210038,
+                            "Seed": 35
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 1692589,
+                            "Seed": 35
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 35,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1495822,
+                            "Seed": 35
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 36,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 1609255,
+                            "Seed": 36
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#35",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "21779285"
+                },
+                {
+                    "id": "12826983"
+                },
+                {
+                    "id": "34338684"
+                },
+                {
+                    "id": "19897367"
+                },
+                {
+                    "id": "16456158"
+                }
+            ]
+        },
+        {
+            "FullName": "ARGGGHHHHHH Reunited",
+            "Acronym": "ARG",
+            "FlagName": "GB",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 36,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 1502247,
+                            "Seed": 36
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 1361550,
+                            "Seed": 35
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 36,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 1313935,
+                            "Seed": 36
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 1224557,
+                            "Seed": 36
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 36,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 1144653,
+                            "Seed": 36
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 1295896,
+                            "Seed": 36
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 36,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1404430,
+                            "Seed": 36
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 35,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 1719280,
+                            "Seed": 35
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#36",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "25914360"
+                },
+                {
+                    "id": "12264218"
+                },
+                {
+                    "id": "10055204"
+                },
+                {
+                    "id": "17523947"
+                }
+            ]
+        },
+        {
+            "FullName": "MikuDropZ559_",
+            "Acronym": "Mik",
+            "FlagName": "ES",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 37,
+                    "Beatmaps": [
+                        {
+                            "ID": 5145470,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Apocalypse",
+                                    "Artist": "Gram vs. Yooh"
+                                }
+                            },
+                            "Score": 685573,
+                            "Seed": 37
+                        },
+                        {
+                            "ID": 5146337,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Gargoyle",
+                                    "Artist": "Micelle"
+                                }
+                            },
+                            "Score": 707708,
+                            "Seed": 37
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 37,
+                    "Beatmaps": [
+                        {
+                            "ID": 2758293,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Presenter*",
+                                    "Artist": "Aitsuki Nakuru"
+                                }
+                            },
+                            "Score": 821623,
+                            "Seed": 37
+                        },
+                        {
+                            "ID": 3385974,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Parousia",
+                                    "Artist": "xi"
+                                }
+                            },
+                            "Score": 957447,
+                            "Seed": 37
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 37,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146304,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "CROSS SOUL",
+                                    "Artist": "HyuN feat. Syepias"
+                                }
+                            },
+                            "Score": 517036,
+                            "Seed": 37
+                        },
+                        {
+                            "ID": 4814962,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Rasou",
+                                    "Artist": "SOOOO"
+                                }
+                            },
+                            "Score": 503835,
+                            "Seed": 37
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 37,
+                    "Beatmaps": [
+                        {
+                            "ID": 4860232,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 702924,
+                            "Seed": 37
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 37,
+                    "Beatmaps": [
+                        {
+                            "ID": 5133745,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Mad Piano Party II",
+                                    "Artist": "Plum"
+                                }
+                            },
+                            "Score": 784065,
+                            "Seed": 37
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#37",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "22037489"
+                },
+                {
+                    "id": "18120411"
+                },
+                {
+                    "id": "12759554"
+                }
+            ]
+        }
+    ]
+}
