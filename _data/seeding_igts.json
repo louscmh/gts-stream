@@ -1,0 +1,4315 @@
+{
+    "Teams": [
+        {
+            "FullName": "Netherlands A",
+            "Acronym": "Net",
+            "FlagName": "NL",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 1,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1991892,
+                            "Seed": 1
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1982252,
+                            "Seed": 2
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 2,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 2126070,
+                            "Seed": 2
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 3,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 2108375,
+                            "Seed": 3
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 2,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 2103580,
+                            "Seed": 2
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 7,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2163775,
+                            "Seed": 7
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#1",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "11043157"
+                },
+                {
+                    "id": "14548572"
+                },
+                {
+                    "id": "19161909"
+                },
+                {
+                    "id": "9853595"
+                },
+                {
+                    "id": "1540807"
+                }
+            ]
+        },
+        {
+            "FullName": "United States A",
+            "Acronym": "Uni",
+            "FlagName": "US",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 2,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1979221,
+                            "Seed": 3
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1986645,
+                            "Seed": 1
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 3,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 2113881,
+                            "Seed": 3
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 1,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 2115054,
+                            "Seed": 1
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 6,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 2040225,
+                            "Seed": 6
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 3,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2189766,
+                            "Seed": 3
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#2",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "7789926"
+                },
+                {
+                    "id": "11796581"
+                },
+                {
+                    "id": "36682714"
+                },
+                {
+                    "id": "17184772"
+                },
+                {
+                    "id": "14552277"
+                }
+            ]
+        },
+        {
+            "FullName": "United Kingdom",
+            "Acronym": "Uni",
+            "FlagName": "GB",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 3,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1970141,
+                            "Seed": 6
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1977975,
+                            "Seed": 4
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 5,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 2101845,
+                            "Seed": 5
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 6,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 2065854,
+                            "Seed": 6
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 1,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 2121693,
+                            "Seed": 1
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 6,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2171831,
+                            "Seed": 6
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#3",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "9780417"
+                },
+                {
+                    "id": "10055204"
+                },
+                {
+                    "id": "12489832"
+                },
+                {
+                    "id": "14878199"
+                },
+                {
+                    "id": "10505592"
+                }
+            ]
+        },
+        {
+            "FullName": "Japan",
+            "Acronym": "Jap",
+            "FlagName": "JP",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 4,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1976876,
+                            "Seed": 4
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1965290,
+                            "Seed": 9
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 7,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 2064517,
+                            "Seed": 7
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 9,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 2056990,
+                            "Seed": 9
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 3,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 2069272,
+                            "Seed": 3
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 11,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2090898,
+                            "Seed": 11
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#4",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "34618273"
+                },
+                {
+                    "id": "33231846"
+                },
+                {
+                    "id": "9814770"
+                },
+                {
+                    "id": "30685000"
+                },
+                {
+                    "id": "26592615"
+                }
+            ]
+        },
+        {
+            "FullName": "Norway",
+            "Acronym": "Nor",
+            "FlagName": "NO",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 5,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1954473,
+                            "Seed": 10
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1980063,
+                            "Seed": 3
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 18,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 1974438,
+                            "Seed": 18
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 2,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 2112587,
+                            "Seed": 2
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 9,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 2019172,
+                            "Seed": 9
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 5,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2178755,
+                            "Seed": 5
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#5",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "18382591"
+                },
+                {
+                    "id": "16204122"
+                },
+                {
+                    "id": "12513942"
+                },
+                {
+                    "id": "6951444"
+                },
+                {
+                    "id": "13806692"
+                }
+            ]
+        },
+        {
+            "FullName": "Brazil",
+            "Acronym": "Bra",
+            "FlagName": "BR",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 9,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1948586,
+                            "Seed": 11
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1965814,
+                            "Seed": 8
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 4,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 2103933,
+                            "Seed": 4
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 5,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 2070845,
+                            "Seed": 5
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 15,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1907370,
+                            "Seed": 15
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 8,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2130185,
+                            "Seed": 8
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#6",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "13104856"
+                },
+                {
+                    "id": "9731062"
+                },
+                {
+                    "id": "14229374"
+                },
+                {
+                    "id": "36025479"
+                },
+                {
+                    "id": "6093582"
+                }
+            ]
+        },
+        {
+            "FullName": "European Alliance",
+            "Acronym": "IGTSEA",
+            "FlagName": "IGTSEA",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 12,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1900462,
+                            "Seed": 17
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1954496,
+                            "Seed": 10
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 6,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 2094948,
+                            "Seed": 6
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 13,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 2038782,
+                            "Seed": 13
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 4,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 2055802,
+                            "Seed": 4
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 4,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2186765,
+                            "Seed": 4
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#7",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "14666725"
+                },
+                {
+                    "id": "9098192"
+                },
+                {
+                    "id": "10584064"
+                },
+                {
+                    "id": "3543061"
+                },
+                {
+                    "id": "7768626"
+                }
+            ]
+        },
+        {
+            "FullName": "France A",
+            "Acronym": "Fra",
+            "FlagName": "FR",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 8,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1973598,
+                            "Seed": 5
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1924351,
+                            "Seed": 13
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 1,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 2132191,
+                            "Seed": 1
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 8,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 2064812,
+                            "Seed": 8
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 26,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1772384,
+                            "Seed": 26
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 2,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2206600,
+                            "Seed": 2
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#8",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "7157133"
+                },
+                {
+                    "id": "9713372"
+                },
+                {
+                    "id": "6387858"
+                },
+                {
+                    "id": "5193488"
+                },
+                {
+                    "id": "10419120"
+                }
+            ]
+        },
+        {
+            "FullName": "Singapore",
+            "Acronym": "Sin",
+            "FlagName": "SG",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 11,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1923120,
+                            "Seed": 13
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1969923,
+                            "Seed": 7
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 8,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 2054500,
+                            "Seed": 8
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 10,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 2056723,
+                            "Seed": 10
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 19,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1865186,
+                            "Seed": 19
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 9,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2117393,
+                            "Seed": 9
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#9",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "34718076"
+                },
+                {
+                    "id": "31020012"
+                },
+                {
+                    "id": "9140302"
+                },
+                {
+                    "id": "8876527"
+                },
+                {
+                    "id": "6860040"
+                }
+            ]
+        },
+        {
+            "FullName": "Taiwan",
+            "Acronym": "Tai",
+            "FlagName": "TW",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 10,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1919418,
+                            "Seed": 14
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1973331,
+                            "Seed": 5
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 14,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 2027116,
+                            "Seed": 14
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 16,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1999888,
+                            "Seed": 16
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 7,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 2035514,
+                            "Seed": 7
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 13,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2084872,
+                            "Seed": 13
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#10",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "9767342"
+                },
+                {
+                    "id": "16494567"
+                },
+                {
+                    "id": "13997282"
+                },
+                {
+                    "id": "11835951"
+                },
+                {
+                    "id": "27010357"
+                }
+            ]
+        },
+        {
+            "FullName": "Indonesia",
+            "Acronym": "Ind",
+            "FlagName": "ID",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 7,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1989561,
+                            "Seed": 2
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1929486,
+                            "Seed": 12
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 16,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 2015205,
+                            "Seed": 16
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 19,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1962014,
+                            "Seed": 19
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 5,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 2042895,
+                            "Seed": 5
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 17,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2058768,
+                            "Seed": 17
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#11",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "10129901"
+                },
+                {
+                    "id": "19089549"
+                },
+                {
+                    "id": "8370351"
+                },
+                {
+                    "id": "18429972"
+                },
+                {
+                    "id": "16390988"
+                }
+            ]
+        },
+        {
+            "FullName": "Vietnam",
+            "Acronym": "Vie",
+            "FlagName": "VN",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 21,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1885355,
+                            "Seed": 21
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1889109,
+                            "Seed": 20
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 15,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 2019606,
+                            "Seed": 15
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 7,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 2065830,
+                            "Seed": 7
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 8,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 2026522,
+                            "Seed": 8
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 1,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2215013,
+                            "Seed": 1
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#12",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "16868806"
+                },
+                {
+                    "id": "17148657"
+                },
+                {
+                    "id": "17474128"
+                },
+                {
+                    "id": "19817503"
+                },
+                {
+                    "id": "19207842"
+                }
+            ]
+        },
+        {
+            "FullName": "China A",
+            "Acronym": "Chi",
+            "FlagName": "CN",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 13,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1958435,
+                            "Seed": 8
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1894437,
+                            "Seed": 19
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 22,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 1875317,
+                            "Seed": 22
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 4,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 2095382,
+                            "Seed": 4
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 11,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1997831,
+                            "Seed": 11
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 10,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2116194,
+                            "Seed": 10
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#13",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "21401002"
+                },
+                {
+                    "id": "34528787"
+                },
+                {
+                    "id": "30122510"
+                },
+                {
+                    "id": "15603359"
+                }
+            ]
+        },
+        {
+            "FullName": "Hong Kong",
+            "Acronym": "Hon",
+            "FlagName": "HK",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 6,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1962057,
+                            "Seed": 7
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1970409,
+                            "Seed": 6
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 24,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 1864491,
+                            "Seed": 24
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 11,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 2056457,
+                            "Seed": 11
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 12,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1969006,
+                            "Seed": 12
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 19,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2057024,
+                            "Seed": 19
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#14",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "3339073"
+                },
+                {
+                    "id": "8312496"
+                },
+                {
+                    "id": "12018352"
+                }
+            ]
+        },
+        {
+            "FullName": "Mexico",
+            "Acronym": "Mex",
+            "FlagName": "MX",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 20,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1910113,
+                            "Seed": 16
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1879492,
+                            "Seed": 25
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 20,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 1912739,
+                            "Seed": 20
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 12,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 2049851,
+                            "Seed": 12
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 13,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1916365,
+                            "Seed": 13
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 14,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2082004,
+                            "Seed": 14
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#15",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "10516547"
+                },
+                {
+                    "id": "17585799"
+                },
+                {
+                    "id": "10192636"
+                },
+                {
+                    "id": "28514186"
+                }
+            ]
+        },
+        {
+            "FullName": "Spain",
+            "Acronym": "Spa",
+            "FlagName": "ES",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 24,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1873168,
+                            "Seed": 24
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1896185,
+                            "Seed": 18
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 17,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 2013761,
+                            "Seed": 17
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 18,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1974284,
+                            "Seed": 18
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 10,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 2010854,
+                            "Seed": 10
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 18,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2057588,
+                            "Seed": 18
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#16",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "12759554"
+                },
+                {
+                    "id": "18120411"
+                },
+                {
+                    "id": "34977126"
+                },
+                {
+                    "id": "10588504"
+                },
+                {
+                    "id": "18500920"
+                }
+            ]
+        },
+        {
+            "FullName": "Colombia",
+            "Acronym": "Col",
+            "FlagName": "CO",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 18,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1889511,
+                            "Seed": 20
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1911075,
+                            "Seed": 17
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 9,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 2047696,
+                            "Seed": 9
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 24,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1899797,
+                            "Seed": 24
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 21,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1832235,
+                            "Seed": 21
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 15,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2068067,
+                            "Seed": 15
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#17",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "11940767"
+                },
+                {
+                    "id": "10510143"
+                },
+                {
+                    "id": "9116107"
+                }
+            ]
+        },
+        {
+            "FullName": "Italy",
+            "Acronym": "Ita",
+            "FlagName": "IT",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 14,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1883110,
+                            "Seed": 22
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1942831,
+                            "Seed": 11
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 23,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 1865835,
+                            "Seed": 23
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 14,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 2015644,
+                            "Seed": 14
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 14,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1913132,
+                            "Seed": 14
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 26,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 1981775,
+                            "Seed": 26
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#18",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "12421640"
+                },
+                {
+                    "id": "4734947"
+                },
+                {
+                    "id": "31854153"
+                },
+                {
+                    "id": "24983048"
+                },
+                {
+                    "id": "11168434"
+                }
+            ]
+        },
+        {
+            "FullName": "Malaysia",
+            "Acronym": "Mal",
+            "FlagName": "MY",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 17,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1915852,
+                            "Seed": 15
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1884907,
+                            "Seed": 22
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 11,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 2035004,
+                            "Seed": 11
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 22,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1941779,
+                            "Seed": 22
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 20,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1838880,
+                            "Seed": 20
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 22,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2001175,
+                            "Seed": 22
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#19",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "9351030"
+                },
+                {
+                    "id": "16284978"
+                },
+                {
+                    "id": "1810773"
+                },
+                {
+                    "id": "14036825"
+                },
+                {
+                    "id": "13382147"
+                }
+            ]
+        },
+        {
+            "FullName": "Southeast Asian Alliance",
+            "Acronym": "IGTSSEAA",
+            "FlagName": "IGTSSEAA",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 23,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1898878,
+                            "Seed": 18
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1881722,
+                            "Seed": 24
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 21,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 1895994,
+                            "Seed": 21
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 15,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 2010242,
+                            "Seed": 15
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 16,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1881987,
+                            "Seed": 16
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 21,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2033732,
+                            "Seed": 21
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#20",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "7033479"
+                },
+                {
+                    "id": "24285111"
+                },
+                {
+                    "id": "11621976"
+                }
+            ]
+        },
+        {
+            "FullName": "Russian Federation",
+            "Acronym": "Rus",
+            "FlagName": "RU",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 15,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1893817,
+                            "Seed": 19
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1913742,
+                            "Seed": 15
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 30,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 1779425,
+                            "Seed": 30
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 20,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1951999,
+                            "Seed": 20
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 17,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1881950,
+                            "Seed": 17
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 23,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2000591,
+                            "Seed": 23
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#21",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "37252117"
+                },
+                {
+                    "id": "11199892"
+                },
+                {
+                    "id": "15340906"
+                },
+                {
+                    "id": "14830593"
+                }
+            ]
+        },
+        {
+            "FullName": "Canada",
+            "Acronym": "Can",
+            "FlagName": "CA",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 26,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1848589,
+                            "Seed": 26
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1883433,
+                            "Seed": 23
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 10,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 2035401,
+                            "Seed": 10
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 29,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1872640,
+                            "Seed": 29
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 28,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1748492,
+                            "Seed": 28
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 12,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2087870,
+                            "Seed": 12
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#22",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "21779285"
+                },
+                {
+                    "id": "2065771"
+                },
+                {
+                    "id": "17373438"
+                },
+                {
+                    "id": "30049930"
+                }
+            ]
+        },
+        {
+            "FullName": "Philippines",
+            "Acronym": "Phi",
+            "FlagName": "PH",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 29,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1835331,
+                            "Seed": 29
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1843170,
+                            "Seed": 28
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 19,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 1926333,
+                            "Seed": 19
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 17,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1985443,
+                            "Seed": 17
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 22,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1830156,
+                            "Seed": 22
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 16,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2066097,
+                            "Seed": 16
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#23",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "10888411"
+                },
+                {
+                    "id": "13605150"
+                },
+                {
+                    "id": "7904667"
+                },
+                {
+                    "id": "11730796"
+                },
+                {
+                    "id": "16653442"
+                }
+            ]
+        },
+        {
+            "FullName": "Netherlands B",
+            "Acronym": "Net",
+            "FlagName": "NL",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 19,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1945588,
+                            "Seed": 12
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1864173,
+                            "Seed": 27
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 12,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 2032594,
+                            "Seed": 12
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 28,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1883526,
+                            "Seed": 28
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 25,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1792915,
+                            "Seed": 25
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 29,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 1961259,
+                            "Seed": 29
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#24",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "13377652"
+                },
+                {
+                    "id": "26527329"
+                },
+                {
+                    "id": "9529504"
+                },
+                {
+                    "id": "17526061"
+                }
+            ]
+        },
+        {
+            "FullName": "Poland",
+            "Acronym": "Pol",
+            "FlagName": "PL",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 16,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1956467,
+                            "Seed": 9
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1869786,
+                            "Seed": 26
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 26,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 1829527,
+                            "Seed": 26
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 25,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1899769,
+                            "Seed": 25
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 24,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1804668,
+                            "Seed": 24
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 24,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 1988993,
+                            "Seed": 24
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#25",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "7303267"
+                },
+                {
+                    "id": "7009485"
+                },
+                {
+                    "id": "36864969"
+                },
+                {
+                    "id": "23214736"
+                },
+                {
+                    "id": "14433362"
+                }
+            ]
+        },
+        {
+            "FullName": "Lithuania",
+            "Acronym": "Lit",
+            "FlagName": "LT",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 25,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1831544,
+                            "Seed": 31
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1915464,
+                            "Seed": 14
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 31,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 1679551,
+                            "Seed": 31
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 27,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1886577,
+                            "Seed": 27
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 18,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1879885,
+                            "Seed": 18
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 20,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 2037473,
+                            "Seed": 20
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#26",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "6044237"
+                },
+                {
+                    "id": "3941186"
+                },
+                {
+                    "id": "15847145"
+                },
+                {
+                    "id": "17147440"
+                },
+                {
+                    "id": "10791628"
+                }
+            ]
+        },
+        {
+            "FullName": "Chile",
+            "Acronym": "Chi",
+            "FlagName": "CL",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 22,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1850127,
+                            "Seed": 25
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1913226,
+                            "Seed": 16
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 13,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 2029830,
+                            "Seed": 13
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 30,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1826565,
+                            "Seed": 30
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 34,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1452022,
+                            "Seed": 34
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 27,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 1976248,
+                            "Seed": 27
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#27",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "5404711"
+                },
+                {
+                    "id": "34818235"
+                },
+                {
+                    "id": "8299277"
+                },
+                {
+                    "id": "9812963"
+                },
+                {
+                    "id": "8004633"
+                }
+            ]
+        },
+        {
+            "FullName": "France B",
+            "Acronym": "Fra",
+            "FlagName": "FR",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 31,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1832217,
+                            "Seed": 30
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1818604,
+                            "Seed": 29
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 29,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 1789954,
+                            "Seed": 29
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 23,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1935220,
+                            "Seed": 23
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 23,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1811130,
+                            "Seed": 23
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 28,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 1971885,
+                            "Seed": 28
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#28",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "10936319"
+                },
+                {
+                    "id": "8972795"
+                },
+                {
+                    "id": "15631559"
+                },
+                {
+                    "id": "4869346"
+                }
+            ]
+        },
+        {
+            "FullName": "South Korea",
+            "Acronym": "Sou",
+            "FlagName": "KR",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 28,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1882673,
+                            "Seed": 23
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1790540,
+                            "Seed": 32
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 32,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 1670939,
+                            "Seed": 32
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 26,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1886792,
+                            "Seed": 26
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 32,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1592649,
+                            "Seed": 32
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 25,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 1988859,
+                            "Seed": 25
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#29",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "32130172"
+                },
+                {
+                    "id": "23910823"
+                },
+                {
+                    "id": "13618032"
+                }
+            ]
+        },
+        {
+            "FullName": "United States B",
+            "Acronym": "Uni",
+            "FlagName": "US",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 27,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1790567,
+                            "Seed": 33
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1888383,
+                            "Seed": 21
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 25,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 1848679,
+                            "Seed": 25
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 32,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1754891,
+                            "Seed": 32
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 29,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1739239,
+                            "Seed": 29
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 32,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 1865207,
+                            "Seed": 32
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#30",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "5170506"
+                },
+                {
+                    "id": "33153176"
+                },
+                {
+                    "id": "7616811"
+                },
+                {
+                    "id": "32028459"
+                },
+                {
+                    "id": "6642597"
+                }
+            ]
+        },
+        {
+            "FullName": "China B",
+            "Acronym": "Chi",
+            "FlagName": "CN",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 30,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1847402,
+                            "Seed": 27
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1793517,
+                            "Seed": 31
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 34,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 1242994,
+                            "Seed": 34
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 21,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1951397,
+                            "Seed": 21
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 27,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1764966,
+                            "Seed": 27
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 33,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 1850238,
+                            "Seed": 33
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#31",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "33025185"
+                },
+                {
+                    "id": "30983079"
+                },
+                {
+                    "id": "37575101"
+                },
+                {
+                    "id": "30786316"
+                }
+            ]
+        },
+        {
+            "FullName": "Belgium",
+            "Acronym": "Bel",
+            "FlagName": "BE",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 32,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1836297,
+                            "Seed": 28
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1743981,
+                            "Seed": 33
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 28,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 1794835,
+                            "Seed": 28
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 35,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1531243,
+                            "Seed": 35
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 30,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1686667,
+                            "Seed": 30
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 30,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 1959260,
+                            "Seed": 30
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#32",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "10742890"
+                },
+                {
+                    "id": "8280090"
+                }
+            ]
+        },
+        {
+            "FullName": "Austria",
+            "Acronym": "Aus",
+            "FlagName": "AT",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 33,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1828507,
+                            "Seed": 32
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1810260,
+                            "Seed": 30
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 27,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 1806600,
+                            "Seed": 27
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 33,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1753761,
+                            "Seed": 33
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 33,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1590237,
+                            "Seed": 33
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 31,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 1870708,
+                            "Seed": 31
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#33",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "8458835"
+                },
+                {
+                    "id": "11688893"
+                },
+                {
+                    "id": "13338071"
+                }
+            ]
+        },
+        {
+            "FullName": "Latvia",
+            "Acronym": "Lat",
+            "FlagName": "LV",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 36,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1699856,
+                            "Seed": 35
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1588197,
+                            "Seed": 36
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 36,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 541720,
+                            "Seed": 36
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 31,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1791596,
+                            "Seed": 31
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 31,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1602014,
+                            "Seed": 31
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 36,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 1726780,
+                            "Seed": 36
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#34",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "14380867"
+                },
+                {
+                    "id": "37281689"
+                }
+            ]
+        },
+        {
+            "FullName": "Australia",
+            "Acronym": "Aus",
+            "FlagName": "AU",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 35,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1691119,
+                            "Seed": 36
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1729868,
+                            "Seed": 34
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 33,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 1406608,
+                            "Seed": 33
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 34,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1720857,
+                            "Seed": 34
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 36,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1368000,
+                            "Seed": 36
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 34,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 1845435,
+                            "Seed": 34
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#35",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "19265535"
+                },
+                {
+                    "id": "16996988"
+                },
+                {
+                    "id": "9905256"
+                }
+            ]
+        },
+        {
+            "FullName": "Peru",
+            "Acronym": "Per",
+            "FlagName": "PE",
+            "SeedingResults": [
+                {
+                    "Mod": "NM",
+                    "Seed": 34,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146120,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Marshmary",
+                                    "Artist": "MIMI"
+                                }
+                            },
+                            "Score": 1702520,
+                            "Seed": 34
+                        },
+                        {
+                            "ID": 5146141,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "HydroMe+eor",
+                                    "Artist": "seatrus"
+                                }
+                            },
+                            "Score": 1702934,
+                            "Seed": 35
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HD",
+                    "Seed": 35,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146129,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Europa",
+                                    "Artist": "Kurubukko"
+                                }
+                            },
+                            "Score": 1039775,
+                            "Seed": 35
+                        }
+                    ]
+                },
+                {
+                    "Mod": "HR",
+                    "Seed": 36,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146130,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Susume! Lovely Idol * La priere (Cut Ver.)",
+                                    "Artist": "La priere"
+                                }
+                            },
+                            "Score": 1389485,
+                            "Seed": 36
+                        }
+                    ]
+                },
+                {
+                    "Mod": "DT",
+                    "Seed": 35,
+                    "Beatmaps": [
+                        {
+                            "ID": 5146144,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Muffin",
+                                    "Artist": "Emiru no Aishita Tsukiyo ni Dai San Gensou Kyoku wo"
+                                }
+                            },
+                            "Score": 1410150,
+                            "Seed": 35
+                        }
+                    ]
+                },
+                {
+                    "Mod": "FM",
+                    "Seed": 35,
+                    "Beatmaps": [
+                        {
+                            "ID": 3294273,
+                            "BeatmapInfo": {
+                                "Metadata": {
+                                    "Title": "Call My Name feat. Yukacco",
+                                    "Artist": "Mameyudoufu"
+                                }
+                            },
+                            "Score": 1806697,
+                            "Seed": 35
+                        }
+                    ]
+                }
+            ],
+            "Seed": "#36",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "8199435"
+                },
+                {
+                    "id": "19554097"
+                },
+                {
+                    "id": "23429953"
+                }
+            ]
+        }
+    ]
+}

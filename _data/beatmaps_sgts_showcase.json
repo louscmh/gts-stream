@@ -1,65 +1,113 @@
 [
   {
-    "beatmapId": "Gram vs. Yooh - Apocalypse (LuroxS) [Hell Oni].osu",
+    "beatmapId": "Camellia feat. Nanahira - Bikkurisasetara Okoru yo! (JarvisGaming) [AHHHHHHHHHHHHH].osu",
     "pick": "NM1",
-    "modSR": 7.3,
+    "modSR": 6.09,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Micelle - Gargoyle (roufou) [Ura Oni].osu",
+    "beatmapId": 2317246,
     "pick": "NM2",
-    "modSR": 7.09,
+    "modSR": 6.06,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 2758293,
+    "beatmapId": 3577149,
+    "pick": "NM3",
+    "modSR": 5.54,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 1712661,
+    "pick": "NM4",
+    "modSR": 5.48,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4899258,
     "pick": "HD1",
-    "modSR": 6.43,
+    "modSR": 6.03,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3385974,
+    "beatmapId": "Desuwa - Umakuro (roufou) [Oni].osu",
     "pick": "HD2",
-    "modSR": 5.58,
+    "modSR": 4.68,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "HyuN feat. Syepias - CROSS SOUL (Undead Alice) [INNER ONI].osu",
+    "beatmapId": "kireji - GARY III (roufou) [Humgry].osu",
     "pick": "HR1",
-    "modSR": 6.8,
+    "modSR": 5.72,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4814962,
+    "beatmapId": 4148279,
     "pick": "HR2",
-    "modSR": 6.96,
+    "modSR": 6.2,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4860232,
+    "beatmapId": "ColBreakz - Hello (Briesmas) [SOLA SGTS EDIT )].osu",
     "pick": "DT1",
-    "modSR": 6.74,
+    "modSR": 5.89,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5133745,
-    "pick": "FM1",
-    "modSR": 6.19,
+    "beatmapId": 3227211,
+    "pick": "DT2",
+    "modSR": 6.12,
     "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4237716,
+    "pick": "FM1",
+    "modSR": 5.63,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 2656061,
+    "pick": "FM2",
+    "modSR": 5.32,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3022383,
+    "pick": "FM3",
+    "modSR": 5.54,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "PSYQUO - Irradiance (Undead Alice) [Radical Heatwave].osu",
+    "pick": "TB",
+    "modSR": 6.7,
+    "customSong": true,
     "collab": "",
     "mappers": ""
   }
