@@ -1,6 +1,6 @@
 [
     {
-        "currentStage": "QL"
+        "currentStage": "RO32"
     },
     {
         "stage": "QL",
@@ -61,8 +61,8 @@
         "stage": "RO32",
         "showcase": "../../../_shared_assets/design/sgts/showcase_text_ro32.png",
         "stageName": "Round of 32",
-        "overviewText": "BO11",
-        "firstTo": 6
+        "overviewText": "BO9",
+        "firstTo": 5
     },
     {
         "stage": "RO16",
