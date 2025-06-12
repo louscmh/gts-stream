@@ -1,0 +1,300 @@
+@font-face {
+    font-family: "Outfit-Bold";
+    src: url("../../../_shared_assets/fonts/Outfit-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-ExtraBold";
+    src: url("../../../_shared_assets/fonts/Outfit-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-Light";
+    src: url("../../../_shared_assets/fonts/Outfit-Light.ttf");
+}
+
+@font-face {
+    font-family: "Outfit-Regular";
+    src: url("../../../_shared_assets/fonts/Outfit-Regular.ttf");
+}
+
+#main {
+    position: absolute;
+    width:1920px;
+    height:1080px;
+    top:0px;
+    left:0px;
+    display:flex;
+    font-family: "Outfit-Regular";
+    color: #343434;
+    font-size:24px;
+    user-select: none;
+}
+
+#fg {
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: -1;
+}
+
+#bg {
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: -1;
+}
+
+#roundName {
+    font-family: "Outfit-ExtraBold";
+    font-size:48px;
+    position:absolute;
+    top:246px;
+    left:414px;
+}
+
+#timer {
+    font-family: "Outfit-ExtraBold";
+    font-size:136px;
+    position:absolute;
+    top:858px;
+    left:1068px;
+    width:800px;
+    text-align: right;
+}
+
+#upcomingMatchContainer {
+    position:absolute;
+    top:400px;
+    left:50px;
+    display:flex;
+    flex-direction: column;
+    height:fit-content;
+}
+
+#upcomingMatchText {
+    margin-bottom:14px;
+    font-size:24px;
+}
+
+.match {
+    display:flex;
+    height:82px;
+    width:fit-content;
+    margin-bottom:35px;
+}
+
+.matchPlayerOne {
+    display:flex;
+}
+
+.matchPlayerOneSource {
+    background-color: white;
+    object-fit: scale-down;
+    padding:0 8px 0 5px;
+    object-position: center;
+    width:82px;
+    height:82px;
+    border: 6px solid black;
+    border-width: 6px 0px 6px 6px; /* 25px top, 10px right, 4px bottom and 35px left */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.matchPlayerOneDetails {
+    position:relative;
+    background-color: white;
+    height:82px;
+    width:300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color:#343434;
+    margin-left:-2px;
+    border: 6px solid black;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.matchPlayerOneName {
+    font-family: "Outfit-ExtraBold";
+    font-size:30px;
+    margin-left:13px;
+    width:fit-content;
+    white-space: nowrap;
+}
+
+.matchPlayerOneSeed {
+    font-size:24px;
+    margin-left:13px;
+    margin-top:-3px;
+}
+
+.matchPlayerOneWin {
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    width:116px;
+    height:29px;
+    font-size:28px;
+    font-family: "Outfit-ExtraBold";
+    color:white;
+    background-color: #e19219;
+    border: solid black;
+    border-width: 4px 0px 0px 4px; /* 25px top, 10px right, 4px bottom and 35px left */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms ease-in-out;
+    opacity: 0;
+}
+
+.matchMiddleText {
+    height:82px;
+    width:171px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:72px;
+    font-family: "Outfit-ExtraBold";
+}
+
+.matchPlayerTwo {
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+.matchPlayerTwoSource {
+    background-color: white;
+    object-fit: contain;
+    padding:0 5px 0 8px;
+    object-position: center;
+    width:82px;
+    height:82px;
+    border: 6px solid black;
+    border-width: 6px 6px 6px 0px; /* 25px top, 10px right, 4px bottom and 35px left */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.matchPlayerTwoDetails {
+    position:relative;
+    background-color: white;
+    height:82px;
+    width:300px;
+    display:flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: center;
+    color:#343434;
+    margin-right:-2px;
+    border: 6px solid black;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.matchPlayerTwoName {
+    font-family: "Outfit-ExtraBold";
+    font-size:30px;
+    margin-right:13px;
+    width:fit-content;
+    white-space: nowrap;
+}
+
+.matchPlayerTwoSeed {
+    font-size:24px;
+    margin-right:13px;
+    margin-top:-3px;
+}
+
+.matchPlayerTwoWin {
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:116px;
+    height:29px;
+    font-size:28px;
+    font-family: "Outfit-ExtraBold";
+    color:white;
+    background-color: #e19219;
+    border: solid black;
+    border-width: 4px 4px 0px 0px; /* 25px top, 10px right, 4px bottom and 35px left */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms ease-in-out;
+    opacity: 0;
+}
+
+.matchDate {
+    display:flex;
+    flex-direction: column;
+    margin-left: 21px;
+    height:82px;
+    justify-content: center;
+}
+
+.matchTime {
+    font-family: "Outfit-ExtraBold";
+    font-size:57px;
+    margin-top:-3px;
+}
+
+.matchDay {
+    font-size:36px;
+    margin-top:-16px;
+}
+
+/* CONTROLLER */
+#controller {
+    position:absolute;
+    left:1920px;
+    top:0px;
+    background-color:rgb(39, 39, 39);
+    width:500px;
+    height:1080px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttons {
+    width:90%;
+    height:90%;
+    display:flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: "Outfit-Regular";
+    color:white;
+    font-size:24px;
+    user-select: none; /* Disable text selection */
+}
+
+.button {
+    width:100%;
+    height:fit-content;
+    background-color: rgb(255, 255, 255);
+    margin-block:10px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit-Bold";
+    color:rgb(0, 0, 0);
+    font-size:32px;
+    padding-top: 5px;
+    margin-bottom:15px;
+    text-align: center;
+    padding-block: 10px;
+    user-select: none; /* Disable text selection */
+    transition: ease-in-out 500ms;
+}
