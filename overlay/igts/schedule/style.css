@@ -1,21 +1,21 @@
 @font-face {
-    font-family: "Outfit-Bold";
-    src: url("../../../_shared_assets/fonts/Outfit-Bold.ttf");
+    font-family: "Nohemi-Bold";
+    src: url("../../../_shared_assets/fonts/Nohemi-Bold.ttf");
 }
 
 @font-face {
-    font-family: "Outfit-ExtraBold";
-    src: url("../../../_shared_assets/fonts/Outfit-ExtraBold.ttf");
+    font-family: "Nohemi-Regular";
+    src: url("../../../_shared_assets/fonts/Nohemi-Regular.ttf");
 }
 
 @font-face {
-    font-family: "Outfit-Light";
-    src: url("../../../_shared_assets/fonts/Outfit-Light.ttf");
+    font-family: "Nohemi-Light";
+    src: url("../../../_shared_assets/fonts/Nohemi-Light.ttf");
 }
 
 @font-face {
-    font-family: "Outfit-Regular";
-    src: url("../../../_shared_assets/fonts/Outfit-Regular.ttf");
+    font-family: "Nohemi-Regular";
+    src: url("../../../_shared_assets/fonts/Nohemi-Regular.ttf");
 }
 
 #main {
@@ -25,8 +25,8 @@
     top:0px;
     left:0px;
     display:flex;
-    font-family: "Outfit-Regular";
-    color: #343434;
+    font-family: "Nohemi-Regular";
+    color: white;
     font-size:24px;
     user-select: none;
 }
@@ -46,7 +46,7 @@
 }
 
 #roundName {
-    font-family: "Outfit-ExtraBold";
+    font-family: "Nohemi-Regular";
     font-size:48px;
     position:absolute;
     top:246px;
@@ -54,7 +54,7 @@
 }
 
 #timer {
-    font-family: "Outfit-ExtraBold";
+    font-family: "Nohemi-Regular";
     font-size:136px;
     position:absolute;
     top:858px;
@@ -95,7 +95,7 @@
     object-position: center;
     width:82px;
     height:82px;
-    border: 6px solid black;
+    border: 6px solid white;
     border-width: 6px 0px 6px 6px; /* 25px top, 10px right, 4px bottom and 35px left */
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -110,16 +110,12 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    color:#343434;
+    color:black;
     margin-left:-2px;
-    border: 6px solid black;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
 }
 
 .matchPlayerOneName {
-    font-family: "Outfit-ExtraBold";
+    font-family: "Nohemi-Regular";
     font-size:30px;
     margin-left:13px;
     width:fit-content;
@@ -139,9 +135,9 @@
     width:116px;
     height:29px;
     font-size:28px;
-    font-family: "Outfit-ExtraBold";
+    font-family: "Nohemi-Regular";
     color:white;
-    background-color: #e19219;
+    background-color: black;
     border: solid black;
     border-width: 4px 0px 0px 4px; /* 25px top, 10px right, 4px bottom and 35px left */
     box-sizing: border-box;
@@ -161,7 +157,7 @@
     align-items: center;
     justify-content: center;
     font-size:72px;
-    font-family: "Outfit-ExtraBold";
+    font-family: "Nohemi-Regular";
 }
 
 .matchPlayerTwo {
@@ -176,7 +172,7 @@
     object-position: center;
     width:82px;
     height:82px;
-    border: 6px solid black;
+    border: 6px solid white;
     border-width: 6px 6px 6px 0px; /* 25px top, 10px right, 4px bottom and 35px left */
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -192,16 +188,12 @@
     align-items: end;
     flex-direction: column;
     justify-content: center;
-    color:#343434;
+    color:black;
     margin-right:-2px;
-    border: 6px solid black;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
 }
 
 .matchPlayerTwoName {
-    font-family: "Outfit-ExtraBold";
+    font-family: "Nohemi-Regular";
     font-size:30px;
     margin-right:13px;
     width:fit-content;
@@ -221,9 +213,9 @@
     width:116px;
     height:29px;
     font-size:28px;
-    font-family: "Outfit-ExtraBold";
+    font-family: "Nohemi-Regular";
     color:white;
-    background-color: #e19219;
+    background-color: black;
     border: solid black;
     border-width: 4px 4px 0px 0px; /* 25px top, 10px right, 4px bottom and 35px left */
     display:flex;
@@ -242,7 +234,7 @@
 }
 
 .matchTime {
-    font-family: "Outfit-ExtraBold";
+    font-family: "Nohemi-Regular";
     font-size:57px;
     margin-top:-3px;
 }
@@ -273,8 +265,8 @@
 }
 
 .title {
-    font-family: "Outfit-Regular";
-    color:white;
+    font-family: "Nohemi-Regular";
+    color:black;
     font-size:24px;
     user-select: none; /* Disable text selection */
 }
@@ -288,7 +280,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    font-family: "Outfit-Bold";
+    font-family: "Nohemi-Bold";
     color:rgb(0, 0, 0);
     font-size:32px;
     padding-top: 5px;

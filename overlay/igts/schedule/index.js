@@ -61,7 +61,7 @@ let initialized = false;
 const now = new Date();
 (async () => {
     try {
-        const jsonData = await $.getJSON("../../../_data/stage_agts.json");
+        const jsonData = await $.getJSON("../../../_data/stage_igts.json");
         jsonData.map((stage, index) => {
             if (index == 0) {
                 currentStage = stage.currentStage;
@@ -69,7 +69,7 @@ const now = new Date();
                 stages.push(stage);
             }
         });
-        const jsonData_2 = await $.getJSON("../../../_data/seeding_agts.json");
+        const jsonData_2 = await $.getJSON("../../../_data/seeding_igts.json");
         jsonData_2.Teams.map((seed) => {
             seedData.push(seed);
         });
@@ -384,7 +384,7 @@ async function getSchedules(stage) {
             await axios.get("/matches", {
                 baseURL: "https://gtsosu.com/api",
                 params: {
-                    tourney: "agts_2025",
+                    tourney: "igts_2025",
                     stage: stage,
                 },
             })
