@@ -1,24 +1,36 @@
 @font-face {
-    font-family: "Nohemi-Bold";
-    src: url("../../../_shared_assets/fonts/Nohemi-Bold.ttf");
+    font-variant-ligatures: none;
+    font-family: "Outfit-Bold";
+    src: url("../../../_shared_assets/fonts/StretchPro.otf");
 }
 
 @font-face {
-    font-family: "Nohemi-ExtraBold";
-    src: url("../../../_shared_assets/fonts/Nohemi-ExtraBold.ttf");
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    src: url("../../../_shared_assets/fonts/StretchPro.otf");
+    font-variant-ligatures: none;
 }
 
 @font-face {
-    font-family: "Nohemi-Light";
-    src: url("../../../_shared_assets/fonts/Nohemi-Light.ttf");
+    font-variant-ligatures: none;
+    font-family: "Outfit-Light";
+    src: url("../../../_shared_assets/fonts/StretchPro.otf");
 }
 
 @font-face {
-    font-family: "Nohemi-Regular";
-    src: url("../../../_shared_assets/fonts/Nohemi-Regular.ttf");
+    font-variant-ligatures: none;
+    font-family: "Outfit-Regular";
+    src: url("../../../_shared_assets/fonts/StretchPro.otf");
 }
 
 @font-face {
+    font-variant-ligatures: none;
+    font-family: "Engravers-MT";
+    src: url("../../../_shared_assets/fonts/engravers-mt.ttf");
+}
+
+@font-face {
+    font-variant-ligatures: none;
     font-family: "LINESeed-Bold";
     src: url("../../../_shared_assets/fonts/LINESeedJP_TTF_Bd.ttf");
 }
@@ -34,7 +46,8 @@ body {
     top: 0px;
     left: 500px;
     display: flex;
-    font-family: "Nohemi-Light";
+    font-variant-ligatures: none;
+    font-family: "Outfit-Light";
     color: white;
     font-size: 24px;
     user-select: none;
@@ -46,14 +59,15 @@ body {
     height: 1080px;
     top: 0px;
     left: 0px;
-    background-color: rgba(0,0,0,0.5);
-    font-family: "Nohemi-ExtraBold";
+    background-color: rgba(0, 0, 0, 0.5);
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
     color: white;
     font-size: 80px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    z-index:99;
+    z-index: 99;
     transition: 500ms ease-in-out;
     /* display:none; */
 }
@@ -64,7 +78,7 @@ body {
     height: 1080px;
     top: 0px;
     left: 0px;
-    opacity:1;
+    opacity: 1;
 }
 
 .foreground {
@@ -92,7 +106,7 @@ body {
 }
 
 #mappoolScene {
-    opacity:1;
+    opacity: 1;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -118,7 +132,8 @@ body {
     left: 0px;
     width: 1920px;
     height: 1120px;
-    font-family: "Nohemi-ExtraBold";
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
     font-size: 150px;
     color: white;
     display: flex;
@@ -131,7 +146,8 @@ body {
     left: 0px;
     width: 1920px;
     height: 1120px;
-    font-family: "Nohemi-ExtraBold";
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
     font-size: 150px;
     color: white;
     display: flex;
@@ -179,7 +195,8 @@ body {
     height: inherit;
     display: flex;
     flex-direction: column;
-    font-family: "Nohemi-Regular";
+    font-variant-ligatures: none;
+    font-family: "Outfit-Regular";
     color: black;
     z-index: 3;
 }
@@ -188,16 +205,16 @@ body {
     width: inherit;
     height: 35px;
     position: relative;
-    margin-top:3px;
 }
 
 .mapTitleOverview {
-    font-family: "Nohemi-Regular";
+    font-variant-ligatures: none;
+    font-family: "Outfit-Bold";
     width: 75%;
     height: 35px;
     font-size: 25px;
     margin-left: 5px;
-    margin-top: 7px;
+    margin-top: 3px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -234,14 +251,16 @@ body {
 
 .mapMapperTitleOverview,
 .mapDifficultyTitleOverview {
-    font-family: "Nohemi-ExtraBold";
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
     font-size: 10px;
     margin-left: 7px;
 }
 
 .mapMapperOverview,
 .mapDifficultyOverview {
-    font-family: "Nohemi-Regular";
+    font-variant-ligatures: none;
+    font-family: "Outfit-Regular";
     font-size: 10px;
     margin-left: 7px;
 }
@@ -262,7 +281,8 @@ body {
     display: flex;
     justify-content: end;
     align-items: end;
-    font-family: 'Nohemi-ExtraBold';
+    font-variant-ligatures: none;
+    font-family: 'Outfit-ExtraBold';
     color: white;
     font-size: 54px;
     margin-top: 14px;
@@ -276,7 +296,7 @@ body {
     width: inherit;
     height: inherit;
     z-index: 1;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to right, rgba(192, 255, 38, 1), rgba(192, 255, 38, 0.8), rgba(192, 255, 38, 0.6), rgba(192, 255, 38, 0));
     ;
 }
 
@@ -303,7 +323,9 @@ body {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    font-family: 'Nohemi-ExtraBold';
+    font-variant-ligatures: none;
+    font-size: 20px;
+    font-family: 'Outfit-ExtraBold';
     color: black;
     background-color: white;
     z-index: 2;
@@ -312,12 +334,13 @@ body {
 }
 
 .mapPlayerText {
-    font-size: 31px;
+    font-size: 20px;
+    margin-right:2px;
 }
 
 .mapWinText {
-    font-size: 17px;
-    color: Black;
+    font-size: 12px;
+    color: #c0ff26;
 }
 
 .mapPickIcon {
@@ -356,9 +379,10 @@ body {
 }
 
 .mapBanText {
-    font-family: "Nohemi-ExtraBold";
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
     font-size: 30px;
-    color:white;
+    color: white;
 }
 
 .mapPickText {
@@ -367,15 +391,16 @@ body {
     left: 5px;
     z-index: 4;
     font-size: 16px;
-    font-family: "Nohemi-Bold";
+    font-variant-ligatures: none;
+    font-family: "Outfit-Bold";
     border-radius: 10px;
     width: fit-content;
     height: fit-content;
     padding-inline: 20px;
     padding-block: 4px;
     box-shadow: 2px -2.5px 4px rgba(0, 0, 0, 0.5);
-    background-color: rgba(255, 255, 255, 0.75);
-    color: black;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #c0ff26;
     opacity: 0;
     transition: 500ms ease-in-out;
 }
@@ -399,7 +424,7 @@ body {
     width: 1920px;
     object-fit: contain;
     object-position: center;
-    z-index:1;
+    z-index: 1;
 }
 
 #playerOneQueue {
@@ -461,7 +486,7 @@ body {
     margin-bottom: 5px;
     opacity: 1;
     transition: 500ms ease-in-out;
-    z-index:5;
+    z-index: 5;
 }
 
 .mapPickIconQueueLeft {
@@ -501,27 +526,33 @@ body {
     opacity: 0;
     z-index: 2;
     color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #upcomingContainer {
-    position: absolute;
-    top: 150px;
-    left: 90px;
     height: fit-content;
     width: 1750px;
     display: flex;
     flex-direction: column;
     align-items: end;
+    margin-bottom:50px;
 }
 
 #upcomingTexts {
     width: inherit;
     display: flex;
     justify-content: space-between;
-    font-family: "Nohemi-ExtraBold";
+    align-items: center;
+    font-variant-ligatures: none;
+    font-family: "Engravers-MT";
     font-size: 150px;
-    margin-top: -30px;
-    color: white;
+    margin-bottom: 62px;
+    height:95px;
+    color: black;
+    transform: scaleY(1.5);
+    background-color: #c0ff26;
 }
 
 #upcomingPick {
@@ -539,16 +570,31 @@ body {
     margin-top: -40px;
 }
 
-#upcomingSource {
+#upcomingDim {
     position: absolute;
     width: inherit;
     height: inherit;
     top: 0px;
     left: 0px;
     z-index: 1;
+    border-left: 8px solid #c0ff26;
+    border-right: 8px solid #c0ff26;
+    border-bottom: 8px solid #c0ff26;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#upcomingSource {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
     object-fit: cover;
     object-position: center;
-    filter: brightness(70%);
+    filter: brightness(65%);
 }
 
 #upcomingSong {
@@ -561,12 +607,14 @@ body {
 }
 
 #upcomingSongText {
-    font-family: "Nohemi-Bold";
+    font-variant-ligatures: none;
+    font-family: "Outfit-Bold";
     font-size: 48px;
 }
 
 #upcomingArtistText {
-    font-family: "Nohemi-Light";
+    font-variant-ligatures: none;
+    font-family: "Outfit-Light";
     font-size: 27px;
 }
 
@@ -583,14 +631,15 @@ body {
 
 #upcomingCustomTag,
 #upcomingCollabTag {
-    font-family: "Nohemi-Light";
+    font-variant-ligatures: none;
+    font-family: "Outfit-Light";
     font-size: 24px;
     width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: #c0ff26;
     padding-inline: 10px;
     padding-block: 2px;
     text-align: center;
@@ -610,10 +659,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: end;
-    width: 250px;
-    font-family: "Nohemi-ExtraBold";
-    font-size:30px;
-    color:white;
+    width: 300px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 24px;
+    color: white;
 }
 
 #upcomingPickPlayerSource {
@@ -627,15 +677,26 @@ body {
 #upcomingDetails {
     display: flex;
     padding-inline: 50px;
-    padding-block: 35px;
-    border: 4px solid white;
+    padding-block: 10px;
+    border-left: 8px solid #c0ff26;
+    border-right: 8px solid #c0ff26;
+    border-bottom: 8px solid #c0ff26;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: black;
+    width:inherit;
+    justify-content: center;
+    align-items: center;
 }
 
 .upcomingDetailsColumn {
     display: flex;
     flex-direction: column;
     width: fit-content;
-    color: white;
+    color: #c0ff26;
+    justify-content: center;
+    align-items: center;
 }
 
 .upcomingStats {
@@ -643,7 +704,8 @@ body {
 }
 
 .upcomingDetailsText {
-    font-family: "Nohemi-Bold";
+    font-variant-ligatures: none;
+    font-family: "Outfit-Bold";
     font-size: 31px;
     margin-right: 20px;
 }
@@ -659,12 +721,15 @@ body {
 
 #upcomingMapper,
 #upcomingDifficulty {
-    margin-top: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    justify-content: center;
+    align-items: center;
 }
 
 #upcomingDifficulty {
@@ -672,7 +737,8 @@ body {
 }
 
 .upcomingDetailsText2 {
-    font-family: "Nohemi-ExtraBold";
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
     font-size: 13.5px;
 }
 
@@ -689,14 +755,14 @@ body {
     width: 1920px;
     /* transform: translateY(1080px); */
     z-index: 3;
-    opacity:1;
+    opacity: 1;
 }
 
 #matchTop {
     position: absolute;
     top: 0px;
     left: 0px;
-    width:inherit;
+    width: inherit;
 }
 
 #matchTopFg {
@@ -710,7 +776,7 @@ body {
 }
 
 #matchSongContainer {
-    display:flex;
+    display: flex;
     position: absolute;
     top: 0px;
     left: 236px;
@@ -720,7 +786,7 @@ body {
     position: relative;
     width: 607px;
     height: 100px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -728,51 +794,52 @@ body {
 #matchSource {
     width: inherit;
     height: inherit;
-    position:absolute;
-    top:0px;
+    position: absolute;
+    top: 0px;
     left: 0px;
     object-fit: cover;
     object-position: center;
-    filter : brightness(50%);
+    filter: brightness(50%);
 }
 
 #matchPickId {
-    font-family: "Nohemi-Bold";
-    color:white;
-    z-index:4;
-    font-size:64px;
-    width:150px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-Bold";
+    color: white;
+    z-index: 4;
+    font-size: 64px;
+    width: 150px;
     text-align: center;
 }
 
 .matchSongStatContainer {
-    color:white;
-    display:flex;
-    z-index:4;
+    color: white;
+    display: flex;
+    z-index: 4;
     /* flex-direction: column; */
     /* margin-right:20px; */
-    margin-block:5px;
+    margin-block: 5px;
 }
 
 .matchSongStatText {
-    font-family:"Nohemi-Bold";
-    font-size:20px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-Bold";
+    font-size: 20px;
 }
 
 .matchSongStat {
-    font-size:20px;
-    margin-left:10px;
+    font-size: 20px;
+    margin-left: 10px;
 }
 
 #matchSongDetails {
-    margin-left:15px;
-    margin-top:5px;
-    display:flex;
+    margin-left: 15px;
+    display: flex;
     flex-direction: column;
-    width:400px;
-    height:fit-content;
-    overflow:hidden;
-    position:relative;
+    width: 400px;
+    height: fit-content;
+    overflow: hidden;
+    position: relative;
 }
 
 #matchSongPart1 {
@@ -781,31 +848,34 @@ body {
 }
 
 #matchSongTitle {
-    font-family:"Nohemi-Light";
-    font-size:27px;
-    margin-top:6px;
-    white-space:nowrap;
-    width:fit-content;
+    font-variant-ligatures: none;
+    font-family: "Outfit-Light";
+    font-size: 27px;
+    margin-top: 6px;
+    white-space: nowrap;
+    width: fit-content;
 }
 
 #matchSongTitleDelay {
-    font-family:"Nohemi-Light";
-    font-size:27px;
-    margin-top:6px;
-    display:none;
-    white-space:nowrap;
-    position:absolute;
-    width:fit-content;
+    font-variant-ligatures: none;
+    font-family: "Outfit-Light";
+    font-size: 27px;
+    margin-top: 6px;
+    display: none;
+    white-space: nowrap;
+    position: absolute;
+    width: fit-content;
 }
 
 #matchArtistTitle {
-    font-family:"Nohemi-Light";
-    font-size:15px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-Light";
+    font-size: 15px;
 }
 
 #matchSubtitleDetails1 {
-    margin-top:8px;
-    display:flex;
+    margin-top: 8px;
+    display: flex;
     flex-direction: row;
     transition: 500ms ease-in-out;
     opacity: 1;
@@ -813,14 +883,14 @@ body {
 }
 
 #matchSubtitleDetails2 {
-    display:flex;
-    padding-block:15px;
+    display: flex;
+    padding-block: 15px;
     transition: 500ms ease-in-out;
     opacity: 0;
     /* display:none; */
     /* transform:translateY(-32px); */
-    position:absolute;
-    height:70px;
+    position: absolute;
+    height: 70px;
     /* display: grid;
     align-items: center;
     grid-template-columns: repeat(2, 1fr); 
@@ -828,616 +898,703 @@ body {
 }
 
 .matchSongStatColumn {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    width:fit-content;
-    margin-right:20px;
+    width: fit-content;
+    margin-right: 20px;
     color: white;
 }
 
-#matchMapper, #matchDifficulty {
-    margin-right:22px;
+#matchMapper,
+#matchDifficulty {
+    margin-right: 22px;
     color: white;
 }
 
 #matchMapper {
-    width:100px;
+    width: 100px;
     color: white;
 }
 
 #matchDifficulty {
-    width:300px;
+    width: 300px;
     color: white;
 }
 
 .matchSubtitle {
-    font-family:"Nohemi-Bold";
-    font-size:12px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-Bold";
+    font-size: 9px;    
 }
 
-#matchMapperTitle, #matchDifficultyTitle {
-    font-size:12px;
+#matchMapperTitle,
+#matchDifficultyTitle {
+    font-size: 9px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
+#matchStageContainer {
+    font-variant-ligatures: none;
+    font-family: "Outfit-Regular";
+    font-size: 34px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #matchStage {
-    font-family:"Nohemi-Regular";
-    font-size:34px;
-    position:absolute;
-    top:0px;
-    right:0px;
-    height:100px;
-    width:350px;
-    display:flex;
+    width: fit-content;
+    transform: scaleX(0.90);
+    height: 24%;
+    font-family: "Engravers-MT";
+    font-size: 34px;
+    color: black;
+    background-color: #c0ff26;
+    letter-spacing: 5px;
+    white-space: nowrap;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #matchBottom {
-    opacity:1   ;
+    opacity: 1;
     position: absolute;
     bottom: 0px;
     left: 0px;
-    width:inherit;
-    height:148px;
-    background-color: white;
-    display:flex;
-    color:black;
+    width: inherit;
+    height: 148px;
+    background-color: black;
+    display: flex;
+    color: #c0ff26;
     justify-content: space-between;
+    border: 8px solid #c0ff26;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 #bottomPlayerOne {
-    display:flex;
+    display: flex;
     position: relative;
-    width:596px;
+    width: 596px;
+    align-items: center;
 }
 
 #bottomPlayerTwo {
-    display:flex;
+    display: flex;
     flex-direction: row-reverse;
     position: relative;
-    width:596px;
+    width: 596px;
+    align-items: center;
 }
 
 .bottomPfp {
-    height:138px;
-    width:138px;
+    height: fit-content;
+    width: 138px;
+    height:80px;
     margin: 10px;
-    background-color: white;
     object-fit: contain;
     object-position: center;
 }
 
 #bottomT1Text {
-    position:absolute;
-    top: -53px;
-    left: 18px;
-    color:black;
-    background-color: white;
-    font-family:"Nohemi-ExtraBold";
-    font-size:38px;
-    width:98px;
-    height:41px;
-    padding-right:15px;
-    padding-top:3px;
-    display:flex;
+    position: absolute;
+    top: -60px;
+    left: 26px;
+    color: black;
+    background-color: #c0ff26;
+    font-variant-ligatures: none;
+    font-family: "Engravers-MT";
+    font-size: 46px;
+    width: 18%;
+    height:21%;
+    padding-bottom:2px;
+    display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
 }
 
 #bottomT2Text {
-    position:absolute;
-    top: -53px;
-    right: 18px;
-    color:black;
-    background-color: white;
-    font-family:"Nohemi-ExtraBold";
-    font-size:38px;
-    width:98px;
-    height:41px;
-    padding-left:15px;
-    padding-top:3px;
-    display:flex;
+    position: absolute;
+    top: -60px;
+    right: 26px;
+    color: black;
+    background-color: #c0ff26;
+    font-variant-ligatures: none;
+    font-family: "Engravers-MT";
+    font-size: 46px;
+    width: 18%;
+    height:21%;
+    padding-bottom:2px;
+    display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
 }
 
 #bottomT1Pick {
-    position:absolute;
+    position: absolute;
     top: -53px;
     right: 0;
-    display:flex;
+    display: flex;
     align-items: center;
-    height:41px;
-    transition:500ms ease-in-out;
+    height: 41px;
+    transition: 500ms ease-in-out;
 }
 
 #bottomT2Pick {
-    position:absolute;
+    position: absolute;
     top: -53px;
     left: 0;
-    display:flex;
+    display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    height:41px;
-    opacity:0;
-    transition:500ms ease-in-out;
+    height: 41px;
+    opacity: 0;
+    transition: 500ms ease-in-out;
 }
 
 .bottomPickText {
-    font-family:"Nohemi-ExtraBold";
-    color: white;
-    font-size:30px;
-    margin-inline:13px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    color: #c0ff26;
+    font-size: 30px;
+    margin-inline: 13px;
 }
 
 .bottomPickArrow {
-    font-family:"Nohemi-ExtraBold";
-    color:white;
-    font-size:57px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    color: #c0ff26;
+    font-size: 57px;
 }
 
 #bottomPlayerOneDetails {
-    display:flex;
-    position:relative;
+    display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
-    margin-left:23px;
+    margin-left: 23px;
 }
 
 #bottomPlayerTwoDetails {
-    display:flex;
-    position:relative;
+    display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: end;
-    margin-right:23px;
+    margin-right: 23px;
 }
 
 #bottomScoreRowLeft {
-    display:flex;
-    margin-left:-4px;
-    margin-bottom:5px;
+    display: flex;
+    margin-left: -4px;
+    margin-bottom: 5px;
 }
 
 #bottomScoreLeft {
-    display:flex;
+    display: flex;
 }
 
 #bottomScoreRowRight {
-    display:flex;
+    display: flex;
     flex-direction: row-reverse;
-    margin-right:-4px;
-    margin-bottom:5px;
+    margin-right: -4px;
+    margin-bottom: 5px;
 }
 
 #bottomScoreRight {
-    display:flex;
+    display: flex;
 }
 
 .score {
-    width:34px;
-    height:34px;
-    border: 4px solid rgb(0, 0, 0);
-    background-color: rgba(0,0,0,0);
+    width:24px;
+    height:24px;
+    border: 4px solid #c0ff26;
+    background-color: rgba(192, 255, 38, 0);
     margin-inline: 3px;
-    border-radius: 25px;
     transition: 250ms ease-in-out;
 }
 
 .scoreFill {
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(192, 255, 38, 1);
 }
 
 #bottomScoreLeft>.score.scoreFillAnimate {
-	animation: addScore 1000ms forwards;
+    animation: addScore 1000ms forwards;
 }
 
 #bottomScoreRight>.score.scoreFillAnimate {
-	animation: addScore 1000ms forwards;
+    animation: addScore 1000ms forwards;
 }
 
 #bottomScoreLeft>.score.scoreNoneAnimate {
-	animation: removeScore 500ms forwards;
+    animation: removeScore 500ms forwards;
 }
 
 #bottomScoreRight>.score.scoreNoneAnimate {
-	animation: removeScore 500ms forwards;
+    animation: removeScore 500ms forwards;
 }
 
-#bottomPlayerOneName, #bottomPlayerTwoName {
-    font-family:"Nohemi-ExtraBold";
-    font-size:30px;
+#bottomPlayerOneName,
+#bottomPlayerTwoName {
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 26px;
 }
 
-#bottomPlayerOnePick,#bottomPlayerTwoPick {
-    font-family: "Nohemi-Bold";
-    color:white;
+#bottomPlayerOnePick,
+#bottomPlayerTwoPick {
+    font-variant-ligatures: none;
+    font-family: "Outfit-Bold";
+    color: white;
     background-color: black;
     border-radius: 25px;
     padding-inline: 15px;
     padding-block: 3px;
-    transition:500ms ease-in-out;
-    display:flex;
+    transition: 500ms ease-in-out;
+    display: flex;
     justify-content: center;
     align-items: center;
-    opacity:0;
-    font-size:20px;
-    margin-inline:4px;
+    opacity: 0;
+    font-size: 16px;
+    margin-inline: 4px;
 }
 
 #bottomMiddleContainer {
-    position:relative;
-    width:728px;
-    height:inherit;
+    position: relative;
+    width: 728px;
+    height: inherit;
 }
 
 #bottomMatch {
-    position:absolute;
-    top:0px;
-    left:0px;
-    height:inherit;
-    width:728px;
-    background-color: rgb(255, 255, 255);
-    z-index:3;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 140px;
+    width: 728px;
+    background-color: black;
+    z-index: 3;
     transform: translateY(148px);
+    border: none;
+    border-bottom: 8px solid #c0ff26;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
-#bottomMatchProgressBar, #bottomMatchResults {
-    position:absolute;
-    top:0px;
-    left:0px;
-    height:inherit;
-    width:inherit;
-    display:flex;
+#bottomMatchProgressBar,
+#bottomMatchResults {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: inherit;
+    width: inherit;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity:1;
+    opacity: 1;
 }
 
 #bottomMatchResults {
-    opacity:0;
+    opacity: 0;
 }
 
 #bottomResultsTop {
-    font-family:"Nohemi-ExtraBold";
-    font-size:36px;
-    margin-top:12px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 36px;
+    margin-top: 12px;
     margin-bottom: -16px;
 }
 
 #bottomResultsBottom {
-    font-family:"Nohemi-ExtraBold";
-    font-size:72px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 64px;
 }
 
 #bottomSongProgressText {
-    font-family:"Nohemi-ExtraBold";
-    font-size:16px;
-    margin-bottom:24px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 16px;
+    margin-bottom: 24px;
 }
 
 #bottomSongProgressLabels {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: end;
     width: 550px;
-    font-family:"Nohemi-ExtraBold";
-    font-size:16px;
-    margin-bottom:5px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
 #bottomSongPercentage {
-    width:300px;
-    font-size:30px;
-    display:flex;
+    width: 300px;
+    font-size: 30px;
+    display: flex;
     justify-content: center;
     align-items: end;
-    margin-bottom:-2px;
+    margin-bottom: -2px;
 }
 
 #bottomProgressBar {
-    position:relative;
+    position: relative;
     width: 550px;
-    height:11px;
-    border: solid 2px black;
-    border-radius:20px; 
+    height: 11px;
+    border: solid 2px #c0ff26;
+    border-radius: 20px;
 }
 
 #bottomProgressBarContent {
-    position:absolute;
-    top:0px;
-    left:0px;
-    height:inherit;
-    width:200px;
-    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: inherit;
+    width: 200px;
+    background-color: #c0ff26;
 }
 
 #bottomChatText {
-    font-family:"Nohemi-Bold";
-    font-size:57px;
-    color:white;
-    position:absolute;
-    bottom:-15px;
-    right:-1px;
+    font-variant-ligatures: none;
+    font-family: "Engravers-MT";
+    font-size: 57px;
+    color: black;
+    position: absolute;
+    top: 1px;
+    right: -25px;
+    background-color: #c0ff26;
+    height:25%;
+    width:27%;
+    transform: scaleX(0.75);
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #effectsOverlay {
-    position:absolute;
-    top:0px;
-    left:0px;
-    height:1080px;
-    width:1920px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 1080px;
+    width: 1920px;
 }
 
 #effectsShimmer {
-    position:absolute;
-    top:0px;
-    left:0px;
-    height:1080px;
-    width:1920px;
-    opacity:0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 1080px;
+    width: 1920px;
+    opacity: 0;
 }
 
 #effectsLeftShimmer {
-    position:absolute;
-    top:0px;
-    left:-100px;
-    height:1080px;
-    width:100px;
-    box-shadow: 120px 0 200px rgba(0, 0, 0, 0.5); /* Left glow */
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    height: 1080px;
+    width: 100px;
+    box-shadow: 120px 0 200px rgba(192, 255, 38, 0.5);
+    /* Left glow */
 }
 
 #effectsRightShimmer {
-    position:absolute;
-    top:0px;
-    right:-100px;
-    height:1080px;
-    width:100px;
-    box-shadow: -120px 0 200px rgba(0, 0, 0, 0.5); /* Left glow */
+    position: absolute;
+    top: 0px;
+    right: -100px;
+    height: 1080px;
+    width: 100px;
+    box-shadow: -120px 0 200px rgba(192, 255, 38, 0.5);
+    /* Left glow */
 }
 
 /* MATCH */
 #matchScene {
-    position:absolute;
-    top:0px;
-    left:0px;
-    height:1080px;
-    width:1920px;
-    z-index:1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 1080px;
+    width: 1920px;
+    z-index: 1;
 }
 
 #matchScoreBoard {
-    position:absolute;
-    top:849px;
-    left:0px;
-    height:83px;
-    width:inherit;
-    display:flex;
+    position: absolute;
+    top: 849px;
+    left: 0px;
+    height: 83px;
+    width: inherit;
+    display: flex;
     justify-content: space-between;
-    opacity:0;
-    /* background-color: #0fa625; */
+    opacity: 0;
+    background-color: black;
+    border-top: 8px solid #c0ff26;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 #matchWinningBoard {
-    position:absolute;
-    display:flex;
-    top:0px;
-    left:0px;
-    height:83px;
-    width:inherit;
+    position: absolute;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    height: 83px;
+    width: inherit;
 }
 
 #matchWinningLeft {
-    width:50%;
-    height:inherit;
-    display:flex;
+    width: 50%;
+    height: inherit;
+    display: flex;
     justify-content: end;
-    position:relative;
+    position: relative;
 }
 
 #matchWinningRight {
-    width:50%;
-    height:inherit;
-    display:flex;
-    position:relative;
+    width: 50%;
+    height: inherit;
+    display: flex;
+    position: relative;
 }
 
 #matchWinningLeftWinText {
-    position:absolute;
-    top:0px;
-    right:0px;
-    display:flex;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
     width: 100px;
     height: 34px;
     justify-content: center;
     align-items: center;
-    font-family: 'Nohemi-ExtraBold';
-    color: black;
-    background-color: white;
-    z-index:2;
-    opacity:0;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    color: #c0ff26;
+    background-color: black;
+    z-index: 2;
+    opacity: 0;
     transition: 500ms ease-in-out;
 }
 
 #matchWinningRightWinText {
-    position:absolute;
-    top:0px;
-    left:0px;
-    display:flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
     width: 100px;
     height: 34px;
     justify-content: center;
     align-items: center;
-    font-family: 'Nohemi-ExtraBold';
-    color: black;
-    background-color: white;
-    z-index:2;
-    opacity:0;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    color: #c0ff26;
+    background-color: black;
+    z-index: 2;
+    opacity: 0;
     transition: 500ms ease-in-out;
 }
 
 #matchWinningLeftContent {
     transition: 500ms cubic-bezier(0.000, 0.125, 0.000, 1.005);
     /* width:100%; */
-    height:inherit;
+    height: inherit;
 }
 
 #matchWinningRightContent {
     transition: 500ms cubic-bezier(0.000, 0.125, 0.000, 1.005);
     /* width:100%; */
-    height:inherit;
+    height: inherit;
 }
 
 #matchOneScoreContainer {
-    background-color: white;
-    display:flex;
+    transition: 1500ms cubic-bezier(0.000, 0.125, 0.000, 1.005);
+    background-color: black;
+    display: flex;
     align-items: center;
-    justify-content: end;
-    width:400px;
+    justify-content: center;
+    width: 400px;
+    border-left: 8px solid #c0ff26;
+    border-right: 8px solid #c0ff26;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 #matchOneScore {
-    font-family: "Nohemi-ExtraBold";
-    font-size:57px;
-    margin-right:28px;
-    color:Black;
-    width:fit-content;
-    z-index:0;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 45px;
+    /* margin-right: 28px; */
+    color: #c0ff26;
+    width: fit-content;
+    z-index: 0;
     transition: 1500ms cubic-bezier(0.000, 0.125, 0.000, 1.005);
     /* transform: TranslateX(450px); */
     /* transform: TranslateX(570px); */
 }
 
 #matchTwoScoreContainer {
-    background-color: white;
-    display:flex;
+    transition: 1500ms cubic-bezier(0.000, 0.125, 0.000, 1.005);
+    background-color: black;
+    display: flex;
     align-items: center;
-    width:400px;
+    justify-content: center;
+    width: 400px;
+    border-left: 8px solid #c0ff26;
+    border-right: 8px solid #c0ff26;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 #matchTwoScore {
-    font-family: "Nohemi-ExtraBold";
-    font-size:57px;
-    margin-left:28px;
-    color:Black;
-    width:fit-content;
-    z-index:0;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 45px;
+    /* margin-left: 28px; */
+    color: #c0ff26;
+    width: fit-content;
+    z-index: 0;
     transition: 1500ms cubic-bezier(0.000, 0.125, 0.000, 1.005);
 }
 
-#matchOneLead, #matchTwoLead {
-    display:flex;
+#matchOneLead,
+#matchTwoLead {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width:115px;
-    height:inherit;
-    color: white;
-    font-family: "Nohemi-ExtraBold";
-    font-size:72px;
-    opacity:0;
+    width: 115px;
+    height: inherit;
+    color: #c0ff26;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 72px;
+    opacity: 0;
 }
 
 #matchScoreBar {
-    width:890px;
-    display:flex;
+    width: 890px;
+    display: flex;
 }
 
 #matchScoreLeftSection {
-    width:50%;
-    display:flex;
+    width: 50%;
+    display: flex;
     justify-content: end;
 }
 
 #matchScoreLeftContainer {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: end;
-    width:fit-content;
+    width: fit-content;
     transition: 250ms ease-in-out;
 }
 
 #matchScoreLeftContent {
-    height:29px;
-    background-color: white;
-    border-radius: 20px 0px 0px  20px;
+    height: 29px;
+    background-color: #c0ff26;
+    /* border-radius: 20px 0px 0px 20px; */
     transition: 250ms ease-in-out;
 }
 
 #matchScoreLeftText {
-    font-family: "Nohemi-ExtraBold";
-    color: white;
-    font-size:30px;
-    margin-top:8px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    color: #c0ff26;
+    font-size: 24px;
+    margin-top: 6px;
     transition: 250ms ease-in-out;
     text-align: center;
-    width:fit-content;
+    width: fit-content;
     transition: 250ms ease-in-out;
-    opacity:0;
+    opacity: 0;
 }
 
 #matchScoreRightSection {
-    width:50%;
-    display:flex;
+    width: 50%;
+    display: flex;
 }
 
 #matchScoreRightContainer {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: start;
-    width:fit-content;
+    width: fit-content;
     transition: 250ms ease-in-out;
 }
 
 #matchScoreRightContent {
-    height:29px;
-    background-color: white;
-    border-radius: 0px 20px 20px 0px;
+    height: 29px;
+    background-color: #c0ff26;
+    /* border-radius: 0px 20px 20px 0px; */
     transition: 250ms ease-in-out;
 }
 
 #matchScoreRightText {
-    font-family: "Nohemi-ExtraBold";
-    font-size:30px;
-    margin-top:8px;
-    color: white;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 24px;
+    margin-top: 6px;
+    color: #c0ff26;
     transition: 250ms ease-in-out;
     text-align: center;
-    width:fit-content;
+    width: fit-content;
     transition: 250ms ease-in-out;
-    opacity:0;
+    opacity: 0;
 }
 
 #matchClients {
-    position:absolute;
-    left:0px;
-    top:129px;
-    width:1920px;
-    height:720px;
-    display:flex;
-    opacity:0;
-    display:flex;
+    position: absolute;
+    left: 0px;
+    top: 129px;
+    width: 1920px;
+    height: 720px;
+    display: flex;
+    opacity: 0;
     justify-content: center;
+    align-items: center;
 }
 
-#matchClientLeft, #matchClientRight {
-    width:640px;
-    display:flex;
-    flex-direction: column;
+#matchClientLeft,
+#matchClientRight {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#matchClientLeft > .matchClient:first-child,
+#matchClientRight > .matchClient:first-child {
+    flex: 0 0 100%;
+    margin-left: 480px;
+}
+
+#matchClientLeft > .matchClient:not(:first-child),
+#matchClientRight > .matchClient:not(:first-child) {
+    flex: 0 0 50%;
 }
 
 .matchClient {
-    width:640px;
-    height:360px;
-    position:relative;
-    display:flex;
+    width: 480px;
+    height: 360px;
+    position: relative;
+    display: flex;
     justify-content: space-between;
     align-items: end;
-    transition:500ms ease-in-out;
     /* border: 4px solid white;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1445,37 +1602,42 @@ body {
 }
 
 .matchClientDetails {
-    transition:500ms ease-in-out;
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:inherit;
-    height:inherit;
-    display:flex;
+    transition: 500ms ease-in-out;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: inherit;
+    height: inherit;
+    display: flex;
     justify-content: space-between;
     align-items: end;
-    z-index:2;
+    z-index: 2;
 }
 
-.matchClientLeft, .matchClientRight {
-    display:flex;
+.matchClientLeft,
+.matchClientRight {
+    display: flex;
     flex-direction: column;
-    margin-left:19px;
-    margin-bottom:15px;
+    margin-left: 19px;
+    margin-bottom: 15px;
 }
 
-.matchClient100, .matchClientMiss, .matchClientUr, .matchClientName {
+.matchClient100,
+.matchClientMiss,
+.matchClientUr,
+.matchClientName {
     background-color: white;
-    height:33px;
-    width:155px;
-    display:flex;
+    height: 33px;
+    width: 155px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: "Nohemi-ExtraBold";
-    font-size:24px;
-    color:black;
-    margin-top:8px;
-    z-index:2;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 16px;
+    color: black;
+    margin-top: 8px;
+    z-index: 2;
 }
 
 .matchClientName {
@@ -1484,106 +1646,123 @@ body {
 }
 
 .matchClientUr {
-    margin-right:19px;
+    margin-right: 19px;
 }
 
 .matchClientText {
-    margin-right:18px;
+    margin-right: 18px;
+    font-size:16px;
 }
 
 .matchClient100Text {
-    margin-left:18px;
-    color:#FF9000;
+    margin-left: 18px;
+    color: #FF9000;
 }
 
 .matchClientMissText {
-    margin-left:18px;
-    color:#FF0000;
+    margin-left: 18px;
+    color: #FF0000;
 }
 
 .matchClientUrText {
-    margin-left:18px;
+    margin-left: 18px;
 }
 
 .matchClientMissGlow {
-    box-shadow:inset 50px 0 200px rgba(184, 41, 41, 0.7), /* Left Glow */
-    inset -50px 0 200px rgba(184, 41, 41, 0.7); /* Right Glow */
-    position:absolute;
-    top:0px;
-    left:0px;
-    width:640px;
-    height:360px;
-    z-index:0;
-    opacity:0;
+    box-shadow: inset 50px 0 200px rgba(184, 41, 41, 0.7),
+        /* Left Glow */
+        inset -50px 0 200px rgba(184, 41, 41, 0.7);
+    /* Right Glow */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 480px;
+    height: 360px;
+    z-index: 0;
+    opacity: 0;
 }
 
 /* CHATS */
 #bottomChat {
-    position:absolute;
-    top:0px;
-    left:0px;
-    height:inherit;
-    width:728px;
+    position: absolute;
+    top: -6px;
+    left: 0px;
+    height: inherit;
+    width: 728px;
     background-color: black;
-    display:flex;
+    display: flex;
     align-items: center;
+    border: 8px solid #c0ff26;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 #chats {
-    margin-left:20px;
-    width:550px;
-    height:85%;
-    overflow: hidden; /* Hide scrollbars */
-	font-size: 16px;
+    margin-left: 20px;
+    width: 550px;
+    height: 85%;
+    overflow: hidden;
+    /* Hide scrollbars */
+    font-size: 16px;
+    font-variant-ligatures: none;
     font-family: 'LINESeed-Bold', sans-serif;
-    color:white;
+    color: white;
 }
 
 #chatsDebug {
-    margin-top:10px;
-    width:410px;
-    height:300px;
+    margin-top: 10px;
+    width: 410px;
+    height: 300px;
     border-radius: 20px;
     padding: 20px;
-    overflow: hidden; /* Hide scrollbars */
-	font-size: 16px;
+    overflow: hidden;
+    /* Hide scrollbars */
+    font-size: 16px;
+    font-variant-ligatures: none;
     font-family: 'LINESeed-Bold', sans-serif;
-    color:white;
+    color: white;
     background-color: black;
 }
 
 .chat {
-	display: flex;
-	text-align: left;
-	color: #ffffff;
+    display: flex;
+    text-align: left;
+    color: #ffffff;
 }
 
 .chatTime {
-	width: 45px;
-	color: #ffffff;
-	margin-right: 10px;
+    width: 45px;
+    color: #ffffff;
+    margin-right: 10px;
 }
+
 .chatName {
-	color: #ffffff;
-	white-space: nowrap;
-	width: max-content;
+    color: #ffffff;
+    white-space: nowrap;
+    width: max-content;
 }
+
 .chatText {
-	white-space: normal;
-	word-wrap: break-word;
-	overflow: hidden;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow: hidden;
 }
+
 .unknown {
-	color: #ff0000;
+    color: #ff0000;
 }
+
 .bot {
-	color: #FF66AA;
+    color: #FF66AA;
 }
+
 .left {
-	color: #FF9000;
+    color: #FF9000;
 }
+
 .right {
-	color: #FF9000;
+    color: #FF9000;
 }
 
 /* INTRO */
@@ -1596,80 +1775,113 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity:0;
+    opacity: 0;
 }
 
 #introVSText {
-    font-family:"Nohemi-ExtraBold";
-    font-size:285px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 285px;
     margin-inline: 160px;
 }
 
 .introPlayer {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    width:300px;
-    height:fit-content;
+    width: 300px;
+    height: fit-content;
+    background-color: black;
+    color: #c0ff26;
 }
 
 .introPlayerPfp {
     object-fit: contain;
     object-position: center;
-    border: solid 8px white;
+    background-color: black;
+    width: 300px;
+    height: 206px;
+    border: 6px solid #c0ff26;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    background-color: white;
-    width:300px;
-    height:250px;
 }
 
 .introPlayerDetails {
-    margin-top:-2px;
-    width:300px;
-    display:flex;
+    margin-top: -2px;
+    width: 300px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
-    color:black;
+    background-color: black;
+    color: #c0ff26;
     align-items: center;
     padding-block: 10px;
 }
 
 .introPlayerName {
-    font-family:"Nohemi-ExtraBold";
-    font-size:30px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 30px;
     text-align: center;
-    width:90%;
+    width: 100%;
     overflow: hidden;
     white-space: nowrap;
-    margin-bottom: 25px;
+    border-left: 6px solid #c0ff26;
+    border-bottom: 6px solid #c0ff26;
+    border-right: 6px solid #c0ff26;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .introPlayerContainer {
-    width:90%;
-    display:flex;
+    width: 100%;
+    display: flex;
     justify-content: space-between;
+    border-left: 6px solid #c0ff26;
+    border-top: 6px solid #c0ff26;
+    border-right: 6px solid #c0ff26;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .introRosterContainer {
-    width:90%;
-    display:flex;
+    width: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top:5px;
-    height:150px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    height: fit-content;
     justify-content: center;
+    border-left: 6px solid #c0ff26;
+    border-bottom: 6px solid #c0ff26;
+    border-right: 6px solid #c0ff26;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .introPlayerText {
-    font-family:"Nohemi-Bold";
+    font-variant-ligatures: none;
+    font-family: "Outfit-Bold";
+    margin-inline: 3px;
+    text-transform: uppercase;
 }
 
-#introPlayerTwoRoster, #introPlayerOneRoster {
+.introPlayerStatText {
+    font-variant-ligatures: none;
+    margin-inline:3px;
+}
+
+#introPlayerTwoRoster,
+#introPlayerOneRoster {
     text-align: center;
     overflow-wrap: break-word;
     white-space: normal;
+    width:90%;
+    font-size:16px;
 }
 
 #matchHistoryScene {
@@ -1687,278 +1899,290 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Nohemi-ExtraBold";
-    font-size:48px;
-    color:black;
-    background-color: white;
-    width:392px;
-    height:58px;
-    margin-top:-30px;
-    opacity:0;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 36px;
+    color: #c0ff26;
+    background-color: black;
+    width: 392px;
+    height: 58px;
+    margin-top: -30px;
+    opacity: 0;
 }
 
 #matchHistoryMainContainer {
     position: absolute;
     top: 148px;
-    left:90px;
-    height:896px;
-    width:1750px;
-    display:flex;
+    left: 90px;
+    height: 896px;
+    width: 1750px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#matchHistoryPlayerContainer, #matchHistoryContainer {
-    display:flex;
+#matchHistoryPlayerContainer,
+#matchHistoryContainer {
+    display: flex;
     justify-content: space-between;
 }
 
 #matchHistoryLeftPlayer {
-    display:flex;
-    opacity:0;
+    display: flex;
+    opacity: 0;
 }
 
 #matchHistoryLeftPlayerSource {
-    border:solid 4px white;
+    border: solid 4px black;
     object-fit: contain;
-    background-color: white;
+    background-color: black;
     object-position: center;
-    width:82px;
-    height:82px;
+    width: 82px;
+    height: 82px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 
 #matchHistoryLeftPlayerDetails {
-    position:relative;
-    background-color: white;
-    height:82px;
-    width:300px;
-    display:flex;
+    position: relative;
+    background-color: black;
+    height: 82px;
+    width: 300px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    color:black;
-    margin-left:-2px;
+    color: #c0ff26;
+    margin-left: -2px;
 }
 
 #matchHistoryLeftPlayerName {
-    font-family: "Nohemi-ExtraBold";
-    font-size:30px;
-    margin-left:13px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 24px;
+    margin-left: 13px;
 }
 
 #matchHistoryLeftPlayerSeed {
-    font-size:24px;
-    margin-left:13px;
-    margin-top:-3px;
+    font-size: 18px;
+    margin-left: 13px;
+    margin-top: -3px;
 }
 
 #matchHistoryRightContainer {
     position: absolute;
     top: 148px;
-    right:90px;
-    height:896px;
-    display:flex;
+    right: 90px;
+    height: 896px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: end;
 }
 
 #matchHistoryRightPlayer {
-    display:flex;
+    display: flex;
     flex-direction: row-reverse;
-    opacity:0;
+    opacity: 0;
 }
 
 #matchHistoryRightPlayerSource {
-    border:solid 4px white;
+    border: solid 4px black;
     object-fit: contain;
-    background-color: white;
+    background-color: black;
     object-position: center;
-    width:82px;
-    height:82px;
+    width: 82px;
+    height: 82px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 
 #matchHistoryRightPlayerDetails {
-    position:relative;
-    background-color: white;
-    height:82px;
-    width:300px;
-    display:flex;
+    position: relative;
+    background-color: black;
+    height: 82px;
+    width: 300px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: end;
-    color:black;
-    margin-right:-2px;
+    color: #c0ff26;
+    margin-right: -2px;
 }
 
 #matchHistoryRightPlayerName {
-    font-family: "Nohemi-ExtraBold";
-    font-size:30px;
-    margin-right:13px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 24px;
+    margin-right: 13px;
 }
 
 #matchHistoryRightPlayerSeed {
-    font-size:24px;
-    margin-right:13px;
-    margin-top:-3px;
+    font-size: 18px;
+    margin-right: 13px;
+    margin-top: -3px;
 }
 
 #matchHistoryLeft {
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
 #matchHistoryRight {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: end;
 }
 
 .historyLeft {
-    margin-top:36px;
-    display:flex;
-    height:fit-content;
-    width:fit-content;
-    opacity:0;
+    margin-top: 36px;
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    opacity: 0;
 }
 
 .historyRoundLeft {
-    font-family:"Nohemi-ExtraBold";
-    font-size:57px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 48px;
     width: 200px;
-    height:54px;
-    display:flex;
+    height: 54px;
+    display: flex;
     align-items: center;
     justify-content: start;
 }
 
 .historyPlayerLeft {
-    background-color: white;
-    color:black;
-    font-family:"Nohemi-ExtraBold";
-    font-size:30px;
+    background-color: black;
+    color: #c0ff26;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 24px;
     width: 370px;
-    height:54px;
-    display:flex;
+    height: 54px;
+    display: flex;
     align-items: center;
     justify-content: start;
-    padding-inline:8px;
+    padding-inline: 8px;
 }
 
 .historySourceLeft {
-    border:solid 4px white;
+    border: solid 4px black;
     object-fit: contain;
-    background-color: white;
+    background-color: #c0ff26;
     object-position: center;
-    width:54px;
-    height:54px;
+    width: 54px;
+    height: 54px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    margin-left:-2px;
+    margin-left: -2px;
 }
 
 .historyWinDetailsLeft {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    height:54px;
-    margin-left:37px;
+    height: 54px;
+    margin-left: 37px;
 }
 
 .historyWinTextLeft {
-    background-color: white;
-    color:black;
-    font-family:"Nohemi-ExtraBold";
-    font-size:22px;
+    background-color: black;
+    color: #c0ff26;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 16px;
     width: 93px;
-    height:23px;
-    display:flex;
+    height: 23px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .historyWinScoreLeft {
-    font-family:"Nohemi-ExtraBold";
-    font-size:30px;
-    margin-left:-2px;
-    margin-top:2px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 24px;
+    margin-left: -2px;
+    margin-top: 2px;
 }
 
 .historyRight {
-    margin-top:36px;
-    display:flex;
+    margin-top: 36px;
+    display: flex;
     flex-direction: row-reverse;
-    height:fit-content;
-    width:fit-content;
-    opacity:0;
+    height: fit-content;
+    width: fit-content;
+    opacity: 0;
 }
 
 .historyRoundRight {
-    font-family:"Nohemi-ExtraBold";
-    font-size:57px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 48px;
     width: 200px;
-    height:54px;
-    display:flex;
+    height: 54px;
+    display: flex;
     align-items: center;
     justify-content: end;
 }
 
 .historyPlayerRight {
-    background-color: white;
-    color:black;
-    font-family:"Nohemi-ExtraBold";
-    font-size:30px;
+    background-color: black;
+    color: #c0ff26;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 24px;
     width: 370px;
-    height:54px;
-    display:flex;
+    height: 54px;
+    display: flex;
     align-items: center;
     justify-content: end;
-    padding-inline:8px;
+    padding-inline: 8px;
 }
 
 .historySourceRight {
-    border:solid 4px white;
+    border: solid 4px black;
     object-fit: contain;
-    background-color: white;
+    background-color: black;
     object-position: center;
-    width:54px;
-    height:54px;
+    width: 54px;
+    height: 54px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    margin-right:-2px;
+    margin-right: -2px;
 }
 
 .historyWinDetailsRight {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: end;
-    height:54px;
-    margin-right:37px;
+    height: 54px;
+    margin-right: 37px;
 }
 
 .historyWinTextRight {
-    background-color: white;
-    color:black;
-    font-family:"Nohemi-ExtraBold";
-    font-size:22px;
+    background-color: black;
+    color: #c0ff26;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 16px;
     width: 93px;
-    height:23px;
-    display:flex;
+    height: 23px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .historyWinScoreRight {
-    font-family:"Nohemi-ExtraBold";
-    font-size:30px;
-    margin-right:-2px;
-    margin-top:2px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 24px;
+    margin-right: -2px;
+    margin-top: 2px;
 }
 
 /* RESULTS */
@@ -1969,10 +2193,11 @@ body {
     top: 0px;
     left: 0px;
     display: flex;
-    opacity:0;
+    opacity: 0;
 }
 
-#resultAsset_1, #resultAsset_2 {
+#resultAsset_1,
+#resultAsset_2 {
     position: absolute;
     width: 1920px;
     height: 1080px;
@@ -1981,199 +2206,210 @@ body {
 }
 
 #resultScoreline {
-    height:58px;
-    width:1700px;
-    display:flex;
-    position:absolute;
+    height: 58px;
+    width: 1700px;
+    display: flex;
+    position: absolute;
     align-items: center;
     top: 247px;
-    left:49px;
+    left: 49px;
+    color: #c0ff26;
 }
 
 #resultsStaticText {
-    background-color: white;
-    color:black;
-    font-family: "Nohemi-ExtraBold";
-    font-size:47px;
-    width:335px;
-    display:flex;
-    justify-content: end;
+    background-color: #c0ff26;
+    color: black;
+    font-variant-ligatures: none;
+    font-family: "Engravers-MT";
+    transform:scaleY(1.5);
+    font-size: 47px;
+    height:28px;
+    padding-bottom:2px;
+    width: 310px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding-right:12px;
 }
 
 #resultScorelinePlayerOne {
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
 #resultScorelinePlayerTwo {
-    display:flex;
+    display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
 
 #resultScorelineLine {
-    display:flex;
+    display: flex;
     margin-inline: 20px;
     align-items: center;
 }
 
 .resultText {
-    font-family: "Nohemi-Regular";
-    font-size:72px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 48px;
 }
 
 .resultScorelineSource {
-    margin-inline:30px;
-    width:58px;
+    margin-inline: 30px;
+    width: 58px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 
 .resultScorelineText {
-    font-family: "Nohemi-Regular";
-    font-size:30px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 30px;
 }
 
 #resultQueueContainer {
-    display:flex;
-    position:absolute;
+    display: flex;
+    position: absolute;
     top: 400px;
-    left:240px;
+    left: 240px;
     flex-direction: column;
-    width:fit-content;
+    width: fit-content;
 }
 
 #resultQueueTop {
-    display:flex;
+    display: flex;
     align-items: end;
-    width:fit-content;
+    width: fit-content;
 }
 
 #resultBan {
-    display:flex;
+    display: flex;
 }
 
 .resultContainer {
-    display:flex;
+    display: flex;
     flex-direction: column;
     margin-right: 20px;
-    width:fit-content;
+    width: fit-content;
 }
 
 .resultContainerSong {
-    height:144px;
-    width:144px;
-    display:flex;
+    height: 144px;
+    width: 144px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    position:relative;
+    position: relative;
 }
 
 .resultContainerPick {
-    font-family: "Nohemi-ExtraBold";
-    font-size:42px;
-    color:white;
-    z-index:2;
-    border:4px solid white;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 36px;
+    color: #c0ff26;
+    z-index: 2;
+    border: 4px solid #c0ff26;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    height:144px;
-    width:144px;
-    display:flex;
+    height: 144px;
+    width: 144px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .resultContainerSource {
-    height:144px;
-    width:144px;
-    position:absolute;
-    top:0px;
-    left:0px;
+    height: 144px;
+    width: 144px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     background-color: black;
     object-fit: cover;
     filter: brightness(50%) blur(4px);
-    z-index:1;
+    z-index: 1;
 }
 
 .resultContainerBottom {
-    display:flex;
-    width:144px;
-    height:39px;
+    display: flex;
+    width: 144px;
+    height: 39px;
 }
 
 .resultContainerPlayer {
-    width:39px;
-    height:39px;
+    width: 39px;
+    height: 39px;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    color:white;
-    font-family: "Nohemi-ExtraBold";
-    font-size:24px;
+    color: #c0ff26;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 18px;
 }
 
 .resultContainerText {
-    width:105px;
-    height:39px;
+    width: 105px;
+    height: 39px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    color:black;
-    font-family: "Nohemi-ExtraBold";
-    font-size:32px;
+    color: black;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 26px;
 }
 
 #resultPlayerPick {
-    display:flex;
+    display: flex;
     align-items: center;
-    width:fit-content;
-    margin-right:20px;
-    color:white;
+    width: fit-content;
+    margin-right: 20px;
+    color: #c0ff26;
 }
 
 .resultPlayerPickSource {
-    width:42px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    width: 42px;
+    height:28px;
+    object-fit: cover;
+    object-position: center;
+    background-color: black;
 }
 
 .resultPlayerText {
-    color:white;
-    font-family: "Nohemi-Regular";
-    font-size:24px;
-    margin-left:10px;
-    margin-right:20px;
+    color: #c0ff26;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 20px;
 }
 
 #resultPickContainer {
-    display:flex;
-    width:fit-content;
-    height:fit-content;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
     align-items: center;
-    margin-top:67px;
+    margin-top: 67px;
 }
 
 #resultPicks {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    width:fit-content;
+    width: fit-content;
 }
 
 #resultPickOne {
-    display:flex;
+    display: flex;
     margin-bottom: 26px;
 }
 
 #resultPickTwo {
-    display:flex;
+    display: flex;
 }
 
 #resultPickTb {
@@ -2182,41 +2418,49 @@ body {
 
 #resultSceneBanText {
     position: absolute;
-    top:404px;
-    left:75px;
-    width:113px;
-    height:44px;
-    background-color: white;
-    color:black;
+    top: 404px;
+    left: 75px;
+    width: 113px;
+    height: 22px;
+    padding-bottom:1px;
+    background-color: #c0ff26;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Nohemi-ExtraBold";
-    font-size:36px;
+    font-variant-ligatures: none;
+    font-family: "Engravers-MT";
+    font-size: 36px;
+    transform: scaleY(1.5);
 }
 
 #resultScenePickText {
     position: absolute;
-    top:654px;
-    left:75px;
-    width:113px;
-    height:44px;
-    background-color: white;
-    color:black;
+    top: 654px;
+    left: 75px;
+    width: 113px;
+    height: 22px;
+    padding-bottom:1px;
+    background-color: #c0ff26;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Nohemi-ExtraBold";
-    font-size:36px;
+    font-variant-ligatures: none;
+    font-family: "Engravers-MT";
+    font-size: 36px;
+    transform: scaleY(1.5);
 }
 
 #resultStageText {
     position: absolute;
-    right:0px;
-    bottom:-20px;
-    font-family: "Nohemi-ExtraBold";
-    font-size:78px;
+    right: 0px;
+    bottom: -20px;
+    font-variant-ligatures: none;
+    font-family: "Outfit-ExtraBold";
+    font-size: 78px;
     text-align: right;
+    color: #c0ff26;
 }
 
 /* CONTROLLER */
@@ -2254,9 +2498,10 @@ body {
 }
 
 .title {
-    font-family: "Nohemi-Regular";
+    font-variant-ligatures: none;
+    font-family: "Outfit-Regular";
     color: white;
-    font-size: 24px;
+    font-size: 18px;
     user-select: none;
     /* Disable text selection */
 }
@@ -2270,9 +2515,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Nohemi-Bold";
+    font-variant-ligatures: none;
+    font-family: "Outfit-Bold";
     color: rgb(0, 0, 0);
-    font-size: 32px;
+    font-size: 26px;
     padding-top: 5px;
     margin-bottom: 15px;
     text-align: center;
@@ -2282,12 +2528,14 @@ body {
     transition: ease-in-out 500ms;
 }
 
-#controllerArrow, #controllerResults {
+#controllerArrow,
+#controllerResults {
     background-color: rgb(67, 67, 67);
     color: rgb(36, 36, 36);
 }
 
-#controllerAutoScene, #controllerAutoPick {
+#controllerAutoScene,
+#controllerAutoPick {
     background-color: rgb(143, 202, 148);
 }
 
@@ -2366,6 +2614,7 @@ body {
         opacity: 1;
         transform: translateX(0);
     }
+
     100% {
         opacity: 0;
         transform: translateX(-250px);
@@ -2377,6 +2626,7 @@ body {
         opacity: 1;
         transform: translateX(0);
     }
+
     100% {
         opacity: 0;
         transform: translateX(250px);
@@ -2412,6 +2662,7 @@ body {
         opacity: 1;
         transform: translateX(0);
     }
+
     100% {
         opacity: 0;
         transform: translateX(-400px);
@@ -2423,6 +2674,7 @@ body {
         opacity: 1;
         transform: translateX(0);
     }
+
     100% {
         opacity: 0;
         transform: translateX(400px);
@@ -2526,54 +2778,61 @@ body {
 }
 
 @keyframes scrollText {
-	0% {
-	  transform: translateX(100%);
-	}
-	100% {
-	  transform: translateX(-100%);
-	}
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 @keyframes scrollTextDelay {
-	0% {
-	  transform: translateX(100%) translateY(-35px);
-	}
-	100% {
-	  transform: translateX(-100%) translateY(-35px);
-	}
+    0% {
+        transform: translateX(100%) translateY(-40px);
+    }
+
+    100% {
+        transform: translateX(-100%) translateY(-40px);
+    }
 }
 
 @keyframes addScore {
     0% {
         transform: scale(1);
-        background-color: rgba(0,0,0,0);
+        background-color: rgba(192, 255, 38, 0);
     }
+
     50% {
         transform: scale(1.2);
-		background-color: rgba(0,0,0,1);
+        background-color: rgba(192, 255, 38, 1);
     }
+
     100% {
         transform: scale(1);
-		background-color: rgba(0,0,0,1);
+        background-color: rgba(192, 255, 38, 1);
     }
 }
 
 @keyframes removeScore {
-	from {
-		background-color: rgba(0,0,0,1);
-	}
-	to {
-        background-color: rgba(0,0,0,0);
-	}
+    from {
+        background-color: rgba(192, 255, 38, 1);
+    }
+
+    to {
+        background-color: rgba(192, 255, 38, 0);
+    }
 }
 
 @keyframes pickingBob {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(0.9);
     }
+
     100% {
         transform: scale(1);
     }
@@ -2583,6 +2842,7 @@ body {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -2593,6 +2853,7 @@ body {
         opacity: 0;
         transform: translateY(83px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -2604,16 +2865,18 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+
     100% {
         opacity: 0;
         transform: translateY(83px);
     }
-}   
+}
 
 @keyframes slideUpMatchBottom {
     0% {
         transform: translateY(148px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -2623,6 +2886,7 @@ body {
     0% {
         transform: translateY(0);
     }
+
     100% {
         transform: translateY(148px);
     }
@@ -2632,9 +2896,11 @@ body {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(1);
     }
@@ -2642,22 +2908,24 @@ body {
 
 @keyframes winBar {
     0% {
-        background-color: Black;
+        background-color: #c0ff26;
         width: 0%;
     }
+
     100% {
-        background-color: Black;
+        background-color: #c0ff26;
         width: 100%;
     }
 }
 
 @keyframes loseBar {
     0% {
-        background-color: white;
+        background-color: black;
         width: 0%;
     }
+
     100% {
-        background-color: white;
+        background-color: black;
         width: 100%;
     }
 }
@@ -2666,9 +2934,11 @@ body {
     0% {
         transform: scale(0);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(1);
     }
@@ -2678,9 +2948,11 @@ body {
     0% {
         transform: scale(1);
     }
+
     25% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(0);
     }

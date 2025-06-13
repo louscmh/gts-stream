@@ -1,32 +1,3 @@
-// FLAGS //////////////////////////////////////////////////////////////////
-let teamFlags = [
-    "AC", "AD", "AE", "AF", "AG", "AI", "AL", "AM", "AO", "AQ", "AR", "AS", "AT", "AU", "AW", "AX", "AZ",
-    "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BL", "BM", "BN", "BO", "BQ", "BR", "BS", "BT", "BV", "BW", "BY", "BZ",
-    "CA", "CC", "CD", "CF", "CG", "CH", "CI", "CK", "CL", "CM", "CN", "CO", "CR", "CU", "CV", "CW", "CX", "CY", "CZ",
-    "DE", "DJ", "DK", "DM", "DO", "DZ",
-    "EC", "EE", "EG", "EH", "ER", "ES", "ET",
-    "FI", "FJ", "FM", "FO", "FR",
-    "GA", "GB", "GD", "GE", "GF", "GG", "GH", "GI", "GL", "GM", "GN", "GP", "GQ", "GR", "GT", "GU", "GW", "GY",
-    "HK", "HM", "HN", "HR", "HT", "HU",
-    "ID", "IE", "IL", "IM", "IN", "IO", "IQ", "IR", "IS", "IT",
-    "JE", "JM", "JO", "JP",
-    "KE", "KG", "KH", "KI", "KM", "KN", "KP", "KR", "KW", "KY", "KZ",
-    "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY",
-    "MA", "MC", "MD", "ME", "MF", "MG", "MH", "MK", "ML", "MM", "MN", "MO", "MP", "MQ", "MR", "MS", "MT", "MU", "MV", "MW", "MX", "MY", "MZ",
-    "NA", "NC", "NE", "NF", "NG", "NI", "NL", "NO", "NP", "NR", "NU", "NZ",
-    "OM",
-    "PA", "PE", "PF", "PG", "PH", "PK", "PL", "PM", "PN", "PR", "PS", "PT", "PW", "PY",
-    "QA",
-    "RE", "RO", "RS", "RU", "RW",
-    "SA", "SB", "SC", "SD", "SE", "SG", "SH", "SI", "SJ", "SK", "SL", "SM", "SN", "SO", "SR", "SS", "ST", "SV", "SX", "SY", "SZ",
-    "TC", "TD", "TF", "TG", "TH", "TJ", "TK", "TL", "TM", "TN", "TO", "TR", "TT", "TV", "TW", "TZ",
-    "UA", "UG", "UM", "US", "UY", "UZ",
-    "VA", "VC", "VE", "VG", "VI", "VN", "VU",
-    "WF", "WS",
-    "YE", "YT",
-    "ZA", "ZM", "ZW"
-];
-
 // SOCKET /////////////////////////////////////////////////////////////////
 let socket = new ReconnectingWebSocket("ws://localhost:24050/ws");
 socket.onopen = () => {
@@ -49,15 +20,15 @@ let addFlags = [];
 let currentStage;
 (async () => {
     try {
-        const jsonData = await $.getJSON("../../../_data/beatmaps_igts.json");
+        const jsonData = await $.getJSON("../../../_data/beatmaps_sgts.json");
         jsonData.map((beatmap) => {
             beatmapSet.push(beatmap);
         });
-        const jsonData_2 = await $.getJSON("../../../_data/seeding_igts.json");
+        const jsonData_2 = await $.getJSON("../../../_data/seeding_sgts.json");
         jsonData_2.Teams.map((seed) => {
             seedData.push(seed);
         });
-        const jsonData_3 = await $.getJSON("../../../_data/stage_igts.json");
+        const jsonData_3 = await $.getJSON("../../../_data/stage_sgts.json");
         jsonData_3.map((stage, index) => {
             if (index == 0) {
                 currentStage = stage.currentStage;
@@ -101,7 +72,7 @@ class ScoreTracker {
     updateClients(data) {
         data.map(async(clientData,index) => {
             // console.log(index);
-            const client = index < 2 ? this.leftClients[index] : this.rightClients[index-2];
+            const client = index < 3 ? this.leftClients[index] : this.rightClients[index-3];
             if (client) {
                 client.updateMiss(clientData.gameplay.hits["0"]);
                 client.updateGood(clientData.gameplay.hits["100"]);
@@ -275,7 +246,7 @@ class Client {
         if (name == this.player) return;
         const element = document.getElementById(this.matchClientName.id)
         element.innerHTML = name;
-        adjustFont(element, 140, 24);
+        adjustFont(element, 140, 20);
         this.player = name;
     }
     hideAllButUr() {
@@ -324,14 +295,14 @@ socket.onmessage = async event => {
     // NORMAL CODE
 
     tempLeft = data.tourney.manager.teamName.left;
-    // tempLeft = "NLA";
+    // tempLeft = "JNT";
 
     if (tempLeft != leftTeam && tempLeft != "" && !playersSetup) {
         leftTeam = tempLeft;
         playersSetup = true;
         setTimeout(function (event) {
             matchManager.updatePlayerId([data.tourney.manager.teamName.left, data.tourney.manager.teamName.right])
-            // matchManager.updatePlayerId(["NLA", "USA"]);
+            // matchManager.updatePlayerId(["JNT", "IAA"]);
         }, 150);
     }
 
@@ -353,6 +324,66 @@ socket.onmessage = async event => {
 
 
 }
+
+// TEMPORARY: load static sample data every 5 seconds
+// setInterval(async () => {
+//     if (!initialized) return;
+//     try {
+//         const data = await $.getJSON("../../../_data/sgts_sample_data_1.json");
+//         console.log(data);
+
+//         if (!hasSetupBeatmaps) {
+//             await setupBeatmaps();
+//             hasSetupBeatmaps = true;
+//         }
+//         if (!hasSetupBeatmaps) return;
+
+//         // update team names once
+//         tempLeft = data.tourney.manager.teamName.left;
+//         if (tempLeft && tempLeft !== leftTeam && !playersSetup) {
+//             leftTeam = tempLeft;
+//             playersSetup = true;
+//             setTimeout(() => {
+//                 matchManager.updatePlayerId([
+//                     data.tourney.manager.teamName.left,
+//                     data.tourney.manager.teamName.right
+//                 ]);
+//             }, 150);
+//         }
+//         if (!hasSetupPlayers) return;
+
+//         // normal update flow
+//         matchManager.checkState(data.tourney.manager.ipcState);
+//         matchManager.gameplayManager.updateProgress(data);
+//         matchManager.gameplayManager.updateClients(
+//             data,
+//             data.tourney.manager.bools.scoreVisible,
+//             data.tourney.manager.ipcState
+//         );
+//         matchManager.updateScores(data);
+//         matchManager.updateChat(data);
+//         matchManager.debug();
+
+//         // detect new song
+//         const tempStats = [
+//             data.menu.bm.id,
+//             data.menu.bm.stats.memoryOD,
+//             data.menu.bm.stats.fullSR,
+//             data.menu.bm.stats.BPM.min,
+//             data.menu.bm.stats.BPM.max
+//         ];
+//         if (
+//             matchManager.currentFile !== data.menu.bm.path.file ||
+//             !arraysEqual(matchManager.currentStats, tempStats)
+//         ) {
+//             matchManager.currentFile = data.menu.bm.path.file;
+//             matchManager.currentStats = tempStats;
+//             matchManager.updateMatchSong(data);
+//         }
+//     } catch (err) {
+//         console.error("Failed to load sample data:", err);
+//     }
+// }, 5000);
 
 // CLASSES ////////////////////////////////////////////////////////////////////
 class Beatmap {
@@ -468,9 +499,9 @@ class Beatmap {
         this.mapWinT2.innerHTML = "WIN";
         this.mapBanText.innerHTML = "BAN";
         this.mapPickText.innerHTML = "PICK";
-        this.mapSource.setAttribute('src', "../../../_shared_assets/design/igts/main_banner.png");
-        this.mapPickIcon.setAttribute('src', "../../../_shared_assets/design/igts/pick_arrow_overview.png");
-        this.mapBanPlayer.setAttribute('src', "../../../_shared_assets/design/igts/main_banner.png");
+        this.mapSource.setAttribute('src', "../../../_shared_assets/design/sgts/main_banner.png");
+        this.mapPickIcon.setAttribute('src', "../../../_shared_assets/design/sgts/pick_arrow_overview.png");
+        this.mapBanPlayer.setAttribute('src', "../../../_shared_assets/design/sgts/main_banner.png");
 
         clickerObj.appendChild(this.mapPickText);
         clickerObj.appendChild(this.mapBanContainer);
@@ -596,7 +627,7 @@ class Beatmap {
         this.mapArtistQueue.innerHTML = this.mapArtist.innerHTML;
         this.mapMapperQueue.innerHTML = this.mapMapper.innerHTML;
         this.mapDifficultyQueue.innerHTML = this.mapDifficulty.innerHTML;
-        this.mapPickQueue.setAttribute("src", `../../../_shared_assets/design/igts/pick_queue_${isPlayerOne ? "left" : "right"}.png`);
+        this.mapPickQueue.setAttribute("src", `../../../_shared_assets/design/sgts/pick_queue_${isPlayerOne ? "left" : "right"}.png`);
 
         clickerObjQueue.appendChild(this.mapDetailsQueue);
         clickerObjQueue.appendChild(this.mapWinT1Queue);
@@ -971,8 +1002,8 @@ class MatchManager {
                     this.bottomT2Pick.style.animation = "pickingBob 1s cubic-bezier(0,.7,.39,.99)";
                 }
             }
-            this.bottomT1PickText.innerHTML = this.banCount < 2 ? "Currently Banning" : "Currently Picking";
-            this.bottomT2PickText.innerHTML = this.banCount < 2 ? "Currently Banning" : "Currently Picking";
+            this.bottomT1PickText.innerHTML = this.banCount < 2 ? "Banning" : "Picking";
+            this.bottomT2PickText.innerHTML = this.banCount < 2 ? "Banning" : "Picking";
         });
 
         this.controllerUndo = document.getElementById("controllerUndo");
@@ -1259,7 +1290,7 @@ class MatchManager {
                             this.banCount++;
                             if (this.banCount == 1) { this.resultsManager.firstPickIsLeft = this.playerTurn == "left" ? false : true };
                             this.resultsManager.update();
-                            bm.toggleBan(this.playerTurn == "left" ? this.leftPlayerData.FlagName : this.rightPlayerData.FlagName, this.playerTurn == "left" ? true : false, this.pickCount);
+                            bm.toggleBan(this.playerTurn == "left" ? this.leftPlayerData.Acronym : this.rightPlayerData.Acronym, this.playerTurn == "left" ? true : false, this.pickCount);
                             this.controllerTurn.click();
                         } else if (this.banCount == 2 && !bm.isPick && !bm.isBan && (this.bestOf - 1) * 2 != this.pickCount - 2) {
                             // PICKING
@@ -1366,8 +1397,8 @@ class MatchManager {
     async updatePlayerId(playerId) {
         this.leftPlayerData = seedData.find(seed => seed["Acronym"] == playerId[0]);
         this.rightPlayerData = seedData.find(seed => seed["Acronym"] == playerId[1]);
-        const leftFlag = await getCountryFlag(seedData.find(seed => seed["Acronym"] == playerId[0])["FlagName"]);
-        const rightFlag = await getCountryFlag(seedData.find(seed => seed["Acronym"] == playerId[1])["FlagName"]);
+        const leftFlag = await getCountryFlag(seedData.find(seed => seed["Acronym"] == playerId[0])["Acronym"]);
+        const rightFlag = await getCountryFlag(seedData.find(seed => seed["Acronym"] == playerId[1])["Acronym"]);
         const leftRoster = await Promise.all(
             this.leftPlayerData.Players.map(async (player) => {
                 const data = await getUserDataSet(player.id);
@@ -1421,7 +1452,7 @@ class MatchManager {
         let length = mapData.total_length;
         // let sr = upcomingOfflineMapData.pick.substring(0, 2) == "DT" ? upcomingOfflineMapData.modSR : mapData.difficultyrating;
         let sr = upcomingOfflineMapData.modSR;
-        const teamFlag = await getCountryFlag(this.playerTurn == "left" ? this.rightPlayerData.FlagName : this.leftPlayerData.FlagName);
+        const teamFlag = await getCountryFlag(this.playerTurn == "left" ? this.rightPlayerData.Acronym : this.leftPlayerData.Acronym);
         if (upcomingOfflineMapData.pick.substring(0, 2) == "HR" || upcomingOfflineMapData.pick.substring(0, 2) == "FM") {
             finalOD = Math.min(finalOD * 1.4, 10);
             this.gameplayManager.isDoubleTime = false;
@@ -1487,7 +1518,7 @@ class MatchManager {
             this.matchSongLength.innerHTML = parseTime(length);
             this.matchSource.setAttribute("src", `https://assets.ppy.sh/beatmaps/${mapData.beatmapset_id}/covers/cover.jpg`);
             this.matchSource.onerror = function () {
-                this.matchSource.setAttribute('src', `../../../_shared_assets/design/igts/main_banner.png`);
+                this.matchSource.setAttribute('src', `../../../_shared_assets/design/sgts/main_banner.png`);
             };
         } else {
             let { memoryOD, fullSR, BPM: { min, max } } = data.menu.bm.stats;
@@ -1505,7 +1536,7 @@ class MatchManager {
             this.matchSongLength.innerHTML = parseTimeMs(full);
             this.matchSource.setAttribute('src', `http://localhost:24050/Songs/${data.menu.bm.path.full}?a=${Math.random(10000)}`);
             this.matchSource.onerror = function () {
-                this.matchSource.setAttribute('src', `../../../_shared_assets/design/igts/main_banner.png`);
+                this.matchSource.setAttribute('src', `../../../_shared_assets/design/sgts/main_banner.png`);
             };
 
         }
@@ -1794,6 +1825,9 @@ class GameplayManager {
         this.matchWinningRightContent = document.getElementById("matchWinningRightContent");
         this.matchWinningRightWinText = document.getElementById("matchWinningRightWinText");
 
+        this.matchOneScoreContainer = document.getElementById("matchOneScoreContainer");
+        this.matchTwoScoreContainer = document.getElementById("matchTwoScoreContainer");
+
         this.isGameplay = false;
         this.animationScore = {
             matchOneScore: new CountUp('matchOneScore', 0, 0, 0, .2, { useEasing: true, useGrouping: true, separator: ",", decimal: "." }),
@@ -1805,7 +1839,7 @@ class GameplayManager {
         this.scoreRight;
         this.comboLeft;
         this.comboRight;
-        this.barThreshold = 100000;
+        this.barThreshold = 200000;
         this.songStart;
         this.currentTime;
         this.isDoubleTime = false;
@@ -1873,11 +1907,11 @@ class GameplayManager {
     }
 
     async setupClients() {
-        const clientNumber = 4
+        const clientNumber = 6
         for (let i=1;i<clientNumber+1;i++) {
             const client = new Client(i);
             client.generate();
-            this.scoreTracker.addClient(client, i<3?true:false);
+            this.scoreTracker.addClient(client, i<4?true:false);
         }
     }
 
@@ -1954,6 +1988,10 @@ class GameplayManager {
             this.matchTwoLead.style.opacity = 0;
             this.matchScoreLeftText.style.opacity = 1;
             this.matchScoreRightText.style.opacity = 0;
+            this.matchOneScoreContainer.style.backgroundColor = "#c0ff26";
+            this.matchTwoScoreContainer.style.backgroundColor = "black";
+            this.matchOneScore.style.color = "black";
+            this.matchTwoScore.style.color = "#c0ff26";
         } else if (lead == "right") {
             this.matchTwoLead.style.animation = "fadeInRight 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
             this.matchTwoLead.style.opacity = 1;
@@ -1961,6 +1999,10 @@ class GameplayManager {
             this.matchOneLead.style.opacity = 0;
             this.matchScoreLeftText.style.opacity = 0;
             this.matchScoreRightText.style.opacity = 1;
+            this.matchOneScoreContainer.style.backgroundColor = "black";
+            this.matchTwoScoreContainer.style.backgroundColor = "#c0ff26";
+            this.matchOneScore.style.color = "#c0ff26";
+            this.matchTwoScore.style.color = "black";
         } else if (lead == "center") {
             this.matchOneLead.style.animation = "fadeOutLeft 1s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
             this.matchOneLead.style.opacity = 0;
@@ -1968,7 +2010,10 @@ class GameplayManager {
             this.matchTwoLead.style.opacity = 0;
             this.matchScoreLeftText.style.opacity = 0;
             this.matchScoreRightText.style.opacity = 0;
-
+            this.matchTwoScoreContainer.style.backgroundColor = "black";
+            this.matchOneScoreContainer.style.backgroundColor = "black";
+            this.matchOneScore.style.color = "#c0ff26";
+            this.matchTwoScore.style.color = "#c0ff26";
         }
     }
 
@@ -1986,8 +2031,8 @@ class GameplayManager {
         this.matchWinningLeftContent.style.width = "0%";
         this.matchWinningRightContent.style.animation = "";
         this.matchWinningRightContent.style.width = "0%";
-        this.matchOneScore.style.color = "Black";
-        this.matchTwoScore.style.color = "Black";
+        this.matchOneScore.style.color = "#c0ff26";
+        this.matchTwoScore.style.color = "#c0ff26";
         this.matchOneScore.style.transform = "";
         this.matchTwoScore.style.transform = "";
         this.matchWinningLeftWinText.style.opacity = 0;
@@ -2018,11 +2063,12 @@ class GameplayManager {
         if (leftWon) {
             this.matchWinningLeftContent.style.animation = "winBar 2s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
             this.matchWinningLeftContent.style.width = "100%";
-            this.matchWinningLeftContent.style.backgroundColor = "Black";
+            this.matchWinningLeftContent.style.backgroundColor = "#c0ff26";
             this.matchWinningRightContent.style.animation = "loseBar 2s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
             this.matchWinningRightContent.style.width = "100%";
-            this.matchWinningRightContent.style.backgroundColor = "white";
-            this.matchOneScore.style.color = "white";
+            this.matchWinningRightContent.style.backgroundColor = "black";
+            this.matchOneScore.style.color = "black";
+            this.matchTwoScore.style.color = "#c0ff26";
             this.matchOneScore.style.transform = "TranslateX(480px)";
             this.matchTwoScore.style.transform = "TranslateX(-570px)";
             this.matchWinningLeftWinText.style.opacity = 1;
@@ -2030,11 +2076,12 @@ class GameplayManager {
         } else {
             this.matchWinningRightContent.style.animation = "winBar 2s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
             this.matchWinningRightContent.style.width = "100%";
-            this.matchWinningRightContent.style.backgroundColor = "Black";
+            this.matchWinningRightContent.style.backgroundColor = "#c0ff26";
             this.matchWinningLeftContent.style.animation = "loseBar 2s cubic-bezier(0.000, 0.125, 0.000, 1.005)";
             this.matchWinningLeftContent.style.width = "100%";
-            this.matchWinningLeftContent.style.backgroundColor = "white";
-            this.matchTwoScore.style.color = "white";
+            this.matchWinningLeftContent.style.backgroundColor = "black";
+            this.matchOneScore.style.color = "#c0ff26";
+            this.matchTwoScore.style.color = "black";
             this.matchOneScore.style.transform = "TranslateX(570px)";
             this.matchTwoScore.style.transform = "TranslateX(-480px)";
             this.matchWinningLeftWinText.style.opacity = 0;
@@ -2076,8 +2123,8 @@ class ResultsManager {
     }
 
     async initialUpdate() {
-        const leftFlag = await getCountryFlag(this.playerLeft.FlagName);
-        const rightFlag = await getCountryFlag(this.playerRight.FlagName);
+        const leftFlag = await getCountryFlag(this.playerLeft.Acronym);
+        const rightFlag = await getCountryFlag(this.playerRight.Acronym);
         this.resultScorelinePlayerOneSource.setAttribute("src", leftFlag);
         this.resultScorelinePlayerTwoSource.setAttribute("src", rightFlag);
         this.resultScorelinePlayerOneText.innerHTML = this.playerLeft.FullName;
@@ -2101,7 +2148,7 @@ class HistoryManager {
         this.rightPlayer = rightPlayer;
         this.leftHistory = [];
         this.rightHistory = [];
-        this.rounds = ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6"];
+        this.rounds = ["Round of 32", "Round of 16", "Quarterfinals", "Semifinals", "Finals", "Grand Finals"];
 
         this.matchHistoryLeftPlayerSource = document.getElementById("matchHistoryLeftPlayerSource");
         this.matchHistoryLeftPlayerName = document.getElementById("matchHistoryLeftPlayerName");
@@ -2140,7 +2187,7 @@ class HistoryManager {
                     history.generate();
                     const isLeft = match.player1 == this.leftPlayer.FullName ? true : false;
                     history.historyPlayer.innerHTML = isLeft ? match.player2 : match.player1;
-                    const teamFlag = await getCountryFlag(seedData.find(seed => seed["Acronym"] == history.historyPlayer.innerHTML)["FlagName"]);
+                    const teamFlag = await getCountryFlag(seedData.find(seed => seed["Acronym"] == history.historyPlayer.innerHTML)["Acronym"]);
                     history.historyRound.innerHTML = stages.find(stage => stage.stageName == round)["stage"];
                     history.historySource.setAttribute("src", teamFlag);
                     history.historyWinText.innerHTML = isLeft ? (match.score1 > match.score2 ? "WIN" : "LOSE") : (match.score2 > match.score1 ? "WIN" : "LOSE");
@@ -2155,7 +2202,7 @@ class HistoryManager {
                     history.generate();
                     const isLeft = match.player1 == this.rightPlayer.FullName ? true : false;
                     history.historyPlayer.innerHTML = isLeft ? match.player2 : match.player1;
-                    const teamFlag = await getCountryFlag(seedData.find(seed => seed["Acronym"] == history.historyPlayer.innerHTML)["FlagName"]);
+                    const teamFlag = await getCountryFlag(seedData.find(seed => seed["Acronym"] == history.historyPlayer.innerHTML)["Acronym"]);
                     history.historyRound.innerHTML = stages.find(stage => stage.stageName == round)["stage"];
                     history.historySource.setAttribute("src", teamFlag);
                     history.historyWinText.innerHTML = isLeft ? (match.score1 > match.score2 ? "WIN" : "LOSE") : (match.score2 > match.score1 ? "WIN" : "LOSE");
@@ -2280,7 +2327,7 @@ async function getSchedules(stage) {
             await axios.get("/matches", {
                 baseURL: "https://gtsosu.com/api",
                 params: {
-                    tourney: "igts_2025",
+                    tourney: "sgts_2025",
                     stage: stage,
                 },
             })
@@ -2366,14 +2413,8 @@ async function delay(ms) {
 }
 
 async function getCountryFlag(acronym) {
-    let imageUrl;
-    // console.log(acronym);
-    if (!teamFlags.includes(acronym)) {
-        imageUrl = addFlags.find(flag => flag.flagname == acronym)["link"];
-    } else {
-        imageUrl = `https://raw.githubusercontent.com/ppy/osu-resources/master/osu.Game.Resources/Textures/Flags/${acronym}.png`;
-    }
-    // console.log(imageUrl);
+    console.log(`Getting flag for ${acronym}`);
+    let imageUrl = addFlags.find(flag => flag.flagname == acronym)["link"];
     return imageUrl;
 }
 
