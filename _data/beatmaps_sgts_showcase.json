@@ -1,112 +1,120 @@
 [
   {
-    "beatmapId": "Camellia feat. Nanahira - Bikkurisasetara Okoru yo! (JarvisGaming) [AHHHHHHHHHHHHH].osu",
+    "beatmapId": 4594733,
     "pick": "NM1",
-    "modSR": 6.09,
+    "modSR": 6.77,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 2317246,
+    "beatmapId": 4837124,
     "pick": "NM2",
+    "modSR": 6.7,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 2691863,
+    "pick": "NM3",
+    "modSR": 5.91,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4724631,
+    "pick": "NM4",
+    "modSR": 6.47,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "t+pazolite - monochrome dream (Nwolf) [wereoni].osu",
+    "pick": "NM5",
+    "modSR": 6.37,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4532423,
+    "pick": "HD1",
+    "modSR": 6.27,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "MYUKKE. - AKKERA-COUNTRY-BOY (Yasuho) [Inner Yahus (SGTS Edit)].osu",
+    "pick": "HD2",
+    "modSR": 5.03,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Ardolf - Rainbow Raceway (Nwolf) [it is a road that you go (SGTS ver.)].osu",
+    "pick": "HR1",
+    "modSR": 6.32,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Sparxe - Gust Bird Attack (roufou) [Ura Oni].osu",
+    "pick": "HR2",
+    "modSR": 6.55,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Cranky - SALON & CHALON (Nwolf) [Yuh (SGTS)].osu",
+    "pick": "DT1",
+    "modSR": 6.36,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3280996,
+    "pick": "DT2",
+    "modSR": 6.33,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4949152,
+    "pick": "FM1",
     "modSR": 6.06,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3577149,
-    "pick": "NM3",
-    "modSR": 5.54,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 1712661,
-    "pick": "NM4",
-    "modSR": 5.48,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 4899258,
-    "pick": "HD1",
-    "modSR": 6.03,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "Desuwa - Umakuro (roufou) [Oni].osu",
-    "pick": "HD2",
-    "modSR": 4.68,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "kireji - GARY III (roufou) [Humgry].osu",
-    "pick": "HR1",
-    "modSR": 5.72,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 4148279,
-    "pick": "HR2",
-    "modSR": 6.2,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "ColBreakz - Hello (Briesmas) [SOLA SGTS EDIT )].osu",
-    "pick": "DT1",
-    "modSR": 5.89,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 3227211,
-    "pick": "DT2",
-    "modSR": 6.12,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 4237716,
-    "pick": "FM1",
-    "modSR": 5.63,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 2656061,
+    "beatmapId": 2578605,
     "pick": "FM2",
-    "modSR": 5.32,
+    "modSR": 5.8,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3022383,
+    "beatmapId": 3499979,
     "pick": "FM3",
-    "modSR": 5.54,
+    "modSR": 5.91,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "PSYQUO - Irradiance (Undead Alice) [Radical Heatwave].osu",
+    "beatmapId": "G4TE-16 - CHRIMOSA (TaikoMom) [Delicate Solidity].osu",
     "pick": "TB",
-    "modSR": 6.7,
+    "modSR": 6.88,
     "customSong": true,
     "collab": "",
     "mappers": ""
