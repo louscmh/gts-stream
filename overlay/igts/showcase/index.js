@@ -12,12 +12,6 @@ socket.onerror = error => {
     console.log("Socket Error: ", error);
 };
 
-socket.onmessage = async event => {
-    if (!initialized) {return};
-    let data = JSON.parse(event.data);
-
-}
-
 // BEATMAP DATA /////////////////////////////////////////////////////////////////
 let beatmapSet = [];
 let beatmaps = [];

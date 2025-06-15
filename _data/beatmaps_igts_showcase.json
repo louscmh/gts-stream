@@ -1,106 +1,114 @@
 [
   {
-    "beatmapId": "Fuki - Zekkai no Juliet (Minami-Kotori) [Lite Oni].osu",
+    "beatmapId": "Anamanaguchi - Blackout City (Nwolf) [Dinner, Eat].osu",
     "pick": "NM1",
-    "modSR": 3.98,
+    "modSR": 4.17,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3903842,
+    "beatmapId": 4560333,
     "pick": "NM2",
-    "modSR": 4.36,
+    "modSR": 4.4,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4816355,
+    "beatmapId": 4940761,
     "pick": "NM3",
+    "modSR": 3.45,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "7_7 - Getsuyou (ikin5050) [Nozdormu and ikin's Oni[nerf]].osu",
+    "pick": "NM4",
+    "modSR": 3.65,
+    "customSong": false,
+    "collab": "",
+    "mappers": "ikin5050 & Nozdormu"
+  },
+  {
+    "beatmapId": 1773321,
+    "pick": "NM5",
     "modSR": 3.03,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "The Musical Ghost - You Wouldn't Get This (Fynbi) [NM4 (for IGTS 2025)].osu",
-    "pick": "NM4",
-    "modSR": 3.42,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 5026011,
+    "beatmapId": "you feat. ugu - PAINTER (Defectum) [leirsund is completely dead].osu",
     "pick": "HD1",
-    "modSR": 3.59,
+    "modSR": 3.43,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "solfa feat. Chata - Norikire Juken Wars (kurumilove) [awawa].osu",
+    "beatmapId": "Sound piercer vs. Iriss - BOUNCE THE TECH (Haypzeh) [Muzukashii].osu",
     "pick": "HD2",
-    "modSR": 3.07,
+    "modSR": 3.27,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Alkome - Mind Disorder (YonGin) [Muzukashii].osu",
+    "beatmapId": "EmoCosine - Nekojarashi (davidminh0111) [Muzukashii].osu",
     "pick": "HR1",
-    "modSR": 3.69,
+    "modSR": 3.78,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 2266391,
+    "beatmapId": "SAMString - Night Fighter (Burak) [Muzukashii (edit)].osu",
     "pick": "HR2",
-    "modSR": 3.64,
+    "modSR": 3.9,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4890795,
+    "beatmapId": 3069697,
     "pick": "DT1",
+    "modSR": 3.97,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Camellia - illegal trap (Cynplytholowazy) [surprising death].osu",
+    "pick": "DT2",
+    "modSR": 4.35,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "key vs. locket - mundo (shininghalo) [eu ando atras de uma certeza, ela tem q ser perfeita].osu",
+    "pick": "FM1",
     "modSR": 3.7,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "kakichoco - Kizuna ~Kochi version~ (arcpotato) [Intertwined].osu",
-    "pick": "DT2",
-    "modSR": 4.04,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 3668810,
-    "pick": "FM1",
-    "modSR": 3.67,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "t+pazolite - Chartreuse Green (krytwal) [I swear I'm not recycling TWC memes].osu",
+    "beatmapId": "yuki. - Spring Signal (Rycy) [Lite Oni].osu",
     "pick": "FM2",
-    "modSR": 3.51,
+    "modSR": 3.76,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Jun Kuroda - White Dwarf Stars (UnagiDon) [Oni].osu",
+    "beatmapId": "SEVEN LIVES - CA$H REGI$TER (Jarvismarie) [Taiko].osu",
     "pick": "TB",
-    "modSR": 4.22,
+    "modSR": 4.38,
     "customSong": false,
     "collab": "",
-    "mappers": ""
+    "mappers": "Rosemarie & JarvisGaming"
   }
 ]
