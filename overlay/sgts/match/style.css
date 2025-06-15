@@ -824,11 +824,11 @@ body {
 .matchSongStatText {
     font-variant-ligatures: none;
     font-family: "Outfit-Bold";
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .matchSongStat {
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 10px;
 }
 
@@ -904,6 +904,7 @@ body {
     width: fit-content;
     margin-right: 20px;
     color: white;
+    font-size: 18px;
 }
 
 #matchMapper,
@@ -1149,6 +1150,7 @@ body {
     font-variant-ligatures: none;
     font-family: "Outfit-ExtraBold";
     font-size: 26px;
+    white-space: nowrap;
 }
 
 #bottomPlayerOnePick,
@@ -1622,6 +1624,10 @@ body {
     margin-bottom: 15px;
 }
 
+.matchClientRight {
+    align-items: end;
+}
+
 .matchClient100,
 .matchClientMiss,
 .matchClientUr,
@@ -1643,6 +1649,8 @@ body {
 .matchClientName {
     justify-content: center;
     align-items: center;
+    white-space: nowrap;
+    margin-right: 19px;
 }
 
 .matchClientUr {
@@ -1822,7 +1830,9 @@ body {
     font-variant-ligatures: none;
     font-family: "Outfit-ExtraBold";
     font-size: 30px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
@@ -1832,6 +1842,13 @@ body {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    height:46px;
+}
+
+#introPlayerOneName,
+#introPlayerTwoName {
+    width:fit-content;
+    white-space: nowrap;
 }
 
 .introPlayerContainer {

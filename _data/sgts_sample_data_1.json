@@ -28,8 +28,8 @@
             "metadata": {
                 "artist": "Yousei Teikoku",
                 "artistOriginal": "妖精帝國",
-                "title": "Autoscopy",
-                "titleOriginal": "Autoscopy",
+                "title": "Autoscopy wow what a very long title that is",
+                "titleOriginal": "Autoscopy wow what a very long title that is",
                 "mapper": "- Nilou -",
                 "difficulty": "Kuki's Expert"
             },
@@ -3142,10 +3142,10 @@
     },
     "tourney": {
         "manager": {
-            "ipcState": 4,
+            "ipcState": 3,
             "bestOF": 9,
             "teamName": {
-                "left": "JNT",
+                "left": "UUA",
                 "right": "IAA"
             },
             "stars": {
@@ -3175,7 +3175,7 @@
             {
                 "team": "left",
                 "spectating": {
-                    "name": "",
+                    "name": "AuroraPhantasma",
                     "country": "",
                     "userID": 0,
                     "accuracy": 0,
@@ -3221,7 +3221,7 @@
             {
                 "team": "left",
                 "spectating": {
-                    "name": "",
+                    "name": "SilverTyrant",
                     "country": "",
                     "userID": 0,
                     "accuracy": 0,
@@ -3267,7 +3267,7 @@
             {
                 "team": "left",
                 "spectating": {
-                    "name": "",
+                    "name": "lakjdslasjkdaskjd",
                     "country": "",
                     "userID": 0,
                     "accuracy": 0,
@@ -3313,7 +3313,7 @@
             {
                 "team": "right",
                 "spectating": {
-                    "name": "",
+                    "name": "qieuyqwoieyuqwoiue",
                     "country": "",
                     "userID": 0,
                     "accuracy": 0,
@@ -3359,7 +3359,7 @@
             {
                 "team": "right",
                 "spectating": {
-                    "name": "",
+                    "name": "ekjhqldhjaslkdjhsad",
                     "country": "",
                     "userID": 0,
                     "accuracy": 0,
@@ -3405,7 +3405,7 @@
             {
                 "team": "right",
                 "spectating": {
-                    "name": "",
+                    "name": "aslkdhasl kdjjhaslk",
                     "country": "",
                     "userID": 0,
                     "accuracy": 0,

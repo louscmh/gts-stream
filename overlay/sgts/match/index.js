@@ -246,7 +246,7 @@ class Client {
         if (name == this.player) return;
         const element = document.getElementById(this.matchClientName.id)
         element.innerHTML = name;
-        adjustFont(element, 140, 20);
+        adjustFont(element, 150, 16);
         this.player = name;
     }
     hideAllButUr() {
@@ -1414,6 +1414,8 @@ class MatchManager {
         this.bottomPlayerTwoPfp.setAttribute("src", rightFlag);
         this.bottomPlayerOneName.innerHTML = this.leftPlayerData.FullName;
         this.bottomPlayerTwoName.innerHTML = this.rightPlayerData.FullName;
+        adjustFont(this.bottomPlayerOneName, 380, 26);
+        adjustFont(this.bottomPlayerTwoName, 380, 26);
         this.bottomPlayerOneSeed.innerHTML = `Seed #${seedData.find(seed => seed["Acronym"] == playerId[0])["Seed"].match(/\d+/)[0]}`;
         this.bottomPlayerTwoSeed.innerHTML = `Seed #${seedData.find(seed => seed["Acronym"] == playerId[1])["Seed"].match(/\d+/)[0]}`;
 
@@ -1421,6 +1423,8 @@ class MatchManager {
         this.introPlayerTwoPfp.setAttribute("src", rightFlag);
         this.introPlayerOneName.innerHTML = this.leftPlayerData.FullName;
         this.introPlayerTwoName.innerHTML = this.rightPlayerData.FullName;
+        adjustFont(this.introPlayerOneName, 280, 30);
+        adjustFont(this.introPlayerTwoName, 280, 30);
         this.introPlayerOneSeed.innerHTML = `#${seedData.find(seed => seed["Acronym"] == playerId[0])["Seed"].match(/\d+/)[0]}`;
         this.introPlayerTwoSeed.innerHTML = `#${seedData.find(seed => seed["Acronym"] == playerId[1])["Seed"].match(/\d+/)[0]}`;
         this.introPlayerOneRoster.innerHTML = leftRoster.join(" · ");
