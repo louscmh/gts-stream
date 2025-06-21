@@ -735,7 +735,7 @@
         {
             "FullName": "European Alliance",
             "Acronym": "EUR",
-            "FlagName": "SI",
+            "FlagName": "IGTSEA",
             "SeedingResults": [
                 {
                     "Mod": "NM",
@@ -2303,7 +2303,7 @@
         {
             "FullName": "Southeast Asian Alliance",
             "Acronym": "SEA",
-            "FlagName": "TH",
+            "FlagName": "IGTSSEAA",
             "SeedingResults": [
                 {
                     "Mod": "NM",
