@@ -1,122 +1,123 @@
 [
   {
-    "beatmapId": 4594733,
+    "beatmapId": 3654321,
     "pick": "NM1",
-    "modSR": 6.77,
+    "modSR": 7.08,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4837124,
+    "beatmapId": 4311898,
     "pick": "NM2",
-    "modSR": 6.7,
+    "modSR": 7.19,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 2691863,
+    "beatmapId": 4327347,
     "pick": "NM3",
-    "modSR": 5.91,
+    "modSR": 6.38,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4724631,
+    "beatmapId": "xi - FREEDOM DiVE (TaikoMom) [oMom's Taiko Oni].osu",
     "pick": "NM4",
-    "modSR": 6.47,
+    "modSR": 6.98,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "t+pazolite - monochrome dream (Nwolf) [wereoni].osu",
+    "beatmapId": "Culprate - Yin (SolaEclipse) [SGTS Jumpscare].osu",
     "pick": "NM5",
-    "modSR": 6.37,
+    "modSR": 6.51,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4532423,
+    "beatmapId": 4964632,
     "pick": "HD1",
-    "modSR": 6.27,
+    "modSR": 6.6,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "MYUKKE. - AKKERA-COUNTRY-BOY (Yasuho) [Inner Yahus (SGTS Edit)].osu",
+    "beatmapId": "Ironmouse & Camellia - Waifu Jam (Short Ver.) (JarvisGaming) [i do not possess the knowledge of twerking].osu",
     "pick": "HD2",
-    "modSR": 5.03,
+    "modSR": 4.96,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Ardolf - Rainbow Raceway (Nwolf) [it is a road that you go (SGTS ver.)].osu",
+    "beatmapId": 4946016,
     "pick": "HR1",
-    "modSR": 6.32,
+    "modSR": 6.42,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Sparxe - Gust Bird Attack (roufou) [Ura Oni].osu",
+    "beatmapId": 2607127,
     "pick": "HR2",
-    "modSR": 6.55,
+    "modSR": 6.87,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Cranky - SALON & CHALON (Nwolf) [Yuh (SGTS)].osu",
+    "beatmapId": 4703803,
     "pick": "DT1",
-    "modSR": 6.36,
+    "modSR": 6.68,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3280996,
+    "beatmapId": "t+pazolite - Chartreuse Green (Uncut Edition) (this dude) [Collab without Permission].osu",
     "pick": "DT2",
-    "modSR": 6.33,
+    "modSR": 6.78,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4949152,
+    "beatmapId": "freesia - ROTTERDAM KITCHEN (roufou) [rollfou style].osu",
     "pick": "FM1",
-    "modSR": 6.06,
+    "modSR": 6.34,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 2578605,
+    "beatmapId": "kanone - Atlantis Hawk (Lamery) [Inner Oni (SGTS Edit)].osu",
     "pick": "FM2",
-    "modSR": 5.8,
+    "modSR": 6.01,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3499979,
+    "beatmapId": 3028994,
     "pick": "FM3",
-    "modSR": 5.91,
+    "modSR": 6.02,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "G4TE-16 - CHRIMOSA (TaikoMom) [Delicate Solidity].osu",
+    "beatmapId": "sanmal - Folded Dimension (Yasuho) [Liminal Tesseract].osu",
     "pick": "TB",
-    "modSR": 6.88,
+    "modSR": 7.18,
     "customSong": true,
     "collab": "",
     "mappers": ""
   }
 ]
+

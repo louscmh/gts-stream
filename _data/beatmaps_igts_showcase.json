@@ -1,114 +1,115 @@
 [
   {
-    "beatmapId": "Anamanaguchi - Blackout City (Nwolf) [Dinner, Eat].osu",
+    "beatmapId": "Breakchild & Stoop - blue noah 2022 (Cut Ver.) (Cynplytholowazy) [Oni].osu",
     "pick": "NM1",
-    "modSR": 4.17,
+    "modSR": 4.45,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4560333,
+    "beatmapId": "Ludicin - Obliterate (this dude) [Oni].osu",
     "pick": "NM2",
-    "modSR": 4.4,
+    "modSR": 4.6,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4940761,
+    "beatmapId": "Dictate - Melodik (Short Ver.) (ikin5050) [oni].osu",
     "pick": "NM3",
-    "modSR": 3.45,
+    "modSR": 3.54,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "7_7 - Getsuyou (ikin5050) [Nozdormu and ikin's Oni[nerf]].osu",
+    "beatmapId": "Synthion - Blossom (cut ver.) (qish) [qish & Rycy's Oni].osu",
     "pick": "NM4",
-    "modSR": 3.65,
+    "modSR": 3.93,
     "customSong": false,
     "collab": "",
-    "mappers": "ikin5050 & Nozdormu"
+    "mappers": ""
   },
   {
-    "beatmapId": 1773321,
+    "beatmapId": "O2i3 - Kato (Hivan111) [Oni (IGTS Ver.)].osu",
     "pick": "NM5",
-    "modSR": 3.03,
+    "modSR": 3.39,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "you feat. ugu - PAINTER (Defectum) [leirsund is completely dead].osu",
-    "pick": "HD1",
-    "modSR": 3.43,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "Sound piercer vs. Iriss - BOUNCE THE TECH (Haypzeh) [Muzukashii].osu",
+    "beatmapId": 3990412,
     "pick": "HD2",
-    "modSR": 3.27,
+    "modSR": 4.01,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "EmoCosine - Nekojarashi (davidminh0111) [Muzukashii].osu",
+    "beatmapId": "Hyper Potions - Porta Vista (Kingo) [Oni].osu",
+    "pick": "HD2",
+    "modSR": 3.25,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "yuki. - Be Your Light (davidminh0111) [so chill].osu",
     "pick": "HR1",
-    "modSR": 3.78,
+    "modSR": 4.12,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "SAMString - Night Fighter (Burak) [Muzukashii (edit)].osu",
+    "beatmapId": "AAAA - Hoshizora no Kanransha (luxem_) [Oni (IGTS Edit)].osu",
     "pick": "HR2",
-    "modSR": 3.9,
+    "modSR": 4.34,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 3069697,
+    "beatmapId": 4921262,
     "pick": "DT1",
-    "modSR": 3.97,
+    "modSR": 4.16,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Camellia - illegal trap (Cynplytholowazy) [surprising death].osu",
+    "beatmapId": "Mili - Ga1ahad and Scientific Witchery (TaikoMom) [Bittersweet IGTS Flavoured Oni].osu",
     "pick": "DT2",
-    "modSR": 4.35,
+    "modSR": 4.48,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "key vs. locket - mundo (shininghalo) [eu ando atras de uma certeza, ela tem q ser perfeita].osu",
+    "beatmapId": "MIMI - Mizuoto to Curtain (arcpotato) [Loneliness].osu",
     "pick": "FM1",
-    "modSR": 3.7,
+    "modSR": 4.09,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "yuki. - Spring Signal (Rycy) [Lite Oni].osu",
+    "beatmapId": "Laur - Evoke (davidminh0111) [I WANNA HEAR THE NOISE].osu",
     "pick": "FM2",
-    "modSR": 3.76,
+    "modSR": 3.89,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "SEVEN LIVES - CA$H REGI$TER (Jarvismarie) [Taiko].osu",
+    "beatmapId": "Cansol - a school of fish (Ph0eNiiXZ) [the world of blue (IGTS Ver.)].osu",
     "pick": "TB",
-    "modSR": 4.38,
+    "modSR": 4.59,
     "customSong": false,
     "collab": "",
-    "mappers": "Rosemarie & JarvisGaming"
+    "mappers": ""
   }
 ]
+

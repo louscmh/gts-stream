@@ -1,6 +1,6 @@
 [
     {
-        "currentStage": "RO16"
+        "currentStage": "QF"
     },
     {
         "stage": "QL",
@@ -16,7 +16,7 @@
         "firstTo": 5
     },
     {
-        "stage": "W2",
+        "stage": "W3",
         "showcase": "../../../_shared_assets/design/igts/showcase_text_w2.png",
         "stageName": "Week 2",
         "overviewText": "BO9",
