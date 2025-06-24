@@ -65,9 +65,15 @@ ___
 - **UNDO ACTION:** Button to retract the latest action performed by the **UPCOMING ACTION** button, which includes reversing the player order.
 - **TOGGLE PICKING:** Button to unhide all picking assets, indicating the start of the next pick. This will be toggled automatically when a win on a pick is marked.
 ___
-### Banning/Picking Maps
+### Banning/Picking/Marking Wins on Maps
 ![alt text](_shared_assets/setup/image-interact.png)
 While hovering over any of the beatmaps, upon Left Clicking the action denoted by the UPCOMING ACTION button will be applied. This concerns the banning & picking of all maps in the pool.
+
+If you want to mark a win on a player (this won't be required if things go well, but just incase for resetting),
+- ALT+Left-Click on a **picked map** mark it as the left player's win
+- ALT+Right-Click on a **picked map** mark it as the right player's win
+
+The win status will go away alongside the map when undo action is clicked.
 
 ___
 ## Scene Index
