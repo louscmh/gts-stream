@@ -1,115 +1,114 @@
 [
   {
-    "beatmapId": "Breakchild & Stoop - blue noah 2022 (Cut Ver.) (Cynplytholowazy) [Oni].osu",
+    "beatmapId": "SECONDWALL - Boku wa Boku de shika Nakute (Rycy) [I'm just me].osu",
     "pick": "NM1",
-    "modSR": 4.45,
+    "modSR": 4.8,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Ludicin - Obliterate (this dude) [Oni].osu",
+    "beatmapId": "BLANKFIELD - Half Ghost (krytwal) [Half Oni].osu",
     "pick": "NM2",
-    "modSR": 4.6,
+    "modSR": 4.87,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Dictate - Melodik (Short Ver.) (ikin5050) [oni].osu",
+    "beatmapId": 5187318,
     "pick": "NM3",
-    "modSR": 3.54,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "Synthion - Blossom (cut ver.) (qish) [qish & Rycy's Oni].osu",
-    "pick": "NM4",
-    "modSR": 3.93,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "O2i3 - Kato (Hivan111) [Oni (IGTS Ver.)].osu",
-    "pick": "NM5",
-    "modSR": 3.39,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 3990412,
-    "pick": "HD2",
-    "modSR": 4.01,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "Hyper Potions - Porta Vista (Kingo) [Oni].osu",
-    "pick": "HD2",
-    "modSR": 3.25,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "yuki. - Be Your Light (davidminh0111) [so chill].osu",
-    "pick": "HR1",
-    "modSR": 4.12,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "AAAA - Hoshizora no Kanransha (luxem_) [Oni (IGTS Edit)].osu",
-    "pick": "HR2",
-    "modSR": 4.34,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 4921262,
-    "pick": "DT1",
     "modSR": 4.16,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Mili - Ga1ahad and Scientific Witchery (TaikoMom) [Bittersweet IGTS Flavoured Oni].osu",
+    "beatmapId": "Shirobon - Step It (davidminh0111) [bruh].osu",
+    "pick": "NM4",
+    "modSR": 4.27,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Rukadesu & 5KiLOBYTE - ETERNAL (Cynplytholowazy) [LITE INNER ONI].osu",
+    "pick": "NM5",
+    "modSR": 4.43,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 2417738,
+    "pick": "HD1",
+    "modSR": 4.23,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "my sound life - 0215 (YonGin) [Oni].osu",
+    "pick": "HD2",
+    "modSR": 3.45,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Function Phantom - Paradox (Nozdormu) [Thesis].osu",
+    "pick": "HR1",
+    "modSR": 4.1,
+    "customSong": false,
+    "collab": "",
+    "mappers": "Nozdormu & kurumilove"
+  },
+  {
+    "beatmapId": "Omoi - If You're Gonna Jump (arcpotato) [Promise].osu",
+    "pick": "HR2",
+    "modSR": 4.88,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "KOAN Sound & Asa - Fuego (Nwolf) [not a Muzukashii].osu",
+    "pick": "DT1",
+    "modSR": 4.05,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "solfa feat. Shimotsuki Haruka - Natsuiro Ramune (YonGin) [tf is bent in 4].osu",
     "pick": "DT2",
-    "modSR": 4.48,
-    "customSong": false,
+    "modSR": null,
+    "customSong": 4.87,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "MIMI - Mizuoto to Curtain (arcpotato) [Loneliness].osu",
+    "beatmapId": 5187285,
     "pick": "FM1",
-    "modSR": 4.09,
+    "modSR": 4.24,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Laur - Evoke (davidminh0111) [I WANNA HEAR THE NOISE].osu",
+    "beatmapId": 5185570,
     "pick": "FM2",
-    "modSR": 3.89,
+    "modSR": 3.96,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Cansol - a school of fish (Ph0eNiiXZ) [the world of blue (IGTS Ver.)].osu",
+    "beatmapId": "USAO - Anomaly (Defectum) [The Fifth Round].osu",
     "pick": "TB",
-    "modSR": 4.59,
+    "modSR": 4.69,
     "customSong": false,
     "collab": "",
     "mappers": ""
   }
 ]
-
