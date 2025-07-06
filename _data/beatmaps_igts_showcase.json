@@ -1,112 +1,128 @@
 [
   {
-    "beatmapId": "SECONDWALL - Boku wa Boku de shika Nakute (Rycy) [I'm just me].osu",
+    "beatmapId": "KINEMA106 - Nightmare Party (JarvisGaming) [Skibidi Party].osu",
     "pick": "NM1",
-    "modSR": 4.8,
+    "modSR": 4.98,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "BLANKFIELD - Half Ghost (krytwal) [Half Oni].osu",
+    "beatmapId": "Synthion - VIVIDVELOCITY (Joylintp) [VVD].osu",
     "pick": "NM2",
-    "modSR": 4.87,
+    "modSR": 5.31,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5187318,
+    "beatmapId": "Toromaru - Formless Canvas (shoucan91) [Cat].osu",
     "pick": "NM3",
-    "modSR": 4.16,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "Shirobon - Step It (davidminh0111) [bruh].osu",
-    "pick": "NM4",
-    "modSR": 4.27,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "Rukadesu & 5KiLOBYTE - ETERNAL (Cynplytholowazy) [LITE INNER ONI].osu",
-    "pick": "NM5",
-    "modSR": 4.43,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 2417738,
-    "pick": "HD1",
-    "modSR": 4.23,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "my sound life - 0215 (YonGin) [Oni].osu",
-    "pick": "HD2",
-    "modSR": 3.45,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "Function Phantom - Paradox (Nozdormu) [Thesis].osu",
-    "pick": "HR1",
-    "modSR": 4.1,
-    "customSong": false,
-    "collab": "",
-    "mappers": "Nozdormu & kurumilove"
-  },
-  {
-    "beatmapId": "Omoi - If You're Gonna Jump (arcpotato) [Promise].osu",
-    "pick": "HR2",
-    "modSR": 4.88,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "KOAN Sound & Asa - Fuego (Nwolf) [not a Muzukashii].osu",
-    "pick": "DT1",
-    "modSR": 4.05,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "solfa feat. Shimotsuki Haruka - Natsuiro Ramune (YonGin) [tf is bent in 4].osu",
-    "pick": "DT2",
-    "modSR": null,
-    "customSong": 4.87,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 5187285,
-    "pick": "FM1",
     "modSR": 4.24,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5185570,
-    "pick": "FM2",
-    "modSR": 3.96,
+    "beatmapId": "Cansol - Curtain Call (arcpotato) [Farewell].osu",
+    "pick": "NM4",
+    "modSR": 4.21,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "USAO - Anomaly (Defectum) [The Fifth Round].osu",
+    "beatmapId": "Andora - Flashback (feat. RANASOL) (Gamelan4) [Recollection].osu",
+    "pick": "NM5",
+    "modSR": 3.54,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Ice - Floor of Lava (Fynbi) [NM6].osu",
+    "pick": "NM6",
+    "modSR": 4.67,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 3260062,
+    "pick": "HD1",
+    "modSR": 4.51,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4255925,
+    "pick": "HD2",
+    "modSR": 3.87,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "systile - #shibuyameltdown (krytwal) [#collab #oni].osu",
+    "pick": "HR1",
+    "modSR": 4.5,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Nashimoto Ui - TV Zombie (K a y o k o) [Oni].osu",
+    "pick": "HR2",
+    "modSR": 5.11,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Gomadare - Resolver (Nwolf) [Oni].osu",
+    "pick": "DT1",
+    "modSR": 4.3,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Mili - Nine Point Eight (sendol) [Oni (IGTS Ver.)].osu",
+    "pick": "DT2",
+    "modSR": 4.93,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Fractal Dreamers - Celestial Horizon (Rycy) [Land of Dreams].osu",
+    "pick": "FM1",
+    "modSR": 4.53,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 4082203,
+    "pick": "FM2",
+    "modSR": 4.41,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Affected - What Are You Waiting For (Original Mix) (Defectum) [pedagogisk antimodifikasjonsgymtrening].osu",
+    "pick": "FM3",
+    "modSR": 4.41,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Ludicin - State of Mind (TaikoMom) [Dharana].osu",
     "pick": "TB",
-    "modSR": 4.69,
+    "modSR": 5.21,
     "customSong": false,
     "collab": "",
     "mappers": ""
