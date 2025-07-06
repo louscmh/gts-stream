@@ -1,129 +1,129 @@
 [
   {
-    "beatmapId": 3527423,
+    "beatmapId": "Camellia - +ERABY+E CONNEC+10N (Cut Ver.) (K8107) [HE11 0N1].osu",
     "pick": "NM1",
-    "modSR": 7.39,
+    "modSR": 7.63,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Fuki - Zinger Ringer Gang Love (Volta) [Lover].osu",
+    "beatmapId": "seleP - Scarlet Rose (roufou) [Hell Oni].osu",
     "pick": "NM2",
-    "modSR": 7.34,
+    "modSR": 7.67,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Street - Sakura Fubuki(Ata Remix) (KaEDe1106) [Inner Oni (SGTS edit)].osu",
+    "beatmapId": "Supa7onyz pres. 5-let - Asymmetrical Grooves (JarvisGaming) [boom].osu",
     "pick": "NM3",
-    "modSR": 6.88,
+    "modSR": 7.18,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Inferi - The Abhorrent Art (Heaxys) [Robbery (SGTS Edit)].osu",
+    "beatmapId": "Fleshgod Apocalypse - Kingborn (TaikoMom) [Blighted Fate (Cut ver.)].osu",
     "pick": "NM4",
-    "modSR": 7.37,
+    "modSR": 8.52,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "BlackY - Swing Edge (Cut Ver.) (4sbet1) [Inner Oni].osu",
+    "beatmapId": 3024270,
     "pick": "NM5",
-    "modSR": 7.26,
+    "modSR": 7.57,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Aiyru - Elevator (SolaEclipse) [Need a Lift].osu",
+    "beatmapId": "agu - Cernunnos (Nightcore Ustempo Mix) (roufou) [Sigma Gym Training Session].osu",
     "pick": "NM6",
-    "modSR": 6.73,
+    "modSR": 6.79,
     "customSong": false,
     "collab": "",
-    "mappers": ""
+    "mappers": "roufou & SolaEclipse"
   },
   {
-    "beatmapId": "cosMo@Bousou-P feat. Otomachi Una - Brainkeeper Service (-Kazuha) [Hell Oni].osu",
+    "beatmapId": "BlackY - ULTiMATE END (Cut Ver.) (4sbet1) [!NNER ON!].osu",
     "pick": "HD1",
-    "modSR": 7.19,
+    "modSR": 7.65,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Tedjimo Yomigy - JezoensiS (Lamery) [Ezomatsu (SGTS Edit)].osu",
+    "beatmapId": "PTB10 - Interference (Yasuho) [Innerference].osu",
     "pick": "HD2",
-    "modSR": 5.43,
+    "modSR": 6.63,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 2992826,
+    "beatmapId": 3139485,
     "pick": "HR1",
-    "modSR": 7.13,
+    "modSR": 7.65,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4880877,
+    "beatmapId": 4507189,
     "pick": "HR2",
-    "modSR": 7.49,
+    "modSR": 7.98,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5031218,
+    "beatmapId": "Camellia feat. Nanahira - senpai, notice me! (aabc271) [Collab Oni- (SGTS Edit)].osu",
     "pick": "DT1",
-    "modSR": 7.24,
+    "modSR": 7.47,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 1781229,
+    "beatmapId": 4311786,
     "pick": "DT2",
-    "modSR": 7.35,
+    "modSR": 7.56,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 2194921,
+    "beatmapId": 3459766,
     "pick": "FM1",
-    "modSR": 6.85,
+    "modSR": 7.17,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4898462,
+    "beatmapId": "w_tre - Shannon's Theorem (Nwolf) [respect for RA&PH].osu",
     "pick": "FM2",
-    "modSR": 6.57,
+    "modSR": 7.12,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Se-U-Ra - LOSHAXI (origin) (LuroxS) [C-A-L-A-M-I-T-Y].osu",
+    "beatmapId": "Function Phantom - Algebra (Cut Ver.) (4sbet1) [Inner Oni (SGTS Edit)].osu",
     "pick": "FM3",
-    "modSR": 6.53,
+    "modSR": 6.92,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "psychoangel - target_panic (HiroK) [anxious_accuracy].osu",
+    "beatmapId": "Hommarju - Deus Ex Machina (Maximum Attack Mix) (roufou) [Sudden Gift That Saves].osu",
     "pick": "TB",
-    "modSR": 7.8,
-    "customSong": true,
+    "modSR": 8.00,
+    "customSong": false,
     "collab": "",
     "mappers": ""
   }

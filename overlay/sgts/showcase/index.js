@@ -34,7 +34,7 @@ let currentStage;
         jsonData_2.map((beatmap) => {
             offlineData.push(beatmap);
         });
-        const jsonData_3 = await $.getJSON("../../../_data/stage_sgts.json");
+        const jsonData_3 = await $.getJSON("../../../_data/stage_sgts_showcase.json");
         jsonData_3.map((stage,index) => {
             if (index == 0) {
                 currentStage = stage.currentStage;
