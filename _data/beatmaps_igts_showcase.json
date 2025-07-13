@@ -1,129 +1,129 @@
 [
   {
-    "beatmapId": "KINEMA106 - Nightmare Party (JarvisGaming) [Skibidi Party].osu",
+    "beatmapId": "Umeboshi Chazuke vs. Morimori Atsushi - Pico2 Funkoter (Briesmas) [Inner Oni].osu",
     "pick": "NM1",
-    "modSR": 4.98,
+    "modSR": 5.06,
     "customSong": false,
     "collab": "",
-    "mappers": ""
+    "mappers": "Haypzeh & Briesmas"
   },
   {
-    "beatmapId": "Synthion - VIVIDVELOCITY (Joylintp) [VVD].osu",
+    "beatmapId": "I love you Orchestra - Squall (arcpotato) [Tsunami].osu",
     "pick": "NM2",
-    "modSR": 5.31,
+    "modSR": 5.28,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Toromaru - Formless Canvas (shoucan91) [Cat].osu",
+    "beatmapId": "BilliumMoto - Hypersurface (shininghalo) [Inner Oni].osu",
     "pick": "NM3",
-    "modSR": 4.24,
+    "modSR": 4.66,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Cansol - Curtain Call (arcpotato) [Farewell].osu",
+    "beatmapId": "seatrus + Halv - The Core (Rycy) [In your face].osu",
     "pick": "NM4",
-    "modSR": 4.21,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "Andora - Flashback (feat. RANASOL) (Gamelan4) [Recollection].osu",
-    "pick": "NM5",
-    "modSR": 3.54,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "Ice - Floor of Lava (Fynbi) [NM6].osu",
-    "pick": "NM6",
-    "modSR": 4.67,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 3260062,
-    "pick": "HD1",
-    "modSR": 4.51,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 4255925,
-    "pick": "HD2",
-    "modSR": 3.87,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "systile - #shibuyameltdown (krytwal) [#collab #oni].osu",
-    "pick": "HR1",
-    "modSR": 4.5,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "Nashimoto Ui - TV Zombie (K a y o k o) [Oni].osu",
-    "pick": "HR2",
-    "modSR": 5.11,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "Gomadare - Resolver (Nwolf) [Oni].osu",
-    "pick": "DT1",
-    "modSR": 4.3,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "Mili - Nine Point Eight (sendol) [Oni (IGTS Ver.)].osu",
-    "pick": "DT2",
-    "modSR": 4.93,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": "Fractal Dreamers - Celestial Horizon (Rycy) [Land of Dreams].osu",
-    "pick": "FM1",
     "modSR": 4.53,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4082203,
+    "beatmapId": "BlackY - Swing Edge (Cut Ver.) (Defectum) [Bohemianistic Grindset].osu",
+    "pick": "NM5",
+    "modSR": 4.72,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "MYUKKE. - OTTAMA GAZER (_gt) [INTERNATIONAL GIMMICK THROWDOWN SESSION].osu",
+    "pick": "NM6",
+    "modSR": 4.14,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "1zm8 - Oddly Sinister (K a y o k o) [rhombicosidodecahedron].osu",
+    "pick": "HD1",
+    "modSR": 4.43,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "HyperJuice - City Lights feat. EVO+, Jinmenusagi (Pa's Lam System Remix) (ikin5050) [Oni].osu",
+    "pick": "HD2",
+    "modSR": 3.92,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Sydosys - SOURCE_MISSING (Cynplytholowazy) [The Source isn't IGTS].osu",
+    "pick": "HR1",
+    "modSR": 4.68,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "MuryokuP - Core (Minami-Kotori) [Oni].osu",
+    "pick": "HR2",
+    "modSR": 5.23,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 5210196,
+    "pick": "DT1",
+    "modSR": 4.69,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "Getty - BLVST BEVT (VIP) (Kingo) [FINVL BEVT].osu",
+    "pick": "DT2",
+    "modSR": 5.38,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "ak+q - ikasu (UnagiDon) [Rebirth].osu",
+    "pick": "FM1",
+    "modSR": 4.64,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": "D(ABE3) - MANIERA (davidminh0111) [pp].osu",
     "pick": "FM2",
-    "modSR": 4.41,
+    "modSR": 4.52,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Affected - What Are You Waiting For (Original Mix) (Defectum) [pedagogisk antimodifikasjonsgymtrening].osu",
+    "beatmapId": "Tanchiky - REDOUT feat. Torika (Nwolf) [Tancheeky Nando'S].osu",
     "pick": "FM3",
-    "modSR": 4.41,
+    "modSR": 4.62,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": "Ludicin - State of Mind (TaikoMom) [Dharana].osu",
+    "beatmapId": "N_dog - Collapsar (davidminh0111) [Interstellar Galactic Twinkling Supernova].osu",
     "pick": "TB",
-    "modSR": 5.21,
-    "customSong": false,
+    "modSR": 5.62,
+    "customSong": true,
     "collab": "",
     "mappers": ""
   }
