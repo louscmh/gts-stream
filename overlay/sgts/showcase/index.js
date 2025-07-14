@@ -282,7 +282,7 @@ class ShowcaseManager {
                 this.sourceAsset.setAttribute('src',"../../../_shared_assets/design/sgts/main_banner.png");
             }
     
-            this.adjustFont(this.songTitleAsset,700,48);
+            this.adjustFont(this.songTitleAsset,800,40);
         
             this.makeScrollingText(this.difficultyTextAsset, this.difficultyTextDelayAsset,20,340,40);
         }.bind(this),1000)

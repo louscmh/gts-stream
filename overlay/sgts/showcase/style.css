@@ -143,6 +143,8 @@
     align-items: end;
     color:white;
     z-index: -1 !important;
+    width:fit-content;
+    overflow: hidden;
 }
 
 #artistTitle {
@@ -159,6 +161,7 @@
     font-weight: 500;
     text-align: right;
     width: fit-content;
+    white-space: nowrap;
     background-color: rgba(0, 0, 0, 0.75);
     padding-right: 15px;
     padding-left: 20px;
