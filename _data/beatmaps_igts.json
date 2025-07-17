@@ -1,129 +1,129 @@
 [
   {
-    "beatmapId": 5198350,
+    "beatmapId": 5210556,
     "pick": "NM1",
-    "modSR": 4.98,
+    "modSR": 5.06,
     "customSong": false,
     "collab": "",
-    "mappers": ""
+    "mappers": "Haypzeh & Briesmas"
   },
   {
-    "beatmapId": 5198764,
+    "beatmapId": 5210773,
     "pick": "NM2",
-    "modSR": 5.31,
+    "modSR": 5.28,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5198753,
+    "beatmapId": 5210780,
     "pick": "NM3",
-    "modSR": 4.24,
+    "modSR": 4.66,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5198768,
+    "beatmapId": 5210683,
     "pick": "NM4",
-    "modSR": 4.21,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 5198825,
-    "pick": "NM5",
-    "modSR": 3.54,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 5198792,
-    "pick": "NM6",
-    "modSR": 4.67,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 3260062,
-    "pick": "HD1",
-    "modSR": 4.51,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 4255925,
-    "pick": "HD2",
-    "modSR": 3.87,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 5198756,
-    "pick": "HR1",
-    "modSR": 4.5,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 5198616,
-    "pick": "HR2",
-    "modSR": 5.11,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 5198809,
-    "pick": "DT1",
-    "modSR": 4.3,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 5198211,
-    "pick": "DT2",
-    "modSR": 4.93,
-    "customSong": false,
-    "collab": "",
-    "mappers": ""
-  },
-  {
-    "beatmapId": 5198641,
-    "pick": "FM1",
     "modSR": 4.53,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 4082203,
+    "beatmapId": 5210781,
+    "pick": "NM5",
+    "modSR": 4.72,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 5210787,
+    "pick": "NM6",
+    "modSR": 4.14,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 5210639,
+    "pick": "HD1",
+    "modSR": 4.43,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 5210748,
+    "pick": "HD2",
+    "modSR": 3.92,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 5210831,
+    "pick": "HR1",
+    "modSR": 4.68,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 5210829,
+    "pick": "HR2",
+    "modSR": 5.23,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 5210196,
+    "pick": "DT1",
+    "modSR": 4.69,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 5210830,
+    "pick": "DT2",
+    "modSR": 5.38,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 5210703,
+    "pick": "FM1",
+    "modSR": 4.64,
+    "customSong": false,
+    "collab": "",
+    "mappers": ""
+  },
+  {
+    "beatmapId": 5210835,
     "pick": "FM2",
-    "modSR": 4.41,
+    "modSR": 4.52,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5198821,
+    "beatmapId": 5210834,
     "pick": "FM3",
-    "modSR": 4.41,
+    "modSR": 4.62,
     "customSong": false,
     "collab": "",
     "mappers": ""
   },
   {
-    "beatmapId": 5198835,
+    "beatmapId": 5210841,
     "pick": "TB",
-    "modSR": 5.21,
-    "customSong": false,
+    "modSR": 5.62,
+    "customSong": true,
     "collab": "",
     "mappers": ""
   }
