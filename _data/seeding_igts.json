@@ -1,6 +1,54 @@
 {
     "Teams": [
         {
+            "FullName": "McDonald 5 Piece Chicken Nuggets",
+            "Acronym": "MCD",
+            "FlagName": "MCD",
+            "Seed": "#0",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "36682714"
+                },
+                {
+                    "id": "21779285"
+                },
+                {
+                    "id": "12421640"
+                },
+                {
+                    "id": "12421640"
+                },
+                {
+                    "id": "17148657"
+                }
+            ]
+        },
+        {
+            "FullName": "United Tingdom",
+            "Acronym": "UTD",
+            "FlagName": "UTD",
+            "Seed": "#0",
+            "LastYearPlacing": 1,
+            "Players": [
+                {
+                    "id": "12489832"
+                },
+                {
+                    "id": "16494567"
+                },
+                {
+                    "id": "11043157"
+                },
+                {
+                    "id": "6387858"
+                },
+                {
+                    "id": "16868806"
+                }
+            ]
+        },
+        {
             "FullName": "Netherlands A",
             "Acronym": "NLA",
             "FlagName": "NL",
