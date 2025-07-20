@@ -405,7 +405,7 @@ body {
 #playerOneQueue {
     position: absolute;
     left: 238px;
-    top: 253px;
+    top: 127px;
     width: 466px;
     display: flex;
     flex-direction: column;
@@ -415,7 +415,7 @@ body {
 #playerTwoQueue {
     position: absolute;
     left: 1216px;
-    top: 253px;
+    top: 127px;
     width: 466px;
     display: flex;
     flex-direction: column;

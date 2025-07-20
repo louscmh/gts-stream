@@ -798,11 +798,11 @@ class MatchManager {
     constructor(beatmapSet) {
         this.beatmapSet = beatmapSet;
         this.overviewBeatmaps = [];
-        this.pickCount = 0;
+        this.pickCount = 2;
         this.leftWins = 0;
         this.rightWins = 0;
         this.playerTurn = "left";
-        this.banCount = 0;
+        this.banCount = 2;
         this.leftPlayerData;
         this.rightPlayerData;
         this.currentMappoolScene = 1;
@@ -812,7 +812,7 @@ class MatchManager {
         this.scoreTwo;
         this.bestOf;
 
-        this.hasBanned = false;
+        this.hasBanned = true;
         this.togglePickVar = false;
         this.mappoolSwitchVar = true;
         this.matchSwitchVar = true;
@@ -1253,7 +1253,7 @@ class MatchManager {
                             this.resultsManager.update();
                             bm.toggleBan(this.playerTurn == "left" ? this.leftPlayerData.FlagName : this.rightPlayerData.FlagName, this.playerTurn == "left" ? true : false, this.pickCount);
                             this.controllerTurn.click();
-                        } else if (this.banCount == 2 && !bm.isPick && !bm.isBan && (this.bestOf - 1) * 2 != this.pickCount - 2) {
+                        } else if (this.banCount == 2 && !bm.isPick && !bm.isBan) {
                             // PICKING
                             this.pickCount++;
                             this.unpulseOverview(bm.layerName);
@@ -1656,9 +1656,9 @@ class MatchManager {
         } else if (index == 5 && this.currentMatchScene) {
             // change to mappool scene
             this.controllerMatch.click();
-            setTimeout(function () {
-                this.resultSwitchVar == true ? this.controllerResults.click() : null;
-            }.bind(this), 10000);
+            // setTimeout(function () {
+            //     this.resultSwitchVar == true ? this.controllerResults.click() : null;
+            // }.bind(this), 10000);
             setTimeout(function () {
                 this.autoSceneChange(3);
             }.bind(this), 25000);
@@ -1740,7 +1740,8 @@ class MatchManager {
     }
 
     checkWin() {
-        if ((this.leftWins == this.bestOf || this.rightWins == this.bestOf) && (this.scoreOne == this.bestOf || this.scoreTwo == this.bestOf)) {
+        // if ((this.leftWins == this.bestOf || this.rightWins == this.bestOf) && (this.scoreOne == this.bestOf || this.scoreTwo == this.bestOf)) {
+        if ((this.leftWins >= 1 || this.rightWins >= 1) && (this.scoreOne >= 1 || this.scoreTwo >= 1)) {
             this.undimButton(this.controllerResults);
             this.resultSwitchVar = true;
         } else {
