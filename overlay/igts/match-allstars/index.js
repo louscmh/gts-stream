@@ -1872,7 +1872,7 @@ class GameplayManager {
         for (let i=1;i<clientNumber+1;i++) {
             const client = new Client(i);
             client.generate();
-            this.scoreTracker.addClient(client, i<3?true:false);
+            this.scoreTracker.addClient(client, i<5?true:false);
         }
     }
 
